@@ -11,15 +11,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2605.28690v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-05-27-arxiv-latent_conditioned_parameterized_quantum_circuits_as_universal_approximators_for_distribut_infographic.json
 
-## 2. EFaaS: A Quantum-Classical Serverless Entangled Scheduler for Hybrid Variational Algorithms
-
-- Date: 2026-05-26
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2605.27540v1
-- PDF: https://arxiv.org/pdf/2605.27540v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-05-26-arxiv-efaas_a_quantum_classical_serverless_entangled_scheduler_for_hybrid_variational_algorithms_infographic.json
-
-## 3. Quantum optimization beyond QUBO for industrial logistics and scheduling
+## 2. Quantum optimization beyond QUBO for industrial logistics and scheduling
 
 - Date: 2026-05-28
 - Category: Quantum Hardware
@@ -27,13 +19,21 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2605.30252v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-05-28-arxiv-quantum_optimization_beyond_qubo_for_industrial_logistics_and_scheduling_infographic.json
 
-## 4. Variational Quantum Models for Knowledge Graph Embeddings on NISQ Devices
+## 3. Variational Quantum Models for Knowledge Graph Embeddings on NISQ Devices
 
 - Date: 2026-05-27
 - Category: Quantum Algorithms
 - arXiv: https://arxiv.org/abs/2605.28723v1
 - PDF: https://arxiv.org/pdf/2605.28723v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-05-27-arxiv-variational_quantum_models_for_knowledge_graph_embeddings_on_nisq_devices_infographic.json
+
+## 4. EFaaS: A Quantum-Classical Serverless Entangled Scheduler for Hybrid Variational Algorithms
+
+- Date: 2026-05-26
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2605.27540v1
+- PDF: https://arxiv.org/pdf/2605.27540v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-05-26-arxiv-efaas_a_quantum_classical_serverless_entangled_scheduler_for_hybrid_variational_algorithms_infographic.json
 
 ## 5. Thermodynamic-limit dispersion relations on trapped-ion quantum hardware
 

@@ -1,13 +1,13 @@
 {
-  "key_insight": "A DMRG-prepared MPS can be encoded efficiently up to a logistic-growth threshold, then finished with scheduled probabilistic imaginary-time evolution to avoid very deep circuits.",
-  "engineering_relevance": "This hybrid workflow reduces quantum ground-state preparation cost by shifting hard optimization and state-quality estimation into classical preprocessing and by truncating the expensive encoding tail.",
+  "key_insight": "DMRG finds a strong MPS starting point, and stopping MPS encoding at the logistic inflection point before using PITE avoids the deepest and least efficient part of state preparation.",
+  "engineering_relevance": "This hybrid workflow reduces circuit depth and post-selection cost, making ground-state initialization more practical for near-term quantum simulation pipelines.",
   "method": [
-    "Use DMRG to obtain an MPS for the target N-site ground state.",
-    "Load the MPS with an optimization-free MPD encoding circuit until the central-bond Schmidt-rank inflection point L*.",
-    "Apply deterministically scheduled PITE to suppress the remaining excited-state error using energy, gap, and overlap estimates."
+    "Use DMRG to compute an N-site ground-state MPS and estimate overlap/gap parameters.",
+    "Encode the MPS onto qubits with an optimization-free matrix-product disentangler (MPD) circuit up to the inflection layer L*.",
+    "Apply deterministically scheduled probabilistic imaginary-time evolution (PITE) to remove remaining excited-state error."
   ],
-  "evidence_signal": "The abstract reports numerical experiments on the spin-1/2 staggered-field Heisenberg chain showing that stopping at L* avoids very deep encoding circuits and reduces PITE post-selection overhead.",
-  "watch_item": "The approach relies on reliable classical estimates of the ground-state energy, effective gap, and reference overlap, which may be difficult for larger or less well-behaved systems.",
+  "evidence_signal": "Numerical tests on the spin-1/2 staggered-field Heisenberg chain show that the approach avoids very deep encoding circuits and significantly lowers the post-selection overhead of PITE.",
+  "watch_item": "The method depends on accurate classical preprocessing from DMRG and on problem-specific estimates of the gap and overlap, so performance may degrade when those quantities are hard to obtain or the target state is not well approximated by a low-bond-dimension MPS.",
   "hashtags": [
     "#QuantumAlgorithms",
     "#GroundStatePreparation",
@@ -19,6 +19,6 @@
   "paper_title": "Overcoming the Matrix-Product-State Encoding Barrier via DMRG-Guided Probabilistic Imaginary-Time Evolution",
   "paper_date": "2026-05-28",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-05-30T22:50:22",
+  "generated_at": "2026-05-31T11:41:12",
   "generator": "openai"
 }

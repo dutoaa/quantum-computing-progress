@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-06-06
+Generated: 2026-06-07
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Setting angles in quantum approximate optimization at utility-scale
@@ -75,15 +75,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.06070v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-efficient_quantum_circuit_construction_of_controlled_time_evolution_for_arbitrary_pauli_su_infographic.json
 
-## 10. Scalable On-Hardware Training of Quantum Neural Networks and Application to Clinical Data Imputation
-
-- Date: 2026-06-02
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.03517v1
-- PDF: https://arxiv.org/pdf/2606.03517v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-02-arxiv-scalable_on_hardware_training_of_quantum_neural_networks_and_application_to_clinical_data_infographic.json
-
-## 11. Quantum Optimization Algorithms for Strongly Correlated Many-Body Systems
+## 10. Quantum Optimization Algorithms for Strongly Correlated Many-Body Systems
 
 - Date: 2026-06-02
 - Category: Quantum Algorithms
@@ -91,7 +83,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.03147v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-02-arxiv-quantum_optimization_algorithms_for_strongly_correlated_many_body_systems_infographic.json
 
-## 12. Shattering the Symmetry Trap in Fixed-Ansatz VQE: An Accelerated ADAPT-VQE Study of Three Pillar Molecules under Bravyi-Kitaev Mapping
+## 11. Shattering the Symmetry Trap in Fixed-Ansatz VQE: An Accelerated ADAPT-VQE Study of Three Pillar Molecules under Bravyi-Kitaev Mapping
 
 - Date: 2026-06-04
 - Category: Quantum Algorithms
@@ -99,7 +91,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.05968v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-shattering_the_symmetry_trap_in_fixed_ansatz_vqe_an_accelerated_adapt_vqe_study_of_three_p_infographic.json
 
-## 13. Periodic Symmetry-Adapted Encoding: Qubit Reduction in Crystalline Electronic Structure
+## 12. Periodic Symmetry-Adapted Encoding: Qubit Reduction in Crystalline Electronic Structure
 
 - Date: 2026-06-04
 - Category: Quantum Algorithms
@@ -107,7 +99,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.05777v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-periodic_symmetry_adapted_encoding_qubit_reduction_in_crystalline_electronic_structure_infographic.json
 
-## 14. Expressibility, Noise, and Error Mitigation in VQE Ansatz Selection
+## 13. Expressibility, Noise, and Error Mitigation in VQE Ansatz Selection
 
 - Date: 2026-06-03
 - Category: Quantum Algorithms
@@ -115,7 +107,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.04955v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-expressibility_noise_and_error_mitigation_in_vqe_ansatz_selection_infographic.json
 
-## 15. Characterization of errors in photon-heralded quantum operations between non-interacting quantum emitters
+## 14. Characterization of errors in photon-heralded quantum operations between non-interacting quantum emitters
 
 - Date: 2026-06-03
 - Category: Quantum Error Correction
@@ -123,7 +115,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.04312v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-characterization_of_errors_in_photon_heralded_quantum_operations_between_non_interacting_q_infographic.json
 
-## 16. Feature Encoding in Quantum Machine Learning: A Survey and Practical Guidelines
+## 15. Feature Encoding in Quantum Machine Learning: A Survey and Practical Guidelines
 
 - Date: 2026-06-03
 - Category: Quantum Hardware
@@ -131,7 +123,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.05387v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-feature_encoding_in_quantum_machine_learning_a_survey_and_practical_guidelines_infographic.json
 
-## 17. A Tutorial for Characterizing Transmon Qubits
+## 16. A Tutorial for Characterizing Transmon Qubits
 
 - Date: 2026-06-02
 - Category: Quantum Hardware
@@ -139,13 +131,21 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.03815v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-02-arxiv-a_tutorial_for_characterizing_transmon_qubits_infographic.json
 
-## 18. Nanostructure modelling with early fault tolerant quantum computers
+## 17. Nanostructure modelling with early fault tolerant quantum computers
 
 - Date: 2026-06-04
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2606.06442v1
 - PDF: https://arxiv.org/pdf/2606.06442v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-nanostructure_modelling_with_early_fault_tolerant_quantum_computers_infographic.json
+
+## 18. Scalable On-Hardware Training of Quantum Neural Networks and Application to Clinical Data Imputation
+
+- Date: 2026-06-02
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.03517v1
+- PDF: https://arxiv.org/pdf/2606.03517v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-02-arxiv-scalable_on_hardware_training_of_quantum_neural_networks_and_application_to_clinical_data_infographic.json
 
 ## 19. A framework for low-overhead quantum fault tolerance via spacetime lifting
 

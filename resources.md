@@ -1,9 +1,49 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-06-08
+Generated: 2026-06-09
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
-## 1. Projector Quantum Variational Ansatz
+## 1. Adaptive directional gradients for parameterised quantum circuits
+
+- Date: 2026-06-08
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.09734v1
+- PDF: https://arxiv.org/pdf/2606.09734v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-adaptive_directional_gradients_for_parameterised_quantum_circuits_infographic.json
+
+## 2. Hardware-Aware QAOA for Honeypot Traffic Partitioning on 100+ Qubit IBM Quantum Processors
+
+- Date: 2026-06-08
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.09469v1
+- PDF: https://arxiv.org/pdf/2606.09469v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-hardware_aware_qaoa_for_honeypot_traffic_partitioning_on_100_qubit_ibm_quantum_processors_infographic.json
+
+## 3. Benchmarking Quantum Algorithmic Resilience for CVaR Portfolio Optimization: The Expressibility-Coherence Trade-off
+
+- Date: 2026-06-05
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.07727v1
+- PDF: https://arxiv.org/pdf/2606.07727v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-05-arxiv-benchmarking_quantum_algorithmic_resilience_for_cvar_portfolio_optimization_the_expressibi_infographic.json
+
+## 4. A Dual Metastable-State Encoding Architecture for Quantum Processing with $^{171}\mathrm{Yb}$ Atom Arrays
+
+- Date: 2026-06-07
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2606.08453v1
+- PDF: https://arxiv.org/pdf/2606.08453v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-07-arxiv-a_dual_metastable_state_encoding_architecture_for_quantum_processing_with_171_mathrm_yb_at_infographic.json
+
+## 5. Pure and mixed Dicke state ansatz for equality and inequality constraints in variational quantum eigensolver
+
+- Date: 2026-06-07
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.08504v1
+- PDF: https://arxiv.org/pdf/2606.08504v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-07-arxiv-pure_and_mixed_dicke_state_ansatz_for_equality_and_inequality_constraints_in_variational_q_infographic.json
+
+## 6. Projector Quantum Variational Ansatz
 
 - Date: 2026-06-05
 - Category: Quantum Algorithms
@@ -11,154 +51,114 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.07084v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-05-arxiv-projector_quantum_variational_ansatz_infographic.json
 
-## 2. Setting angles in quantum approximate optimization at utility-scale
+## 7. Satellite-Based Quantum Communication: Performance Evaluation of Discrete-Variable Quantum Key Distribution Protocols
 
-- Date: 2026-06-03
+- Date: 2026-06-08
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.09217v1
+- PDF: https://arxiv.org/pdf/2606.09217v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-satellite_based_quantum_communication_performance_evaluation_of_discrete_variable_quantum_infographic.json
+
+## 8. Graph Neural Networks for Fast Operator Selection in Adaptive VQE
+
+- Date: 2026-06-07
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.05311v1
-- PDF: https://arxiv.org/pdf/2606.05311v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-setting_angles_in_quantum_approximate_optimization_at_utility_scale_infographic.json
+- arXiv: https://arxiv.org/abs/2606.08794v1
+- PDF: https://arxiv.org/pdf/2606.08794v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-07-arxiv-graph_neural_networks_for_fast_operator_selection_in_adaptive_vqe_infographic.json
 
-## 3. Barbell Codes: qLDPC Codes for Superconducting Quantum Hardware
+## 9. From Pauli Strings to Quantum Dynamics: A Unified Characterization
 
-- Date: 2026-06-04
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.06062v1
-- PDF: https://arxiv.org/pdf/2606.06062v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-barbell_codes_qldpc_codes_for_superconducting_quantum_hardware_infographic.json
+- Date: 2026-06-08
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.09773v1
+- PDF: https://arxiv.org/pdf/2606.09773v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-from_pauli_strings_to_quantum_dynamics_a_unified_characterization_infographic.json
 
-## 4. Measurement circuit ansatz: Naimark versus quantum neural-network measurements
+## 10. Quantum Global Variational Learning for Quantum Error Correction
 
-- Date: 2026-06-05
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.07376v1
-- PDF: https://arxiv.org/pdf/2606.07376v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-05-arxiv-measurement_circuit_ansatz_naimark_versus_quantum_neural_network_measurements_infographic.json
-
-## 5. Coherent versus stochastic error injection on a repetition-code logical qubit in superconducting hardware
-
-- Date: 2026-06-05
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.07377v1
-- PDF: https://arxiv.org/pdf/2606.07377v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-05-arxiv-coherent_versus_stochastic_error_injection_on_a_repetition_code_logical_qubit_in_supercond_infographic.json
-
-## 6. Rapid Gaussian Boson Sampling Circuit Screening for GKP States Creation via a Two-Stage Machine Learning Surrogate
-
-- Date: 2026-06-04
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2606.05992v1
-- PDF: https://arxiv.org/pdf/2606.05992v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-rapid_gaussian_boson_sampling_circuit_screening_for_gkp_states_creation_via_a_two_stage_ma_infographic.json
-
-## 7. Multi-Qubit Dyadic Phase Fixing for Fault-Tolerant Quantum Compilation
-
-- Date: 2026-06-03
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2606.05397v1
-- PDF: https://arxiv.org/pdf/2606.05397v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-multi_qubit_dyadic_phase_fixing_for_fault_tolerant_quantum_compilation_infographic.json
-
-## 8. Hybrid quantum-classical physics-informed neural networks for solving nonlinear PDEs: when and where hybridization is effective?
-
-- Date: 2026-06-03
+- Date: 2026-06-07
 - Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2606.04679v1
-- PDF: https://arxiv.org/pdf/2606.04679v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-hybrid_quantum_classical_physics_informed_neural_networks_for_solving_nonlinear_pdes_when_infographic.json
+- arXiv: https://arxiv.org/abs/2606.08592v1
+- PDF: https://arxiv.org/pdf/2606.08592v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-07-arxiv-quantum_global_variational_learning_for_quantum_error_correction_infographic.json
 
-## 9. Breakeven demonstration of quantum low-density parity-check codes
+## 11. Impact of gate-voltage noise on silicon spin-qubit variational quantum eigensolvers
 
-- Date: 2026-06-04
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2606.06455v1
-- PDF: https://arxiv.org/pdf/2606.06455v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-breakeven_demonstration_of_quantum_low_density_parity_check_codes_infographic.json
-
-## 10. Symmetries and overparametrization properties of Hamiltonian variational ansatzes for the $(1+1)$d $\mathbb{Z}_2$ lattice gauge theory
-
-- Date: 2026-06-04
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.05719v1
-- PDF: https://arxiv.org/pdf/2606.05719v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-symmetries_and_overparametrization_properties_of_hamiltonian_variational_ansatzes_for_the_infographic.json
-
-## 11. Solution of the Equation-of-Motion Phonon Method eigenvalue problems on the D-Wave quantum annealer
-
-- Date: 2026-06-05
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2606.07035v1
-- PDF: https://arxiv.org/pdf/2606.07035v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-05-arxiv-solution_of_the_equation_of_motion_phonon_method_eigenvalue_problems_on_the_d_wave_quantum_infographic.json
-
-## 12. Shattering the Symmetry Trap in Fixed-Ansatz VQE: An Accelerated ADAPT-VQE Study of Three Pillar Molecules under Bravyi-Kitaev Mapping
-
-- Date: 2026-06-04
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.05968v1
-- PDF: https://arxiv.org/pdf/2606.05968v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-shattering_the_symmetry_trap_in_fixed_ansatz_vqe_an_accelerated_adapt_vqe_study_of_three_p_infographic.json
-
-## 13. Periodic Symmetry-Adapted Encoding: Qubit Reduction in Crystalline Electronic Structure
-
-- Date: 2026-06-04
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.05777v1
-- PDF: https://arxiv.org/pdf/2606.05777v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-periodic_symmetry_adapted_encoding_qubit_reduction_in_crystalline_electronic_structure_infographic.json
-
-## 14. Expressibility, Noise, and Error Mitigation in VQE Ansatz Selection
-
-- Date: 2026-06-03
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.04955v1
-- PDF: https://arxiv.org/pdf/2606.04955v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-expressibility_noise_and_error_mitigation_in_vqe_ansatz_selection_infographic.json
-
-## 15. Characterization of errors in photon-heralded quantum operations between non-interacting quantum emitters
-
-- Date: 2026-06-03
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2606.04312v1
-- PDF: https://arxiv.org/pdf/2606.04312v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-characterization_of_errors_in_photon_heralded_quantum_operations_between_non_interacting_q_infographic.json
-
-## 16. Quantum correlations in QBism's reconstruction program
-
-- Date: 2026-06-05
-- Category: Quantum Optimization
-- arXiv: https://arxiv.org/abs/2606.07485v1
-- PDF: https://arxiv.org/pdf/2606.07485v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-05-arxiv-quantum_correlations_in_qbism_s_reconstruction_program_infographic.json
-
-## 17. Efficient Quantum Circuit Construction of Controlled Time-Evolution for Arbitrary Pauli-Sum Hamiltonians
-
-- Date: 2026-06-04
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.06070v1
-- PDF: https://arxiv.org/pdf/2606.06070v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-efficient_quantum_circuit_construction_of_controlled_time_evolution_for_arbitrary_pauli_su_infographic.json
-
-## 18. Coordinated optimization of departure sequencing and section-track allocation in railway short-term concentrated departure scenarios based on qubo and hybrid quantum algorithms
-
-- Date: 2026-06-04
-- Category: Quantum Optimization
-- arXiv: https://arxiv.org/abs/2606.06543v1
-- PDF: https://arxiv.org/pdf/2606.06543v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-04-arxiv-coordinated_optimization_of_departure_sequencing_and_section_track_allocation_in_railway_s_infographic.json
-
-## 19. Feature Encoding in Quantum Machine Learning: A Survey and Practical Guidelines
-
-- Date: 2026-06-03
+- Date: 2026-06-07
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.05387v1
-- PDF: https://arxiv.org/pdf/2606.05387v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-03-arxiv-feature_encoding_in_quantum_machine_learning_a_survey_and_practical_guidelines_infographic.json
+- arXiv: https://arxiv.org/abs/2606.08874v1
+- PDF: https://arxiv.org/pdf/2606.08874v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-07-arxiv-impact_of_gate_voltage_noise_on_silicon_spin_qubit_variational_quantum_eigensolvers_infographic.json
 
-## 20. A Tutorial for Characterizing Transmon Qubits
+## 12. Simulating quantum circuits with a neural statebank
 
-- Date: 2026-06-02
+- Date: 2026-06-07
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2606.08707v1
+- PDF: https://arxiv.org/pdf/2606.08707v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-07-arxiv-simulating_quantum_circuits_with_a_neural_statebank_infographic.json
+
+## 13. High Precision Qubit-Efficient Variational Continuous Optimization via Amplitude Estimation
+
+- Date: 2026-06-07
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.08690v1
+- PDF: https://arxiv.org/pdf/2606.08690v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-07-arxiv-high_precision_qubit_efficient_variational_continuous_optimization_via_amplitude_estimatio_infographic.json
+
+## 14. Who Earns the Safety? Intervention-Aware Quantum Predictive Control with Safety Attribution
+
+- Date: 2026-06-08
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.09778v1
+- PDF: https://arxiv.org/pdf/2606.09778v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-who_earns_the_safety_intervention_aware_quantum_predictive_control_with_safety_attribution_infographic.json
+
+## 15. Complexity-driven transitions in quantum observation
+
+- Date: 2026-06-08
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2606.09765v1
+- PDF: https://arxiv.org/pdf/2606.09765v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-complexity_driven_transitions_in_quantum_observation_infographic.json
+
+## 16. The dynamic 4.8.8 Floquet code
+
+- Date: 2026-06-08
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.03815v1
-- PDF: https://arxiv.org/pdf/2606.03815v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-02-arxiv-a_tutorial_for_characterizing_transmon_qubits_infographic.json
+- arXiv: https://arxiv.org/abs/2606.09678v1
+- PDF: https://arxiv.org/pdf/2606.09678v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-the_dynamic_4_8_8_floquet_code_infographic.json
+
+## 17. Numerical solution of the nonlinear Dirac equation by a splitting variational quantum algorithm
+
+- Date: 2026-06-06
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.08053v1
+- PDF: https://arxiv.org/pdf/2606.08053v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-06-arxiv-numerical_solution_of_the_nonlinear_dirac_equation_by_a_splitting_variational_quantum_algo_infographic.json
+
+## 18. Zermelo's navigation problem through the lens of quantum annealing: How the Landau-Zener approximation leads to an efficient classical solution
+
+- Date: 2026-06-08
+- Category: Quantum Optimization
+- arXiv: https://arxiv.org/abs/2606.09602v1
+- PDF: https://arxiv.org/pdf/2606.09602v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-zermelo_s_navigation_problem_through_the_lens_of_quantum_annealing_how_the_landau_zener_ap_infographic.json
+
+## 19. Leveraging Landau-Zener-Stückelberg interference for accelerating diabatic quantum annealing
+
+- Date: 2026-06-08
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.09706v1
+- PDF: https://arxiv.org/pdf/2606.09706v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-leveraging_landau_zener_st_ckelberg_interference_for_accelerating_diabatic_quantum_anneali_infographic.json
+
+## 20. Algebraic Kolmogorov--Arnold representation theorem for quantum measurement
+
+- Date: 2026-06-08
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.09584v1
+- PDF: https://arxiv.org/pdf/2606.09584v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-08-arxiv-algebraic_kolmogorov_arnold_representation_theorem_for_quantum_measurement_infographic.json

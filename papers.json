@@ -25,29 +25,82 @@
         "url": "https://arxiv.org/pdf/2606.09734v1"
       }
     ],
-    "score": 106,
+    "score": 101,
     "infographic": {
-      "key_insight": "Training parameterised quantum circuits (PQCs) on quantum hardware is bottlenecked by the measurement cost of gradient estimation, which under the parameter-shift rule scales linearly in the number of trainable parameters and dominates the total shot budget of",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
+      "key_insight": "The paper introduces adaptive forward-gradient estimators for parameterised quantum circuits that reduce measurement cost while remaining unbiased, and generalise several known gradient methods as special cases.",
+      "engineering_relevance": "This can substantially cut shot budgets and training time for large-scale PQC optimisation on near-term quantum hardware, improving practicality for quantum machine learning and variational algorithms.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Average random directional derivatives to form an unbiased forward-gradient estimate.",
+        "Use an adaptive allocation rule in QUIVER to minimise measurement cost per update.",
+        "Recover SPSA, random coordinate descent, and parameter-shift in limiting regimes."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The abstract reports numerical results on ECG5000 and MNIST with up to 60 qubits and 1770 parameters, plus benchmarks on QAOA and VQE where QUIVER outperforms iCANS and gCANS.",
+      "watch_item": "Performance depends on choosing a suitable number of random directions and may still be limited by variance or hardware noise in real devices.",
       "hashtags": [
-        "#AIQuantumComputing",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#QuantumMachineLearning",
+        "#VariationalAlgorithms",
+        "#GradientEstimation",
+        "#QuantumOptimization"
       ],
       "paper_id": "2026-06-08-arxiv-adaptive_directional_gradients_for_parameterised_quantum_circuits",
       "paper_title": "Adaptive directional gradients for parameterised quantum circuits",
       "paper_date": "2026-06-08",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:42",
+      "generated_at": "2026-06-11T13:59:21",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-08-arxiv-towards_the_implementation_of_a_quantum_classifier",
+    "arxiv_id": "2606.10150v2",
+    "date": "2026-06-08",
+    "title": "Towards the implementation of a quantum classifier",
+    "authors": "Lorenzo Confalonieri",
+    "abstract": "In this work, we investigate the use of a quantum circuit as a binary classification model in the context of quantum machine learning. We call this model, binary quantum classifier. First, we describe fundamental concepts of quantum computing and introduce the computational tool used: Qibo, an open-source framework for efficient quantum simulations and quantum hardware control. Then, we describe how to design a binary quantum classifier for the classification of images and small arrays of variables by showing how to input data in the circuit, defining a quantum circuit model Ansatz with trainable parameters and a loss function, and implementing multiple minimizers. We test our quantum classifier with two data sets. The first one is the MNIST data set which is composed of handwritten digits (reduced to only handwritten zeros and handwritten ones for binary classification). We study the behavior of different minimizers by increasing the number of layers of the Ansatz. The second data set represents two different high energy collisions that can occur at colliders such as LHC (CERN). Due to in-time proton-proton interactions known as pile-up, we distinguish two different data sets: \"without pile-up\" and \"with pile-up\". These collisions can be represented by images of size 32x32 or by six high-level variables that we call features. By increasing the size of the training data set and the number of layers of the Ansatz, we search for the best minimizer. Splitting the data set in training set and test set, we compute: ROC curve, AUC score, confusion matrices and test set accuracy. For \"with pile-up\" images, we compare the results obtained with the quantum classifier with a small convolutional neural network. We conclude that is possible to build a binary quantum classifier with a quantum circuit and we highlight its performances and limitations in comparison with classical technologies.",
+    "category": "Quantum Machine Learning",
+    "source": "arXiv",
+    "published": "2026-06-08T20:28:14Z",
+    "updated": "2026-06-10T14:30:03Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph",
+      "hep-ex",
+      "physics.comp-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.10150v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.10150v2"
+      }
+    ],
+    "score": 99,
+    "infographic": {
+      "key_insight": "A trainable quantum circuit can be used as a binary classifier for images and low-dimensional features, with performance depending strongly on circuit depth, optimizer choice, and dataset size.",
+      "engineering_relevance": "This work gives a practical blueprint for implementing and benchmarking quantum machine-learning classifiers against classical baselines on real binary tasks.",
+      "method": [
+        "Encode MNIST zeros vs ones and collider event data into a parameterized quantum circuit (Ansatz).",
+        "Train the circuit with multiple minimizers and vary the number of layers to study optimization behavior.",
+        "Evaluate using ROC curves, AUC, confusion matrices, and test accuracy; compare image results with a small CNN."
+      ],
+      "evidence_signal": "The paper tests on two binary datasets—MNIST and collider events with/without pile-up—using train/test splits and reports ROC, AUC, confusion matrices, and test accuracy.",
+      "watch_item": "Results are sensitive to circuit depth, optimizer, and data representation, so scaling to larger problems may face performance and hardware-simulation limits.",
+      "hashtags": [
+        "#QuantumMachineLearning",
+        "#QuantumClassifier",
+        "#BinaryClassification",
+        "#Qibo",
+        "#QuantumComputing"
+      ],
+      "paper_id": "2026-06-08-arxiv-towards_the_implementation_of_a_quantum_classifier",
+      "paper_title": "Towards the implementation of a quantum classifier",
+      "paper_date": "2026-06-08",
+      "paper_category": "Quantum Machine Learning",
+      "generated_at": "2026-06-11T13:59:23",
       "generator": "openai"
     }
   },
@@ -64,7 +117,8 @@
     "updated": "2026-06-08T13:24:55Z",
     "primary_category": "quant-ph",
     "categories": [
-      "quant-ph"
+      "quant-ph",
+      "cs.CR"
     ],
     "links": [
       {
@@ -76,82 +130,29 @@
         "url": "https://arxiv.org/pdf/2606.09469v1"
       }
     ],
-    "score": 106,
+    "score": 96,
     "infographic": {
-      "key_insight": "Denial-of-service (DoS) and distributed denial-of-service (DDoS) mitigation requires separating malicious traffic from benign traffic while minimizing disruption to legitimate users.",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
+      "key_insight": "A shallow, hardware-aware QAOA pipeline can run real honeypot traffic partitioning workloads on IBM quantum processors, but performance is strongly shaped by backend architecture and routing overhead.",
+      "engineering_relevance": "The paper provides a reproducible benchmark framework for evaluating quantum optimization on cybersecurity traffic segregation problems, with separate reporting for objective quality, security metrics, routing cost, and runtime.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Mapped honeypot traffic partitioning to a weighted MaxCut/QUBO formulation.",
+        "Ran fixed-depth QAOA on IBM quantum hardware and compared against classical heuristics and a noiseless MPS reference.",
+        "Evaluated labeled temporal bipartite benchmark graphs at 16, 32, 66, and 110 nodes across multiple backends."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The largest benchmark used a 110-node, 181-edge instance executed on three IBM backends, and the authors report that simple classical heuristics still solve the current labeled graphs.",
+      "watch_item": "This is not a quantum advantage result; the main caution is that hardware connectivity and routing overhead can materially change observed solution quality and runtime.",
       "hashtags": [
-        "#AIQuantumComputing",
+        "#QAOA",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#Cybersecurity",
+        "#MaxCut",
+        "#IBMQuantum"
       ],
       "paper_id": "2026-06-08-arxiv-hardware_aware_qaoa_for_honeypot_traffic_partitioning_on_100_qubit_ibm_quantum_processors",
       "paper_title": "Hardware-Aware QAOA for Honeypot Traffic Partitioning on 100+ Qubit IBM Quantum Processors",
       "paper_date": "2026-06-08",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:43",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-08-arxiv-towards_the_implementation_of_a_quantum_classifier",
-    "arxiv_id": "2606.10150v1",
-    "date": "2026-06-08",
-    "title": "Towards the implementation of a quantum classifier",
-    "authors": "Lorenzo Confalonieri, Adrián Pérez Salinas, Stefano Carrazza",
-    "abstract": "In this work, we investigate the use of a quantum circuit as a binary classification model in the context of quantum machine learning. We call this model, binary quantum classifier. First, we describe fundamental concepts of quantum computing and introduce the computational tool used: Qibo, an open-source framework for efficient quantum simulations and quantum hardware control. Then, we describe how to design a binary quantum classifier for the classification of images and small arrays of variables by showing how to input data in the circuit, defining a quantum circuit model Ansatz with trainable parameters and a loss function, and implementing multiple minimizers. We test our quantum classifier with two data sets. The first one is the MNIST data set which is composed of handwritten digits (reduced to only handwritten zeros and handwritten ones for binary classification). We study the behavior of different minimizers by increasing the number of layers of the Ansatz. The second data set represents two different high energy collisions that can occur at colliders such as LHC (CERN). Due to in-time proton-proton interactions known as pile-up, we distinguish two different data sets: \"without pile-up\" and \"with pile-up\". These collisions can be represented by images of size 32x32 or by six high-level variables that we call features. By increasing the size of the training data set and the number of layers of the Ansatz, we search for the best minimizer. Splitting the data set in training set and test set, we compute: ROC curve, AUC score, confusion matrices and test set accuracy. For \"with pile-up\" images, we compare the results obtained with the quantum classifier with a small convolutional neural network. We conclude that is possible to build a binary quantum classifier with a quantum circuit and we highlight its performances and limitations in comparison with classical technologies.",
-    "category": "Quantum Machine Learning",
-    "source": "arXiv",
-    "published": "2026-06-08T20:28:14Z",
-    "updated": "2026-06-08T20:28:14Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph",
-      "hep-ex",
-      "physics.comp-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.10150v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.10150v1"
-      }
-    ],
-    "score": 104,
-    "infographic": {
-      "key_insight": "In this work, we investigate the use of a quantum circuit as a binary classification model in the context of quantum machine learning.",
-      "engineering_relevance": "Potential relevance: quantum machine learning workflows and research evaluation.",
-      "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
-      "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
-      ],
-      "paper_id": "2026-06-08-arxiv-towards_the_implementation_of_a_quantum_classifier",
-      "paper_title": "Towards the implementation of a quantum classifier",
-      "paper_date": "2026-06-08",
-      "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-06-10T12:56:43",
+      "generated_at": "2026-06-11T13:59:26",
       "generator": "openai"
     }
   },
@@ -180,29 +181,187 @@
         "url": "https://arxiv.org/pdf/2606.10230v1"
       }
     ],
-    "score": 98,
+    "score": 93,
     "infographic": {
-      "key_insight": "Uniform permutation generation is a fundamental task in both classical and quantum computation, with applications ranging from cryptography to quantum optimization and quantum error correction.",
-      "engineering_relevance": "Potential relevance: quantum hardware workflows and research evaluation.",
+      "key_insight": "Variational quantum circuits can generate exact uniform permutations on constrained hardware, achieving linear-depth controlled-SWAP constructions on nearest-neighbor layouts.",
+      "engineering_relevance": "This reduces connectivity demands and depth for uniform permutation sampling, making the method more practical for quantum hardware and compiler-aware circuit design.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Build a variational circuit whose gate layout follows the device interaction graph.",
+        "Use controlled-SWAP-based unitary constructions to enforce exact uniform permutation statistics.",
+        "Analyze topology limits and show Bene\u000161-like architectures can realize permutations but not uniform sampling."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The abstract reports exact uniformity with quadratic circuit size and linear depth O(n) on linear nearest-neighbor topologies, plus a proof of intrinsic non-uniformity for quantum Bene\u000161-like circuits.",
+      "watch_item": "Exact uniformity is topology-dependent and may require substantial circuit size and careful parameter optimization, which could affect noise robustness and scalability.",
       "hashtags": [
-        "#AIQuantumComputing",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#QuantumCircuits",
+        "#VariationalQuantumAlgorithms",
+        "#HardwareConstraints",
+        "#PermutationSampling"
       ],
       "paper_id": "2026-06-08-arxiv-variational_approach_for_uniform_quantum_permutation_generators",
       "paper_title": "Variational Approach for Uniform Quantum Permutation Generators",
       "paper_date": "2026-06-08",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-06-10T12:56:43",
+      "generated_at": "2026-06-11T13:59:28",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-10-arxiv-quantum_occam_learning_sample_supported_expressibility_for_circuit_based_quantum_learning",
+    "arxiv_id": "2606.12211v1",
+    "date": "2026-06-10",
+    "title": "Quantum Occam Learning: Sample-Supported Expressibility for Circuit-Based Quantum Learning",
+    "authors": "Jeongho Bang, Kyoungho Cho, Jeongwoo Jae",
+    "abstract": "A central principle in quantum machine learning is that an ansatz should be expressive enough to represent the quantum data of interest. Yet, the expressibility is statistically meaningful only insofar as it can be learned from finitely many copies of an unknown quantum state. In this work, we develop an information-theoretic Occam theory for quantum data generated by finite-size quantum circuits. For the class $S_{n,G}$ of $n$-qubit pure states preparable with at most $G$ two-qubit gates, a metric-entropy argument gives the realizable sample law $\\widetildeΘ(G/ε^2)$ in the circuit-limited regime. For an arbitrary source $\\hatρ$, we introduce the best $G$-gate approximation error $d_G(\\hatρ)$ and the approximate circuit complexity $C_η(\\hatρ)$. We prove an agnostic quantum Occam theorem: with $M$ copies, one can learn up to the best $G$-gate approximation error plus a statistical penalty $\\widetilde{O}(\\sqrt{G/M})$. We then remove the need to know $G$ in advance through an adaptive model-selection theorem whose oracle inequality selects the circuit complexity justified by the data. Matching lower bounds yield a sample-supported expressibility law: at trace-distance accuracy $ε$, $M$ samples can support only $G_{\\rm supported} \\simeq Mε^2$ gates, up to logarithmic factors and tomography saturation at $2^n$. Thus, the circuit complexity becomes an adaptive statistical resource rather than a static promise. Our framework turns bounded circuit complexity into a model-selection principle for quantum machine learning.",
+    "category": "Quantum Machine Learning",
+    "source": "arXiv",
+    "published": "2026-06-10T15:28:36Z",
+    "updated": "2026-06-10T15:28:36Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.12211v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.12211v1"
+      }
+    ],
+    "score": 87,
+    "infographic": {
+      "key_insight": "The paper shows that a quantum model’s circuit complexity is only meaningful if the available training copies can statistically support it, leading to a sample-supported expressibility law.",
+      "engineering_relevance": "For quantum machine learning, this provides a principled way to choose ansatz size from data availability, reducing over-parameterization and improving model selection.",
+      "method": [
+        "Derive a metric-entropy sample complexity bound for n-qubit states prepared with at most G two-qubit gates.",
+        "Define best G-gate approximation error d_G(ρ̂) and approximate circuit complexity C_η(ρ̂) for arbitrary sources.",
+        "Prove an adaptive oracle inequality that selects circuit complexity from data without knowing G in advance."
+      ],
+      "evidence_signal": "The abstract reports matching lower bounds and a sample law showing that, at trace-distance accuracy ε, M samples support only about G_supported ≃ Mε² gates, up to logarithmic factors and saturation near 2^n.",
+      "watch_item": "The scaling is limited by logarithmic factors and ultimately by tomography saturation, so very high-complexity states may still be infeasible with finite copies.",
+      "hashtags": [
+        "#QuantumMachineLearning",
+        "#QuantumOccam",
+        "#AnsatzDesign",
+        "#SampleComplexity",
+        "#ModelSelection"
+      ],
+      "paper_id": "2026-06-10-arxiv-quantum_occam_learning_sample_supported_expressibility_for_circuit_based_quantum_learning",
+      "paper_title": "Quantum Occam Learning: Sample-Supported Expressibility for Circuit-Based Quantum Learning",
+      "paper_date": "2026-06-10",
+      "paper_category": "Quantum Machine Learning",
+      "generated_at": "2026-06-11T13:59:31",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-10-arxiv-tensor_network_based_distributed_quantum_dynamics_on_independent_quantum_computers",
+    "arxiv_id": "2606.11579v1",
+    "date": "2026-06-10",
+    "title": "Tensor-Network-Based Distributed Quantum Dynamics on Independent Quantum Computers",
+    "authors": "Anurag Dwivedi, Melissa C. Revelle, Daniel S. Lobser, Brian K. McFarland, Edward C. Tortorici, Christopher G. Yale",
+    "abstract": "We present an approach based on tensor networks for distributed quantum computing simulation of chemical wavepacket dynamics in a continuous variable representation. The central idea is that the tensor-network representation of the multidimensional time-evolution operator naturally induces an elevated Hilbert space where the dynamics decomposes into a set of independent lower-dimensional propagations. This transformation converts an entangled quantum evolution into a set of parallel computational tasks that can be executed asynchronously across heterogeneous quantum and classical computing architectures. The resulting formalism establishes a direct connection between tensor-network decompositions, uniformly controlled quantum circuits, and asynchronous distributed quantum computing. The approach is developed with a goal towards hybrid quantum/classical implementation, and is appropriate for a general heterogeneous mixture of quantum hardware systems. The experimental realization of the asynchronously distributed quantum processes that arise from the tensor-network decomposition are carried out on the Sandia National Laboratories' trapped-ion quantum computer, where the circuits are compiled using native partial-entangling $XX(θ)$ gates, reducing the expected two-qubit gate infidelity by more than 30\\% relative to conventional fully entangling decompositions. We demonstrate the methodology by quantum computing the vibrational spectra of a small protonated water cluster that shows critical quantum nuclear behavior. Such water cluster systems have been found to be challenging for experimental action spectroscopy and for theory, and here, for the first time, we provide results for vibrational spectroscopy that are in agreement with the respective classical results to within 4cm$^{-1}$, thus allowing for the potential for spectroscopic accuracy from quantum computations.",
+    "category": "Quantum Simulation",
+    "source": "arXiv",
+    "published": "2026-06-10T02:13:24Z",
+    "updated": "2026-06-10T02:13:24Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph",
+      "cs.DC",
+      "physics.atm-clus",
+      "physics.atom-ph",
+      "physics.chem-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.11579v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.11579v1"
+      }
+    ],
+    "score": 84,
+    "infographic": {
+      "key_insight": "Tensor-network decompositions turn a high-dimensional quantum dynamics problem into independent lower-dimensional propagations that can run in parallel across distributed quantum and classical hardware.",
+      "engineering_relevance": "The method provides a practical route to hybrid, asynchronous quantum computing for molecular simulation, while also reducing two-qubit gate cost by using native partial-entangling gates.",
+      "method": [
+        "Represent the time-evolution operator as a tensor network in an elevated Hilbert space.",
+        "Decompose the coupled dynamics into independent subproblems that can be executed asynchronously on heterogeneous devices.",
+        "Compile the distributed circuits on trapped-ion hardware using native XX(θ) entangling gates."
+      ],
+      "evidence_signal": "On a small protonated water cluster, the quantum-computed vibrational spectra matched classical results within 4 cm^-1, and the compiled gate strategy reduced expected two-qubit infidelity by more than 30%.",
+      "watch_item": "The approach depends on effective tensor-network decomposition and hardware-specific compilation, so performance and scalability may vary across quantum platforms and problem sizes.",
+      "hashtags": [
+        "#QuantumComputing",
+        "#TensorNetworks",
+        "#DistributedQuantumComputing",
+        "#QuantumSimulation",
+        "#HybridQuantumClassical"
+      ],
+      "paper_id": "2026-06-10-arxiv-tensor_network_based_distributed_quantum_dynamics_on_independent_quantum_computers",
+      "paper_title": "Tensor-Network-Based Distributed Quantum Dynamics on Independent Quantum Computers",
+      "paper_date": "2026-06-10",
+      "paper_category": "Quantum Simulation",
+      "generated_at": "2026-06-11T13:59:34",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-09-arxiv-q_dice_quantum_distributed_interconnect_compiler_and_emulator",
+    "arxiv_id": "2606.11340v1",
+    "date": "2026-06-09",
+    "title": "Q-DICE: Quantum Distributed Interconnect Compiler and Emulator",
+    "authors": "Michael Silver, Zachary Vernec, Hans-Arno Jacobsen",
+    "abstract": "As distributed quantum computing (DQC) offers a leading path towards scalable quantum computation, the ability to benchmark distributed algorithms under realistic conditions becomes critical for system co-design. However, without access to physical systems, researchers lack tools to evaluate distribution protocols. We introduce Q-DICE (Quantum Distributed Interconnect Compiler and Emulator), a hardware-aware emulation environment for benchmarking distributed quantum circuits on classical simulators and on NISQ-era monolithic hardware. This work provides three core contributions: (1) a programmatic scheme to construct distributed QPU backends, utilizing two novel techniques - QPU slicing and stitching - to facilitate distributed circuit mapping, (2) a methodology for modeling nonlocal link noise using physically motivated Kraus operators and stochastic error channels, and (3) a boundary-aware circuit mapping algorithm enforcing distributed QPU topology constraints during transpilation. Together, these components constitute a distribution-aware compiler and noise-modeling engine that faithfully enforces the physical limitations of distributed quantum hardware within existing execution environments. We validate Q-DICE against a multitude of experimentally demonstrated quantum circuits, including a distributed Grover's search on optically linked trapped-ion hardware, achieving a worst-case fidelity deviation of 4% between simulated and experimental results. These findings demonstrate Q-DICE's capacity to accurately reproduce real distributed quantum system behavior across platforms, streamlining experimentation with distributed quantum algorithms and architectures.",
+    "category": "Quantum Hardware",
+    "source": "arXiv",
+    "published": "2026-06-09T18:19:08Z",
+    "updated": "2026-06-09T18:19:08Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.11340v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.11340v1"
+      }
+    ],
+    "score": 84,
+    "infographic": {
+      "key_insight": "Q-DICE provides a hardware-aware compiler and emulator that lets researchers benchmark distributed quantum circuits realistically, even without access to distributed quantum hardware.",
+      "engineering_relevance": "It helps co-design distributed quantum systems by enforcing topology and noise constraints during transpilation and simulation.",
+      "method": [
+        "Constructs distributed QPU backends via QPU slicing and stitching.",
+        "Models nonlocal link noise with Kraus operators and stochastic error channels.",
+        "Uses a boundary-aware mapping algorithm to respect distributed topology constraints."
+      ],
+      "evidence_signal": "The paper validates Q-DICE on multiple experimentally demonstrated circuits, including distributed Grover's search, and reports a worst-case fidelity deviation of 4% versus experimental results.",
+      "watch_item": "Accuracy depends on the chosen physical noise model and backend construction, so mismatches in link behavior or topology assumptions could limit realism.",
+      "hashtags": [
+        "#QuantumComputing",
+        "#DistributedQuantumComputing",
+        "#QuantumCompiler",
+        "#QuantumEmulation",
+        "#NISQ"
+      ],
+      "paper_id": "2026-06-09-arxiv-q_dice_quantum_distributed_interconnect_compiler_and_emulator",
+      "paper_title": "Q-DICE: Quantum Distributed Interconnect Compiler and Emulator",
+      "paper_date": "2026-06-09",
+      "paper_category": "Quantum Hardware",
+      "generated_at": "2026-06-11T13:59:36",
       "generator": "openai"
     }
   },
@@ -231,83 +390,29 @@
         "url": "https://arxiv.org/pdf/2606.10432v1"
       }
     ],
-    "score": 88,
+    "score": 83,
     "infographic": {
-      "key_insight": "We experimentally demonstrate the continuous-variable quantum approximate optimization algorithm (CV-QAOA) for multi-variable problems and multiple QAOA depths using a measurement-based CV quantum computing platform on a quad-rail lattice (QRL) cluster state.",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
+      "key_insight": "The paper experimentally demonstrates continuous-variable QAOA on a quad-rail lattice cluster state and shows that increasing circuit depth from 1 to 2 improves optimization performance, while deeper circuits give diminishing returns in practice.",
+      "engineering_relevance": "It advances programmable measurement-based CV quantum computing by providing a concrete mapping of quadratic cost functions to hardware-friendly QRL layouts, relevant for scaling variational optimization on photonic platforms.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Mapped arbitrary quadratic cost functions onto a quad-rail lattice cluster-state architecture.",
+        "Prepared and measured a CV-QAOA ansatz on a programmable measurement-based quantum computing platform.",
+        "Optimized variational parameters with Bayesian optimization and tested multiple QAOA depths."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The evaluation used experimental runs on up to 100 modes and compared depth-1, depth-2, and deeper CV-QAOA settings, with idealized simulations used as a benchmark.",
+      "watch_item": "Performance gains beyond depth 2 were limited experimentally, likely due to noise accumulation and classical optimization difficulties.",
       "hashtags": [
-        "#AIQuantumComputing",
+        "#CVQAOA",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#PhotonicQuantum",
+        "#VariationalAlgorithms",
+        "#QuantumOptimization"
       ],
       "paper_id": "2026-06-09-arxiv-experimental_implementation_of_continuous_variable_qaoa_on_a_quad_rail_lattice_cluster_sta",
       "paper_title": "Experimental implementation of continuous-variable QAOA on a quad-rail lattice cluster state",
       "paper_date": "2026-06-09",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:44",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-05-arxiv-benchmarking_quantum_algorithmic_resilience_for_cvar_portfolio_optimization_the_expressibi",
-    "arxiv_id": "2606.07727v1",
-    "date": "2026-06-05",
-    "title": "Benchmarking Quantum Algorithmic Resilience for CVaR Portfolio Optimization: The Expressibility-Coherence Trade-off",
-    "authors": "Prashik N. Somkuwar, K. Srinivasan, G. Raghavan",
-    "abstract": "Quantum combinatorial optimization offers theoretical advantages for complex financial modeling, but physical implementation on Noisy Intermediate Scale Quantum (NISQ) devices is severely constrained by hardware topology. This study presents a hardware benchmarking analysis between a Hardware Efficient Variational Quantum Neural Network (HE-VQNN) and the Warm Start Quantum Approximate Optimization Algorithm (WS-QAOA) for a hybrid Mean Variance and Conditional Value at Risk (CVaR) portfolio objective. By implementing a novel classical quantum hybrid proxy matrix to bypass the CVaR auxiliary qubit bottleneck, we map up to 16 assets from the NIFTY 50 index onto an IBM heavy hex processor. We systematically quantify algorithmic resilience to the \"SWAP tax\" incurred during routing. Empirical results reveal a critical operational trade-off: WS-QAOA provides exact theoretical mapping but suffers catastrophic hardware decoherence due to exponential nonlocal gate overhead. Conversely, HE-VQNN preserves hardware coherence but lacks the mathematical expressibility to capture dense tail risk asset correlations. This study exposes the limitations of dense financial optimization on current architectures forces an nonviable choice between algorithmic inexpressibility and hardware decoherence. This is indicative of a deeper limitation as to what can and cannot be done with NISQ computers lacking in all-to-all connectivity.",
-    "category": "Quantum Algorithms",
-    "source": "arXiv",
-    "published": "2026-06-05T17:07:59Z",
-    "updated": "2026-06-05T17:07:59Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph",
-      "cs.CL",
-      "math.OC",
-      "q-fin.PM"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.07727v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.07727v1"
-      }
-    ],
-    "score": 88,
-    "infographic": {
-      "key_insight": "Quantum combinatorial optimization offers theoretical advantages for complex financial modeling, but physical implementation on Noisy Intermediate Scale Quantum (NISQ) devices is severely constrained by hardware topology.",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
-      "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
-      "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
-      ],
-      "paper_id": "2026-06-05-arxiv-benchmarking_quantum_algorithmic_resilience_for_cvar_portfolio_optimization_the_expressibi",
-      "paper_title": "Benchmarking Quantum Algorithmic Resilience for CVaR Portfolio Optimization: The Expressibility-Coherence Trade-off",
-      "paper_date": "2026-06-05",
-      "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:44",
+      "generated_at": "2026-06-11T13:59:38",
       "generator": "openai"
     }
   },
@@ -339,35 +444,86 @@
         "url": "https://arxiv.org/pdf/2606.09988v1"
       }
     ],
-    "score": 86,
+    "score": 81,
     "infographic": {
-      "key_insight": "Quantum circuits suffer from severe trainability issues: even shallow circuits are swamped with poor local minima.",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
+      "key_insight": "Matrix product states avoid poor local minima because their gauge freedom creates effective local overparametrization, making their energy landscapes much easier to optimize than brickwork circuits.",
+      "engineering_relevance": "This suggests sequential quantum circuit ansätze and tensor-network methods can be far more trainable for variational optimization than standard shallow brickwork circuits.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Proved the MPS energy landscape has no poor local minima under the studied setting.",
+        "Showed the local minimum distribution is invariant to moving the orthogonality center.",
+        "Compared sequential circuits against brickwork circuits on random Hamiltonians."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "Numerical experiments in the abstract show sequential circuit optimization converges near the optimum even for random Hamiltonians, unlike brickwork circuits.",
+      "watch_item": "The guarantee is specific to the MPS setting and the stated optimization framework, so it may not transfer directly to all variational quantum circuit architectures or hardware-constrained implementations.",
       "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#QuantumAlgorithms",
+        "#MatrixProductStates",
+        "#Trainability",
+        "#VariationalQuantumAlgorithms",
+        "#TensorNetworks"
       ],
       "paper_id": "2026-06-08-arxiv-absence_of_poor_local_minima_in_matrix_product_states",
       "paper_title": "Absence of poor local minima in matrix product states",
       "paper_date": "2026-06-08",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:44",
+      "generated_at": "2026-06-11T13:59:41",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-10-arxiv-fast_adiabatic_quantum_gates_via_hyperfine_intermediate_states",
+    "arxiv_id": "2606.11655v1",
+    "date": "2026-06-10",
+    "title": "Fast Adiabatic Quantum Gates via Hyperfine Intermediate States",
+    "authors": "Jiayin Fan, Xingdong Zhao, Manqi Zhang, Fangfang Xie, Jing Qian",
+    "abstract": "The appeal of adiabatic quantum computing lies in its intrinsic robustness against various technical imperfections, making it attractive for many quantum information applications. However, it faces a fundamental challenge: accelerating the adiabatic operations while preserving adiabaticity within the qubit coherence time. In this article, we propose an electromagnetically induced transparency-based adiabatic CNOT gate protocol which harnesses atomic hyperfine intermediate states (HISs) to speed up the adiabatic evolution. The HISs, naturally-existed in two-photon transitions, often need to be suppressed due to their significant decay errors. In contrast, this paper introduces a novel method that utilizes appropriately chosen HISs not only to enhance the adiabaticity in STAY pathway but also to accelerate the population transfer in TRANSFER pathway. Through pulse optimization, we achieve adiabatic gate fidelities exceeding 0.9991 within 0.3903 μs in realistic Cs atomic setups. To demonstrate the generality of protocol we further assess the impact of decays from multiple HIS and extend our model to arbitrary number of states, providing a practical route toward fast and robust adiabatic quantum gates in Rydberg-atom platforms.",
+    "category": "Quantum Hardware",
+    "source": "arXiv",
+    "published": "2026-06-10T04:37:25Z",
+    "updated": "2026-06-10T04:37:25Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.11655v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.11655v1"
+      }
+    ],
+    "score": 80,
+    "infographic": {
+      "key_insight": "The paper turns normally harmful hyperfine intermediate states into a resource to both preserve adiabaticity and speed up a CNOT gate in an EIT-based Rydberg-atom protocol.",
+      "engineering_relevance": "This offers a practical path to faster, high-fidelity quantum gates that better fit within coherence-time limits in atomic quantum hardware.",
+      "method": [
+        "Use EIT-based adiabatic CNOT control with hyperfine intermediate states in two-photon transitions.",
+        "Optimize pulses so HISs enhance the STAY pathway and accelerate population transfer in the TRANSFER pathway.",
+        "Extend the model to include decay from multiple HISs and arbitrary numbers of states."
+      ],
+      "evidence_signal": "In realistic Cs atomic setups, the optimized protocol achieves gate fidelities above 0.9991 in 0.3903 microseconds.",
+      "watch_item": "Performance may be sensitive to decay in intermediate states and to how well the optimized pulses and atomic parameters can be realized experimentally.",
+      "hashtags": [
+        "#QuantumComputing",
+        "#QuantumHardware",
+        "#AdiabaticGates",
+        "#RydbergAtoms",
+        "#ElectromagneticallyInducedTransparency"
+      ],
+      "paper_id": "2026-06-10-arxiv-fast_adiabatic_quantum_gates_via_hyperfine_intermediate_states",
+      "paper_title": "Fast Adiabatic Quantum Gates via Hyperfine Intermediate States",
+      "paper_date": "2026-06-10",
+      "paper_category": "Quantum Hardware",
+      "generated_at": "2026-06-11T13:59:44",
       "generator": "openai"
     }
   },
   {
     "id": "2026-06-08-arxiv-jgra_jacobian_geometry_robustness_assessment_in_nisq_noise_aware_quantum_neural_networks",
-    "arxiv_id": "2606.09964v1",
+    "arxiv_id": "2606.09964v2",
     "date": "2026-06-08",
     "title": "JGRA: Jacobian Geometry Robustness Assessment in NISQ Noise-Aware Quantum Neural Networks",
     "authors": "Gianluca Scanu, Luca Barletta, Stefano Rini",
@@ -375,7 +531,7 @@
     "category": "Quantum Machine Learning",
     "source": "arXiv",
     "published": "2026-06-08T15:40:05Z",
-    "updated": "2026-06-08T15:40:05Z",
+    "updated": "2026-06-10T10:46:03Z",
     "primary_category": "quant-ph",
     "categories": [
       "quant-ph",
@@ -384,36 +540,36 @@
     "links": [
       {
         "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.09964v1"
+        "url": "https://arxiv.org/abs/2606.09964v2"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.09964v1"
+        "url": "https://arxiv.org/pdf/2606.09964v2"
       }
     ],
-    "score": 83,
+    "score": 78,
     "infographic": {
-      "key_insight": "The NISQ era places stringent constraints on quantum computation, where noise and decoherence fundamentally limit performance.",
-      "engineering_relevance": "Potential relevance: quantum machine learning workflows and research evaluation.",
+      "key_insight": "JGRA uses Jacobian geometry to quantify how sensitive noise-aware quantum neural networks are to NISQ perturbations, turning robustness into a measurable geometric property.",
+      "engineering_relevance": "The framework helps engineers assess and compare QNN designs for noise resilience before deployment on noisy quantum hardware.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Calibrate synthetic noise to match entropy of target NISQ conditions.",
+        "Train QNNs with noise awareness to reflect realistic inference behavior.",
+        "Extract noise-conditioned Jacobians and derive geometric descriptors linked to robustness."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The abstract reports empirical results showing that the Jacobian-based descriptors predict robustness under unseen noise.",
+      "watch_item": "The approach depends on accurate noise calibration, so mismatch between assumed and actual hardware noise could weaken its reliability.",
       "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#QuantumMachineLearning",
+        "#NISQ",
+        "#QuantumNeuralNetworks",
+        "#RobustnessAssessment",
+        "#JacobianGeometry"
       ],
       "paper_id": "2026-06-08-arxiv-jgra_jacobian_geometry_robustness_assessment_in_nisq_noise_aware_quantum_neural_networks",
       "paper_title": "JGRA: Jacobian Geometry Robustness Assessment in NISQ Noise-Aware Quantum Neural Networks",
       "paper_date": "2026-06-08",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-06-10T12:56:45",
+      "generated_at": "2026-06-11T13:59:48",
       "generator": "openai"
     }
   },
@@ -444,81 +600,82 @@
         "url": "https://arxiv.org/pdf/2606.09971v1"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "Entanglement and non-stabilizerness (magic) quantify two distinct departures of quantum systems from classical description: the former measures non-local correlations, while the latter measures the deviation from stabilizer states that can be efficiently simul",
-      "engineering_relevance": "Potential relevance: quantum error correction workflows and research evaluation.",
+      "key_insight": "In 1+1D SU(2) lattice gauge theory, the ground state shows a crossover where both entanglement and non-stabilizerness (magic) sharply change, marking a transition from a more magic-rich to a less magic regime.",
+      "engineering_relevance": "The results help identify where quantum advantage may be accessible in early fault-tolerant quantum simulation of non-Abelian gauge theories, especially when choosing observables and regimes that are hard for classical methods.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Computed gauge-invariant entanglement entropy and stabilizer Rényi entropy for the ground state.",
+        "Used a dressed-site basis that enforces Gauss's law exactly.",
+        "Applied tensor networks to scale calculations up to L=100 (300 qubits)."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The abstract reports a large-scale tensor-network study up to 100 lattice sites, finding a crossover g* that is simultaneously reflected in entanglement entropy, stabilizer Rényi entropy, and particle density.",
+      "watch_item": "The conclusions are based on ground-state calculations in a specific 1+1D SU(2) setting, so the crossover behavior may not directly generalize to higher dimensions or different gauge groups.",
       "hashtags": [
-        "#AIQuantumComputing",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#QuantumErrorCorrection",
+        "#LatticeGaugeTheory",
+        "#Entanglement",
+        "#MagicState"
       ],
       "paper_id": "2026-06-08-arxiv-magic_and_entanglement_in_1_1_dimensional_su_2_lattice_gauge_theory",
       "paper_title": "Magic and entanglement in 1+1-dimensional SU(2) lattice gauge theory",
       "paper_date": "2026-06-08",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-10T12:56:45",
+      "generated_at": "2026-06-11T13:59:51",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-06-07-arxiv-a_dual_metastable_state_encoding_architecture_for_quantum_processing_with_171_mathrm_yb_at",
-    "arxiv_id": "2606.08453v1",
-    "date": "2026-06-07",
-    "title": "A Dual Metastable-State Encoding Architecture for Quantum Processing with $^{171}\\mathrm{Yb}$ Atom Arrays",
-    "authors": "Chun-Wei Liu, Saiwei Nie, Eesha Banerjee, Micah Davidson, Nick Reynolds, Alyssa L. Miller",
-    "abstract": "Neutral-atom arrays combine scalable qubit registers, long coherence times, flexible optical control, and strong Rydberg-mediated entangling interactions, making them a promising platform for quantum information processing. However, physical error rates remain a challenge, and fault-tolerant quantum error correction (QEC) requires repeated mid-circuit measurement and reset of ancilla qubits without disturbing nearby data qubits. This requirement introduces significant control and architectural overhead, making qubit encoding an important architectural decision. Here, we propose a dual metastable-state qubit encoding for $^{171}\\mathrm{Yb}$ atoms that utilizes two independent qubit subspaces in the $(6s6p)\\,{}^3\\mathrm{P}_0$ and $(6s6p)\\,{}^3\\mathrm{P}_2$ manifolds. The ${}^3\\mathrm{P}_0$ manifold provides a long-coherence nuclear-spin (NS) qubit suitable for storage and arithmetic operations, while the ${}^3\\mathrm{P}_2$ manifold provides a hyperfine-spin (HF) qubit, with $Δ_{\\mathrm{HF}} = 2π\\times 6.7~\\mathrm{GHz}$, that enables fast Raman operations and direct state-selective imaging. Coherent shelving between the two metastable manifolds connects the qubit subspaces, allowing operations to be assigned to spectrally distinct processor zones. We simulate single-qubit and two-qubit gate fidelities in ${}^3\\mathrm{P}_2$, as well as coherent shelving between the HF and NS qubit subspaces. We incorporate these physical-level estimates into an architectural resource estimation and logical-level simulation. Our approach integrates mid-circuit measurements and fast qubit operations within a single-species platform, providing a versatile framework for future fault-tolerant quantum computing with neutral-atom qubits.",
-    "category": "Quantum Error Correction",
+    "id": "2026-06-10-arxiv-family_aware_residual_architecture_for_predicting_quantum_circuit_simulation_performance",
+    "arxiv_id": "2606.11620v1",
+    "date": "2026-06-10",
+    "title": "Family-Aware Residual Architecture for Predicting Quantum Circuit Simulation Performance",
+    "authors": "Honjar Xing, Yehong Jiang, Xianbang Wang, Zehua Wang, Zhicheng Jiang",
+    "abstract": "Approximate tensor-network simulators enable classical simulation of quantum circuits beyond the reach of exact methods, but selecting optimal approximation parameters -- such as bond dimension thresholds -- remains a costly trial-and-error process. We present a family-aware neural architecture that predicts both the minimum approximation threshold required to achieve target fidelity and the expected wall-clock runtime for quantum circuit simulation, given only the circuit's OpenQASM description and execution context. Our key insight is that quantum circuits from different algorithmic families (e.g., QFT, Grover, VQE) exhibit fundamentally distinct simulation cost profiles due to their differing entanglement structures. We employ family-conditioned residual corrections -- additive, family-specific adjustments atop a shared backbone, drawing on established conditional computation techniques -- enabling the model to capture both universal circuit properties and algorithmic nuances. The architecture incorporates a pretrained family classifier (97.5% accuracy) and domain-informed algorithm fingerprint features derived from gate-composition heuristics. Evaluated on circuits spanning 7--130 qubits across 10 algorithm families, our system achieves 79.5% exact threshold accuracy (91.2% within one rung) and $R^2 = 0.82$ runtime correlation, with inference completing in approximately 50 ms -- replacing trial-and-error simulation runs that may take minutes to hours. Ablation studies confirm that family-aware modeling provides the single largest performance improvement (+3.2 percentage points), validating the hypothesis that algorithm family is a first-class feature for simulation cost prediction.",
+    "category": "Quantum Algorithms",
     "source": "arXiv",
-    "published": "2026-06-07T04:55:40Z",
-    "updated": "2026-06-07T04:55:40Z",
+    "published": "2026-06-10T03:31:37Z",
+    "updated": "2026-06-10T03:31:37Z",
     "primary_category": "quant-ph",
     "categories": [
       "quant-ph",
-      "physics.atom-ph"
+      "cs.ET",
+      "cs.LG"
     ],
     "links": [
       {
         "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.08453v1"
+        "url": "https://arxiv.org/abs/2606.11620v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.08453v1"
+        "url": "https://arxiv.org/pdf/2606.11620v1"
       }
     ],
-    "score": 82,
+    "score": 76,
     "infographic": {
-      "key_insight": "Neutral-atom arrays combine scalable qubit registers, long coherence times, flexible optical control, and strong Rydberg-mediated entangling interactions, making them a promising platform for quantum information processing.",
-      "engineering_relevance": "Potential relevance: quantum error correction workflows and research evaluation.",
+      "key_insight": "Quantum circuit simulation cost is strongly family-dependent, and a family-aware residual neural model can predict both required approximation threshold and runtime from OpenQASM and context.",
+      "engineering_relevance": "This can replace slow trial-and-error tuning for approximate tensor-network simulators, helping practitioners choose simulation settings in milliseconds instead of minutes or hours.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Shared neural backbone reads circuit and execution-context features.",
+        "Pretrained family classifier adds algorithm-family context for residual corrections.",
+        "Family-specific additive residuals refine predictions using gate-composition fingerprint features."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "Across 7–130 qubit circuits from 10 algorithm families, the model reached 79.5% exact threshold accuracy, 91.2% within one rung, and runtime prediction with R² = 0.82, with ~50 ms inference.",
+      "watch_item": "Performance may depend on reliable family classification and representative training coverage; unseen circuit families or atypical entanglement patterns could reduce accuracy.",
       "hashtags": [
-        "#AIQuantumComputing",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#QuantumCircuits",
+        "#TensorNetworks",
+        "#MachineLearning",
+        "#PerformancePrediction"
       ],
-      "paper_id": "2026-06-07-arxiv-a_dual_metastable_state_encoding_architecture_for_quantum_processing_with_171_mathrm_yb_at",
-      "paper_title": "A Dual Metastable-State Encoding Architecture for Quantum Processing with $^{171}\\mathrm{Yb}$ Atom Arrays",
-      "paper_date": "2026-06-07",
-      "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-10T12:56:46",
+      "paper_id": "2026-06-10-arxiv-family_aware_residual_architecture_for_predicting_quantum_circuit_simulation_performance",
+      "paper_title": "Family-Aware Residual Architecture for Predicting Quantum Circuit Simulation Performance",
+      "paper_date": "2026-06-10",
+      "paper_category": "Quantum Algorithms",
+      "generated_at": "2026-06-11T13:59:54",
       "generator": "openai"
     }
   },
@@ -547,29 +704,133 @@
         "url": "https://arxiv.org/pdf/2606.11010v1"
       }
     ],
-    "score": 81,
+    "score": 76,
     "infographic": {
-      "key_insight": "Bosonic codes offer hardware-efficient approaches to quantum error correction, with the best encodings offering effective protection of idle quantum information against loss and dephasing - particularly rotation-symmetric codes, which include the cat and binom",
-      "engineering_relevance": "Potential relevance: quantum error correction workflows and research evaluation.",
+      "key_insight": "Bosonic cyclic codes intentionally trade one layer of loss-detection for a richer set of fault-tolerant logical phase gates, implemented through passive Gaussian rotations.",
+      "engineering_relevance": "This gives hardware-efficient bosonic encodings a more practical control toolbox for quantum algorithms while preserving much of their built-in error protection.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Generalize rotation-symmetric bosonic codes into a cyclic family with tunable symmetry order.",
+        "Derive cyclic cat and Vandermonde code variants that retain many cat/binomial-code properties.",
+        "Convert higher-order stabilizers into logical phase gates and extend the framework to SU(2)-related operations and multimode codes."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The abstract reports that losing detectability of a single photon loss can unlock as many logical phase gates as the code’s original rotation symmetry order, all via passive Gaussian rotations.",
+      "watch_item": "The added logical-gate flexibility comes at the cost of reduced error-detectability, so the practical benefit depends on whether the hardware and noise model can tolerate that tradeoff.",
       "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#QuantumErrorCorrection",
+        "#BosonicCodes",
+        "#FaultTolerantQuantumComputing",
+        "#GaussianOperations",
+        "#QuantumAlgorithms"
       ],
       "paper_id": "2026-06-09-arxiv-bosonic_cyclic_codes_trading_stabilizers_for_gaussian_non_clifford_phase_gates",
       "paper_title": "Bosonic Cyclic Codes: Trading Stabilizers for Gaussian Non-Clifford Phase Gates",
       "paper_date": "2026-06-09",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-10T12:56:46",
+      "generated_at": "2026-06-11T13:59:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-10-arxiv-collective_neutrino_oscillations_many_body_non_forward_effects_and_non_classicality",
+    "arxiv_id": "2606.12404v1",
+    "date": "2026-06-10",
+    "title": "Collective neutrino oscillations: Many-body non-forward effects and non-classicality",
+    "authors": "Julien Froustey, Ermal Rrapaj, Yuhao Liu, Gushu Li, Costin Iancu, Vincenzo Cirigliano",
+    "abstract": "Neutrino evolution in dense astrophysical environments is typically described either within a quantum kinetic framework, which neglects the build-up of multi-body correlations, or through simplified many-body calculations that allow significant entanglement to develop. In this work, we compare these two approaches in a simple neutrino-gas configuration, with particular emphasis on the role of non-forward scattering processes. These effects are incorporated either through a collision term in the kinetic description, or by considering the full neutrino-neutrino many-body Hamiltonian. We highlight differences between the two descriptions in both their characteristic timescales and asymptotic behavior. Motivated by the natural suitability of quantum computing for many-body calculations, we further investigate the non-classicality of neutrino evolution, discussing Trotter error scaling, along with the associated costs of constructing quantum circuits in terms of entangling gates and non-Clifford gates. We find that the resources needed for neutrino many-body evolution are on the low end of typical high-energy physics problems and on the mid to high end with respect to quantum chemistry problems. For the full Hamiltonian, resource requirements increase relative to the truncated version. We emphasize the importance of efficient fermion-to-qubit encodings, which are essential for reducing the substantial computational resources required for such simulations.",
+    "category": "Quantum Simulation",
+    "source": "arXiv",
+    "published": "2026-06-10T17:59:12Z",
+    "updated": "2026-06-10T17:59:12Z",
+    "primary_category": "hep-ph",
+    "categories": [
+      "hep-ph",
+      "astro-ph.HE",
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.12404v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.12404v1"
+      }
+    ],
+    "score": 75,
+    "infographic": {
+      "key_insight": "Including non-forward scattering makes neutrino many-body evolution deviate from kinetic theory by changing both the timescale and the long-time behavior, revealing more non-classical dynamics than the truncated picture.",
+      "engineering_relevance": "The paper quantifies quantum-computing resource costs for neutrino simulation, showing that efficient fermion-to-qubit encodings and circuit design are critical to keep entangling and non-Clifford gate counts manageable.",
+      "method": [
+        "Compare a quantum kinetic model with a collision term against a full neutrino-neutrino many-body Hamiltonian",
+        "Study a simple dense neutrino-gas setup to isolate non-forward scattering effects",
+        "Estimate Trotter error scaling and circuit resource requirements for truncated vs full Hamiltonians"
+      ],
+      "evidence_signal": "The abstract reports qualitative comparison results and resource estimates, finding that full-Hamiltonian simulations require more resources than truncated models and that neutrino many-body simulation sits low for HEP but mid-to-high for quantum chemistry.",
+      "watch_item": "Results are based on a simplified neutrino-gas model, so real astrophysical environments may introduce additional correlations, geometry, and scaling challenges.",
+      "hashtags": [
+        "#QuantumSimulation",
+        "#NeutrinoPhysics",
+        "#ManyBodyPhysics",
+        "#Trotterization",
+        "#QuantumComputing"
+      ],
+      "paper_id": "2026-06-10-arxiv-collective_neutrino_oscillations_many_body_non_forward_effects_and_non_classicality",
+      "paper_title": "Collective neutrino oscillations: Many-body non-forward effects and non-classicality",
+      "paper_date": "2026-06-10",
+      "paper_category": "Quantum Simulation",
+      "generated_at": "2026-06-11T13:59:59",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-10-arxiv-clifford_disentanglers_for_entanglement_reduction_in_molecular_electronic_structure_simula",
+    "arxiv_id": "2606.12056v1",
+    "date": "2026-06-10",
+    "title": "Clifford disentanglers for entanglement reduction in molecular electronic structure simulations",
+    "authors": "Longfei Chang, Zibo Wu, Yunzhi Li, Haiqi Liu, Jiajun Ren, Mingpu Qin",
+    "abstract": "Entanglement is a key bottleneck limiting the efficiency of tensor-network and quantum simulations of molecular electronic structures. Here, we systematically assess and extend Clifford disentanglers as a structure-preserving approach to entanglement reduction: they can modify the entanglement structure of qubit wavefunctions while retaining the Pauli-string form of qubit Hamiltonians. To enable a practical search over Clifford transformations, we classify Clifford operators by their action on the Schmidt spectrum across a bipartition, reducing the two- and four-qubit search spaces to 20 and 91392 representatives, respectively. Embedded in an iterative Clifford-augmented matrix product state framework, these transformations reduce the energy errors at fixed bond dimension for the molecular test cases studied and mitigate the dependence on orbital orderings and fermion-to-qubit mappings. We further show that Clifford disentanglers can also benefit quantum simulations such as the shallow-circuit variational quantum eigensolver calculations. Together, these results establish Clifford disentanglers as a useful structure-preserving entanglement-engineering tool for tensor-network and quantum simulations of molecular electronic structure, while also clarifying their correlation dependence and motivating future developments.",
+    "category": "Quantum Simulation",
+    "source": "arXiv",
+    "published": "2026-06-10T13:22:04Z",
+    "updated": "2026-06-10T13:22:04Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.12056v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.12056v1"
+      }
+    ],
+    "score": 75,
+    "infographic": {
+      "key_insight": "Clifford disentanglers can reduce entanglement in molecular electronic-structure states without destroying the Pauli-string Hamiltonian structure, improving simulation efficiency.",
+      "engineering_relevance": "This offers a structure-preserving preprocessing layer for tensor-network and shallow-circuit quantum workflows that can lower bond-dimension demands and reduce sensitivity to orbital ordering and qubit mapping.",
+      "method": [
+        "Classify Clifford operators by how they change Schmidt spectra across a bipartition.",
+        "Search reduced representative sets for 2-qubit and 4-qubit Clifford transformations.",
+        "Embed the best disentanglers inside an iterative Clifford-augmented MPS workflow and test on VQE-like simulations."
+      ],
+      "evidence_signal": "The abstract reports that, on molecular test cases, the method lowers energy errors at fixed bond dimension and also helps shallow-circuit VQE calculations.",
+      "watch_item": "The benefit depends on the correlation structure of the target state, so the search overhead and gains may vary across molecules and representations.",
+      "hashtags": [
+        "#QuantumSimulation",
+        "#TensorNetworks",
+        "#MolecularElectronicStructure",
+        "#CliffordCircuits",
+        "#EntanglementReduction"
+      ],
+      "paper_id": "2026-06-10-arxiv-clifford_disentanglers_for_entanglement_reduction_in_molecular_electronic_structure_simula",
+      "paper_title": "Clifford disentanglers for entanglement reduction in molecular electronic structure simulations",
+      "paper_date": "2026-06-10",
+      "paper_category": "Quantum Simulation",
+      "generated_at": "2026-06-11T14:00:02",
       "generator": "openai"
     }
   },
@@ -598,43 +859,43 @@
         "url": "https://arxiv.org/pdf/2606.08504v1"
       }
     ],
-    "score": 80,
+    "score": 75,
     "infographic": {
-      "key_insight": "Combinatorial optimization can be addressed with quantum computing through variational quantum algorithms, but a central challenge in this approach is to design an ansatz expressive enough to explore the feasible subspace of the Hilbert space where the optimal",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
+      "key_insight": "The paper introduces a feasibility-preserving Dicke-state ansatz that encodes equality and inequality Hamming-weight constraints directly in the quantum circuit, avoiding penalty terms in VQE.",
+      "engineering_relevance": "This gives quantum optimization practitioners a structured way to search only valid solutions for constrained combinatorial problems such as portfolio optimization.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Builds a pure Dicke state ansatz for equality constraints.",
+        "Extends to mixed Dicke states for inequality constraints using density-matrix formalism.",
+        "Combines multiple constrained groups via tensor products and tests with CMA-ES optimization."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "Across three portfolio optimization scenarios with increasing constraint complexity, the ansatz required fewer objective-function calls than restricted random search to find high-quality feasible solutions, and IBM hardware runs exposed noise and transpilation challenges.",
+      "watch_item": "Practical deployment is limited by hardware noise and circuit transpilation overhead, so mitigation and compilation quality remain important.",
       "hashtags": [
-        "#AIQuantumComputing",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#VQE",
+        "#DickeStates",
+        "#CombinatorialOptimization",
+        "#NISQ"
       ],
       "paper_id": "2026-06-07-arxiv-pure_and_mixed_dicke_state_ansatz_for_equality_and_inequality_constraints_in_variational_q",
       "paper_title": "Pure and mixed Dicke state ansatz for equality and inequality constraints in variational quantum eigensolver",
       "paper_date": "2026-06-07",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:46",
+      "generated_at": "2026-06-11T14:00:04",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-06-05-arxiv-projector_quantum_variational_ansatz",
-    "arxiv_id": "2606.07084v1",
-    "date": "2026-06-05",
-    "title": "Projector Quantum Variational Ansatz",
-    "authors": "Thomas Dumontier, Robin Ollive, Stephane Louise",
-    "abstract": "Quantum computing offers several algorithms to compute the ground state of a problem Hamiltonian. The most desirable algorithms belong to the Fault Tolerant QuantumComputing (FTQC) regime, such as quantum algorithms with repetitive structure like Quantum Phase Estimation (QPE) and Quantum Signal Processing (QSP). However, in the Noisy In-termediate Scale Quantum (NISQ) regime, the most realistic approaches involve Variational Quantum Eigensolver (VQE) algorithms and their variants. VQE is an algorithm that searches for a parametrized unitary matrix called an ansatz whose purposeis to transform an easily prepared initial state into the groundstate of a given Hamiltonian. Adaptive Derivative-AssembledPseudo-Trotter (ADAPT)-VQE is a variant of VQE that im-proves this approach by constructing the ansatz iteratively so that the associated quantum circuit is as shallow as possible. A major difference between FTQC (i.e. not variational) algorithms and VQE is that FTQC algorithms do not construct a state transitiondirectly. Instead, they construct a projector that identifies the ground state using ancillary qubits that flag the good solution. The desired state is then obtained via amplitude amplification orpost-selection. In this work, we propose a VQE ansatz whose structure is more similar to that of an FTQC algorithm. Depending on its parametrization, this ansatz can be equivalent to either an Intermediate Scale Quantum (ISQ)-QSP or to an ADAPT-VQE quantum circuit structure. Our experimental results show that this first proposal of Projector Variational Ansatz (PVA) converges with a shallower ansatz than the usual ADAPT-VQE.",
+    "id": "2026-06-10-arxiv-partitioned_iterative_quantum_scheduling_of_satellites_for_urgent_disaster_response_case_s",
+    "arxiv_id": "2606.12310v1",
+    "date": "2026-06-10",
+    "title": "Partitioned Iterative Quantum Scheduling of Satellites for Urgent Disaster Response: Case study of Wildfire",
+    "authors": "Lucas T. Braydwood, Taejin Park, Hirofumi Hashimoto, Zoe Gonzalez Izquierdo, Andrew Michaelis, Eleanor Rieffel",
+    "abstract": "The standard in Earth-observation tasks today is having near real-time access to surface images in response to changing conditions. For instance, as urban environments interface more with wildlands and wildfires become less predictable, their tracking with satellite resources becomes essential. This requires the coordination of increasingly large constellations of satellites, giving rise to challenging computational problems. With wildfire detection and tracking as a backdrop, we investigate the power of special purpose and novel computing paradigms to tackle the ensuing satellite scheduling problems, making a compelling case for quantum algorithms. We bring quantum scheduling algorithms closer to implementation by examining both the emerging iterative quantum algorithm framework, which comes with analytic guarantees compared to some classical algorithms, and distributed quantum computing methods whose relevance is on the rise as utility-scale problems begin to get solved with quantum computers. Drawing strength from several computing fronts, we develop a distributed/parallelization scheme in conjunction with the quantum algorithm design and apply these techniques to real-world datasets for wildfire detection. While our quantum subprocesses are currently too small to see significant quantum advantage, our results validate the utility of these techniques, and continue forging the path toward distributed quantum computing.",
     "category": "Quantum Algorithms",
     "source": "arXiv",
-    "published": "2026-06-05T09:23:56Z",
-    "updated": "2026-06-05T09:23:56Z",
+    "published": "2026-06-10T16:44:33Z",
+    "updated": "2026-06-10T16:44:33Z",
     "primary_category": "quant-ph",
     "categories": [
       "quant-ph"
@@ -642,36 +903,36 @@
     "links": [
       {
         "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.07084v1"
+        "url": "https://arxiv.org/abs/2606.12310v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.07084v1"
+        "url": "https://arxiv.org/pdf/2606.12310v1"
       }
     ],
-    "score": 80,
+    "score": 73,
     "infographic": {
-      "key_insight": "Quantum computing offers several algorithms to compute the ground state of a problem Hamiltonian.",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
+      "key_insight": "The paper shows how partitioned iterative quantum scheduling can coordinate large satellite constellations for urgent wildfire response, bringing quantum methods closer to practical Earth-observation planning.",
+      "engineering_relevance": "It targets a high-impact operations problem—near real-time satellite tasking for disaster monitoring—where faster, scalable schedulers can improve wildfire detection and tracking.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Develop an iterative quantum scheduling framework with analytic guarantees.",
+        "Add a distributed/parallel partitioning scheme to scale the scheduling problem.",
+        "Test the approach on real-world wildfire detection datasets and satellite-response scenarios."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The authors evaluate the methods on real-world wildfire datasets and report that the current quantum subproblems are still too small to demonstrate clear quantum advantage.",
+      "watch_item": "The main implementation concern is that the quantum subprocesses remain limited in size, so practical advantage over classical methods is not yet demonstrated.",
       "hashtags": [
-        "#AIQuantumComputing",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#SatelliteScheduling",
+        "#WildfireResponse",
+        "#EarthObservation",
+        "#DistributedQuantumComputing"
       ],
-      "paper_id": "2026-06-05-arxiv-projector_quantum_variational_ansatz",
-      "paper_title": "Projector Quantum Variational Ansatz",
-      "paper_date": "2026-06-05",
+      "paper_id": "2026-06-10-arxiv-partitioned_iterative_quantum_scheduling_of_satellites_for_urgent_disaster_response_case_s",
+      "paper_title": "Partitioned Iterative Quantum Scheduling of Satellites for Urgent Disaster Response: Case study of Wildfire",
+      "paper_date": "2026-06-10",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:47",
+      "generated_at": "2026-06-11T14:00:06",
       "generator": "openai"
     }
   },
@@ -700,29 +961,29 @@
         "url": "https://arxiv.org/pdf/2606.11000v1"
       }
     ],
-    "score": 78,
+    "score": 73,
     "infographic": {
-      "key_insight": "Asynchronous, event-based graph neural networks (AEGNNs) have recently emerged as an efficient paradigm for processing the sparse and high-temporal-resolution data from event cameras.",
-      "engineering_relevance": "Potential relevance: quantum simulation workflows and research evaluation.",
+      "key_insight": "The paper maps asynchronous event-based graph neural network computation onto the analog dynamics of a neutral-atom quantum processor, using Rydberg interactions to perform message passing natively.",
+      "engineering_relevance": "This suggests a path to hardware-efficient processing of sparse, high-temporal-resolution event-camera data with programmable quantum analog systems.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Map each incoming event to a trapped atom, with atom position encoding the event’s spatio-temporal neighborhood.",
+        "Use atomic qubit states as node embeddings and Rydberg interactions as graph edges for message passing.",
+        "Train the analog model by tuning Hamiltonian controls such as laser amplitudes and detunings with classical feedback."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The abstract presents a new hybrid quantum-classical framework and argues that the continuous Hamiltonian dynamics and parallelism of neutral-atom hardware could improve accuracy for event-based graph computation.",
+      "watch_item": "Practical performance will depend on precise control of atom placement, interaction fidelity, and stable optimization of noisy analog Hamiltonian parameters.",
       "hashtags": [
-        "#AIQuantumComputing",
         "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#NeutralAtoms",
+        "#GraphNeuralNetworks",
+        "#EventCameras",
+        "#AnalogQuantum"
       ],
       "paper_id": "2026-06-09-arxiv-analog_quantum_asynchronous_event_based_graph_neural_network",
       "paper_title": "Analog Quantum Asynchronous Event-Based Graph Neural Network",
       "paper_date": "2026-06-09",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-06-10T12:56:47",
+      "generated_at": "2026-06-11T14:00:09",
       "generator": "openai"
     }
   },
@@ -752,287 +1013,29 @@
         "url": "https://arxiv.org/pdf/2606.10179v1"
       }
     ],
-    "score": 78,
+    "score": 73,
     "infographic": {
-      "key_insight": "Quantum Circuit Born Machines (QCBMs) offer a natural approach to generative machine learning by leveraging the Born rule.",
-      "engineering_relevance": "Potential relevance: quantum machine learning workflows and research evaluation.",
+      "key_insight": "The paper shows that IQP-based quantum circuit born machines can be analyzed for trainability under Gaussian parameter initialization, yielding bounds on gradient variance and concentration that clarify when optimization is feasible or prone to barren plateaus.",
+      "engineering_relevance": "For quantum ML practitioners, these results give practical guidance on choosing initialization schemes and circuit settings to improve trainability when using MMD-trained IQP QCBMs.",
       "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
+        "Uses Stein’s lemma to derive an analytical lower bound on gradient variance.",
+        "Applies Lipschitz concentration bounds for Gaussian random variables to bound gradient deviation from its mean.",
+        "Analyzes conditions that may either suppress or exacerbate exponential concentration and barren plateaus."
       ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
+      "evidence_signal": "The paper’s evidence is theoretical: it derives analytical bounds rather than reporting experimental benchmark results, based on the abstract.",
+      "watch_item": "The conclusions depend on the Gaussian initialization assumptions and the specific IQP-QCBM/MMD setting, so they may not transfer directly to other ansätze or losses.",
       "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
+        "#QuantumMachineLearning",
+        "#QuantumCircuits",
+        "#BornMachines",
+        "#BarrenPlateaus",
+        "#GaussianInitialization"
       ],
       "paper_id": "2026-06-08-arxiv-trainability_of_iqp_quantum_circuit_born_machines_under_gaussian_initialization",
       "paper_title": "Trainability of IQP Quantum Circuit Born Machines Under Gaussian Initialization",
       "paper_date": "2026-06-08",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-06-10T12:56:47",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-08-arxiv-satellite_based_quantum_communication_performance_evaluation_of_discrete_variable_quantum",
-    "arxiv_id": "2606.09217v1",
-    "date": "2026-06-08",
-    "title": "Satellite-Based Quantum Communication: Performance Evaluation of Discrete-Variable Quantum Key Distribution Protocols",
-    "authors": "Muskan",
-    "abstract": "Quantum Key Distribution (QKD) has emerged as a fundamentally secure approach to communication in the era of quantum computing, offering protection against threats posed to classical cryptographic schemes such as RSA and Diffie-Hellman. This thesis presents a comprehensive performance analysis of satellite-based QKD protocols, focusing on both prepare-and-measure and entanglement-based schemes under realistic atmospheric and operational conditions. The study begins by introducing the theoretical foundations of quantum communication, including qubits, entanglement, and quantum entropy, and motivates the need for satellite-based QKD to overcome the distance limitations of fiber-based systems. Subsequently, the thesis evaluates four prominent QKD protocols-BB84, B92, BBM92, and E91-using a circular beam propagation model that incorporates atmospheric effects such as diffraction, turbulence, attenuation, and pointing errors, along with environmental noise contributions for uplink and downlink. Comparative numerical simulations reveal that protocol performance is strongly influenced by channel asymmetries, beam propagation characteristics, and noise, providing guidance on optimal protocol selection for low Earth orbit (LEO) satellite links. The research further investigates high-dimensional (HD) QKD protocols, specifically HD-BB84 and HD-Extended B92, using the elliptic-beam approximation to account for turbulence-induced distortions for both uplink and downlink. Simulations under vary ing system dimensions, weather conditions, and zenith angles demonstrate that HD-BB84 achieves higher key rates, superior noise tolerance, and more favorable probability distributions of the key rate compared to HD-Extended B92, highlighting the advantages of high-dimensional encoding for robust satellite-based QKD.",
-    "category": "Quantum Hardware",
-    "source": "arXiv",
-    "published": "2026-06-08T08:51:25Z",
-    "updated": "2026-06-08T08:51:25Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.09217v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.09217v1"
-      }
-    ],
-    "score": 77,
-    "infographic": {
-      "key_insight": "Quantum Key Distribution (QKD) has emerged as a fundamentally secure approach to communication in the era of quantum computing, offering protection against threats posed to classical cryptographic schemes such as RSA and Diffie-Hellman.",
-      "engineering_relevance": "Potential relevance: quantum hardware workflows and research evaluation.",
-      "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
-      "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
-      ],
-      "paper_id": "2026-06-08-arxiv-satellite_based_quantum_communication_performance_evaluation_of_discrete_variable_quantum",
-      "paper_title": "Satellite-Based Quantum Communication: Performance Evaluation of Discrete-Variable Quantum Key Distribution Protocols",
-      "paper_date": "2026-06-08",
-      "paper_category": "Quantum Hardware",
-      "generated_at": "2026-06-10T12:56:47",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-07-arxiv-graph_neural_networks_for_fast_operator_selection_in_adaptive_vqe",
-    "arxiv_id": "2606.08794v1",
-    "date": "2026-06-07",
-    "title": "Graph Neural Networks for Fast Operator Selection in Adaptive VQE",
-    "authors": "Javad Vahedi, Hadi H. Arefi",
-    "abstract": "Adaptive variational quantum algorithms like ADAPT-VQE construct tailored ansätze by iteratively selecting operators from a pool using gradient-based criteria. While this avoids oversized parameter spaces, repeatedly scanning the full pool incurs a classical cost that scales linearly with pool size-a major bottleneck for systems with long-range interactions or large operator sets. Here, we reformulate adaptive operator selection as a graph-based decision problem and introduce a graph neural network (GNN) policy that predicts the next entangling operator directly from the interaction graph and state-dependent observables. Training data are generated from exact simulations of disordered long-range spin chains, using gradient magnitudes as supervision signals. The learned policy accurately reproduces the dominant structure of the greedy gradient-based selection rule, significantly outperforming heuristics based solely on interaction strength. Integrated into a variational quantum eigensolver (VQE) workflow, this GNN-VQE approach achieves energy errors close to standard ADAPT-VQE while drastically reducing full-pool gradient evaluations. To test transferability beyond spin models, we evaluate the policy on small active-space molecular benchmarks (LiH and BeH_$2$). We find the GNN is highly effective as a shortlist generator: exact rescoring over just a few GNN-proposed candidates recovers near-oracle rollout behavior while searching only a small fraction of the pool. These results demonstrate that adaptive circuit construction contains learnable structure that can be exploited to accelerate variational quantum algorithms.",
-    "category": "Quantum Algorithms",
-    "source": "arXiv",
-    "published": "2026-06-07T19:18:47Z",
-    "updated": "2026-06-07T19:18:47Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph",
-      "cond-mat.dis-nn",
-      "physics.chem-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.08794v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.08794v1"
-      }
-    ],
-    "score": 77,
-    "infographic": {
-      "key_insight": "Adaptive variational quantum algorithms like ADAPT-VQE construct tailored ansätze by iteratively selecting operators from a pool using gradient-based criteria.",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
-      "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
-      "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
-      ],
-      "paper_id": "2026-06-07-arxiv-graph_neural_networks_for_fast_operator_selection_in_adaptive_vqe",
-      "paper_title": "Graph Neural Networks for Fast Operator Selection in Adaptive VQE",
-      "paper_date": "2026-06-07",
-      "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:48",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-09-arxiv-camera_enabled_scalable_homodyne_detection_of_multimode_quantum_light",
-    "arxiv_id": "2606.10387v1",
-    "date": "2026-06-09",
-    "title": "Camera-enabled scalable homodyne detection of multimode quantum light",
-    "authors": "Young-Do Yoon, Chan Roh, Geunhee Gwak, Young-Sik Ra",
-    "abstract": "Scalability is a key challenge in advancing quantum technologies such as quantum computing, communication, and metrology. Photonic systems offer a promising route to scalability by enabling the deterministic generation of large-scale entangled states. Homodyne detection is an essential quantum measurement to exploit such entangled states, enabling quantum-enhanced measurement, deterministic quantum teleportation, GKP-state breeding, and quantum error correction. Despite the recent progress in generating large-scale quantum states, realizing quantum measurement at scale remains a major challenge. Here we realize scalable and efficient homodyne detection by leveraging a large number of pixels in a charge-coupled-device (CCD) camera. Our approach enables shot-noise-limited quadrature measurements of 60 optical modes simultaneously, while requiring only nanowatt-level local oscillator power per mode -- a six-order-of-magnitude reduction compared to conventional methods. The system achieves clearance exceeding 24 dB for all modes with negligible crosstalk. We demonstrate its compatibility with a large-scale quantum state by directly observing squeezing and entanglement in 60 optical modes. Furthermore, we showcase applications in verifying multipartite entanglement and in the conditional preparation of multimode states. This work provides a scalable method for quantum measurement, paving the way for large-scale quantum information processing.",
-    "category": "Quantum Error Correction",
-    "source": "arXiv",
-    "published": "2026-06-09T03:53:58Z",
-    "updated": "2026-06-09T03:53:58Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.10387v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.10387v1"
-      }
-    ],
-    "score": 76,
-    "infographic": {
-      "key_insight": "Scalability is a key challenge in advancing quantum technologies such as quantum computing, communication, and metrology.",
-      "engineering_relevance": "Potential relevance: quantum error correction workflows and research evaluation.",
-      "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
-      "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
-      ],
-      "paper_id": "2026-06-09-arxiv-camera_enabled_scalable_homodyne_detection_of_multimode_quantum_light",
-      "paper_title": "Camera-enabled scalable homodyne detection of multimode quantum light",
-      "paper_date": "2026-06-09",
-      "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-10T12:56:48",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-08-arxiv-vqa_for_dynamic_portfolio_optimization_sampling_strategies_optimizer_scheduling_and_hardwa",
-    "arxiv_id": "2606.10098v1",
-    "date": "2026-06-08",
-    "title": "VQA for Dynamic Portfolio Optimization: Sampling Strategies, Optimizer Scheduling, and Hardware-Aware Ansatz Design",
-    "authors": "Mohammad Kashfi Haghighi",
-    "abstract": "Variational quantum algorithms are increasingly explored for optimization problems at scales relevant to near-term quantum devices. Their practical performance depends strongly on design choices such as the sampling objective, classical optimizer, and ansatz layout before and after hardware transpilation. We study these factors for dynamic portfolio optimization, a multi-period financial problem balancing return, risk, transaction costs, cash-interest effects, and constraints. Using a sampling-based VQA framework on a 150-qubit dynamic portfolio instance, we evaluate several components of the optimization workflow. We propose a specific adaptive CVaR schedule that gradually tightens the sampled tail used for optimization, together with a two-stage optimizer combining global exploration with Particle Swarm Optimization and local refinement with the Nakanishi-Fujii-Todo optimizer. We also study ansatz depth and sequential growth strategies. Finally, we introduce two hardware-aware ansatz-layout modifications: a data-guided colored layout that assigns correlated variables to qubits connected by entangling gates, and a heavy-hex-native deep-chain layout designed to increase native two-qubit interaction depth without additional routing overhead after transpilation. Simulator studies select CVaR, optimizer, and depth configurations, while the ansatz comparison is performed on the ibm_quebec QPU. The results show that sampling strategy, optimizer scheduling, and hardware-aware layout design materially affect performance. In the reported QPU layout comparison, the proposed heavy-hex-native deep-chain layout achieves the best final objective value and CVaR-tail performance among the tested layouts. Although we do not observe quantum advantage over a state-of-the-art exact classical solver, our results provide practical guidance for improving VQA performance on near-term hardware.",
-    "category": "Quantum Algorithms",
-    "source": "arXiv",
-    "published": "2026-06-08T19:25:39Z",
-    "updated": "2026-06-08T19:25:39Z",
-    "primary_category": "cs.CE",
-    "categories": [
-      "cs.CE",
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.10098v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.10098v1"
-      }
-    ],
-    "score": 76,
-    "infographic": {
-      "key_insight": "Variational quantum algorithms are increasingly explored for optimization problems at scales relevant to near-term quantum devices.",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
-      "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
-      "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
-      ],
-      "paper_id": "2026-06-08-arxiv-vqa_for_dynamic_portfolio_optimization_sampling_strategies_optimizer_scheduling_and_hardwa",
-      "paper_title": "VQA for Dynamic Portfolio Optimization: Sampling Strategies, Optimizer Scheduling, and Hardware-Aware Ansatz Design",
-      "paper_date": "2026-06-08",
-      "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:48",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-08-arxiv-from_pauli_strings_to_quantum_dynamics_a_unified_characterization",
-    "arxiv_id": "2606.09773v1",
-    "date": "2026-06-08",
-    "title": "From Pauli Strings to Quantum Dynamics: A Unified Characterization",
-    "authors": "Roberto Gargiulo, Paul Herringer, Robert Zeier",
-    "abstract": "Understanding the dynamical properties of quantum systems is an essential task in quantum computing, quantum control, and many-body physics. Tools such as representation theory and Lie theory provide crucial information on reachability and computational power. However, this information can be difficult to access exactly or compute efficiently for arbitrary generating sets. Here we focus on the setting of Pauli strings, which satisfy numerous exceptional properties that simplify the problem. We find deep connections between Pauli Lie algebras and certain subgroups of the Clifford group generated by transvections, through the symplectic properties of the Pauli strings. This allows us to give an invariant-based perspective on these objects and their reachability, in the language of Pauli orbits, symmetries, and invariant subspaces. The invariant-based approach provides efficient algorithms for identifying Lie algebras and orbits, as well as a simple framework for analyzing structured Pauli generating sets. We also show in an elementary way that Clifford subgroups generated by transvections provide 3-designs for the corresponding Pauli Lie groups. We illustrate the framework through structured examples from variational quantum algorithms, restricted quantum computation, many-body systems, and random circuits.",
-    "category": "Quantum Algorithms",
-    "source": "arXiv",
-    "published": "2026-06-08T17:33:15Z",
-    "updated": "2026-06-08T17:33:15Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.09773v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.09773v1"
-      }
-    ],
-    "score": 75,
-    "infographic": {
-      "key_insight": "Understanding the dynamical properties of quantum systems is an essential task in quantum computing, quantum control, and many-body physics.",
-      "engineering_relevance": "Potential relevance: quantum algorithms workflows and research evaluation.",
-      "method": [
-        "AI quantum computing paper selected from recent arXiv submissions.",
-        "Ranked by recency plus AI and quantum computing relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Review the full paper for governing assumptions, validation data, and generalization limits.",
-      "hashtags": [
-        "#AIQuantumComputing",
-        "#QuantumComputing",
-        "#Turbulence",
-        "#QuantumML",
-        "#arXiv"
-      ],
-      "paper_id": "2026-06-08-arxiv-from_pauli_strings_to_quantum_dynamics_a_unified_characterization",
-      "paper_title": "From Pauli Strings to Quantum Dynamics: A Unified Characterization",
-      "paper_date": "2026-06-08",
-      "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-10T12:56:49",
+      "generated_at": "2026-06-11T14:00:11",
       "generator": "openai"
     }
   }

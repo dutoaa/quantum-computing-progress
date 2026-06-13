@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-06-12
+Generated: 2026-06-13
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. An LLM System for Autonomous Variational Quantum Circuit Design
@@ -51,7 +51,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.12211v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-10-arxiv-quantum_occam_learning_sample_supported_expressibility_for_circuit_based_quantum_learning_infographic.json
 
-## 7. Tensor-Network-Based Distributed Quantum Dynamics on Independent Quantum Computers
+## 7. Coupling-Grouped XY-QAOA for Joint Anomaly-Feature Selection
+
+- Date: 2026-06-11
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.13244v1
+- PDF: https://arxiv.org/pdf/2606.13244v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-11-arxiv-coupling_grouped_xy_qaoa_for_joint_anomaly_feature_selection_infographic.json
+
+## 8. Tensor-Network-Based Distributed Quantum Dynamics on Independent Quantum Computers
 
 - Date: 2026-06-10
 - Category: Quantum Simulation
@@ -59,7 +67,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.11579v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-10-arxiv-tensor_network_based_distributed_quantum_dynamics_on_independent_quantum_computers_infographic.json
 
-## 8. Q-DICE: Quantum Distributed Interconnect Compiler and Emulator
+## 9. Q-DICE: Quantum Distributed Interconnect Compiler and Emulator
 
 - Date: 2026-06-09
 - Category: Quantum Hardware
@@ -67,7 +75,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.11340v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-09-arxiv-q_dice_quantum_distributed_interconnect_compiler_and_emulator_infographic.json
 
-## 9. Experimental implementation of continuous-variable QAOA on a quad-rail lattice cluster state
+## 10. Experimental implementation of continuous-variable QAOA on a quad-rail lattice cluster state
 
 - Date: 2026-06-09
 - Category: Quantum Algorithms
@@ -75,7 +83,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.10432v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-09-arxiv-experimental_implementation_of_continuous_variable_qaoa_on_a_quad_rail_lattice_cluster_sta_infographic.json
 
-## 10. Graph Reinforcement Learning for Calibration-Aware Quantum Circuit Routing
+## 11. Graph Reinforcement Learning for Calibration-Aware Quantum Circuit Routing
 
 - Date: 2026-06-11
 - Category: Quantum Hardware
@@ -83,7 +91,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.12816v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-11-arxiv-graph_reinforcement_learning_for_calibration_aware_quantum_circuit_routing_infographic.json
 
-## 11. Clifford disentanglers for entanglement reduction in molecular electronic structure simulations
+## 12. Clifford disentanglers for entanglement reduction in molecular electronic structure simulations
 
 - Date: 2026-06-10
 - Category: Quantum Simulation
@@ -91,21 +99,13 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.12056v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-10-arxiv-clifford_disentanglers_for_entanglement_reduction_in_molecular_electronic_structure_simula_infographic.json
 
-## 12. Fast Adiabatic Quantum Gates via Hyperfine Intermediate States
+## 13. Fast Adiabatic Quantum Gates via Hyperfine Intermediate States
 
 - Date: 2026-06-10
 - Category: Quantum Hardware
 - arXiv: https://arxiv.org/abs/2606.11655v1
 - PDF: https://arxiv.org/pdf/2606.11655v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-10-arxiv-fast_adiabatic_quantum_gates_via_hyperfine_intermediate_states_infographic.json
-
-## 13. Coupling-Grouped XY-QAOA for Joint Anomaly-Feature Selection
-
-- Date: 2026-06-11
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.13244v1
-- PDF: https://arxiv.org/pdf/2606.13244v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-11-arxiv-coupling_grouped_xy_qaoa_for_joint_anomaly_feature_selection_infographic.json
 
 ## 14. Explicit Quantum Circuit Simulation of Nonlinear 1-Dimensional Fluid with Carleman-linearized Boltzmann Method
 

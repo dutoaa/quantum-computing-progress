@@ -1,24 +1,24 @@
 {
-  "key_insight": "Calibration-aware reinforcement learning can route quantum circuits to higher exact fidelity by avoiding poorly calibrated couplers, even when that increases two-qubit gate count.",
-  "engineering_relevance": "For NISQ compilers, using same-day hardware calibration data in routing decisions can improve run quality beyond standard gate-count minimization.",
+  "key_insight": "A calibration-aware graph RL router can outperform gate-count-driven quantum circuit routing by deliberately choosing SWAP paths that avoid poorly calibrated couplers, improving final circuit fidelity.",
+  "engineering_relevance": "For quantum compilers targeting noisy hardware, this suggests routing should incorporate up-to-date calibration data, not just minimize swap count or depth, to better preserve executable accuracy.",
   "method": [
-    "Graph RL router with proximal policy optimization",
-    "Uses IBM Heron r2 same-day calibration snapshots as edge features",
-    "Compared against SABRE-best20 and target-aware SABRE on MQT Bench circuits"
+    "Trained a graph-based routing policy with proximal policy optimization (PPO).",
+    "Used same-day IBM Heron r2 calibration data to guide hardware-edge SWAP decisions.",
+    "Compared against SABRE-best20 and target-aware SABRE using exact simulated fidelity."
   ],
-  "evidence_signal": "Across nine MQT Bench circuits and three calibration snapshots, pooled mean exact fidelity was 0.727 versus 0.440 for SABRE-best20 and 0.481 for target-aware SABRE.",
-  "watch_item": "The gains come with higher routed two-qubit counts, and under the fixed tree action graph the 10q families still favor SABRE-best20, so the approach may not generalize uniformly.",
+  "evidence_signal": "Across nine MQT Bench circuits and three calibration snapshots, pooled mean exact fidelity was 0.727 for the learned router versus 0.440 for SABRE-best20 and 0.481 for target-aware SABRE.",
+  "watch_item": "The fidelity gains come with more two-qubit gates, and the fixed tree action graph does not help all circuit sizes—10q families still favor SABRE-best20.",
   "hashtags": [
-    "#QuantumComputing",
-    "#CircuitRouting",
-    "#ReinforcementLearning",
-    "#CalibrationAware",
-    "#NISQ"
+    "#QuantumCompiling",
+    "#GraphReinforcementLearning",
+    "#CalibrationAwareRouting",
+    "#NoisyQuantumHardware",
+    "#QuantumCircuitOptimization"
   ],
   "paper_id": "2026-06-11-arxiv-graph_reinforcement_learning_for_calibration_aware_quantum_circuit_routing",
   "paper_title": "Graph Reinforcement Learning for Calibration-Aware Quantum Circuit Routing",
   "paper_date": "2026-06-11",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-06-14T11:57:49",
+  "generated_at": "2026-06-15T15:50:31",
   "generator": "openai"
 }

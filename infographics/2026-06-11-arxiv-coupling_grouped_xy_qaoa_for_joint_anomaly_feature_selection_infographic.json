@@ -1,24 +1,24 @@
 {
-  "key_insight": "Coupling-Grouped XY-QAOA jointly selects anomalous samples and explanatory features under fixed budgets, reducing calibration-sensitivity and improving hardware feasibility versus sequential feature-first selection.",
-  "engineering_relevance": "The method delivers shallower, lower-gate quantum circuits on IBM Heron hardware while preserving constraints, making joint constrained selection more practical for near-term quantum optimization workflows.",
+  "key_insight": "The paper argues that anomaly and feature selection should be optimized jointly under fixed budgets, because feature-first ranking can miss interactions and becomes more sensitive to calibration error as the number of selected samples grows.",
+  "engineering_relevance": "Coupling-Grouped XY-QAOA shows a hardware-aware way to run constraint-preserving bipartite-selection QAOA at larger widths and depths on IBM Heron R3 while reducing circuit cost.",
   "method": [
-    "Formulate anomaly and feature selection as a joint constrained optimization problem with fixed sample and feature counts.",
-    "Use a constraint-preserving grouped-angle XY-QAOA mixer tailored to bipartite selection.",
-    "Apply hardware-aware compilation plus warm starts and near-budget repair to improve feasible solution quality."
+    "Formulate joint sample-feature selection as a fixed-budget constrained optimization problem.",
+    "Use a grouped-angle XY-QAOA variant that preserves feasibility during mixing.",
+    "Apply hardware-aware transpilation and warm-start/repair strategies to improve feasible output quality."
   ],
-  "evidence_signal": "On sparse IBM Heron R3 benchmarks, the implementation cut depth by 45.9%-61.3% and two-qubit gates by 2.6%-5.2%, reached feasible-sequence retention up to 63% at 20 qubits p=5, and improved outcomes across 36-64 qubit runs.",
-  "watch_item": "Performance is benchmark-dependent, and the strongest results rely on sparse instances, hardware-aware tuning, and feasible-sector retention that may not transfer directly to denser or noisier settings.",
+  "evidence_signal": "On matched sparse IBM Heron R3 benchmarks, the implementation cut depth by 45.9%-61.3% and two-qubit gates by 2.6%-5.2%, achieved 64 qubits at p=2 and 36 qubits at p=3, and in 20-qubit p=5 runs retained 63% valid samples.",
+  "watch_item": "Performance depends on sparse benchmark structure and hardware-aware compilation, so gains may not transfer directly to denser problems or different quantum devices.",
   "hashtags": [
     "#QuantumComputing",
     "#QAOA",
-    "#AnomalyDetection",
     "#FeatureSelection",
-    "#HardwareEfficientQuantum"
+    "#AnomalyDetection",
+    "#QuantumHardware"
   ],
   "paper_id": "2026-06-11-arxiv-coupling_grouped_xy_qaoa_for_joint_anomaly_feature_selection",
   "paper_title": "Coupling-Grouped XY-QAOA for Joint Anomaly-Feature Selection",
   "paper_date": "2026-06-11",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-06-14T11:57:58",
+  "generated_at": "2026-06-15T15:50:38",
   "generator": "openai"
 }

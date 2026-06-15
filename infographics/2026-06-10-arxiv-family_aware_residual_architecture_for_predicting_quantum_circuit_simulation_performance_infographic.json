@@ -1,13 +1,13 @@
 {
-  "key_insight": "Quantum circuit simulation cost is strongly family-dependent, so adding family-specific residual corrections to a shared predictor improves estimates of approximation threshold and runtime.",
-  "engineering_relevance": "The model can replace time-consuming trial-and-error tuning for tensor-network simulators by predicting near-optimal settings from OpenQASM and execution context in about 50 ms.",
+  "key_insight": "Quantum simulation cost is strongly family-dependent, and adding family-aware residual corrections lets a model predict both the needed approximation threshold and runtime from an OpenQASM circuit description.",
+  "engineering_relevance": "This can replace slow trial-and-error tuning for tensor-network simulators, helping engineers choose simulation settings in milliseconds instead of running expensive test simulations.",
   "method": [
-    "Shared neural backbone for circuit-level cost prediction",
-    "Family-conditioned residual branches add algorithm-specific corrections",
-    "Uses pretrained family classifier plus heuristic gate-composition fingerprints"
+    "Shared neural backbone on circuit + execution-context features",
+    "Pretrained family classifier (97.5% accuracy) plus algorithm fingerprint heuristics",
+    "Family-specific residual heads to adjust threshold and runtime predictions"
   ],
-  "evidence_signal": "Evaluated on 7–130 qubit circuits across 10 families, the method reached 79.5% exact threshold accuracy, 91.2% within one rung, and runtime prediction with R² = 0.82.",
-  "watch_item": "Performance depends on accurate family classification and representative training data; unseen circuit families or atypical entanglement patterns may reduce reliability.",
+  "evidence_signal": "Across circuits from 7 to 130 qubits in 10 algorithm families, the method reached 79.5% exact threshold accuracy, 91.2% within one rung, and runtime prediction correlation of R² = 0.82 with about 50 ms inference.",
+  "watch_item": "Performance may depend on accurate family classification and on how well the training data covers new circuit families or unusual entanglement patterns.",
   "hashtags": [
     "#QuantumComputing",
     "#TensorNetworks",
@@ -19,6 +19,6 @@
   "paper_title": "Family-Aware Residual Architecture for Predicting Quantum Circuit Simulation Performance",
   "paper_date": "2026-06-10",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-06-14T11:58:15",
+  "generated_at": "2026-06-15T15:50:59",
   "generator": "openai"
 }

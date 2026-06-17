@@ -1,17 +1,17 @@
 {
-  "key_insight": "The paper introduces K-networks, a directed, basis-conditioned edge weight that captures how measuring one qubit reshapes the conditional state of another.",
-  "engineering_relevance": "K-networks provide a practical diagnostic for quantum circuits, revealing feed-forward, phase, and interaction structure from two-qubit reduced density matrices.",
+  "key_insight": "The paper introduces K-networks, a directed, basis-conditioned qubit-to-qubit diagnostic that quantifies how measuring one qubit reshapes another qubit’s conditional state.",
+  "engineering_relevance": "K-networks provide a compact way to inspect and compare multi-qubit circuit structure when full state inspection is impractical, helping reveal feed-forward, phase, and interaction patterns.",
   "method": [
-    "Define K_{i→j} from measurement outcomes on qubit i and the distinguishability of the resulting conditional states of qubit j.",
-    "Use a standard binary-ensemble distinguishability score to make the edge weight large when outcomes are balanced and target states differ, and zero when the source is deterministic or the target states match.",
-    "Compute the network entirely from two-qubit reduced density matrices, making it scalable as a circuit-state summary tool."
+    "Define a directed edge weight K_{i→j} from two-qubit reduced density matrices.",
+    "Use binary-ensemble distinguishability to score how different qubit j’s conditional states are after measuring qubit i.",
+    "Interpret K as a diagnostic graph layer rather than an entanglement measure."
   ],
-  "evidence_signal": "The abstract reports that K reduces to tangle for pure two-qubit states, can reach 1 for separable mixed states, and is illustrated on teleportation, Grover, QAOA, and random circuit families.",
-  "watch_item": "K is a diagnostic summary rather than an entanglement measure, so high values should not be interpreted as proof of quantum correlation.",
+  "evidence_signal": "The abstract reports examples across teleportation, Grover, QAOA, and random circuit families, and notes that for pure two-qubit states K reduces to the tangle while separable mixed states can still reach K=1.",
+  "watch_item": "Because K is basis-specific and diagnostic rather than an entanglement metric, results can depend strongly on measurement choice and should not be over-interpreted as physical correlation strength.",
   "hashtags": [
     "#QuantumComputing",
     "#QuantumCircuits",
-    "#GraphAnalysis",
+    "#QubitNetworks",
     "#QuantumDiagnostics",
     "#QAOA"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "What does measuring one qubit reveal about another? $K$-networks as a directed diagnostic for quantum circuits",
   "paper_date": "2026-06-15",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-06-16T15:11:26",
+  "generated_at": "2026-06-17T13:42:19",
   "generator": "openai"
 }

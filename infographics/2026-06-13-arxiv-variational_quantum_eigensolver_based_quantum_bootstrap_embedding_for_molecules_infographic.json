@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper shows that variational quantum eigensolvers can be used as fragment solvers inside bootstrap embedding to accurately simulate strongly correlated molecules on near-term quantum hardware.",
-  "engineering_relevance": "This provides a practical path to reduce qubit requirements while preserving chemical accuracy, making larger molecular energy calculations more feasible on NISQ devices.",
+  "key_insight": "The paper shows that variational quantum eigensolvers can be used as fragment solvers inside quantum bootstrap embedding to accurately simulate correlated molecules on near-term hardware.",
+  "engineering_relevance": "This provides a practical path to reduce qubit requirements and improve scalability for molecular quantum simulation on noisy intermediate-scale quantum devices.",
   "method": [
-    "Build a quantum bootstrap embedding workflow with VQE solving each molecular fragment.",
-    "Introduce FastAdaptVQE to speed ADAPT-VQE using sparse-matrix statevector linear algebra.",
-    "Add MatrixFreeAdaptVQE and a look-ahead operator selection strategy to improve scalability and convergence."
+    "Split the molecule into fragments and embed each fragment in a self-consistent bath via bootstrap embedding.",
+    "Use VQE-based fragment solvers, with FastAdaptVQE and MatrixFreeAdaptVQE accelerating ADAPT-VQE operator selection and memory usage.",
+    "Replace greedy operator choice with a look-ahead strategy to improve convergence and robustness."
   ],
-  "evidence_signal": "Benchmarks on H4 and F2 achieved chemical accuracy, within 1 kcal/mol of bootstrap embedding results using full configuration interaction (FCI) as the reference.",
-  "watch_item": "The approach still depends on careful fragmenting, operator selection, and managing memory/computation bottlenecks as fragment sizes grow.",
+  "evidence_signal": "Benchmarks on H4 and F2 reached chemical accuracy, within 1 kcal/mol of bootstrap embedding results obtained with a full configuration interaction solver.",
+  "watch_item": "Performance still depends on fragment size, operator-selection strategy, and the statevector/sparse-linear-algebra overhead needed for larger fragments.",
   "hashtags": [
     "#QuantumComputing",
     "#VQE",
-    "#ADAPTVQE",
+    "#BootstrapEmbedding",
     "#QuantumChemistry",
-    "#BootstrapEmbedding"
+    "#NearTermQuantum"
   ],
   "paper_id": "2026-06-13-arxiv-variational_quantum_eigensolver_based_quantum_bootstrap_embedding_for_molecules",
   "paper_title": "Variational Quantum Eigensolver-Based Quantum Bootstrap Embedding for Molecules",
   "paper_date": "2026-06-13",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-06-17T13:41:41",
+  "generated_at": "2026-06-18T12:53:16",
   "generator": "openai"
 }

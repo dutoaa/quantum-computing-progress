@@ -1,24 +1,24 @@
 {
-  "key_insight": "IncrementalExecution estimates the minimum shots needed for a fixed quantum circuit by stopping when additional executions no longer materially change the measured output distribution.",
-  "engineering_relevance": "This can cut quantum runtime and cost on noisy cloud hardware by avoiding unnecessary shots while preserving a target level of result fidelity.",
+  "key_insight": "The paper introduces an online shot-stopping framework that halts quantum circuit execution when extra shots stop meaningfully changing the empirical output distribution.",
+  "engineering_relevance": "This can cut runtime and cost on noisy quantum hardware by using only the shots needed to reach a target distribution stability for static circuits.",
   "method": [
-    "Runs shots incrementally rather than in one fixed batch.",
-    "Checks for the point of diminishing returns using the empirical output distribution.",
-    "Supports customizable shot-management policies in a black-box setting with no circuit- or noise-model assumptions."
+    "IncrementalExecution monitors the evolving empirical distribution after each batch of shots.",
+    "It applies a point-of-diminishing-returns stopping rule to decide when to stop.",
+    "The framework allows customizable shot-management policies for different cost–fidelity trade-offs."
   ],
-  "evidence_signal": "The paper reports evaluation across 33,750 framework configurations and 180 unique static circuit-backend combinations, totaling 7.3M independent experiments.",
-  "watch_item": "Because the method is tuned for static circuits, its stopping behavior may need revalidation when circuits, noise conditions, or backend performance drift over time.",
+  "evidence_signal": "The authors evaluated 33,750 framework configurations over 180 static circuit-backend combinations, totaling 7.3M independent experiments.",
+  "watch_item": "The approach is designed for static black-box circuits, so its stopping policy may need retuning for highly dynamic workflows or when backend conditions drift.",
   "hashtags": [
     "#QuantumComputing",
+    "#QuantumCircuits",
     "#ShotOptimization",
-    "#QuantumAlgorithms",
-    "#CloudQuantum",
-    "#NoisyIntermediateScaleQuantum"
+    "#NoisyIntermediateScaleQuantum",
+    "#QuantumAlgorithms"
   ],
   "paper_id": "2026-06-15-arxiv-how_many_shots_are_enough_for_a_quantum_circuit",
   "paper_title": "How Many Shots Are Enough for a Quantum Circuit?",
   "paper_date": "2026-06-15",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-06-17T13:41:50",
+  "generated_at": "2026-06-18T12:53:25",
   "generator": "openai"
 }

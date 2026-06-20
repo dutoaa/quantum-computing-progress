@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-06-19
+Generated: 2026-06-20
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Gatekeepers and Hallucinations: A Layered Evaluation Framework for LLM-Driven Quantum Circuit Generation
@@ -35,21 +35,21 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.20153v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-optimizing_resource_allocation_for_accuracy_in_noisy_variational_quantum_algorithms_infographic.json
 
-## 5. General circuit mapping algorithm for neutral atom quantum computers
-
-- Date: 2026-06-18
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.20503v1
-- PDF: https://arxiv.org/pdf/2606.20503v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-general_circuit_mapping_algorithm_for_neutral_atom_quantum_computers_infographic.json
-
-## 6. Quantum-Accelerated Self-Consistent Field: A Hybrid Algorithm
+## 5. Quantum-Accelerated Self-Consistent Field: A Hybrid Algorithm
 
 - Date: 2026-06-18
 - Category: Quantum Algorithms
 - arXiv: https://arxiv.org/abs/2606.20176v1
 - PDF: https://arxiv.org/pdf/2606.20176v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-quantum_accelerated_self_consistent_field_a_hybrid_algorithm_infographic.json
+
+## 6. General circuit mapping algorithm for neutral atom quantum computers
+
+- Date: 2026-06-18
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.20503v1
+- PDF: https://arxiv.org/pdf/2606.20503v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-general_circuit_mapping_algorithm_for_neutral_atom_quantum_computers_infographic.json
 
 ## 7. Exploiting More Than Symmetry in Variational Quantum Machine Learning
 
@@ -91,31 +91,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.20238v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-random_projections_for_multi_copy_quantum_algorithms_infographic.json
 
-## 12. Entanglement Scaling and Problem Structure in Quantum Approximate and Adiabatic Optimization Algorithms
-
-- Date: 2026-06-17
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.19502v1
-- PDF: https://arxiv.org/pdf/2606.19502v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-17-arxiv-entanglement_scaling_and_problem_structure_in_quantum_approximate_and_adiabatic_optimizati_infographic.json
-
-## 13. Entropy Estimation in Multi-Qutrit Systems via Variational and Classical Neural Networks
-
-- Date: 2026-06-18
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.20504v1
-- PDF: https://arxiv.org/pdf/2606.20504v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-entropy_estimation_in_multi_qutrit_systems_via_variational_and_classical_neural_networks_infographic.json
-
-## 14. Quantum ring all-reduce: communication and privacy advantages for distributed learning
-
-- Date: 2026-06-18
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2606.20344v1
-- PDF: https://arxiv.org/pdf/2606.20344v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-quantum_ring_all_reduce_communication_and_privacy_advantages_for_distributed_learning_infographic.json
-
-## 15. Applications of quantum annealing to magnetic dipole hyperfine structure constants: First results beyond energies for atoms
+## 12. Applications of quantum annealing to magnetic dipole hyperfine structure constants: First results beyond energies for atoms
 
 - Date: 2026-06-18
 - Category: Quantum Hardware
@@ -123,31 +99,31 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.20166v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-applications_of_quantum_annealing_to_magnetic_dipole_hyperfine_structure_constants_first_r_infographic.json
 
-## 16. Computing noise-canceling observables via Pauli propagation
-
-- Date: 2026-06-18
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.20441v1
-- PDF: https://arxiv.org/pdf/2606.20441v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-computing_noise_canceling_observables_via_pauli_propagation_infographic.json
-
-## 17. Vine Codes: Low-Overhead Quantum LDPC Codes on a Planar Square Grid
-
-- Date: 2026-06-18
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.20263v1
-- PDF: https://arxiv.org/pdf/2606.20263v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-vine_codes_low_overhead_quantum_ldpc_codes_on_a_planar_square_grid_infographic.json
-
-## 18. Exceptional-Point-Anchored Variational Quantum Eigensolver for Non-Hermitian Many-Body Phase Diagrams: Bridging Skin-Effect Topology and Entanglement Criticality on NISQ Hardware
+## 13. Entanglement Scaling and Problem Structure in Quantum Approximate and Adiabatic Optimization Algorithms
 
 - Date: 2026-06-17
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.18916v1
-- PDF: https://arxiv.org/pdf/2606.18916v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-17-arxiv-exceptional_point_anchored_variational_quantum_eigensolver_for_non_hermitian_many_body_pha_infographic.json
+- arXiv: https://arxiv.org/abs/2606.19502v1
+- PDF: https://arxiv.org/pdf/2606.19502v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-17-arxiv-entanglement_scaling_and_problem_structure_in_quantum_approximate_and_adiabatic_optimizati_infographic.json
 
-## 19. Quantum Chip Paradigm Framework
+## 14. Entropy Estimation in Multi-Qutrit Systems via Variational and Classical Neural Networks
+
+- Date: 2026-06-18
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.20504v1
+- PDF: https://arxiv.org/pdf/2606.20504v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-entropy_estimation_in_multi_qutrit_systems_via_variational_and_classical_neural_networks_infographic.json
+
+## 15. Quantum ring all-reduce: communication and privacy advantages for distributed learning
+
+- Date: 2026-06-18
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2606.20344v1
+- PDF: https://arxiv.org/pdf/2606.20344v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-quantum_ring_all_reduce_communication_and_privacy_advantages_for_distributed_learning_infographic.json
+
+## 16. Quantum Chip Paradigm Framework
 
 - Date: 2026-06-16
 - Category: Quantum Error Correction
@@ -155,10 +131,34 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.17899v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-16-arxiv-quantum_chip_paradigm_framework_infographic.json
 
-## 20. Benchmark of quantum algorithms for ground state preparation in the presence of noise
+## 17. Scalable quantum circuit knitting using a weak-coupling approximation
+
+- Date: 2026-06-17
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2606.19035v2
+- PDF: https://arxiv.org/pdf/2606.19035v2
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-17-arxiv-scalable_quantum_circuit_knitting_using_a_weak_coupling_approximation_infographic.json
+
+## 18. Computing noise-canceling observables via Pauli propagation
 
 - Date: 2026-06-18
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2606.20551v1
-- PDF: https://arxiv.org/pdf/2606.20551v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-benchmark_of_quantum_algorithms_for_ground_state_preparation_in_the_presence_of_noise_infographic.json
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.20441v1
+- PDF: https://arxiv.org/pdf/2606.20441v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-computing_noise_canceling_observables_via_pauli_propagation_infographic.json
+
+## 19. Vine Codes: Low-Overhead Quantum LDPC Codes on a Planar Square Grid
+
+- Date: 2026-06-18
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.20263v1
+- PDF: https://arxiv.org/pdf/2606.20263v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-18-arxiv-vine_codes_low_overhead_quantum_ldpc_codes_on_a_planar_square_grid_infographic.json
+
+## 20. Nonequilibrium steady states induced by stochastic mid-circuit measurements and resets on a quantum computer
+
+- Date: 2026-06-17
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.19027v1
+- PDF: https://arxiv.org/pdf/2606.19027v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-17-arxiv-nonequilibrium_steady_states_induced_by_stochastic_mid_circuit_measurements_and_resets_on_infographic.json

@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-06-20
+Generated: 2026-06-21
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Gatekeepers and Hallucinations: A Layered Evaluation Framework for LLM-Driven Quantum Circuit Generation

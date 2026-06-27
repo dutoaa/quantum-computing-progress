@@ -25,29 +25,29 @@
         "url": "https://arxiv.org/pdf/2606.26873v1"
       }
     ],
-    "score": 85,
+    "score": 90,
     "infographic": {
-      "key_insight": "The paper shows that a quantum graph neural network can implement permutation-equivariant message passing and be positioned at a chosen Weisfeiler-Leman level, giving it a principled expressivity guarantee for graph learning.",
-      "engineering_relevance": "This provides a scalable near-term quantum design for graph-structured problems, with pre-training and low-cost readout aimed at improving trainability and practical deployment.",
+      "key_insight": "The paper introduces a scalable quantum graph neural network that explicitly performs message passing, is permutation equivariant, and matches a chosen level in the Weisfeiler-Leman hierarchy.",
+      "engineering_relevance": "It offers a near-term quantum learning framework with expressivity guarantees and a low-cost readout that can scale to larger graphs, making it relevant for chemistry, biology, and combinatorial optimization.",
       "method": [
-        "Builds a quantum message-passing GNN that mirrors classical GNN structure.",
-        "Uses the Weisfeiler-Leman hierarchy to characterize and control graph distinguishability.",
-        "Trains first on smaller graph instances to support pre-training and scalability."
+        "Design a quantum GNN that implements message passing in a circuit form.",
+        "Ensure permutation equivariance and controllable graph-discrimination power via the Weisfeiler-Leman hierarchy.",
+        "Use pre-training on small graph instances to improve trainability and scale to larger problems."
       ],
-      "evidence_signal": "The framework was tested in large-scale simulations up to 56 qubits across three datasets, including synthetic hard cases, molecular property prediction, and the travelling salesperson problem.",
-      "watch_item": "Performance claims are based on simulation and model design; real hardware noise and circuit depth may affect scalability and readout fidelity.",
+      "evidence_signal": "The framework was validated in large-scale simulations up to 56 qubits across three datasets, including synthetic graphs, molecular property prediction, and the travelling salesperson problem.",
+      "watch_item": "The approach still depends on variational quantum circuit training, so practical performance may be limited by optimization, noise, and hardware scalability.",
       "hashtags": [
-        "#QuantumML",
+        "#QuantumMachineLearning",
         "#GraphNeuralNetworks",
         "#WeisfeilerLeman",
-        "#QuantumAlgorithms",
-        "#ScalableComputing"
+        "#MessagePassing",
+        "#QuantumAlgorithms"
       ],
       "paper_id": "2026-06-25-arxiv-scalable_message_passing_quantum_graph_neural_networks_in_the_weisfeiler_leman_hierarchy",
       "paper_title": "Scalable Message-Passing Quantum Graph Neural Networks in the Weisfeiler-Leman Hierarchy",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-27T11:27:07",
+      "generated_at": "2026-06-26T12:11:14",
       "generator": "openai"
     }
   },
@@ -78,29 +78,29 @@
         "url": "https://arxiv.org/pdf/2606.26312v1"
       }
     ],
-    "score": 81,
+    "score": 86,
     "infographic": {
-      "key_insight": "The paper introduces a variational autoencoder that learns task-specific quantum embeddings, compressing classical data into a compact qubit representation that remains reconstructable and useful for downstream learning.",
-      "engineering_relevance": "This provides a practical pathway for designing quantum data encodings that reduce qubit requirements while preserving task performance, which is important for near-term quantum ML on noisy hardware.",
+      "key_insight": "The paper introduces a variational autoencoder that learns task-specific quantum embeddings, compressing classical data into a compact quantum representation that remains reconstructable.",
+      "engineering_relevance": "This offers a practical path to quantum feature encoding for machine learning, reducing embedding assumptions while enabling downstream classifiers to work on noisy hardware.",
       "method": [
-        "Train a variational autoencoder to learn quantum embeddings from classical data",
-        "Use a learned decoder to reconstruct the original input from polynomially many measurements",
-        "Feed the compact quantum representation into a circuit-centric quantum classifier"
+        "Train a variational autoencoder to map classical inputs into a quantum latent space.",
+        "Use a learned decoder to reconstruct the original data from the quantum embedding.",
+        "Feed the embedding into a circuit-centric quantum classifier for task evaluation."
       ],
-      "evidence_signal": "The abstract reports that ImageNet-scale data can be compressed into a 13-qubit representation, and on MNIST (3 vs 5) the method reaches 98.5% validation accuracy, close to a 99.7% classical baseline and far above naive amplitude embedding.",
-      "watch_item": "Reconstruction and classification depend on a learned embedding-decoder pair, so training stability, measurement overhead, and hardware noise sensitivity may affect transfer to larger or more complex deployments.",
+      "evidence_signal": "The authors report 98.5% validation accuracy on MNIST (3 vs 5), compress ImageNet-sized data into a 13-qubit representation, and validate reconstructability on IBM hardware.",
+      "watch_item": "The approach depends on trained encoder/decoder circuits and polynomial-measurement recovery, so circuit depth, training stability, and hardware noise may limit scalability.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#VariationalAutoencoder",
         "#QuantumEmbeddings",
-        "#NoisyIntermediateScaleQuantum",
-        "#QuantumAI"
+        "#QuantumNeuralNetworks",
+        "#IBMQuantum"
       ],
       "paper_id": "2026-06-24-arxiv-tailor_made_embeddings_for_quantum_machine_learning",
       "paper_title": "Tailor Made Embeddings for Quantum Machine Learning",
       "paper_date": "2026-06-24",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-06-27T11:27:10",
+      "generated_at": "2026-06-26T12:11:18",
       "generator": "openai"
     }
   },
@@ -131,29 +131,29 @@
         "url": "https://arxiv.org/pdf/2606.27119v1"
       }
     ],
-    "score": 79,
+    "score": 84,
     "infographic": {
-      "key_insight": "Neural transfer unification (NTU) lets a foundation decoder learn decoding structure on smaller quantum codes and transfer that knowledge to larger code distances efficiently.",
-      "engineering_relevance": "This offers a scalable path to fault-tolerant quantum decoding, reducing the training and syndrome-generation burden as code size grows.",
+      "key_insight": "Neural transfer unification (NTU) lets a foundation decoder reuse knowledge across code distances, reducing the training bottleneck for large fault-tolerant quantum codes.",
+      "engineering_relevance": "The framework offers a practical path to scalable, amortized decoder training for quantum processors that need accurate decoding at larger code distances.",
       "method": [
-        "Align decoding tasks across code distances using algebraic structure shared by scalable code families.",
-        "Use a transformer-based decoder (NTU-Transformer) for planar surface codes and bivariate bicycle codes.",
-        "Transfer learned decoding knowledge from smaller codes to accelerate optimization on larger codes."
+        "Align decoding tasks across distances using shared algebraic structure in scalable code families.",
+        "Train on smaller codes first, then transfer learned parameters to larger codes for faster adaptation.",
+        "Instantiate the framework as NTU-Transformer for planar surface codes and bivariate bicycle codes."
       ],
-      "evidence_signal": "In the abstract, NTU-Transformer outperforms correlation-aware matching on the [![361,1,19]!] planar surface code, scales to [![625,1,25]!] with transfer adaptation, and beats Relay-BP on the [![72,12,6]!] bivariate bicycle code at low physical error rates.",
-      "watch_item": "Performance gains depend on code-family structure and transfer setup, so generalization to other codes or noise models may require additional adaptation and evaluation.",
+      "evidence_signal": "In the abstract, NTU-Transformer is reported to beat correlation-aware matching on the [ [361,1,19] ] planar surface code, scale to [ [625,1,25] ] with transfer adaptation, and outperform Relay-BP on the [ [72,12,6] ] bivariate bicycle code in the low-physical-error regime.",
+      "watch_item": "Performance gains depend on suitable algebraic alignment and transferability across code families, so results may not generalize without careful code-structure matching and tuning.",
       "hashtags": [
         "#QuantumErrorCorrection",
         "#FaultTolerantQC",
         "#NeuralDecoding",
-        "#TransformerModels",
-        "#QuantumComputing"
+        "#SurfaceCodes",
+        "#Transformer"
       ],
       "paper_id": "2026-06-25-arxiv-efficient_foundation_decoders_for_fault_tolerant_quantum_computing",
       "paper_title": "Efficient foundation decoders for fault-tolerant quantum computing",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-27T11:27:12",
+      "generated_at": "2026-06-26T12:11:20",
       "generator": "openai"
     }
   },
@@ -183,29 +183,29 @@
         "url": "https://arxiv.org/pdf/2606.26865v1"
       }
     ],
-    "score": 77,
+    "score": 82,
     "infographic": {
-      "key_insight": "The paper introduces quantum physics-informed neural networks (QPINNs) to solve nonlinear integro-differential and fractional PDEs by embedding governing equations directly into quantum trial solutions.",
-      "engineering_relevance": "This provides a quantum-enabled alternative for physics-informed simulation of nonlocal dynamical systems where standard PINNs struggle with integral and fractional operators.",
+      "key_insight": "The paper shows that quantum neural networks can be trained as physics-informed solvers for nonlocal integro-differential and fractional PDEs, with a provable $L^2(\\mu)$ approximation rate of $\\mathcal{O}(n^{-1/2})$.",
+      "engineering_relevance": "This opens a quantum-based route for simulating complex systems with memory, nonlocal interactions, and fractional dynamics that are hard to handle with standard PINNs.",
       "method": [
-        "Use an affine feature map plus variational quantum circuits to generate trigonometric trial solutions.",
-        "Train the QPINN against PDE residuals; compute local derivatives by automatic differentiation.",
-        "Handle nonlocal terms either with numerical quadrature (N-QPINN) or with auxiliary variables that convert the problem into a coupled PDE system (A-QPINN)."
+        "Affine feature map + variational quantum circuit produce trigonometric trial solutions.",
+        "N-QPINN uses numerical quadrature for nonlocal/fractional terms and automatic differentiation for local derivatives.",
+        "A-QPINN replaces quadrature with auxiliary variables, turning each problem into a coupled PDE system with multi-output quantum networks."
       ],
-      "evidence_signal": "The abstract reports a quantitative L2(μ) universal approximation result with O(n^-1/2) convergence and numerical experiments showing better accuracy than classical PINNs.",
-      "watch_item": "Quantum circuit depth, quadrature cost, and auxiliary-system design may limit scalability and practical near-term performance on larger PDE systems.",
+      "evidence_signal": "The abstract reports a series of numerical experiments showing accurate solutions on nonlinear IDEs and FIPDEs, with performance outperforming classical physics-informed neural networks.",
+      "watch_item": "Practical deployment may be constrained by quadrature cost, circuit training stability, and quantum hardware noise, especially for higher-dimensional or stiff nonlocal problems.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#QPINN",
         "#PhysicsInformedNN",
         "#FractionalPDE",
-        "#ScientificComputing"
+        "#IntegroDifferentialEquations"
       ],
       "paper_id": "2026-06-25-arxiv-quantum_physics_informed_neural_networks_for_solving_integro_and_fractional_pdes",
       "paper_title": "Quantum Physics-Informed Neural Networks for Solving Integro and Fractional PDEs",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-06-27T11:27:14",
+      "generated_at": "2026-06-26T12:11:24",
       "generator": "openai"
     }
   },
@@ -234,29 +234,80 @@
         "url": "https://arxiv.org/pdf/2606.27017v1"
       }
     ],
-    "score": 76,
+    "score": 81,
     "infographic": {
-      "key_insight": "A fixed-frequency four-transmon lattice-patch architecture couples qubits to one coupler to improve connectivity and map directly onto surface-code plaquettes for more scalable fault-tolerant quantum computing.",
-      "engineering_relevance": "The design reduces frequency-crowding and compilation overhead while avoiding flux-noise sensitivity, making it a practical hardware building block for larger superconducting processors.",
+      "key_insight": "A fixed-frequency four-transmon lattice-patch architecture can serve as a surface-code-friendly building block while achieving high-fidelity CNOT gates in all connectivity directions.",
+      "engineering_relevance": "The design reduces frequency-crowding and mapping overhead compared with conventional qubit-coupler-qubit layouts, making it a promising hardware primitive for scalable fault-tolerant quantum processors.",
       "method": [
-        "Four fixed-frequency transmons are connected to a single fixed-frequency coupler in a lattice-patch layout.",
-        "The patch is designed to align naturally with surface-code lattice units (plaquettes).",
-        "Cross-resonance control is used, with virtual Rz phase corrections to compensate residual phases."
+        "Couple four fixed-frequency transmons to one fixed-frequency coupler in a lattice-patch arrangement.",
+        "Map the patch directly onto a surface-code plaquette to simplify logical-qubit compilation.",
+        "Use virtual Rz phase updates to correct residual phases from cross-resonance driving."
       ],
-      "evidence_signal": "Multi-level numerical simulations report CNOT fidelities above 0.98 for all six connectivity directions in the patch.",
-      "watch_item": "Residual phase accumulation from the complex four-qubit interaction network requires careful calibration and software phase correction.",
+      "evidence_signal": "Multi-level simulations report CNOT gate fidelities above 0.98 across all six connectivity directions in the patch.",
+      "watch_item": "Cross-resonance driving introduces residual phase accumulation, so careful calibration is required to maintain gate fidelity.",
       "hashtags": [
-        "#QuantumComputing",
+        "#QuantumHardware",
         "#SuperconductingQubits",
         "#Transmon",
         "#SurfaceCode",
-        "#QuantumHardware"
+        "#CNOTGate"
       ],
       "paper_id": "2026-06-25-arxiv-lattice_patch_structure_for_fixed_frequency_transmon_quantum_computer_with_high_fidelity_c",
       "paper_title": "Lattice patch structure for fixed-frequency transmon quantum computer with high-fidelity CNOT gates",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-06-27T11:27:16",
+      "generated_at": "2026-06-26T12:11:26",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-arxiv-high_rate_and_resource_efficient_all_photonic_quantum_repeater_architectures_with_9_km_rep",
+    "arxiv_id": "2606.25314v1",
+    "date": "2026-06-24",
+    "title": "High-Rate and Resource-Efficient All-Photonic Quantum Repeater Architectures with 9 km Repeater Spacing",
+    "authors": "Ryosuke Shiina, Kenneth Goodenough, Nathan Arnold, Filip Rozpędek",
+    "abstract": "Quantum communication between two distant parties will serve as a cornerstone of the future quantum internet. However, generating enough entangled Bell pairs over long distances is a critical bottleneck. Although photons are ideal carriers of quantum information, overcoming photon loss and the exponential attenuation of signals remains a major challenge. We propose an all-photonic quantum repeater architecture that enables quantum communication over 1,000 km with an equidistant repeater spacing of 9 km. This repeater spacing is enabled by elementary entangled Bell pairs protected through the concatenation of continuous-variable and discrete-variable quantum error correction codes, namely, the bosonic Gottesman-Kitaev-Preskill (GKP) code and the [[7,1,3]] Steane code, whose combination yields a synergistic improvement in robustness against photon loss. This architecture incorporates a new ranking criterion and a multi-reflection mirror-based optical cavity as a free-space photonic memory module, which we model in terms of its length and mirror-reflection efficiency. Additionally, we propose two heuristic construction methods for the elementary entangled Bell pairs. One method introduces up to two-qubit correlated errors within each logical qubit but requires a large number of GKP qubits, while the other allows up to three-qubit correlated errors within each logical qubit but requires fewer GKP qubits. To more accurately capture realistic physical conditions during photonic resource preparation, we include switching-induced imperfections in our simulations, in addition to other standard optical imperfections. In the presence of these imperfections, our realization requires only a few thousand GKP qubits per repeater station per protocol run, a resource requirement significantly smaller than the corresponding resource requirements of prior third-generation all-photonic repeater proposals.",
+    "category": "Quantum Error Correction",
+    "source": "arXiv",
+    "published": "2026-06-24T02:26:48Z",
+    "updated": "2026-06-24T02:26:48Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.25314v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.25314v1"
+      }
+    ],
+    "score": 79,
+    "infographic": {
+      "key_insight": "A concatenated GKP + Steane all-photonic repeater can extend quantum communication to 1,000 km with 9 km spacing while remaining resource-efficient.",
+      "engineering_relevance": "The design reduces photon-loss bottlenecks in quantum networks and offers a practical path toward scalable, long-distance photonic quantum repeaters.",
+      "method": [
+        "Use bosonic GKP encoding inside the [[7,1,3]] Steane code to boost loss tolerance.",
+        "Add a multi-reflection mirror optical cavity as a free-space photonic memory model.",
+        "Construct elementary Bell pairs with two heuristic schemes that trade correlated-error tolerance against GKP-qubit count."
+      ],
+      "evidence_signal": "Simulations including switching-induced imperfections and standard optical losses indicate only a few thousand GKP qubits are needed per repeater station per protocol run.",
+      "watch_item": "The architecture depends on realistic high-efficiency mirrors, low-loss switching, and accurate preparation of encoded Bell pairs, which may be difficult to realize experimentally.",
+      "hashtags": [
+        "#QuantumRepeater",
+        "#QuantumNetworking",
+        "#PhotonicQuantumComputing",
+        "#GKPCode",
+        "#QuantumErrorCorrection"
+      ],
+      "paper_id": "2026-06-24-arxiv-high_rate_and_resource_efficient_all_photonic_quantum_repeater_architectures_with_9_km_rep",
+      "paper_title": "High-Rate and Resource-Efficient All-Photonic Quantum Repeater Architectures with 9 km Repeater Spacing",
+      "paper_date": "2026-06-24",
+      "paper_category": "Quantum Error Correction",
+      "generated_at": "2026-06-26T12:11:29",
       "generator": "openai"
     }
   },
@@ -288,78 +339,27 @@
     ],
     "score": 76,
     "infographic": {
-      "key_insight": "A monolithic ultralow-loss Si3N4 photonic chip can integrate photon-pair generation, qubit fusion, and state analysis to overcome loss-limited scaling in discrete-variable quantum processing.",
-      "engineering_relevance": "This work advances manufacturable, CMOS-compatible quantum photonics by demonstrating a practical platform for higher-rate, larger-scale on-chip quantum circuits.",
+      "key_insight": "An ultralow-loss silicon nitride photonic chip can integrate photon sources, fusion gates, and interferometric readout to enable scalable discrete-variable quantum information processing with high-fidelity states and much higher count rates.",
+      "engineering_relevance": "By reducing optical loss on a CMOS-compatible 150-mm platform, this work addresses the main system-level barrier to scaling integrated photonic quantum processors beyond proof-of-principle experiments.",
       "method": [
-        "Integrated narrowband photon-pair sources on Si3N4",
-        "Built low-loss qubit-fusion circuits for combining EPR pairs",
-        "Used reconfigurable interferometers for on-chip state analysis"
+        "Monolithic Si3N4 integration of narrowband photon-pair sources with low-loss qubit-fusion circuits.",
+        "Reconfigurable on-chip interferometers for state analysis and characterization.",
+        "Fusion of two EPR states to generate four-photon GHZ states on chip."
       ],
-      "evidence_signal": "The platform produced EPR states with fidelity 0.9875(3), heralded HOM visibility of 0.990(6), and four-photon GHZ states with fidelity 0.943(8) at a 27 Hz fourfold count rate.",
-      "watch_item": "Despite strong performance, scaling still depends on maintaining ultralow loss and tight device uniformity as circuit depth and source count increase.",
+      "evidence_signal": "The abstract reports EPR-state fidelity of 0.9875(3), heralded HOM visibility of 0.990(6), four-photon GHZ fidelity of 0.943(8), and a fourfold count rate of 27 Hz.",
+      "watch_item": "Performance depends on maintaining extremely low optical loss across sources, routing, fusion, and analysis, so fabrication variability and packaging losses could still limit system-scale scaling.",
       "hashtags": [
         "#QuantumHardware",
-        "#Photonics",
         "#IntegratedPhotonics",
-        "#Si3N4",
-        "#QuantumInformation"
+        "#SiliconNitride",
+        "#QuantumInformation",
+        "#PhotonicQuantumComputing"
       ],
       "paper_id": "2026-06-25-arxiv-an_ultralow_loss_integrated_photonic_platform_for_discrete_variable_quantum_information_pr",
       "paper_title": "An ultralow-loss integrated photonic platform for discrete-variable quantum information processing",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-06-27T11:27:19",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-24-arxiv-high_rate_and_resource_efficient_all_photonic_quantum_repeater_architectures_with_9_km_rep",
-    "arxiv_id": "2606.25314v1",
-    "date": "2026-06-24",
-    "title": "High-Rate and Resource-Efficient All-Photonic Quantum Repeater Architectures with 9 km Repeater Spacing",
-    "authors": "Ryosuke Shiina, Kenneth Goodenough, Nathan Arnold, Filip Rozpędek",
-    "abstract": "Quantum communication between two distant parties will serve as a cornerstone of the future quantum internet. However, generating enough entangled Bell pairs over long distances is a critical bottleneck. Although photons are ideal carriers of quantum information, overcoming photon loss and the exponential attenuation of signals remains a major challenge. We propose an all-photonic quantum repeater architecture that enables quantum communication over 1,000 km with an equidistant repeater spacing of 9 km. This repeater spacing is enabled by elementary entangled Bell pairs protected through the concatenation of continuous-variable and discrete-variable quantum error correction codes, namely, the bosonic Gottesman-Kitaev-Preskill (GKP) code and the [[7,1,3]] Steane code, whose combination yields a synergistic improvement in robustness against photon loss. This architecture incorporates a new ranking criterion and a multi-reflection mirror-based optical cavity as a free-space photonic memory module, which we model in terms of its length and mirror-reflection efficiency. Additionally, we propose two heuristic construction methods for the elementary entangled Bell pairs. One method introduces up to two-qubit correlated errors within each logical qubit but requires a large number of GKP qubits, while the other allows up to three-qubit correlated errors within each logical qubit but requires fewer GKP qubits. To more accurately capture realistic physical conditions during photonic resource preparation, we include switching-induced imperfections in our simulations, in addition to other standard optical imperfections. In the presence of these imperfections, our realization requires only a few thousand GKP qubits per repeater station per protocol run, a resource requirement significantly smaller than the corresponding resource requirements of prior third-generation all-photonic repeater proposals.",
-    "category": "Quantum Error Correction",
-    "source": "arXiv",
-    "published": "2026-06-24T02:26:48Z",
-    "updated": "2026-06-24T02:26:48Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.25314v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.25314v1"
-      }
-    ],
-    "score": 74,
-    "infographic": {
-      "key_insight": "By concatenating GKP and Steane error-correcting codes, the paper shows that an all-photonic repeater can reach 1,000 km communication with 9 km spacing while staying more resilient to photon loss.",
-      "engineering_relevance": "The design lowers repeater-node resource demands to only a few thousand GKP qubits per station per run, making large-scale quantum network deployment more practical.",
-      "method": [
-        "All-photonic repeater architecture with equidistant 9 km spacing",
-        "Concatenated bosonic GKP + [[7,1,3]] Steane codes for improved loss tolerance",
-        "Heuristic Bell-pair construction plus optical-cavity memory and switching-imperfection modeling"
-      ],
-      "evidence_signal": "Simulations incorporating standard optical imperfections and switching-induced errors indicate the proposed scheme can meet the target with substantially fewer GKP qubits than prior third-generation all-photonic repeater designs.",
-      "watch_item": "Performance depends on realistic control of optical imperfections, cavity mirror efficiency, and switching-induced errors, which may be challenging to achieve experimentally.",
-      "hashtags": [
-        "#QuantumRepeater",
-        "#AllPhotonicQuantum",
-        "#QuantumErrorCorrection",
-        "#GKPCode",
-        "#QuantumInternet"
-      ],
-      "paper_id": "2026-06-24-arxiv-high_rate_and_resource_efficient_all_photonic_quantum_repeater_architectures_with_9_km_rep",
-      "paper_title": "High-Rate and Resource-Efficient All-Photonic Quantum Repeater Architectures with 9 km Repeater Spacing",
-      "paper_date": "2026-06-24",
-      "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-27T11:27:22",
+      "generated_at": "2026-06-26T12:11:32",
       "generator": "openai"
     }
   },
@@ -389,29 +389,29 @@
         "url": "https://arxiv.org/pdf/2606.26233v1"
       }
     ],
-    "score": 69,
+    "score": 74,
     "infographic": {
-      "key_insight": "The paper proposes a fidelity-like accuracy metric for quantum annealing that measures the quality of the annealing process itself, not just whether the final optimization answer is correct.",
-      "engineering_relevance": "This gives hardware and algorithm developers a more robust benchmark for quantum annealers, enabling fairer comparisons across problems and platforms.",
+      "key_insight": "The paper proposes a fidelity-style accuracy metric for quantum annealing that evaluates the quality of the annealing process itself, not just whether the optimization problem is solved.",
+      "engineering_relevance": "This gives hardware teams a problem-independent benchmark for comparing annealers against classical thermal behavior and for setting concrete precision targets for future quantum annealing devices.",
       "method": [
-        "Define a quantum-annealing fidelity metric as an equation-of-state accuracy \\u03b5.",
-        "Benchmark it with simulated quantum annealing for Rydberg atom systems.",
-        "Use variational QMC and Green function QMC to estimate achievable precision at massive system sizes."
+        "Define an annealing fidelity metric as an accuracy ε for the annealer’s equation of state.",
+        "Benchmark ε using variational quantum Monte Carlo with a thermal-annealing-inspired ansatz on Rydberg atom systems.",
+        "Cross-check with Green function quantum Monte Carlo to reach higher-precision reference values."
       ],
-      "evidence_signal": "The abstract reports benchmarked accuracies of about \\u03b5\\u223c10^-2 to 10^-3 with variational QMC up to 100,000,000 atoms, and about \\u03b5\\u223c10^-4 with Green function QMC up to 100,000 atoms.",
-      "watch_item": "The metric is benchmarked in simulation, so experimental transferability and sensitivity to hardware-specific noise/control errors still need validation.",
+      "evidence_signal": "The simulations report ε≈10^-2 to 10^-3 up to 100,000,000 atoms with variational QMC and ε≈10^-4 up to 100,000 atoms with Green function QMC, exceeding current experimental platforms by orders of magnitude.",
+      "watch_item": "The metric is benchmarked on Rydberg-atom simulation models, so transferring the same precision claims to other hardware platforms or problem classes may require additional validation.",
       "hashtags": [
         "#QuantumAnnealing",
         "#QuantumComputing",
-        "#Benchmarking",
-        "#QuantumMonteCarlo",
-        "#RydbergAtoms"
+        "#MonteCarlo",
+        "#RydbergAtoms",
+        "#Benchmarking"
       ],
       "paper_id": "2026-06-24-arxiv-a_fidelity_metric_for_quantum_annealing_benchmarked_by_extreme_scaling_quantum_monte_carlo",
       "paper_title": "A fidelity metric for quantum annealing benchmarked by extreme scaling quantum Monte-Carlo simulations",
       "paper_date": "2026-06-24",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-27T11:27:25",
+      "generated_at": "2026-06-26T12:11:35",
       "generator": "openai"
     }
   },
@@ -440,29 +440,29 @@
         "url": "https://arxiv.org/pdf/2606.26085v1"
       }
     ],
-    "score": 69,
+    "score": 74,
     "infographic": {
-      "key_insight": "The paper introduces QSP-Control, an analytical quantum-control framework that uses quantum signal processing to design precise qubit-oscillator operations and suppress unwanted nonlinearities.",
-      "engineering_relevance": "It offers a systematic, interpretable alternative to heuristic pulse optimization for building more robust control protocols in superconducting and other hybrid quantum hardware.",
+      "key_insight": "The paper introduces QSP-Control, an analytical quantum-control framework that uses quantum signal processing to design precise qubit-oscillator operations and suppress unwanted nonlinear effects.",
+      "engineering_relevance": "It offers a systematic, interpretable way to engineer control pulses and Fock-state-selective operations for quantum hardware where heuristic optimization is brittle.",
       "method": [
-        "Map dispersively coupled qubit-oscillator dynamics into QSP-compatible forms.",
-        "Use QSP constructions to cancel cross-Kerr-induced nonlinear errors.",
-        "Design Fock-state-selective operators via structural parallels with Jaynes-Cummings interactions."
+        "Map dispersively coupled qubit-oscillator dynamics into QSP-friendly forms",
+        "Use QSP constructions to mitigate cross-Kerr-induced nonlinearities",
+        "Design Fock-state-selective operators via structural parallels to Jaynes-Cummings interactions"
       ],
-      "evidence_signal": "The abstract presents a theoretical framework with analytical constructions and error-guarantee motivation, but no numerical benchmarks or experimental evaluation are reported.",
-      "watch_item": "The approach is analytically elegant, but practical performance will depend on how well the required QSP sequences and control assumptions can be implemented on noisy hardware.",
+      "evidence_signal": "The abstract reports analytical constructions and error-guaranteed mappings for qubit-oscillator control, but does not mention a numerical benchmark or experimental dataset.",
+      "watch_item": "The approach appears mathematically elegant, but practical deployment will depend on how accurately real devices realize the required dispersive and Jaynes-Cummings-type interaction models.",
       "hashtags": [
+        "#QuantumComputing",
         "#QuantumControl",
         "#QuantumSignalProcessing",
-        "#QuantumAlgorithms",
-        "#QuantumComputing",
-        "#QubitOscillator"
+        "#QubitOscillator",
+        "#QuantumAlgorithms"
       ],
       "paper_id": "2026-06-24-arxiv-analytic_approach_to_quantum_control_using_quantum_signal_processing",
       "paper_title": "Analytic Approach to Quantum Control Using Quantum Signal Processing",
       "paper_date": "2026-06-24",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-27T11:27:27",
+      "generated_at": "2026-06-26T12:11:37",
       "generator": "openai"
     }
   },
@@ -491,29 +491,29 @@
         "url": "https://arxiv.org/pdf/2606.25870v1"
       }
     ],
-    "score": 69,
+    "score": 74,
     "infographic": {
-      "key_insight": "An LLM-driven evolutionary search can discover interpretable fermion-to-qubit encodings with verified code distance beyond prior GSE limits, reaching exact distance 5 and even 6 on one molecular instance.",
-      "engineering_relevance": "The resulting encodings reduce qubit overhead and improve logical-failure rates for molecular simulation benchmarks, making them attractive as resource-efficient wrappers around quantum chemistry workloads.",
+      "key_insight": "An LLM-guided evolutionary search can discover interpretable fermion-to-qubit encodings with verified higher code distance and better qubit compression than prior Generalized Superfast Encoding constructions.",
+      "engineering_relevance": "For molecular quantum simulation, these encodings reduce data-qubit overhead while preserving strict stabilizer-coset correctness, making them attractive as resource-efficient front ends for future algorithms.",
       "method": [
-        "LLM edits a constructor program for the GSE encoding",
-        "An external verifier scores exact stabilizer-coset distance and retains high performers",
-        "A second search uses verifier feedback to optimize compression while preserving verified distance"
+        "LLM edits constructor programs in an evolutionary loop",
+        "An external verifier scores exact code distance and compression",
+        "High-scoring programs are retained and re-mutated to refine encoding rules"
       ],
-      "evidence_signal": "On tested molecular instances, the search produced exact distance-5 codes and one distance-6 code, and at p=10^-3 the encodings used 4.2–5.0× fewer data qubits with 3.4–8.2× lower logical-failure rates versus the comparison route.",
-      "watch_item": "Results are limited to verified encoding-level metrics; the paper does not claim circuit-level fault tolerance, Trotter-cost improvements, or guaranteed scaling beyond the tested instances.",
+      "evidence_signal": "On tested molecular instances, the search produced exact distance-5 codes and a distance-6 code on one 20-mode case, while using 4.2–5.0× fewer data qubits and showing 3.4–8.2× lower logical-failure rates in a memory comparison.",
+      "watch_item": "The reported gains are limited to verified encoding and memory-resource metrics; the authors do not claim circuit-level fault-tolerance or Trotter-cost improvements.",
       "hashtags": [
-        "#QuantumComputing",
         "#QuantumSimulation",
-        "#ErrorCorrection",
-        "#LLMforScience",
-        "#ProgramSynthesis"
+        "#QuantumErrorCorrection",
+        "#ProgramSynthesis",
+        "#MolecularModeling",
+        "#LLMforScience"
       ],
       "paper_id": "2026-06-24-arxiv-evolving_quantum_error_correcting_encodings_for_molecular_simulation",
       "paper_title": "Evolving Quantum Error-Correcting Encodings for Molecular Simulation",
       "paper_date": "2026-06-24",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-06-27T11:27:30",
+      "generated_at": "2026-06-26T12:11:40",
       "generator": "openai"
     }
   },
@@ -542,29 +542,29 @@
         "url": "https://arxiv.org/pdf/2606.27105v1"
       }
     ],
-    "score": 68,
+    "score": 73,
     "infographic": {
-      "key_insight": "Witness expansion unifies analytical and experimentally measurable nonlinear resource witnesses for mixed quantum states under a common free-unitary framework.",
-      "engineering_relevance": "It provides practical, multi-copy criteria to benchmark quantum devices and detect coherence, entanglement, magic, and fermionic non-Gaussianity beyond pure-state settings.",
+      "key_insight": "Witness expansion is a unified way to build nonlinear, polynomial resource witnesses that detect mixed-state quantum resources using multiple copies and can recover many known criteria while enabling new ones.",
+      "engineering_relevance": "It gives practical, experimentally measurable tests for benchmarking quantum hardware and characterizing coherence, entanglement, magic, and fermionic non-Gaussianity in realistic mixed states.",
       "method": [
-        "Construct polynomial witness functions from a target state and a chosen free-unitary symmetry group.",
-        "Estimate the criteria experimentally using multiple copies of the state.",
-        "Recover known quantities and derive new detection rules for qubit, qudit, and fermionic resources."
+        "Constructs polynomial witness functions from a target state and its copies",
+        "Unifies detection across resources tied to free-unitary symmetry groups",
+        "Recovers known measures and extends them to stronger mixed-state criteria"
       ],
-      "evidence_signal": "The abstract reports recovery of several established resource measures and new mixed-state criteria, including the first analytical test for fermionic non-Gaussianity that stays nontrivial for arbitrary qubit number.",
-      "watch_item": "Because the witnesses rely on multi-copy polynomial estimation, practical use may be limited by copy overhead and measurement noise.",
+      "evidence_signal": "The abstract reports both analytical derivations and measurable multi-copy criteria, including new detection results for qubit/qudit magic and the first nontrivial analytical mixed-state fermionic non-Gaussianity criterion.",
+      "watch_item": "Multi-copy polynomial witnesses can be experimentally demanding and may require careful noise control and copy-scaling considerations.",
       "hashtags": [
+        "#QuantumComputing",
         "#QuantumSimulation",
         "#QuantumResources",
-        "#QuantumWitnesses",
-        "#MixedStates",
-        "#QuantumInformation"
+        "#WitnessDetection",
+        "#MixedStates"
       ],
       "paper_id": "2026-06-25-arxiv-witness_expansion_a_unified_framework_for_analytical_and_measurable_mixed_state_resource_d",
       "paper_title": "Witness expansion: A unified framework for analytical and measurable mixed-state resource detection",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-06-27T11:27:32",
+      "generated_at": "2026-06-26T12:11:43",
       "generator": "openai"
     }
   },
@@ -593,29 +593,29 @@
         "url": "https://arxiv.org/pdf/2606.27299v1"
       }
     ],
-    "score": 66,
+    "score": 71,
     "infographic": {
-      "key_insight": "The paper proposes a two-way QKD protocol where Bob performs all sifting and eavesdropper detection after transmission, using a scrambling operator to improve security and prevent mode-based attacks.",
-      "engineering_relevance": "This design simplifies protocol oversight and strengthens practical QKD security by reducing leakage from control-mode signaling and making better use of rounds that would otherwise be discarded.",
+      "key_insight": "The paper proposes a two-way QKD protocol where Bob alone performs all sifting and eavesdropper checks after transmission, using a scrambling operator to improve security and reduce what an attacker can learn from the traveling qubit.",
+      "engineering_relevance": "This design could simplify secure quantum communication workflows by reducing public control signaling and strengthening robustness against channel-only attacks.",
       "method": [
         "Uses one qubit from a maximally entangled Bell state as the quantum channel.",
-        "Applies a scrambling operator as the core security mechanism.",
-        "Defers all sifting and detection to Bob after quantum communication ends."
+        "Delays all sifting and detection until the quantum communication stage is complete.",
+        "Adds a scrambling operator and reuses normally discarded rounds for eavesdropper detection."
       ],
-      "evidence_signal": "The abstract reports a theoretical security analysis of a broad class of ancilla-based attacks, showing they are detectable in the protocol's most general form.",
-      "watch_item": "The protocol's security is analyzed theoretically, so real-world implementation will still need careful validation against noise, device imperfections, and adversarial hardware assumptions.",
+      "evidence_signal": "The abstract reports a general analysis of ancilla-based attacks and claims these attacks are detectable in their most general form.",
+      "watch_item": "The protocol’s security and practicality depend on precise implementation of the scrambling operation and Bob-side post-processing, which may be challenging in noisy real hardware.",
       "hashtags": [
         "#QuantumKeyDistribution",
+        "#QKD",
         "#QuantumSecurity",
         "#QuantumHardware",
-        "#Entanglement",
-        "#CyberPhysicalSecurity"
+        "#Entanglement"
       ],
       "paper_id": "2026-06-25-arxiv-self_sifting_quantum_key_distribution",
       "paper_title": "Self-Sifting quantum key distribution",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-06-27T11:27:34",
+      "generated_at": "2026-06-26T12:11:46",
       "generator": "openai"
     }
   },
@@ -644,29 +644,29 @@
         "url": "https://arxiv.org/pdf/2606.27266v1"
       }
     ],
-    "score": 66,
+    "score": 71,
     "infographic": {
-      "key_insight": "An alternating-minimization control synthesis framework can efficiently design multimode trapped-ion entangling gates while suppressing residual spin-motion entanglement, even as system size and motional complexity grow.",
-      "engineering_relevance": "The method suggests that programmable, large-scale interaction patterns in trapped-ion processors may be achievable with modest control-resource growth, supporting scalable quantum hardware design.",
+      "key_insight": "An alternating-minimization control search can synthesize high-fidelity multimode entangling gates in trapped-ion chains by jointly targeting the desired spin-spin couplings and suppressing residual spin-motion entanglement.",
+      "engineering_relevance": "This makes programmable long-range and local interaction engineering more feasible for large trapped-ion quantum processors using only global laser control or structured individual addressing.",
       "method": [
-        "Directly searches multi-tone control fields for target spin-spin interactions.",
-        "Uses alternating minimization to improve numerical stability in a high-dimensional non-convex optimization landscape.",
-        "Demonstrates both global and individually addressed gate synthesis for large ion chains."
+        "Formulate multimode gate design as a high-dimensional non-convex optimization problem over multi-tone control fields.",
+        "Use alternating minimization to improve numerical stability while satisfying interaction targets and motional-decoupling constraints.",
+        "Demonstrate scalability on large ion chains with all-to-all, nearest-neighbor, and qLDPC-like target interactions."
       ],
-      "evidence_signal": "The abstract reports successful synthesis of all-to-all and nearest-neighbor gates for chains up to N=1000, and an individual-addressing qLDPC example at N=512, with no rapid growth in required control resources across tested regimes.",
-      "watch_item": "Results are numerical and parameter-regime dependent, so experimental robustness to noise, calibration error, and hardware constraints still needs validation.",
+      "evidence_signal": "The abstract reports successful synthesis for ion chains up to N=1000 with global control and an individual-addressing example at N=512, with control resources not growing rapidly over the explored regimes.",
+      "watch_item": "The results are based on numerical synthesis and reported parameter regimes, so experimental robustness to noise, calibration error, and hardware constraints still needs validation.",
       "hashtags": [
         "#QuantumComputing",
         "#TrappedIons",
-        "#QuantumOptimization",
-        "#EntanglingGates",
-        "#ScalableQC"
+        "#QuantumControl",
+        "#Optimization",
+        "#GateSynthesis"
       ],
       "paper_id": "2026-06-25-arxiv-large_scale_multimode_entangling_gate_synthesis_in_trapped_ion_systems",
       "paper_title": "Large-scale multimode entangling-gate synthesis in trapped-ion systems",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Optimization",
-      "generated_at": "2026-06-27T11:27:36",
+      "generated_at": "2026-06-26T12:11:48",
       "generator": "openai"
     }
   },
@@ -695,80 +695,29 @@
         "url": "https://arxiv.org/pdf/2606.25011v1"
       }
     ],
-    "score": 66,
+    "score": 71,
     "infographic": {
-      "key_insight": "By co-designing the algorithm, quantum error-correcting code, and neutral-atom hardware around lattice translation symmetry, the paper enables a high-rate STAR architecture that parallelizes magic-state rotation injections across many logical qubits.",
-      "engineering_relevance": "This offers a concrete path to lower qubit count and practical runtime for early fault-tolerant quantum simulation compared with surface-code-based STAR implementations.",
+      "key_insight": "The paper shows that quantum simulation can be made much more resource-efficient by co-designing the algorithm, high-rate quantum error-correcting code, and neutral-atom hardware around shared lattice symmetries.",
+      "engineering_relevance": "It offers a concrete path to lower qubit overhead and maintain fast logical operations for early fault-tolerant simulation on neutral-atom platforms.",
       "method": [
-        "Use symmetry of the target lattice to select self-dual bivariate bicycle codes.",
-        "Exploit disjoint logical representatives to inject STAR rotation states in parallel across all logical qubits in a block.",
-        "Compile logical operations into low-depth, hardware-native acousto-optic-deflector shifts on neutral-atom hardware."
+        "Use symmetry-matched bivariate bicycle codes for high-rate logical qubit packing.",
+        "Exploit disjoint logical representatives to run STAR magic-state injections in parallel across all logical qubits.",
+        "Compile logical shifts and Clifford operations into low-depth acousto-optic-deflector moves on neutral atoms."
       ],
-      "evidence_signal": "The abstract reports end-to-end estimates showing an 8x8 transverse-field Ising simulation at T* ~ 8 (zJ)^-1 needs 2240 physical qubits and about 200 s per shot, with roughly 5.5x less space than a surface-code STAR baseline at similar speed.",
-      "watch_item": "The architecture’s practicality still depends on achieving favorable post-selection and hardware fidelity at scale, especially for the parallelized STAR injections.",
+      "evidence_signal": "The abstract reports end-to-end estimates of 2240 physical qubits and about 200 s per shot for an 8×8 transverse-field Ising simulation, and about 6300 qubits and 200 s per shot for Fermi-Hubbard dynamics, with roughly 5.5× space reduction versus a surface-code STAR baseline.",
+      "watch_item": "The architecture depends on practical post-selection, hardware-native symmetry operations, and successful integration of high-rate codes, so real-world performance may be limited by implementation complexity and physical error rates.",
       "hashtags": [
         "#QuantumErrorCorrection",
-        "#FaultTolerantQuantumComputing",
-        "#NeutralAtoms",
         "#QuantumSimulation",
-        "#MagicState"
+        "#HighRateCodes",
+        "#NeutralAtoms",
+        "#FaultTolerantQuantumComputing"
       ],
       "paper_id": "2026-06-23-arxiv-fast_and_parallel_high_rate_star_architecture_for_megaquop_quantum_simulation",
       "paper_title": "Fast and Parallel High-Rate STAR Architecture for Megaquop Quantum Simulation",
       "paper_date": "2026-06-23",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-27T11:27:39",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-23-arxiv-when_to_skip_syndrome_extraction_in_surface_gkp_codes",
-    "arxiv_id": "2606.24469v1",
-    "date": "2026-06-23",
-    "title": "When to Skip Syndrome Extraction in Surface-GKP Codes",
-    "authors": "Vaughn Sohn, Changhun Oh",
-    "abstract": "Fault-tolerant quantum error correction requires repeated syndrome extraction to address errors induced by the syndrome-extraction circuit itself. However, repeated syndrome extraction incurs significant overhead in terms of gate count and ancilla consumption (e.g., Gottesman-Kitaev-Preskill (GKP) states). Moreover, noisy syndrome extraction can itself inject additional errors into the data qubits. To address these issues, we propose a concrete adaptive skipping scheme for the surface-GKP code, a representative GKP-concatenated architecture, that uses analog information naturally generated during inner GKP correction. At each round, the scheme selects one of four actions: measuring both Z-type and X-type surface-code stabilizers, measuring only one type, or skipping both types and reusing previous syndromes. The decision is based on a reliability comparison between reusing the previous syndrome value and performing a new noisy syndrome extraction. Using circuit-level simulations, we show that the adaptive skipping scheme can reduce the number of surface-code stabilizer measurements while maintaining logical error rates comparable to or lower than those of the full-measurement baseline. The improvement is most pronounced when gate and measurement noise are larger than idle noise, so that avoiding unnecessary syndrome extraction reduces the noise injected into the code. These results indicate that analog information from inner GKP correction can be used not only to improve decoding but also to reduce the measurement overhead of outer-code syndrome extraction.",
-    "category": "Quantum Error Correction",
-    "source": "arXiv",
-    "published": "2026-06-23T12:01:14Z",
-    "updated": "2026-06-23T12:01:14Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.24469v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.24469v1"
-      }
-    ],
-    "score": 66,
-    "infographic": {
-      "key_insight": "The paper shows that inner GKP analog information can guide an adaptive policy that safely skips some outer surface-code syndrome measurements without increasing logical error.",
-      "engineering_relevance": "This can cut measurement, ancilla, and circuit overhead in fault-tolerant quantum hardware, especially when syndrome-extraction noise is a major error source.",
-      "method": [
-        "Use analog reliability from inner GKP correction to decide whether to measure or reuse syndromes.",
-        "At each round, choose among four actions: measure both Z and X stabilizers, measure only one type, or skip both and reuse previous results.",
-        "Compare the reliability of fresh noisy extraction against syndrome reuse for adaptive scheduling."
-      ],
-      "evidence_signal": "Circuit-level simulations reported lower or comparable logical error rates to the full-measurement baseline while reducing the number of surface-code stabilizer measurements.",
-      "watch_item": "The approach depends on accurate reliability estimates and may be less beneficial when idle noise dominates or when hardware cannot reliably provide the analog information used for decisions.",
-      "hashtags": [
-        "#QuantumErrorCorrection",
-        "#SurfaceGKP",
-        "#GKP",
-        "#FaultTolerance",
-        "#QuantumHardware"
-      ],
-      "paper_id": "2026-06-23-arxiv-when_to_skip_syndrome_extraction_in_surface_gkp_codes",
-      "paper_title": "When to Skip Syndrome Extraction in Surface-GKP Codes",
-      "paper_date": "2026-06-23",
-      "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-27T11:27:41",
+      "generated_at": "2026-06-26T12:11:52",
       "generator": "openai"
     }
   },
@@ -797,29 +746,29 @@
         "url": "https://arxiv.org/pdf/2606.25330v1"
       }
     ],
-    "score": 65,
+    "score": 70,
     "infographic": {
-      "key_insight": "Routing codes are a new family of qLDPC codes that keep high encoding rates while making non-local connections shorter, sparser, and fully parallel.",
-      "engineering_relevance": "They are designed for practical quantum hardware because they reduce wiring complexity on superconductors and simplify atom-movement scheduling in neutral-atom systems.",
+      "key_insight": "Routing codes are a new qLDPC family that keeps high encoding rates while making non-local couplings shorter, less connected, and fully parallel.",
+      "engineering_relevance": "They are designed to fit real hardware better by eliminating wiring crossings in superconducting multilayers and simplifying atom-movement scheduling in neutral-atom arrays.",
       "method": [
-        "Construct a qLDPC family called routing codes.",
-        "Optimize code structure to lower connectivity and shorten non-local couplings.",
-        "Make all non-local couplings mutually parallel to avoid crossings and simplify implementation."
+        "Construct explicit routing-code instances with rates comparable to bivariate bicycle codes.",
+        "Reduce qubit connectivity and shorten non-local coupling length.",
+        "Make all non-local couplings mutually parallel to support hardware-friendly layouts."
       ],
       "evidence_signal": "Circuit-level simulations show weight-7 routing codes can cut physical qubit overhead by about 8× versus surface codes at the same logical error rate.",
-      "watch_item": "The abstract reports promising simulation results, but real hardware performance will still depend on fabrication constraints, control errors, and scaling the routing architecture.",
+      "watch_item": "The main challenge is whether the code family can be realized with low-overhead control, fabrication, and decoding at scale in actual hardware.",
       "hashtags": [
         "#QuantumLDPC",
-        "#QuantumErrorCorrection",
-        "#FaultTolerantQuantumComputing",
+        "#FaultTolerantQC",
         "#QuantumHardware",
+        "#SuperconductingQubits",
         "#NeutralAtoms"
       ],
       "paper_id": "2026-06-24-arxiv-routing_codes_high_rate_quantum_ldpc_codes_with_short_parallel_non_local_connectivity",
       "paper_title": "Routing Codes: High-Rate Quantum LDPC Codes with Short, Parallel Non-Local Connectivity",
       "paper_date": "2026-06-24",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-06-27T11:27:43",
+      "generated_at": "2026-06-26T12:11:56",
       "generator": "openai"
     }
   },
@@ -848,29 +797,29 @@
         "url": "https://arxiv.org/pdf/2606.24048v1"
       }
     ],
-    "score": 65,
+    "score": 70,
     "infographic": {
-      "key_insight": "Speculative window decoding can significantly reduce real-time quantum error-correction latency, but its advantage depends strongly on gate speed, speculation accuracy, decoder latency, and available parallelism.",
-      "engineering_relevance": "For fault-tolerant quantum hardware and decoder designers, this work identifies when speculative decoding is worth the complexity and when a simpler non-speculative decoder may be faster.",
+      "key_insight": "Speculative window decoding can accelerate real-time quantum error correction by overlapping decoding work, but its benefit depends strongly on hardware and workload conditions.",
+      "engineering_relevance": "This study helps system designers decide when speculative decoding is worth deploying versus when simpler non-speculative decoders will be faster and more reliable.",
       "method": [
-        "Analyzed speculative window decoding under slow gate speeds, not just fast superconducting-qubit assumptions.",
-        "Studied sensitivity to speculation accuracy, decoder latency, processor count, and workload parallelism.",
-        "Compared conditions across different quantum error-correction codes, decoders, and hardware platforms."
+        "Evaluated speculative decoding under slower gate-speed quantum technologies beyond superconducting-qubit assumptions.",
+        "Compared sensitivity to speculation accuracy, decoder latency, processor count, and workload parallelism.",
+        "Derived design principles for when speculation improves performance most."
       ],
-      "evidence_signal": "The abstract reports evaluation of speculative decoding across varied regimes to derive design principles and identify cases where non-speculative decoders outperform speculative ones.",
-      "watch_item": "Performance gains are not universal; poor speculation accuracy or low parallelism can erase benefits and make speculative decoding slower than non-speculative approaches.",
+      "evidence_signal": "The abstract reports a performance analysis across gate speeds, decoder/processor settings, and workload characteristics to identify regimes where speculative decoding wins or loses.",
+      "watch_item": "Speculation can backfire if accuracy is low, latency is not high enough, or the workload lacks enough parallelism to hide dependencies.",
       "hashtags": [
         "#QuantumErrorCorrection",
-        "#FaultTolerance",
         "#SpeculativeDecoding",
         "#QuantumComputing",
+        "#FaultTolerance",
         "#PerformanceAnalysis"
       ],
       "paper_id": "2026-06-23-arxiv-an_analysis_of_speculative_window_decoders_for_quantum_error_correction",
       "paper_title": "An Analysis of Speculative Window Decoders for Quantum Error Correction",
       "paper_date": "2026-06-23",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-27T11:27:45",
+      "generated_at": "2026-06-26T12:11:59",
       "generator": "openai"
     }
   },
@@ -901,29 +850,29 @@
         "url": "https://arxiv.org/pdf/2606.27249v1"
       }
     ],
-    "score": 64,
+    "score": 69,
     "infographic": {
-      "key_insight": "The paper proposes a scalable ion-trap quantum computer architecture in optical tweezer arrays, using transport to local zones and state-dependent dipoles to generate precise Coulomb-mediated entangling gates with motional closure.",
-      "engineering_relevance": "This architecture combines trapped-ion coherence with tweezer-array reconfigurability and parallelism, making it promising for scalable quantum processors and fault-tolerant gate schedules.",
+      "key_insight": "The paper proposes a scalable ion-based quantum processor where ions in optical tweezer arrays use state-dependent optical potentials to create controllable dipoles for Coulomb-mediated entangling gates.",
+      "engineering_relevance": "This architecture combines trapped-ion coherence with tweezer-array reconfigurability and parallelism, offering a practical path to scalable quantum error correction hardware.",
       "method": [
-        "Move selected ions into local interaction zones within optical tweezer arrays",
-        "Excite ions to an auxiliary state with displaced optical potential to create controllable effective dipoles",
-        "Use Coulomb interaction between effective dipoles to implement entangling gates with closed motional trajectories"
+        "Move selected ions into local interaction zones in a tweezer array.",
+        "Excite ions to an auxiliary state with a displaced optical potential to induce an effective electric dipole.",
+        "Use Coulomb interaction between dipoles to implement entangling gates with closed motional trajectories."
       ],
-      "evidence_signal": "The abstract reports analytical and implementation-level analysis showing temperature-robust closure of center-of-mass and relative motion, plus suppression of cross-talk during parallel gate execution.",
-      "watch_item": "A key implementation concern is achieving precise state-selective polarizability and control of ion transport while maintaining low cross-talk across simultaneous gates.",
+      "evidence_signal": "The abstract reports analytical and implementation studies showing precise, temperature-robust gate closure, suppressed cross-talk during parallel gates, and a concrete barium-ion realization.",
+      "watch_item": "Real hardware performance will depend on maintaining strong state-selective polarizability and low cross-talk while transporting ions without adding excess motional noise.",
       "hashtags": [
         "#QuantumComputing",
-        "#TrappedIons",
+        "#IonTraps",
         "#OpticalTweezers",
-        "#QuantumArchitecture",
-        "#ErrorCorrection"
+        "#QuantumErrorCorrection",
+        "#ScalableArchitecture"
       ],
       "paper_id": "2026-06-25-arxiv-quantum_computer_architecture_with_ions_in_tweezer_arrays",
       "paper_title": "Quantum computer architecture with ions in tweezer arrays",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-06-27T11:27:47",
+      "generated_at": "2026-06-26T12:12:02",
       "generator": "openai"
     }
   },
@@ -953,29 +902,29 @@
         "url": "https://arxiv.org/pdf/2606.27231v1"
       }
     ],
-    "score": 64,
+    "score": 69,
     "infographic": {
-      "key_insight": "The paper shows how to let an LLM write and run native ARTIQ control code on trapped-ion hardware while enforcing a strict authorization boundary for every hardware-affecting operation.",
-      "engineering_relevance": "It provides a practical safety architecture for autonomous quantum labs, enabling agent-driven calibration and control without giving unchecked software direct access to fragile experimental equipment.",
+      "key_insight": "The paper introduces a hardware-safety gate that lets an LLM write native ARTIQ control code for trapped-ion experiments only when each hardware action is explicitly authorized by a token tied to its exact contents.",
+      "engineering_relevance": "This creates a practical path to safer autonomous lab control by separating agent-generated decisions from hardware execution with per-operation bounds and human approval for sensitive actions.",
       "method": [
-        "LLM agent uses ARTIQ through a Model Context Protocol (MCP) tool layer.",
-        "Every tool call must carry an authorization token bound to the exact command contents.",
-        "Tokens are issued either by simulation-based validation against device bounds (dax.sim) or by a human for sensitive actions."
+        "LLM agent writes experimental control scripts through an MCP server to the existing ARTIQ stack.",
+        "Tokens are issued either by checking proposed scripts in an isolated hardware simulation against device-specific safety bounds or by manual human authorization.",
+        "Unauthorized or adversarial tool calls are blocked unless they match a valid token bound to the exact request."
       ],
-      "evidence_signal": "The system was deployed on a co-trapped 40Ca+/40CaOH+ platform for autonomous calibration and cross-instrument magnetic-field stabilization, and portability was confirmed on an independent 171Yb+ platform.",
-      "watch_item": "The protection boundary is only as strong as the tokening and simulation checks, so adversarial bypass attempts and unmodeled hardware behavior remain important risks.",
+      "evidence_signal": "The system was demonstrated on a trapped-ion platform by autonomously building a full calibration stack, closing a magnetic-field-stabilization loop with operator guidance, and confirming portability on a second $^{171}$Yb$^{+}$ system.",
+      "watch_item": "The protection boundary is precise but not complete, so adversarial scripts reveal where stronger safeguards are still needed, especially for metacognitive failures and problem re-framing.",
       "hashtags": [
-        "#QuantumHardware",
+        "#QuantumControl",
         "#LLMAgents",
-        "#ARTIQ",
         "#TrappedIons",
-        "#AISafety"
+        "#SafeAutonomy",
+        "#ARTIQ"
       ],
       "paper_id": "2026-06-25-arxiv-a_hardware_safety_gated_system_for_llm_written_native_artiq_control_code_on_a_trapped_ion",
       "paper_title": "A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform",
       "paper_date": "2026-06-25",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-06-27T11:27:50",
+      "generated_at": "2026-06-26T12:12:05",
       "generator": "openai"
     }
   },
@@ -1005,29 +954,80 @@
         "url": "https://arxiv.org/pdf/2606.25267v1"
       }
     ],
-    "score": 64,
+    "score": 69,
     "infographic": {
-      "key_insight": "A Bayesian-optimization search paired with discrete biorthogonal wavelet analysis enables fast, robust laser-frequency auto-locking without relying on blind parameter scanning.",
-      "engineering_relevance": "This improves field-ready stabilization for quantum communication, quantum computing, and precision-measurement systems operating under drift and environmental perturbations.",
+      "key_insight": "The paper combines Bayesian optimization with discrete biorthogonal wavelet analysis to auto-lock laser frequency faster and more robustly than traditional scanning methods.",
+      "engineering_relevance": "This approach improves practical laser stabilization for field-deployed quantum communication, computing, and precision-measurement systems.",
       "method": [
-        "Use Bayesian optimization to leverage prior observations and rapidly locate the frequency reference.",
-        "Apply discrete biorthogonal wavelet transformation to detect transition signals and distinguish the correct reference by their characteristic frequency gaps and magnitudes.",
-        "Lock the laser with a lead zirconate titanate-current double-servo loop for final stabilization."
+        "Use Bayesian optimization to search the reference frequency from prior observations instead of blind parameter scanning.",
+        "Apply discrete biorthogonal wavelet transformation to detect transition signals and identify the correct reference via fixed frequency spacing and relative amplitudes.",
+        "Close the loop with a PZT-current double-servo system to maintain lock and narrow the linewidth."
       ],
-      "evidence_signal": "The method reports about 5× faster reference search than conventional scanning, >99.5% identification accuracy under severe disturbances, and a narrowed linewidth of 20 kHz after locking.",
-      "watch_item": "Performance depends on reliable historical data and correct wavelet-based signal features, so deployment must account for changing noise conditions and calibration drift.",
+      "evidence_signal": "The abstract reports 5× faster reference searching, >99.5% identification accuracy under strong disturbances, and a final linewidth of 20 kHz.",
+      "watch_item": "Performance may depend on calibration quality and system-specific transition signatures, so robustness should be validated on other atomic setups and in long-term field operation.",
       "hashtags": [
-        "#QuantumTechnologies",
+        "#QuantumControl",
+        "#LaserLocking",
         "#BayesianOptimization",
         "#WaveletTransform",
-        "#LaserLocking",
-        "#PrecisionMeasurement"
+        "#PrecisionMetrology"
       ],
       "paper_id": "2026-06-24-arxiv-rapid_and_robust_laser_frequency_auto_locking_using_bayesian_optimization_and_discrete_wav",
       "paper_title": "Rapid and robust laser-frequency auto-locking using Bayesian-optimization and discrete-wavelet-transformation algorithms",
       "paper_date": "2026-06-24",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-06-27T11:27:52",
+      "generated_at": "2026-06-26T12:12:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-23-arxiv-feasibility_driven_qaoa_with_penalty_scheduling",
+    "arxiv_id": "2606.25117v1",
+    "date": "2026-06-23",
+    "title": "Feasibility-driven QAOA with penalty scheduling",
+    "authors": "Francesco Ferrari, Matteo Vandelli, Daniele Dragoni",
+    "abstract": "Most available quantum algorithms address constrained optimization problems by treating constraints as soft penalty terms within a QUBO formulation. This approach requires careful adjustment of the penalty coefficients, which scales poorly with the number of constraints and lacks a proper strategy to balance feasibility and solution quality. In this work, we introduce two extensions of standard linear-ramp QAOA (lr-QAOA) tailored to problems with multiple heterogeneous constraints. We first construct $Λ$-lr-QAOA, in which each penalty term is assigned its own linear-ramp schedule, promoting penalty weights from external hyperparameters to internal variational parameters of QAOA, similarly to the objective and mixer parameters. By optimizing all schedules jointly in a single run, this approach eliminates nested penalty tuning and scales more efficiently to multiple constraints. The optimization is guided by a feasibility-driven loss function that pushes the quantum state towards high-quality feasible solutions. As a further refinement, we introduce piecewise-ramp QAOA, in which the linear ramps are replaced by two-segment piecewise schedules, enhancing the expressiveness of the Ansatz at the cost of a small parameter overhead independent of the circuit depth. We benchmark both methods on Earth-observation satellite mission planning tasks formulated as budget-constrained Maximum Weight Independent Set problems. Numerical results show that piecewise-ramp QAOA consistently outperforms lr-QAOA and $Λ$-lr-QAOA across circuit depths and system sizes. Furthermore, both $Λ$-lr-QAOA and piecewise-ramp QAOA exhibit a high feasibility rate, which is crucial in industrial applications. Our analysis highlights an intrinsic feasibility-optimality trade-off, which we address by introducing a filtered variant of the loss providing a single hyperparameter to tune this balance.",
+    "category": "Quantum Algorithms",
+    "source": "arXiv",
+    "published": "2026-06-23T19:44:00Z",
+    "updated": "2026-06-23T19:44:00Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.25117v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.25117v1"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "The paper turns QAOA penalty weights from fixed hyperparameters into trainable schedules, improving feasibility handling for constrained optimization while preserving solution quality.",
+      "engineering_relevance": "This makes QAOA more practical for real constrained engineering problems by reducing penalty-tuning effort and improving the chance of obtaining feasible solutions in a single optimization run.",
+      "method": [
+        "\u00039b-lr-QAOA: assign each constraint penalty its own linear-ramp schedule and optimize all schedules jointly.",
+        "Piecewise-ramp QAOA: replace linear ramps with two-segment schedules for greater expressiveness.",
+        "Use a feasibility-driven loss, plus a filtered variant, to balance constraint satisfaction and objective performance."
+      ],
+      "evidence_signal": "The methods were benchmarked on budget-constrained Maximum Weight Independent Set instances for satellite mission planning, and the piecewise-ramp version consistently outperformed lr-QAOA and \u00039b-lr-QAOA across depths and system sizes.",
+      "watch_item": "The added flexibility introduces more variational parameters and a feasibility-vs-optimality trade-off that still needs careful loss design and tuning.",
+      "hashtags": [
+        "#QAOA",
+        "#QuantumOptimization",
+        "#ConstrainedOptimization",
+        "#Feasibility",
+        "#QuantumAlgorithms"
+      ],
+      "paper_id": "2026-06-23-arxiv-feasibility_driven_qaoa_with_penalty_scheduling",
+      "paper_title": "Feasibility-driven QAOA with penalty scheduling",
+      "paper_date": "2026-06-23",
+      "paper_category": "Quantum Algorithms",
+      "generated_at": "2026-06-26T12:12:11",
       "generator": "openai"
     }
   }

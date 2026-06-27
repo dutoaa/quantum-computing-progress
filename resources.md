@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-06-26
+Generated: 2026-06-27
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Scalable Message-Passing Quantum Graph Neural Networks in the Weisfeiler-Leman Hierarchy
@@ -43,21 +43,21 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.27017v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-25-arxiv-lattice_patch_structure_for_fixed_frequency_transmon_quantum_computer_with_high_fidelity_c_infographic.json
 
-## 6. High-Rate and Resource-Efficient All-Photonic Quantum Repeater Architectures with 9 km Repeater Spacing
-
-- Date: 2026-06-24
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2606.25314v1
-- PDF: https://arxiv.org/pdf/2606.25314v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-24-arxiv-high_rate_and_resource_efficient_all_photonic_quantum_repeater_architectures_with_9_km_rep_infographic.json
-
-## 7. An ultralow-loss integrated photonic platform for discrete-variable quantum information processing
+## 6. An ultralow-loss integrated photonic platform for discrete-variable quantum information processing
 
 - Date: 2026-06-25
 - Category: Quantum Hardware
 - arXiv: https://arxiv.org/abs/2606.26910v1
 - PDF: https://arxiv.org/pdf/2606.26910v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-25-arxiv-an_ultralow_loss_integrated_photonic_platform_for_discrete_variable_quantum_information_pr_infographic.json
+
+## 7. High-Rate and Resource-Efficient All-Photonic Quantum Repeater Architectures with 9 km Repeater Spacing
+
+- Date: 2026-06-24
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2606.25314v1
+- PDF: https://arxiv.org/pdf/2606.25314v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-24-arxiv-high_rate_and_resource_efficient_all_photonic_quantum_repeater_architectures_with_9_km_rep_infographic.json
 
 ## 8. A fidelity metric for quantum annealing benchmarked by extreme scaling quantum Monte-Carlo simulations
 
@@ -115,7 +115,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.25011v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-23-arxiv-fast_and_parallel_high_rate_star_architecture_for_megaquop_quantum_simulation_infographic.json
 
-## 15. Routing Codes: High-Rate Quantum LDPC Codes with Short, Parallel Non-Local Connectivity
+## 15. When to Skip Syndrome Extraction in Surface-GKP Codes
+
+- Date: 2026-06-23
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2606.24469v1
+- PDF: https://arxiv.org/pdf/2606.24469v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-23-arxiv-when_to_skip_syndrome_extraction_in_surface_gkp_codes_infographic.json
+
+## 16. Routing Codes: High-Rate Quantum LDPC Codes with Short, Parallel Non-Local Connectivity
 
 - Date: 2026-06-24
 - Category: Quantum Hardware
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.25330v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-24-arxiv-routing_codes_high_rate_quantum_ldpc_codes_with_short_parallel_non_local_connectivity_infographic.json
 
-## 16. An Analysis of Speculative Window Decoders for Quantum Error Correction
+## 17. An Analysis of Speculative Window Decoders for Quantum Error Correction
 
 - Date: 2026-06-23
 - Category: Quantum Error Correction
@@ -131,7 +139,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.24048v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-23-arxiv-an_analysis_of_speculative_window_decoders_for_quantum_error_correction_infographic.json
 
-## 17. Quantum computer architecture with ions in tweezer arrays
+## 18. Quantum computer architecture with ions in tweezer arrays
 
 - Date: 2026-06-25
 - Category: Quantum Error Correction
@@ -139,7 +147,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.27249v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-25-arxiv-quantum_computer_architecture_with_ions_in_tweezer_arrays_infographic.json
 
-## 18. A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform
+## 19. A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform
 
 - Date: 2026-06-25
 - Category: Quantum Hardware
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.27231v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-25-arxiv-a_hardware_safety_gated_system_for_llm_written_native_artiq_control_code_on_a_trapped_ion_infographic.json
 
-## 19. Rapid and robust laser-frequency auto-locking using Bayesian-optimization and discrete-wavelet-transformation algorithms
+## 20. Rapid and robust laser-frequency auto-locking using Bayesian-optimization and discrete-wavelet-transformation algorithms
 
 - Date: 2026-06-24
 - Category: Quantum Algorithms
 - arXiv: https://arxiv.org/abs/2606.25267v1
 - PDF: https://arxiv.org/pdf/2606.25267v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-24-arxiv-rapid_and_robust_laser_frequency_auto_locking_using_bayesian_optimization_and_discrete_wav_infographic.json
-
-## 20. Feasibility-driven QAOA with penalty scheduling
-
-- Date: 2026-06-23
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2606.25117v1
-- PDF: https://arxiv.org/pdf/2606.25117v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-23-arxiv-feasibility_driven_qaoa_with_penalty_scheduling_infographic.json

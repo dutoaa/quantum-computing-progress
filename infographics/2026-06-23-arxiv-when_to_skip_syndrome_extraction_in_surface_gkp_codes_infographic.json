@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper shows that analog reliability information from inner GKP correction can decide when outer surface-code syndrome measurements can be safely skipped without harming fault tolerance.",
-  "engineering_relevance": "This can lower stabilizer-measurement overhead, ancilla use, and noise injection in GKP-concatenated quantum error-correction architectures.",
+  "key_insight": "The paper shows that inner GKP analog information can guide an adaptive policy that safely skips some outer surface-code syndrome measurements without increasing logical error.",
+  "engineering_relevance": "This can cut measurement, ancilla, and circuit overhead in fault-tolerant quantum hardware, especially when syndrome-extraction noise is a major error source.",
   "method": [
-    "Use a surface-GKP code with adaptive syndrome skipping.",
-    "At each round, choose among four actions: measure both stabilizer types, measure only one type, or reuse prior syndromes.",
-    "Base the decision on a reliability comparison between reused syndromes and a fresh noisy extraction."
+    "Use analog reliability from inner GKP correction to decide whether to measure or reuse syndromes.",
+    "At each round, choose among four actions: measure both Z and X stabilizers, measure only one type, or skip both and reuse previous results.",
+    "Compare the reliability of fresh noisy extraction against syndrome reuse for adaptive scheduling."
   ],
-  "evidence_signal": "Circuit-level simulations indicate the adaptive scheme reduces stabilizer measurements while keeping logical error rates comparable to or better than a full-measurement baseline, especially when gate and measurement noise exceed idle noise.",
-  "watch_item": "The benefit depends on the relative noise balance and requires careful calibration of the reliability test to avoid skipping measurements when fresh extraction would be safer.",
+  "evidence_signal": "Circuit-level simulations reported lower or comparable logical error rates to the full-measurement baseline while reducing the number of surface-code stabilizer measurements.",
+  "watch_item": "The approach depends on accurate reliability estimates and may be less beneficial when idle noise dominates or when hardware cannot reliably provide the analog information used for decisions.",
   "hashtags": [
     "#QuantumErrorCorrection",
-    "#SurfaceCode",
+    "#SurfaceGKP",
     "#GKP",
     "#FaultTolerance",
-    "#QuantumComputing"
+    "#QuantumHardware"
   ],
   "paper_id": "2026-06-23-arxiv-when_to_skip_syndrome_extraction_in_surface_gkp_codes",
   "paper_title": "When to Skip Syndrome Extraction in Surface-GKP Codes",
   "paper_date": "2026-06-23",
   "paper_category": "Quantum Error Correction",
-  "generated_at": "2026-06-25T12:22:10",
+  "generated_at": "2026-06-27T11:27:41",
   "generator": "openai"
 }

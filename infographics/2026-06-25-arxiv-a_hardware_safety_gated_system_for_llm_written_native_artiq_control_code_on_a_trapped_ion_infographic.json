@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper shows how to let an LLM write and run native ARTIQ control code on trapped-ion hardware while enforcing a strict authorization boundary for every hardware-affecting operation.",
-  "engineering_relevance": "It provides a practical safety architecture for autonomous quantum labs, enabling agent-driven calibration and control without giving unchecked software direct access to fragile experimental equipment.",
+  "key_insight": "The paper shows that LLM-written trapped-ion control code can be used safely by enforcing a hard authorization boundary: every hardware-reaching operation must carry a token tied to its exact contents.",
+  "engineering_relevance": "This provides a practical pattern for autonomous quantum-lab control, combining agent flexibility with per-operation safety gating for real hardware experiments.",
   "method": [
-    "LLM agent uses ARTIQ through a Model Context Protocol (MCP) tool layer.",
-    "Every tool call must carry an authorization token bound to the exact command contents.",
-    "Tokens are issued either by simulation-based validation against device bounds (dax.sim) or by a human for sensitive actions."
+    "LLM agent writes native ARTIQ control code through an MCP server",
+    "Each tool call is validated by exact-content authorization tokens",
+    "Tokens are issued by simulation-based checks (dax.sim) or human approval for sensitive actions"
   ],
-  "evidence_signal": "The system was deployed on a co-trapped 40Ca+/40CaOH+ platform for autonomous calibration and cross-instrument magnetic-field stabilization, and portability was confirmed on an independent 171Yb+ platform.",
-  "watch_item": "The protection boundary is only as strong as the tokening and simulation checks, so adversarial bypass attempts and unmodeled hardware behavior remain important risks.",
+  "evidence_signal": "The system is demonstrated on a trapped-ion platform where the agent autonomously builds a calibration stack, closes a magnetic-field-stabilization loop with operator help, and is also tested on a second ion platform for portability.",
+  "watch_item": "Safety depends on the completeness of the token checks and simulation bounds, so adversarial bypass attempts reveal that the protection boundary still needs strengthening.",
   "hashtags": [
     "#QuantumHardware",
     "#LLMAgents",
     "#ARTIQ",
-    "#TrappedIons",
-    "#AISafety"
+    "#SafeAutonomy",
+    "#TrappedIon"
   ],
   "paper_id": "2026-06-25-arxiv-a_hardware_safety_gated_system_for_llm_written_native_artiq_control_code_on_a_trapped_ion",
   "paper_title": "A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform",
   "paper_date": "2026-06-25",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-06-27T11:27:50",
+  "generated_at": "2026-06-28T11:47:15",
   "generator": "openai"
 }

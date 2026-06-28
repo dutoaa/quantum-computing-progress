@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-06-27
+Generated: 2026-06-28
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Scalable Message-Passing Quantum Graph Neural Networks in the Weisfeiler-Leman Hierarchy
@@ -43,21 +43,21 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2606.27017v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-25-arxiv-lattice_patch_structure_for_fixed_frequency_transmon_quantum_computer_with_high_fidelity_c_infographic.json
 
-## 6. An ultralow-loss integrated photonic platform for discrete-variable quantum information processing
-
-- Date: 2026-06-25
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2606.26910v1
-- PDF: https://arxiv.org/pdf/2606.26910v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-25-arxiv-an_ultralow_loss_integrated_photonic_platform_for_discrete_variable_quantum_information_pr_infographic.json
-
-## 7. High-Rate and Resource-Efficient All-Photonic Quantum Repeater Architectures with 9 km Repeater Spacing
+## 6. High-Rate and Resource-Efficient All-Photonic Quantum Repeater Architectures with 9 km Repeater Spacing
 
 - Date: 2026-06-24
 - Category: Quantum Error Correction
 - arXiv: https://arxiv.org/abs/2606.25314v1
 - PDF: https://arxiv.org/pdf/2606.25314v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-24-arxiv-high_rate_and_resource_efficient_all_photonic_quantum_repeater_architectures_with_9_km_rep_infographic.json
+
+## 7. An ultralow-loss integrated photonic platform for discrete-variable quantum information processing
+
+- Date: 2026-06-25
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2606.26910v1
+- PDF: https://arxiv.org/pdf/2606.26910v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-25-arxiv-an_ultralow_loss_integrated_photonic_platform_for_discrete_variable_quantum_information_pr_infographic.json
 
 ## 8. A fidelity metric for quantum annealing benchmarked by extreme scaling quantum Monte-Carlo simulations
 

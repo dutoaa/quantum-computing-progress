@@ -1,24 +1,24 @@
 {
-  "key_insight": "HQNS makes dense QUBO optimization NISQ-friendly by solving only a small rotating frontier of variables at each stage instead of encoding the full problem at once.",
-  "engineering_relevance": "This offers a practical path to run large combinatorial optimization workloads on near-term quantum hardware while controlling circuit width, two-qubit gate count, and resource usage.",
+  "key_insight": "HQNS makes dense QUBO optimization NISQ-friendly by solving the problem in rotating small quantum frontiers instead of one monolithic circuit.",
+  "engineering_relevance": "The framework cuts circuit width and two-qubit interactions from O(N^2) to O(F^2) per stage, enabling larger combinatorial problems to fit current hardware limits.",
   "method": [
-    "Select a compact frontier of F << N active variables and freeze the remaining variables into reduced QUBO coefficients.",
-    "Solve each frontier with a local quantum subproblem, then rotate the frontier through a multi-stage crawling procedure to refine the global solution.",
-    "Use warm-starts, CVaR filtering, and stochastic frontier rotation to stabilize performance across stages."
+    "Select a small active frontier of F variables per stage",
+    "Freeze non-frontier variables into reduced QUBO coefficients",
+    "Rotate frontiers stochastically across stages to refine a global solution"
   ],
-  "evidence_signal": "On MDSSP benchmarks up to N=1000, HQNS preserved 99.9908% of the mean diversity score of an 11-restart parallel SA baseline while cutting wall-clock time by 65.03%, peak CPU by 55.97%, and peak memory by 35.21%.",
-  "watch_item": "Performance depends on frontier size and heuristic choices, so results may degrade if the frontier is too small or if warm-start/CVaR settings are poorly tuned.",
+  "evidence_signal": "On MDSSP up to N=1000, HQNS matched 99.9908% of the mean diversity score of an 11-restart parallel SA baseline while reducing wall-clock time by 65.03%, peak CPU by 55.97%, and peak memory by 35.21%.",
+  "watch_item": "Performance depends on frontier size, warm-starts, CVaR filtering, and stochastic rotation, so tuning and reproducibility may be sensitive.",
   "hashtags": [
     "#QuantumOptimization",
     "#NISQ",
     "#QUBO",
-    "#QAOA",
-    "#HybridAlgorithms"
+    "#HybridAlgorithms",
+    "#CombinatorialOptimization"
   ],
   "paper_id": "2026-06-28-arxiv-hybrid_quantum_neighborhood_selection_nisq_compatible_combinatorial_optimization_via_stoch",
   "paper_title": "Hybrid Quantum Neighborhood Selection: NISQ-Compatible Combinatorial Optimization via Stochastic Frontier Decomposition",
   "paper_date": "2026-06-28",
   "paper_category": "Quantum Optimization",
-  "generated_at": "2026-06-30T12:08:48",
+  "generated_at": "2026-07-01T12:33:30",
   "generator": "openai"
 }

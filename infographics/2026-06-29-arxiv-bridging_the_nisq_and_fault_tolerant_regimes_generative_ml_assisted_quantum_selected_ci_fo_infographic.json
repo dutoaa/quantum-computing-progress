@@ -1,17 +1,17 @@
 {
-  "key_insight": "The paper shows that quantum selected configuration interaction can be made more practical by swapping in a lower-cost LCNot-UCCSD initialization and adding an RBM-based generative recovery step.",
-  "engineering_relevance": "This reduces classical preprocessing overhead and strengthens hybrid quantum-classical workflows for molecular simulation, including DMET-based drug discovery targets.",
+  "key_insight": "The paper combines a lower-cost quantum ansatz with a generative ML subspace model to make selected configuration interaction more efficient for molecular simulation in the NISQ-to-fault-tolerant transition.",
+  "engineering_relevance": "It offers a practical hybrid workflow for reducing classical preprocessing and improving scalability in quantum chemistry pipelines relevant to drug-discovery workloads.",
   "method": [
-    "LCNot-UCCSD replaces LUCJ-style CCSD initialization with MP2-amplitude seeding for lower scaling.",
-    "QSCI-RBM uses a Restricted Boltzmann Machine to recover configurations as a compact generative subspace model.",
-    "The workflow is tested in simulator-based molecular simulations and embedded in DMET for larger chemically relevant systems."
+    "LCNot-UCCSD replaces the higher-order LUCJ initialization with MP2-based parameter setup, reducing scaling from O(N^6) to O(N^4).",
+    "QSCI-RBM swaps SQD configuration recovery for a Restricted Boltzmann Machine to generate a compact candidate subspace.",
+    "The workflow is tested in QARP on a state-vector simulator and embedded in DMET for larger molecular systems."
   ],
-  "evidence_signal": "The methods were evaluated on eight STO-3G molecules across 14 artificial error levels with 100 runs each, plus N2 potential-energy scans in cc-pVDZ and DMET cases for Amantadine and the SARS-CoV-2 main protease/Carmofur complex.",
-  "watch_item": "Results are from an ideal state-vector simulator and controlled artificial errors, so hardware noise and scaling on real devices remain open implementation risks.",
+  "evidence_signal": "The authors evaluate eight molecules over 14 artificial error levels with 100 independent runs each, and further validate on N2 PES scans plus DMET applications to Amantadine and the SARS-CoV-2 main protease complex with Carmofur.",
+  "watch_item": "Results are simulator-based, so real hardware noise, error mitigation overheads, and RBM generalization quality may change performance in practice.",
   "hashtags": [
-    "#QuantumSimulation",
+    "#QuantumComputing",
     "#QuantumChemistry",
-    "#QSCI",
+    "#MachineLearning",
     "#DMET",
     "#DrugDiscovery"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Bridging the NISQ and Fault-Tolerant Regimes: Generative-ML-Assisted Quantum Selected CI for Molecular Simulations",
   "paper_date": "2026-06-29",
   "paper_category": "Quantum Simulation",
-  "generated_at": "2026-07-01T12:33:45",
+  "generated_at": "2026-07-02T12:09:29",
   "generator": "openai"
 }

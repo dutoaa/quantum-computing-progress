@@ -1,13 +1,13 @@
 {
-  "key_insight": "qReduMIS uses quantum QAOA measurements to prune a portfolio-selection graph, then hands the reduced problem to exact classical solvers for a practical hybrid speedup.",
-  "engineering_relevance": "This shows a scalable quantum-classical workflow that can improve combinatorial optimization on real financial datasets without relying on quantum hardware to finish the full solve.",
+  "key_insight": "qReduMIS uses QAOA measurements to identify frozen nodes that shrink the graph before classical optimization, enabling practical quantum-assisted portfolio selection on real market data.",
+  "engineering_relevance": "The pipeline shows how near-term quantum hardware can contribute as a preprocessing accelerator inside a hybrid optimization workflow rather than needing to solve the full problem end to end.",
   "method": [
-    "Model portfolio diversification as a Maximum Independent Set problem on asset-correlation graphs.",
-    "Run QAOA on graph kernels to sample candidate independent sets and identify frozen nodes.",
-    "Apply provably optimal classical reductions recursively until the remaining graph is small enough to solve exactly."
+    "Build a market correlation graph and map portfolio selection to a Maximum Independent Set problem.",
+    "Run QAOA on reduced graph kernels to sample independent sets and detect frozen vertices.",
+    "Apply provably optimal classical reductions recursively, then solve the remaining smaller instance."
   ],
-  "evidence_signal": "Validated on four major market indices up to 225 assets and 73 benchmark graphs, with trapped-ion hardware runs up to 78 qubits and 1016 two-qubit gates; qReduMIS reached success probabilities of 0.40 and 0.95 on the two hardest indices and average approximation ratios of at least 0.96.",
-  "watch_item": "Performance depends on the quality of QAOA samples and reduction heuristics, so hardware noise or poor kernel selection can weaken the end-to-end advantage.",
+  "evidence_signal": "Validated on four major indices up to 225 assets and on Quantinuum trapped-ion hardware, qReduMIS achieved average approximation ratios of at least 0.96, with success probabilities of 0.40 for S&P 100 and 0.95 for Nikkei 225, and improved time-to-solution scaling on 73 graphs in emulator tests.",
+  "watch_item": "Performance depends on the quality of QAOA samples and graph reductions, so hardware noise or weak sampling on larger kernels could reduce the frozen-node identification benefit.",
   "hashtags": [
     "#QuantumComputing",
     "#QAOA",
@@ -19,6 +19,6 @@
   "paper_title": "Quantum-Informed Portfolio Selection: An End-to-End Pipeline Validated on Trapped-Ion Hardware with Real Market Data",
   "paper_date": "2026-07-01",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-07-02T12:08:41",
+  "generated_at": "2026-07-03T12:09:10",
   "generator": "openai"
 }

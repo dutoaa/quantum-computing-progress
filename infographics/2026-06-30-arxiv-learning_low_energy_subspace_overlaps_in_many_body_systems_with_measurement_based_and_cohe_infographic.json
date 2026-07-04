@@ -1,16 +1,16 @@
 {
-  "key_insight": "The paper shows that predicting low-energy subspace overlap in a 10-qubit Heisenberg chain is best handled by different quantum learning strategies depending on the quench regime: shadow-based methods for moderate quenches and physics-informed QCNNs for broader robustness.",
-  "engineering_relevance": "This work informs how to choose between measurement-based and coherent quantum pipelines for state characterization, subspace diagnostics, and future quantum control or state-preparation workflows.",
+  "key_insight": "The paper shows that predicting low-energy subspace overlaps is regime-dependent: measurement-based shadows can win in favorable dynamics, while physics-informed QCNNs are more robust across quenches.",
+  "engineering_relevance": "This informs how to choose between classical-shadow pipelines and coherent quantum models for quantum simulation, state verification, and subspace-based control tasks on near-term hardware.",
   "method": [
-    "Classical shadow features + CNNs for measurement-based learning",
-    "Quantum CNNs for coherent learning directly on the quantum state",
-    "Physics-informed variants: Hamiltonian-aware shadows and Heisenberg-aligned QCNN gates"
+    "Trained supervised models to predict overlap O_K with K-dimensional low-energy eigenspaces of a 10-qubit Heisenberg spin chain after local perturbations.",
+    "Compared measurement-based learning using classical-shadow features + CNNs against coherent learning using QCNNs that act directly on the quantum state.",
+    "Added physics-informed variants: Hamiltonian-aware shadows and QCNN gates matched to Heisenberg exchange structure."
   ],
-  "evidence_signal": "Across five dataset configurations, physics-informed QCNNs achieved stable test performance with mean R^2 = 0.753–0.846, while shadow methods peaked at R^2 = 0.886 in the moderate-quench regime but fell to 0.615 and 0.672 in weak and strong quenches at default shot budgets.",
-  "watch_item": "Hardware-scale deployment is constrained by expensive arbitrary state preparation, which used about 2,044 two-qubit gates and led to near-complete depolarization before inference.",
+  "evidence_signal": "Across five quench datasets, physics-informed QCNNs achieved stable test R^2 = 0.753–0.846, while shadow-based models peaked at R^2 = 0.886 in the moderate-quench regime but dropped to 0.615 and 0.672 in weak/strong quenches at default shot budgets.",
+  "watch_item": "Hardware validation suggests state preparation is a major bottleneck: about 2,044 two-qubit gates led to near-complete depolarization before inference.",
   "hashtags": [
     "#QuantumSimulation",
-    "#QuantumML",
+    "#QuantumMachineLearning",
     "#ClassicalShadows",
     "#QCNN",
     "#ManyBodyPhysics"
@@ -19,6 +19,6 @@
   "paper_title": "Learning Low-Energy Subspace Overlaps in Many-Body Systems with Measurement-Based and Coherent Quantum Strategies",
   "paper_date": "2026-06-30",
   "paper_category": "Quantum Simulation",
-  "generated_at": "2026-07-03T12:09:32",
+  "generated_at": "2026-07-04T11:26:42",
   "generator": "openai"
 }

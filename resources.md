@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-07-03
+Generated: 2026-07-04
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Polynomial equivalence of the global transverse-field Ising model and the gate model of quantum computation
@@ -35,7 +35,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2607.00961v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-bridging_quantum_computing_paradigms_toward_semiconductor_yield_a_controlled_cv_versus_dv_infographic.json
 
-## 5. Hybrid quantum-classical neural network for sentiment analysis
+## 5. Beyond the Expressivity-Trainability Paradox: A Dynamical Lie Algebra Perspective on Navigating Barren Plateaus in Quantum Machine Learning
+
+- Date: 2026-06-30
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2606.31536v3
+- PDF: https://arxiv.org/pdf/2606.31536v3
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-30-arxiv-beyond_the_expressivity_trainability_paradox_a_dynamical_lie_algebra_perspective_on_naviga_infographic.json
+
+## 6. Hybrid quantum-classical neural network for sentiment analysis
 
 - Date: 2026-07-02
 - Category: Quantum Machine Learning
@@ -43,21 +51,13 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2607.01943v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-hybrid_quantum_classical_neural_network_for_sentiment_analysis_infographic.json
 
-## 6. Quantum-Informed Portfolio Selection: An End-to-End Pipeline Validated on Trapped-Ion Hardware with Real Market Data
+## 7. Quantum-Informed Portfolio Selection: An End-to-End Pipeline Validated on Trapped-Ion Hardware with Real Market Data
 
 - Date: 2026-07-01
 - Category: Quantum Algorithms
 - arXiv: https://arxiv.org/abs/2607.01037v1
 - PDF: https://arxiv.org/pdf/2607.01037v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-quantum_informed_portfolio_selection_an_end_to_end_pipeline_validated_on_trapped_ion_hardw_infographic.json
-
-## 7. Beyond the Expressivity-Trainability Paradox: A Dynamical Lie Algebra Perspective on Navigating Barren Plateaus in Quantum Machine Learning
-
-- Date: 2026-06-30
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2606.31536v3
-- PDF: https://arxiv.org/pdf/2606.31536v3
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-30-arxiv-beyond_the_expressivity_trainability_paradox_a_dynamical_lie_algebra_perspective_on_naviga_infographic.json
 
 ## 8. Recovery Algorithm for Correlated Errors in Permutation-Invariant Quantum Codes
 

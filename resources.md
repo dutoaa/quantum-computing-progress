@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-07-04
+Generated: 2026-07-05
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Polynomial equivalence of the global transverse-field Ising model and the gate model of quantum computation

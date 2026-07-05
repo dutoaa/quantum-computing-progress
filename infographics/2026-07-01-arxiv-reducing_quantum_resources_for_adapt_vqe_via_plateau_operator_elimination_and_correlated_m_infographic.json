@@ -1,24 +1,24 @@
 {
-  "key_insight": "Eliminating stalled or redundant operators in ADAPT-VQE, especially when paired with correlated downfolding, makes the optimization faster, shallower, and more accurate within a fixed active space.",
-  "engineering_relevance": "The approach lowers quantum circuit depth and iteration cost while improving energy estimates, making ADAPT-VQE more practical for near-term quantum chemistry workflows.",
+  "key_insight": "Eliminating redundant plateau operators in ADAPT-VQE, especially with pool restoration, makes optimization faster and shallower, while OBDF downfolding improves active-space energies toward FCI.",
+  "engineering_relevance": "This provides a practical way to cut quantum circuit depth and iterations in near-term quantum chemistry workflows without changing the underlying ADAPT-VQE framework.",
   "method": [
-    "Detect non-contributing operators during ADAPT-VQE and remove them from the pool to avoid optimization stalls.",
-    "Compare two elimination strategies: with pool restoration and without pool restoration.",
-    "Combine ADAPT-VQE with OBDF downfolding to replace the bare active-space Hamiltonian with a correlated effective Hamiltonian that captures خارج-active-space dynamical correlation."
+    "Detect and remove non-contributing operators once optimization plateaus are identified.",
+    "Compare ADAPT-VQE variants with and without pool restoration after elimination.",
+    "Combine ADAPT-VQE with OBDF to replace the bare active-space Hamiltonian by a correlated effective Hamiltonian."
   ],
-  "evidence_signal": "Benchmarked in OpenFermion on linear H6 chain, H6 lattice, H6 ring, and N2, where operator elimination reduced circuit depth and iteration count, and OBDF-ADAPT-VQE produced energies closer to FCI than standard ADAPT-VQE in the same active space.",
-  "watch_item": "Operator elimination and downfolded Hamiltonians may depend on detection thresholds, restoration policy, and active-space choice, so performance gains may not transfer uniformly across all molecules or noise settings.",
+  "evidence_signal": "Benchmarks on linear H6 chain, H6 lattice, H6 ring, and N2 with OpenFermion show reduced circuit depth and iteration count, and OBDF-ADAPT-VQE energies closer to FCI than standard ADAPT-VQE in the same active space.",
+  "watch_item": "Operator elimination and downfolding gains depend on reliable plateau detection and the quality of the effective Hamiltonian, so performance may be system- and threshold-sensitive.",
   "hashtags": [
+    "#QuantumComputing",
     "#ADAPTVQE",
     "#QuantumChemistry",
     "#VQE",
-    "#Downfolding",
-    "#QuantumAlgorithms"
+    "#Downfolding"
   ],
   "paper_id": "2026-07-01-arxiv-reducing_quantum_resources_for_adapt_vqe_via_plateau_operator_elimination_and_correlated_m",
   "paper_title": "Reducing quantum resources for ADAPT-VQE via plateau-operator elimination and correlated mean-field downfolding",
   "paper_date": "2026-07-01",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-07-04T11:26:52",
+  "generated_at": "2026-07-05T11:35:53",
   "generator": "openai"
 }

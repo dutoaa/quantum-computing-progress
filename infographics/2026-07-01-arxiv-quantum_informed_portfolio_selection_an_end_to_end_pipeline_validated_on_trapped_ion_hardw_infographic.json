@@ -1,17 +1,17 @@
 {
-  "key_insight": "qReduMIS uses noisy QAOA measurements not as the final answer, but as a guide to prune the portfolio graph and enable stronger classical optimization.",
-  "engineering_relevance": "This shows a practical hybrid quantum workflow for large financial optimization problems, where quantum hardware can improve solution quality by accelerating a classical exact/near-exact pipeline.",
+  "key_insight": "A hybrid quantum-classical pipeline, qReduMIS, uses QAOA measurements to prune and simplify portfolio-selection graphs before classical optimization, improving solution quality and scalability.",
+  "engineering_relevance": "The work shows a practical near-term quantum workflow for financial optimization, demonstrating hardware runs on a 98-qubit trapped-ion system with performance gains over standalone QAOA.",
   "method": [
-    "Model portfolio selection as a Maximum Independent Set problem on asset correlation graphs.",
-    "Run QAOA on graph kernels to identify likely-in-solution 'frozen' vertices.",
-    "Apply recursive classical reductions, then solve the reduced problem optimally or near-optimally."
+    "Formulate portfolio diversification as a Maximum Independent Set problem on asset-correlation graphs.",
+    "Use QAOA to measure candidate independent sets and identify frozen nodes.",
+    "Apply provably optimal classical reductions recursively on the reduced graph (qReduMIS)."
   ],
-  "evidence_signal": "Validated on real market data from four indices up to 225 assets and on Quantinuum trapped-ion hardware, with qReduMIS reaching success probabilities of 0.40 and 0.95 on the hardest cases and average approximation ratios at least 0.96.",
-  "watch_item": "Performance depends on kernel quality, hardware noise, and reduction accuracy, so the approach may not transfer uniformly across different market graphs or quantum devices.",
+  "evidence_signal": "On real market data from four indices up to 225 assets, qReduMIS reached success probabilities of 0.40 and 0.95 on the two largest cases and achieved average approximation ratios of at least 0.96, with emulator tests showing a 3.2× smaller optimal time-to-solution scaling exponent than standalone QAOA for p=2.",
+  "watch_item": "The approach depends on QAOA-generated freeze decisions and hardware/emulator performance, so benefits may vary with noise, graph structure, and circuit depth.",
   "hashtags": [
     "#QuantumComputing",
-    "#PortfolioOptimization",
     "#QAOA",
+    "#PortfolioOptimization",
     "#HybridAlgorithms",
     "#FinancialEngineering"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Quantum-Informed Portfolio Selection: An End-to-End Pipeline Validated on Trapped-Ion Hardware with Real Market Data",
   "paper_date": "2026-07-01",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-07-05T11:35:20",
+  "generated_at": "2026-07-06T13:44:21",
   "generator": "openai"
 }

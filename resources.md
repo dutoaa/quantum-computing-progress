@@ -1,15 +1,15 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-07-06
+Generated: 2026-07-07
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
-## 1. Polynomial equivalence of the global transverse-field Ising model and the gate model of quantum computation
+## 1. How Hard Is Quantum Advantage? A Cloud Microphysics Stress Test for Variational Quantum Models
 
-- Date: 2026-07-01
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2607.01227v1
-- PDF: https://arxiv.org/pdf/2607.01227v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-polynomial_equivalence_of_the_global_transverse_field_ising_model_and_the_gate_model_of_qu_infographic.json
+- Date: 2026-07-06
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2607.04915v1
+- PDF: https://arxiv.org/pdf/2607.04915v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-how_hard_is_quantum_advantage_a_cloud_microphysics_stress_test_for_variational_quantum_mod_infographic.json
 
 ## 2. Quantum Convolutional Autoencoders for Reconstruction-Based Anomaly Detection
 
@@ -19,47 +19,127 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2607.02135v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-quantum_convolutional_autoencoders_for_reconstruction_based_anomaly_detection_infographic.json
 
-## 3. Ravines in quantum cost landscapes: opportunities for improved VQA predictions
+## 3. Comparing and learning figures of merit for quantum circuit compilation
 
-- Date: 2026-07-01
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2607.01329v1
-- PDF: https://arxiv.org/pdf/2607.01329v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-ravines_in_quantum_cost_landscapes_opportunities_for_improved_vqa_predictions_infographic.json
-
-## 4. Bridging Quantum Computing Paradigms toward Semiconductor Yield: A Controlled CV-versus-DV Comparison on Wafer-Map Defect Classification
-
-- Date: 2026-07-01
+- Date: 2026-07-03
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2607.00961v1
-- PDF: https://arxiv.org/pdf/2607.00961v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-bridging_quantum_computing_paradigms_toward_semiconductor_yield_a_controlled_cv_versus_dv_infographic.json
+- arXiv: https://arxiv.org/abs/2607.03275v1
+- PDF: https://arxiv.org/pdf/2607.03275v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-03-arxiv-comparing_and_learning_figures_of_merit_for_quantum_circuit_compilation_infographic.json
 
-## 5. Hybrid quantum-classical neural network for sentiment analysis
+## 4. HamQASBench: A Hamiltonian-Informed Diagnostic Benchmark for Evaluating Quantum Architecture Search
+
+- Date: 2026-07-06
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2607.04845v1
+- PDF: https://arxiv.org/pdf/2607.04845v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-hamqasbench_a_hamiltonian_informed_diagnostic_benchmark_for_evaluating_quantum_architectur_infographic.json
+
+## 5. Transmon Phase Gates Controlled by Superconducting Soliton DAC
+
+- Date: 2026-07-06
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2607.05072v1
+- PDF: https://arxiv.org/pdf/2607.05072v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-transmon_phase_gates_controlled_by_superconducting_soliton_dac_infographic.json
+
+## 6. Complementary 3D color codes for transversal quantum logic
+
+- Date: 2026-07-06
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2607.05107v1
+- PDF: https://arxiv.org/pdf/2607.05107v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-complementary_3d_color_codes_for_transversal_quantum_logic_infographic.json
+
+## 7. Canonical quantization of neurons
+
+- Date: 2026-07-06
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2607.05000v1
+- PDF: https://arxiv.org/pdf/2607.05000v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-canonical_quantization_of_neurons_infographic.json
+
+## 8. Error Mitigation in Bosonic Systems via Virtual Distillation
+
+- Date: 2026-07-06
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2607.04914v1
+- PDF: https://arxiv.org/pdf/2607.04914v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-error_mitigation_in_bosonic_systems_via_virtual_distillation_infographic.json
+
+## 9. A Path-Superposition Framework for Quantum Gate Teleportation
+
+- Date: 2026-07-06
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2607.04672v1
+- PDF: https://arxiv.org/pdf/2607.04672v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-a_path_superposition_framework_for_quantum_gate_teleportation_infographic.json
+
+## 10. QuTuner: Feature- and Learning-Guided Optimization Pass Tuning for Quantum Compilers
+
+- Date: 2026-07-06
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2607.04586v1
+- PDF: https://arxiv.org/pdf/2607.04586v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-qutuner_feature_and_learning_guided_optimization_pass_tuning_for_quantum_compilers_infographic.json
+
+## 11. Noise-Aware Synthesis of Quantum LDPC Encoder Circuits via Two-Sided Hamming Descent
+
+- Date: 2026-07-05
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2607.04462v1
+- PDF: https://arxiv.org/pdf/2607.04462v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-05-arxiv-noise_aware_synthesis_of_quantum_ldpc_encoder_circuits_via_two_sided_hamming_descent_infographic.json
+
+## 12. Routing Anonymity and Identifiability of Noisy Quantum Hardware
+
+- Date: 2026-07-06
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2607.05281v1
+- PDF: https://arxiv.org/pdf/2607.05281v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-routing_anonymity_and_identifiability_of_noisy_quantum_hardware_infographic.json
+
+## 13. Quantum simulation of gauge theories on dynamical spacetimes via Floquet-induced matrix models
+
+- Date: 2026-07-04
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2607.04040v1
+- PDF: https://arxiv.org/pdf/2607.04040v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-04-arxiv-quantum_simulation_of_gauge_theories_on_dynamical_spacetimes_via_floquet_induced_matrix_mo_infographic.json
+
+## 14. A Semantic Framework for Reproducible Variational Quantum Algorithm Execution Records
+
+- Date: 2026-07-04
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2607.03982v1
+- PDF: https://arxiv.org/pdf/2607.03982v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-04-arxiv-a_semantic_framework_for_reproducible_variational_quantum_algorithm_execution_records_infographic.json
+
+## 15. Circuit Design Informed Adaptive Variational Quantum Algorithms
+
+- Date: 2026-07-05
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2607.04110v1
+- PDF: https://arxiv.org/pdf/2607.04110v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-05-arxiv-circuit_design_informed_adaptive_variational_quantum_algorithms_infographic.json
+
+## 16. Fault-tolerant quantum computation with static atomic buses
 
 - Date: 2026-07-02
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2607.01943v1
-- PDF: https://arxiv.org/pdf/2607.01943v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-hybrid_quantum_classical_neural_network_for_sentiment_analysis_infographic.json
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2607.02804v1
+- PDF: https://arxiv.org/pdf/2607.02804v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-fault_tolerant_quantum_computation_with_static_atomic_buses_infographic.json
 
-## 6. Quantum-Informed Portfolio Selection: An End-to-End Pipeline Validated on Trapped-Ion Hardware with Real Market Data
+## 17. A Cross-Platform Analysis of High-Performance Quantum Error Correction Codes
 
-- Date: 2026-07-01
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2607.01037v1
-- PDF: https://arxiv.org/pdf/2607.01037v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-quantum_informed_portfolio_selection_an_end_to_end_pipeline_validated_on_trapped_ion_hardw_infographic.json
+- Date: 2026-07-05
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2607.04082v1
+- PDF: https://arxiv.org/pdf/2607.04082v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-05-arxiv-a_cross_platform_analysis_of_high_performance_quantum_error_correction_codes_infographic.json
 
-## 7. Beyond the Expressivity-Trainability Paradox: A Dynamical Lie Algebra Perspective on Navigating Barren Plateaus in Quantum Machine Learning
-
-- Date: 2026-06-30
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2606.31536v3
-- PDF: https://arxiv.org/pdf/2606.31536v3
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-30-arxiv-beyond_the_expressivity_trainability_paradox_a_dynamical_lie_algebra_perspective_on_naviga_infographic.json
-
-## 8. Recovery Algorithm for Correlated Errors in Permutation-Invariant Quantum Codes
+## 18. Recovery Algorithm for Correlated Errors in Permutation-Invariant Quantum Codes
 
 - Date: 2026-07-02
 - Category: Quantum Hardware
@@ -67,98 +147,18 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2607.02346v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-recovery_algorithm_for_correlated_errors_in_permutation_invariant_quantum_codes_infographic.json
 
-## 9. LUCI on IBM Hardware: Error Suppression with Almost Half Syndrome Density
-
-- Date: 2026-07-02
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2607.01887v1
-- PDF: https://arxiv.org/pdf/2607.01887v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-luci_on_ibm_hardware_error_suppression_with_almost_half_syndrome_density_infographic.json
-
-## 10. Neural-Network Inverse Design of SRF Cavities and Transmons for Bosonic Quantum Computation
-
-- Date: 2026-07-02
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2607.02289v1
-- PDF: https://arxiv.org/pdf/2607.02289v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-neural_network_inverse_design_of_srf_cavities_and_transmons_for_bosonic_quantum_computatio_infographic.json
-
-## 11. Symmetry conservation with Trotterization and Quantum Phase Estimation
-
-- Date: 2026-07-02
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2607.01560v1
-- PDF: https://arxiv.org/pdf/2607.01560v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-symmetry_conservation_with_trotterization_and_quantum_phase_estimation_infographic.json
-
-## 12. Dependency-Aware Circuit Scheduling for Multi-Core Quantum Systems to Minimize Makespan
-
-- Date: 2026-07-01
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2607.00469v1
-- PDF: https://arxiv.org/pdf/2607.00469v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-dependency_aware_circuit_scheduling_for_multi_core_quantum_systems_to_minimize_makespan_infographic.json
-
-## 13. Structure-Aware Compilation for Scalable Neutral-Atom Quantum Computing
+## 19. Reducing quantum measurements in qubit-based overlapping grouping methods for quantum energy estimation through better initializations
 
 - Date: 2026-07-02
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2607.01787v1
-- PDF: https://arxiv.org/pdf/2607.01787v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-structure_aware_compilation_for_scalable_neutral_atom_quantum_computing_infographic.json
+- arXiv: https://arxiv.org/abs/2607.02794v1
+- PDF: https://arxiv.org/pdf/2607.02794v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-reducing_quantum_measurements_in_qubit_based_overlapping_grouping_methods_for_quantum_ener_infographic.json
 
-## 14. Learning Low-Energy Subspace Overlaps in Many-Body Systems with Measurement-Based and Coherent Quantum Strategies
+## 20. Contraction and Expansion Values of Quantum Channels
 
-- Date: 2026-06-30
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2607.00235v1
-- PDF: https://arxiv.org/pdf/2607.00235v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-06-30-arxiv-learning_low_energy_subspace_overlaps_in_many_body_systems_with_measurement_based_and_cohe_infographic.json
-
-## 15. Quantum nonlocal correlations of anomalous weak values
-
-- Date: 2026-07-01
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2607.01491v1
-- PDF: https://arxiv.org/pdf/2607.01491v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-quantum_nonlocal_correlations_of_anomalous_weak_values_infographic.json
-
-## 16. Symmetries of Pauli Noise from Lindbladian Dynamics
-
-- Date: 2026-07-02
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2607.02481v1
-- PDF: https://arxiv.org/pdf/2607.02481v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-symmetries_of_pauli_noise_from_lindbladian_dynamics_infographic.json
-
-## 17. Leveraging LLM-Based Agentic Systems to Generate Quantum Applications for Test Optimization
-
-- Date: 2026-07-01
+- Date: 2026-07-06
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2607.00939v1
-- PDF: https://arxiv.org/pdf/2607.00939v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-leveraging_llm_based_agentic_systems_to_generate_quantum_applications_for_test_optimizatio_infographic.json
-
-## 18. Quantum machine learning models for graphs
-
-- Date: 2026-07-01
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2607.00698v1
-- PDF: https://arxiv.org/pdf/2607.00698v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-quantum_machine_learning_models_for_graphs_infographic.json
-
-## 19. Reducing quantum resources for ADAPT-VQE via plateau-operator elimination and correlated mean-field downfolding
-
-- Date: 2026-07-01
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2607.00575v1
-- PDF: https://arxiv.org/pdf/2607.00575v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-01-arxiv-reducing_quantum_resources_for_adapt_vqe_via_plateau_operator_elimination_and_correlated_m_infographic.json
-
-## 20. One More Time: Revisiting Neural Quantum States from a Reinforcement Learning Perspective
-
-- Date: 2026-07-02
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2607.02292v1
-- PDF: https://arxiv.org/pdf/2607.02292v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-02-arxiv-one_more_time_revisiting_neural_quantum_states_from_a_reinforcement_learning_perspective_infographic.json
+- arXiv: https://arxiv.org/abs/2607.04950v1
+- PDF: https://arxiv.org/pdf/2607.04950v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-07-06-arxiv-contraction_and_expansion_values_of_quantum_channels_infographic.json

@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper shows that compiler figure-of-merit quality can be improved by learning from both circuit structure and hardware context, with weighted PST (wPST) providing a more informative target than standard gate-count or depth metrics.",
-  "engineering_relevance": "This gives quantum compiler designers a practical way to rank hardware-compatible circuits more accurately, improving execution success prediction without the cost of full circuit simulation or trial execution.",
+  "key_insight": "The paper shows that learned, hardware-aware figures of merit can predict quantum circuit execution quality much better than simple gate-count or depth metrics, and it introduces a weighted PST (wPST) that is more informative than standard PST.",
+  "engineering_relevance": "For quantum compilers, these predictors can rank candidate circuits more reliably before execution, helping choose mappings that better respect device noise and coherence constraints.",
   "method": [
-    "Defined an ideal FoM and proposed wPST, which weights success probabilities across individual qubits rather than only the full state.",
-    "Built machine-learning models that combine quantum circuit features with device hardware data to predict PST and wPST quickly.",
-    "Added a two-step method for non-transpiled circuits: predict extra gates first, then estimate wPST while accounting for device coherence times."
+    "Define and analyze desirable properties of an ideal figure of merit for circuit compilation",
+    "Propose wPST, which weights individual qubits instead of only evaluating the full returned state",
+    "Train machine-learning models using both circuit structure and hardware data, including a two-step predictor for non-transpiled circuits"
   ],
-  "evidence_signal": "In numerical simulations and experiments on quantum processors, the learned FoMs improved correlation with true PST/wPST by more than 50% compared with commonly used metrics.",
-  "watch_item": "The two-step prediction pipeline depends on accurate gate-addition and hardware-coherence estimates, so performance may degrade when device conditions drift or compilation patterns differ from training data.",
+  "evidence_signal": "In simulations and experiments on quantum processors, the machine-learning-predicted FoMs improved correlation with true PST or wPST by more than 50% compared with commonly used metrics.",
+  "watch_item": "The approach depends on hardware-specific data and an extra prediction step for gate overhead, so performance may vary when device characteristics drift or when circuits are far outside the training distribution.",
   "hashtags": [
-    "#QuantumCompiling",
-    "#QuantumHardware",
+    "#QuantumComputing",
+    "#QuantumCompilation",
     "#MachineLearning",
-    "#FigureOfMerit",
-    "#QuantumCircuits"
+    "#QuantumHardware",
+    "#PST"
   ],
   "paper_id": "2026-07-03-arxiv-comparing_and_learning_figures_of_merit_for_quantum_circuit_compilation",
   "paper_title": "Comparing and learning figures of merit for quantum circuit compilation",
   "paper_date": "2026-07-03",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-07-07T12:26:52",
+  "generated_at": "2026-07-08T11:46:24",
   "generator": "openai"
 }

@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-07-10
+Generated: 2026-07-11
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Grokking and epoch-wise double descent in quantum neural networks

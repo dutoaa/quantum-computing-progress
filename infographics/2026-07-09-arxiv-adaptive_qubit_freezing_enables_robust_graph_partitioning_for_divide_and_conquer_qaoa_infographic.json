@@ -1,13 +1,13 @@
 {
-  "key_insight": "FrozenLGP makes divide-and-conquer QAOA work on dense or highly connected graphs by freezing a minimal set of blocking qubits and preserving their effect as bias terms.",
-  "engineering_relevance": "This turns graph partitionability from a hard prerequisite into an adaptive preprocessing step for scaling QAOA on near-term quantum hardware.",
+  "key_insight": "FrozenLGP makes divide-and-conquer QAOA work on dense or highly connected graphs by freezing a small set of obstructing qubits and preserving their effect as bias terms.",
+  "engineering_relevance": "It turns graph partitionability into an adaptive preprocessing step, enabling larger MaxCut problems to be mapped onto near-term quantum hardware with fewer entangling gates.",
   "method": [
-    "Use max-flow/min-cut to find the minimum set of obstructing vertices when standard partitioning fails.",
-    "Classically freeze those vertices' spin assignments instead of forcing an invalid separator.",
-    "Fold removed interaction energy into linear Ising bias terms on neighboring active qubits."
+    "Use max-flow/minimum-vertex-cut to detect when standard graph partitioning fails.",
+    "Classically freeze the obstructing vertices’ spin assignments.",
+    "Fold removed interaction energies into neighboring linear bias terms in the Ising Hamiltonian."
   ],
-  "evidence_signal": "The abstract reports 100% decomposition coverage up to 10,000 vertices, versus 4.6% for the standard baseline on high-connectivity graphs, with preserved MaxCut quality and improved noise robustness.",
-  "watch_item": "The approach relies on classical preprocessing and spin freezing, so performance may depend on the quality and cost of repeated min-cut computations and on how freezing choices affect solution optimality.",
+  "evidence_signal": "Across graphs up to 10,000 vertices, the method achieved 100% decomposition coverage versus 4.6% for the standard baseline on high-connectivity cases, while preserving MaxCut quality and improving noise robustness.",
+  "watch_item": "The approach depends on accurate cut computation and careful bias redistribution, so performance may be sensitive to how frozen assignments are chosen and implemented.",
   "hashtags": [
     "#QuantumComputing",
     "#QAOA",
@@ -19,6 +19,6 @@
   "paper_title": "Adaptive Qubit Freezing Enables Robust Graph Partitioning for Divide-and-Conquer QAOA",
   "paper_date": "2026-07-09",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-07-10T12:24:40",
+  "generated_at": "2026-07-11T11:05:15",
   "generator": "openai"
 }

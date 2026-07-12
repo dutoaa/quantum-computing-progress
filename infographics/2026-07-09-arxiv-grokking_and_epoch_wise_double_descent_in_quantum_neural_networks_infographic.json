@@ -1,13 +1,13 @@
 {
-  "key_insight": "Overparameterized two-qubit quantum neural networks can “grok”: they first overfit, then later generalize, often after an epoch-wise double-descent spike in test error.",
-  "engineering_relevance": "Training dynamics in variational quantum circuits are highly sensitive to depth, learning rate, and regularization, so adding light weight-norm control can stabilize generalization in practical QML workflows.",
+  "key_insight": "Overparameterized two-qubit quantum neural networks can “grok” after delayed training, showing epoch-wise double descent and late-stage generalization decay unless stabilized by regularization.",
+  "engineering_relevance": "For quantum ML practitioners, this suggests circuit depth, learning rate, and weight decay must be tuned together to reliably move variational quantum models from memorization to durable generalization.",
   "method": [
-    "Complete SU(4) parameterization on a 2-qubit QNN",
-    "Sweep circuit depth, learning rate, and weight decay to track training/test dynamics",
-    "Add weak explicit weight-norm regularization to prevent late-stage generalization decay"
+    "Train a fully parameterized two-qubit QNN on SU(4)-complete circuits with increased depth.",
+    "Track training loss, test error, and weight-norm across epochs to detect grokking and double descent.",
+    "Add weak explicit weight-norm regularization to preserve post-grokking generalization."
   ],
-  "evidence_signal": "The abstract reports empirical results showing grokking and epoch-wise double descent in test error, with late-stage recovery to generalization under certain hyperparameter settings.",
-  "watch_item": "The stabilization effect is demonstrated on a small two-qubit system, so transfer to larger noisy hardware circuits may be nontrivial.",
+  "evidence_signal": "The abstract reports empirical observations across training runs, where deeper circuits improved the chance of successful generalization and test error often rose and later recovered during training.",
+  "watch_item": "The results are specific to a two-qubit, fully parameterized QNN setup, so the regularization strength and training dynamics may not transfer directly to larger or hardware-noisier quantum circuits.",
   "hashtags": [
     "#QuantumMachineLearning",
     "#Grokking",
@@ -19,6 +19,6 @@
   "paper_title": "Grokking and epoch-wise double descent in quantum neural networks",
   "paper_date": "2026-07-09",
   "paper_category": "Quantum Machine Learning",
-  "generated_at": "2026-07-11T11:04:58",
+  "generated_at": "2026-07-12T11:08:55",
   "generator": "openai"
 }

@@ -1,13 +1,13 @@
 {
-  "key_insight": "RubriQ turns quantum circuit synthesis into an LLM code-generation problem and uses rubric-guided GRPO to optimize circuits for fidelity, T-gate reduction, and hardware compatibility.",
-  "engineering_relevance": "The framework offers a scalable HPC-enabled path to producing fault-tolerant, hardware-ready quantum circuits with minimal constraint violations for real devices.",
+  "key_insight": "RubriQ turns quantum circuit synthesis into an LLM-based code-generation problem and improves it with rubric-guided GRPO to produce more efficient, hardware-compatible circuits.",
+  "engineering_relevance": "The framework provides an HPC-scalable path to automated fault-tolerant circuit generation, helping bridge the gap between theoretical quantum algorithms and deployable hardware-ready implementations.",
   "method": [
-    "LLM generates candidate quantum circuits as code.",
-    "Programmatic rubric scores T-gate count, topology compliance, and unitary fidelity as the RL reward.",
-    "CUDA-Q simulation and DeepSpeed ZeRO2 enable fast multi-node training on A100 clusters."
+    "Uses a domain-grounded rubric as the RL reward, scoring T-gate reduction, topology compliance, and unitary fidelity.",
+    "Trains an LLM with group relative policy optimization (GRPO) instead of a black-box neural critic.",
+    "Integrates GPU-accelerated CUDA-Q simulation and multi-node DeepSpeed ZeRO2 on Perlmutter for fast RL training."
   ],
-  "evidence_signal": "In benchmark tests, RubriQ achieved 3.31x mean T-gate compression versus 2.05x for sparse-reward RL, converged 2-3x faster, and kept hardware-constraint violations below 1% while validating on IBM and IonQ hardware.",
-  "watch_item": "Performance depends on accurate rubric design and simulation-in-the-loop training, so reward mis-specification or simulator-to-hardware mismatch could limit real-world transfer.",
+  "evidence_signal": "On benchmark tasks, RubriQ achieves 3.31x mean T-gate compression versus 2.05x for sparse-reward RL, converges 2–3x faster, and keeps hardware-constraint violations below 1%, with validation on IBM and IonQ devices.",
+  "watch_item": "Performance depends on the quality and completeness of the rubric and simulation-to-hardware transfer may still introduce mismatch or scaling challenges on larger circuits.",
   "hashtags": [
     "#QuantumComputing",
     "#QuantumML",
@@ -19,6 +19,6 @@
   "paper_title": "RubriQ: Rubric-Guided Group Relative Policy Optimization for Constraint-Aware Quantum Circuit Synthesis",
   "paper_date": "2026-07-08",
   "paper_category": "Quantum Machine Learning",
-  "generated_at": "2026-07-12T11:09:00",
+  "generated_at": "2026-07-13T12:30:53",
   "generator": "openai"
 }

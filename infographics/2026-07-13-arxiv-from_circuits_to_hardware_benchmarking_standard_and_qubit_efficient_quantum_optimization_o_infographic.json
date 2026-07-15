@@ -1,24 +1,24 @@
 {
-  "key_insight": "Real-hardware quantum optimization is mostly noise-limited on today’s IBM Heron processors, with a practical fidelity threshold around F_est≈0.1 for MDKP/MIS and no viable QAP solutions found under the tested encodings.",
-  "engineering_relevance": "Qubit-efficient formulations can enlarge runnable problem sizes, but circuit depth, two-qubit gate counts, and encoding feasibility remain the dominant constraints for deployable quantum optimization workflows.",
+  "key_insight": "Across 247 hardware runs, qubit-efficient and standard quantum optimization methods were benchmarked on IBM Heron processors, and most compiled circuits became noise-dominated once estimated fidelity dropped to around F_est ≈ 0.1.",
+  "engineering_relevance": "For near-term quantum optimization, circuit depth, two-qubit error rates, and encoding choice matter more than the algorithm family itself when deciding whether a hardware run is likely to outperform randomness.",
   "method": [
-    "Benchmarked VQE, CVaR-VQE, standard/multi-angle/warm-start QAOA, PCE, and QRAO on IBM Heron r1/r2.",
-    "Ran 247 method-instance combinations across MDKP, MIS, QAP, and MSP with resilience-level-2 mitigation.",
-    "Compared hardware outputs against an independent gate-count fidelity proxy (F_est) and a uniform-random control."
+    "Benchmarked VQE, CVaR-VQE, standard/multi-angle/warm-start QAOA, plus qubit-efficient PCE and QRAO",
+    "Tested four NP-hard problems: MDKP, MIS, QAP, and MSP on IBM Heron r1/r2 with resilience-level-2 mitigation",
+    "Used transpiled circuit size and an independent-error gate-count proxy (F_est) to compare implementations"
   ],
-  "evidence_signal": "Across 247 runs, compiled QAOA-family circuits were generally noise dominated; QAP’s one-hot feasible space was extremely sparse (10!/2^100 at n=10), and the SWAP-aware counterfactual still stayed below F_est=10^-3.",
-  "watch_item": "Results are specific to the tested implementations, encodings, and hardware/compiler settings, so they should not be generalized to QAOA or quantum optimization broadly.",
+  "evidence_signal": "The study reports 247 method-instance combinations and finds a noise-dominated regime near F_est ≈ 0.1 for MDKP and MIS, while QAP hardware runs never produced feasible assignments.",
+  "watch_item": "The conclusions are specific to the tested implementations and hardware/compiler choices, so they should not be read as a general failure of QAOA-like methods in principle.",
   "hashtags": [
     "#QuantumComputing",
-    "#QuantumOptimization",
     "#QAOA",
     "#VQE",
-    "#HardwareBenchmarking"
+    "#HardwareBenchmarking",
+    "#QuantumOptimization"
   ],
   "paper_id": "2026-07-13-arxiv-from_circuits_to_hardware_benchmarking_standard_and_qubit_efficient_quantum_optimization_o",
   "paper_title": "From Circuits to Hardware: Benchmarking Standard and Qubit-Efficient Quantum Optimization on Real Hardware",
   "paper_date": "2026-07-13",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-07-14T11:24:40",
+  "generated_at": "2026-07-15T11:28:28",
   "generator": "openai"
 }

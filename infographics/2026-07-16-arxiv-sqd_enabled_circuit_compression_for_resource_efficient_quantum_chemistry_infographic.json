@@ -1,16 +1,16 @@
 {
-  "key_insight": "SQD can tolerate aggressive circuit simplification, so much of a VQE ansatz can be pruned or Clifford-rounded without materially harming ground-state energy recovery.",
-  "engineering_relevance": "This enables smaller, faster quantum chemistry circuits with lower transpilation cost and shallower hardware execution while preserving chemical-accuracy SQD results.",
+  "key_insight": "SQD remains accurate even when the quantum sampling circuit is heavily simplified, allowing large reductions in non-Clifford and variational complexity before chemical-accuracy performance degrades.",
+  "engineering_relevance": "This enables cheaper quantum chemistry workflows by compressing VQE-style circuits on qubit-reduced Hamiltonians, lowering simulation cost and hardware depth while preserving downstream SQD quality.",
   "method": [
-    "Gradient-based operator pruning removes low-impact excitation terms from the VQE ansatz.",
-    "Clifford rounding snaps remaining parameters to the nearest Clifford angles to reduce non-Clifford complexity.",
-    "Both compressions are applied to a VQE sampling circuit on a qubit-reduced Hamiltonian before SQD post-processing."
+    "Gradient-based operator pruning removes low-impact excitation operators from the ansatz.",
+    "Clifford rounding snaps remaining parameters to nearby Clifford angles to reduce non-Clifford cost.",
+    "Both compressions are applied to VQE sampling circuits used for SQD subspace reconstruction."
   ],
-  "evidence_signal": "Across 21 molecules, median SQD error stayed within chemical accuracy at 50% compression on both axes, with up to 33× simulation speedup and up to 2.8× transpiled-depth reduction on 6 IBM hardware benchmarks.",
-  "watch_item": "Compression is benchmarked on selected molecules and circuits, so performance may depend on ansatz quality, molecule instance, and whether enough ground-state overlap remains after simplification.",
+  "evidence_signal": "Across 21 molecules, median SQD error stayed within chemical accuracy at 50% compression on both pruning and rounding axes, with up to 33× simulation speedup and up to 2.8× transpiled-depth reduction on 6 IBM hardware targets without SQD accuracy loss.",
+  "watch_item": "Compression is evaluated on specific molecules and ansätze, so performance may depend on the amount of ground-state overlap retained and may not generalize uniformly to harder chemistry instances.",
   "hashtags": [
+    "#QuantumComputing",
     "#QuantumChemistry",
-    "#QuantumAlgorithms",
     "#SQD",
     "#VQE",
     "#CircuitCompression"
@@ -19,6 +19,6 @@
   "paper_title": "SQD-Enabled Circuit Compression for Resource-Efficient Quantum Chemistry",
   "paper_date": "2026-07-16",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-07-17T11:21:24",
+  "generated_at": "2026-07-18T11:03:26",
   "generator": "openai"
 }

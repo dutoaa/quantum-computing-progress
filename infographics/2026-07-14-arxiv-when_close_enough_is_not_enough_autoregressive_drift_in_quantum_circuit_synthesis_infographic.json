@@ -1,24 +1,24 @@
 {
-  "key_insight": "A 44.8M-parameter transformer can synthesize quantum circuits well when post-processing can correct errors, but exact discrete synthesis on Clifford+T circuits breaks down as autoregressive drift compounds across longer outputs.",
-  "engineering_relevance": "For fault-tolerant quantum compilers, the result shows that exact equivalence is the bottleneck—not syntax or coarse resource prediction—and that inference-time search and more data are practical levers for improving reliability.",
+  "key_insight": "Transformer-based quantum circuit synthesis works well when approximate outputs can be repaired, but exact discrete synthesis suffers from autoregressive drift as circuits get longer.",
+  "engineering_relevance": "For fault-tolerant quantum compilation, this means sequence models can help with structure and resource estimation, but exact equivalence still needs verification, search, or stronger decoding strategies.",
   "method": [
-    "Encoder-decoder transformer with structured circuit tokenization",
-    "Hybrid synthesis for parameterized circuits: transformer proposes structure, classical optimization refines angles",
-    "Exact Clifford+T circuit generation evaluated with equivalence verification and candidate reranking"
+    "44.8M-parameter encoder-decoder transformer with structured circuit tokenization",
+    "Tested on parameterized circuits (2–6 qubits) and Clifford+T circuits (3–6 qubits)",
+    "Compared hybrid post-processing, multi-candidate inference, and larger training sets"
   ],
-  "evidence_signal": "On parameterized circuits the hybrid method reached median fidelity 1.000, while on Clifford+T circuits exact-match accuracy fell from 88% for circuits with <=9 gates to near zero beyond 26 gates; reranking improved exact matches from 7% to 22.5%, and 2.5x more training data raised them to 39.5%.",
-  "watch_item": "The main limitation is length-sensitive autoregressive drift, so even stronger models may still fail on long exact circuits unless decoding is made more robust or verification is integrated tightly.",
+  "evidence_signal": "On parameterized circuits, the hybrid pipeline reached median fidelity 1.000, while on Clifford+T circuits exact match fell from 88% for circuits with <=9 gates to near zero beyond 26 gates.",
+  "watch_item": "Exact synthesis reliability degrades sharply with sequence length, so practical use requires equivalence checking and cannot rely on greedy autoregressive decoding alone.",
   "hashtags": [
     "#QuantumComputing",
-    "#CircuitSynthesis",
-    "#TransformerModels",
+    "#QuantumCircuitSynthesis",
+    "#AutoregressiveModels",
     "#FaultTolerantComputing",
-    "#AutoregressiveDrift"
+    "#MachineLearningForQuantum"
   ],
   "paper_id": "2026-07-14-arxiv-when_close_enough_is_not_enough_autoregressive_drift_in_quantum_circuit_synthesis",
   "paper_title": "When Close Enough Is Not Enough: Autoregressive Drift in Quantum Circuit Synthesis",
   "paper_date": "2026-07-14",
   "paper_category": "Quantum Error Correction",
-  "generated_at": "2026-07-17T11:21:37",
+  "generated_at": "2026-07-18T11:03:42",
   "generator": "openai"
 }

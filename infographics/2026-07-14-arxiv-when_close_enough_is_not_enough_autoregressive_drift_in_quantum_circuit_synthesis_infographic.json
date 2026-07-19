@@ -1,24 +1,24 @@
 {
-  "key_insight": "Transformer-based quantum circuit synthesis works well when approximate outputs can be repaired, but exact discrete synthesis suffers from autoregressive drift as circuits get longer.",
-  "engineering_relevance": "For fault-tolerant quantum compilation, this means sequence models can help with structure and resource estimation, but exact equivalence still needs verification, search, or stronger decoding strategies.",
+  "key_insight": "Autoregressive quantum circuit synthesis works well when approximate outputs can be corrected afterward, but it breaks down for exact discrete circuits as early token errors cascade into large decoding drift.",
+  "engineering_relevance": "For fault-tolerant quantum compilation, inference-time search and more training data can improve exact synthesis, but reliability still degrades on longer target circuits where exact equivalence is mandatory.",
   "method": [
     "44.8M-parameter encoder-decoder transformer with structured circuit tokenization",
-    "Tested on parameterized circuits (2–6 qubits) and Clifford+T circuits (3–6 qubits)",
-    "Compared hybrid post-processing, multi-candidate inference, and larger training sets"
+    "Tested on parameterized circuits (2-6 qubits) and Clifford+T circuits (3-6 qubits)",
+    "Used equivalence verification, multi-candidate decoding, and scaling experiments to measure drift mitigation"
   ],
-  "evidence_signal": "On parameterized circuits, the hybrid pipeline reached median fidelity 1.000, while on Clifford+T circuits exact match fell from 88% for circuits with <=9 gates to near zero beyond 26 gates.",
-  "watch_item": "Exact synthesis reliability degrades sharply with sequence length, so practical use requires equivalence checking and cannot rely on greedy autoregressive decoding alone.",
+  "evidence_signal": "On Clifford+T circuits, exact-match accuracy fell from 88% for circuits with <=9 gates to near zero beyond 26 gates, while multi-candidate selection improved exact-match from 7% to 22.5% and 2.5x more training data raised it to 39.5%.",
+  "watch_item": "The approach remains fragile for long exact-synthesis targets, since even with more data the accuracy still drops sharply with circuit length and cannot be recovered by post-processing.",
   "hashtags": [
     "#QuantumComputing",
-    "#QuantumCircuitSynthesis",
-    "#AutoregressiveModels",
-    "#FaultTolerantComputing",
-    "#MachineLearningForQuantum"
+    "#CircuitSynthesis",
+    "#TransformerModels",
+    "#FaultTolerantQuantum",
+    "#AutoregressiveDrift"
   ],
   "paper_id": "2026-07-14-arxiv-when_close_enough_is_not_enough_autoregressive_drift_in_quantum_circuit_synthesis",
   "paper_title": "When Close Enough Is Not Enough: Autoregressive Drift in Quantum Circuit Synthesis",
   "paper_date": "2026-07-14",
   "paper_category": "Quantum Error Correction",
-  "generated_at": "2026-07-18T11:03:42",
+  "generated_at": "2026-07-19T11:08:59",
   "generator": "openai"
 }

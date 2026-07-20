@@ -1,24 +1,24 @@
 {
-  "key_insight": "A dilated causal CNN can detect radiation-induced charge jumps in superconducting qubits fast enough for real-time, in-loop control.",
-  "engineering_relevance": "The model was compiled to FPGA firmware on the QICK/ZCU216 platform, showing that low-latency, hardware-ready inference can replace offline charge-jump detection in quantum control systems.",
+  "key_insight": "A dilated causal CNN can detect radiation-induced charge jumps in superconducting qubits fast enough for real-time control, not just offline analysis.",
+  "engineering_relevance": "The approach enables FPGA-deployable, in-the-loop charge-jump detection on QICK, supporting adaptive qubit control and potentially improving error mitigation in quantum processors.",
   "method": [
-    "Trained a dilated causal convolutional neural network on synthetic Ramsey tomography scans built from NEXUS-measured qubit templates.",
-    "Converted the network to FPGA firmware with hls4ml using ap_fixed<16,6> quantization.",
-    "Deployed for online inference on the Zynq UltraScale+ RFSoC with 6.19 μs latency per inference."
+    "Train a DCCNN on synthetic Ramsey tomography scans built from measured qubit templates.",
+    "Translate the model to FPGA firmware with hls4ml using ap_fixed<16,6> quantization.",
+    "Deploy on Zynq UltraScale+ RFSoC hardware to achieve 6.19 µs per inference."
   ],
-  "evidence_signal": "At matched false-positive rate, the DCCNN achieved detection efficiency comparable to the offline χ² method (0.843 ± 0.022 vs. 0.866 ± 0.020) for |Δq| in [0.1, 0.5] e.",
-  "watch_item": "Performance depends on synthetic training data and fixed-point FPGA quantization, so robustness to unseen experimental conditions and deployment drift should be validated.",
+  "evidence_signal": "At matched false-positive rate on |Δq| ∈ [0.1, 0.5] e, the DCCNN reached 0.843 ± 0.022 detection efficiency versus 0.866 ± 0.020 for the offline χ² baseline.",
+  "watch_item": "Performance is shown on synthetic data derived from measured templates, so robustness to broader device drift and unseen operating conditions still needs validation.",
   "hashtags": [
     "#QuantumComputing",
     "#SuperconductingQubits",
-    "#FPGA",
     "#MachineLearning",
-    "#QuantumHardware"
+    "#FPGA",
+    "#RealTimeInference"
   ],
   "paper_id": "2026-07-15-arxiv-real_time_detection_of_charge_jumps_in_superconducting_qubits_with_a_convolutional_neural",
   "paper_title": "Real-Time Detection of Charge Jumps in Superconducting Qubits with a Convolutional Neural Network",
   "paper_date": "2026-07-15",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-07-19T11:08:37",
+  "generated_at": "2026-07-20T12:16:13",
   "generator": "openai"
 }

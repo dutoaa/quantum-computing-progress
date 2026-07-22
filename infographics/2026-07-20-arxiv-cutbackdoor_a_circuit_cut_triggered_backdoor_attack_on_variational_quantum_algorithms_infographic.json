@@ -1,16 +1,16 @@
 {
-  "key_insight": "CutBackdoor shows that a VQA backdoor can stay hidden on the full circuit while only activating when the victim uses circuit cutting, making the deployment-time trigger the resource mismatch itself.",
-  "engineering_relevance": "This exposes circuit cutting and public parameter sharing as a new supply-chain attack surface for practical quantum workflows on near-term hardware.",
+  "key_insight": "CutBackdoor shows that a poisoned VQA parameter set can stay accurate on the full circuit while becoming malicious only when the victim runs circuit cutting, using the cut workflow itself as the backdoor trigger.",
+  "engineering_relevance": "This exposes a new supply-chain risk for quantum software pipelines that rely on pre-trained VQA parameters and circuit cutting to fit hardware limits.",
   "method": [
-    "Poison pre-trained VQA parameters, not the circuit structure",
-    "Exploit CutQC-style circuit cutting as the trigger path",
-    "Preserve normal full-circuit accuracy while degrading cut-path reconstruction"
+    "Injects a parameter-level backdoor with no circuit modification.",
+    "Uses CutQC-style circuit cutting at deployment time as the activation trigger.",
+    "Targets noisy finite-shot cut execution so full-circuit behavior remains stealthy."
   ],
-  "evidence_signal": "Across multiple VQA benchmarks and IBM backends, the attack produced 1.3x to 2.9x cut-path energy amplification while keeping stealthiness small on the full-circuit path.",
-  "watch_item": "The attack depends on finite-shot cut execution and qubit-capacity mismatch, so defenses must consider when and where circuit cutting is invoked.",
+  "evidence_signal": "Across IBM backends and multiple VQA benchmarks, the poisoned model increased cut-path energy by about 1.3× to 2.9× over clean baselines while keeping full-circuit stealthiness small.",
+  "watch_item": "The attack depends on the victim invoking circuit cutting under finite-shot, hardware-constrained conditions, and mitigation such as Zero-Noise Extrapolation only partially reduces the effect.",
   "hashtags": [
     "#QuantumComputing",
-    "#VQA",
+    "#VariationalQuantumAlgorithms",
     "#CircuitCutting",
     "#BackdoorAttack",
     "#Cybersecurity"
@@ -19,6 +19,6 @@
   "paper_title": "CutBackdoor: A Circuit Cut Triggered Backdoor Attack on Variational Quantum Algorithms",
   "paper_date": "2026-07-20",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-07-21T11:46:08",
+  "generated_at": "2026-07-22T11:46:13",
   "generator": "openai"
 }

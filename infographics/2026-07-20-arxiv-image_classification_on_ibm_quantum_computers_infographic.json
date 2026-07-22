@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper shows that ten-class MNIST can run end-to-end on IBM’s 127-qubit Eagle chip using a train-offline, infer-on-hardware workflow with quantum multi-programming for faster parallel inference.",
-  "engineering_relevance": "This provides a practical NISQ deployment pattern: avoid costly on-device training, use the hardware mainly for inference, and improve throughput by packing multiple circuits onto one processor.",
+  "key_insight": "A 127-qubit IBM Eagle processor can run an end-to-end 10-class MNIST quantum classifier, but the practical gain is workflow efficiency rather than higher accuracy.",
+  "engineering_relevance": "The paper shows a deployable NISQ pipeline that shifts training off hardware, uses hardware only for inference, and scales throughput with quantum multi-programming.",
   "method": [
     "Two-phase training: classical gradient-based optimization for the encoder/readout, then gradient-free optimization for quantum parameters.",
-    "Quantum Multi-Programming: place multiple circuit copies on one device to run several inferences in parallel.",
-    "Compare hardware fine-tuning versus simulator training, and benchmark the quantum model against a classical network of matched capacity."
+    "Quantum multi-programming packs multiple trained circuit copies onto one device for parallel inference.",
+    "A controlled fine-tuning study compares on-hardware training versus simulator-trained deployment."
   ],
-  "evidence_signal": "In their evaluation, on-hardware fine-tuning did not produce measurable accuracy gains, and the quantum model showed no per-parameter accuracy advantage over a matched classical baseline.",
-  "watch_item": "The approach is still limited by NISQ noise and scale, so performance gains depend on inference-only use and may not generalize to larger or more complex datasets.",
+  "evidence_signal": "The system was evaluated on 10-class MNIST and benchmarked against a matched-capacity classical network, with no measurable accuracy gain from on-hardware fine-tuning and no mean-accuracy cost from multi-programmed inference.",
+  "watch_item": "The approach does not show a per-parameter accuracy advantage over a comparable classical model, so its value depends on hardware access, job submission limits, and NISQ noise conditions.",
   "hashtags": [
     "#QuantumMachineLearning",
     "#NISQ",
     "#IBMQuantum",
-    "#ImageClassification",
-    "#QuantumInference"
+    "#MNIST",
+    "#QuantumComputing"
   ],
   "paper_id": "2026-07-20-arxiv-image_classification_on_ibm_quantum_computers",
   "paper_title": "Image Classification on IBM Quantum Computers",
   "paper_date": "2026-07-20",
   "paper_category": "Quantum Machine Learning",
-  "generated_at": "2026-07-21T11:46:21",
+  "generated_at": "2026-07-22T11:46:38",
   "generator": "openai"
 }

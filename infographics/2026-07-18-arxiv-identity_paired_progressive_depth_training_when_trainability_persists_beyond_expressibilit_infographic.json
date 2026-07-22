@@ -1,24 +1,24 @@
 {
-  "key_insight": "Identity-paired progressive depth training keeps new VQA layers initialized to the identity, avoiding initialization shock while still improving optimization through added local rotation capacity after expressibility saturates.",
-  "engineering_relevance": "For hardware-efficient quantum circuits, this offers a cheaper and more stable training curriculum that reduces CNOT overhead and can make deeper variational ansätze easier to optimize in practice.",
+  "key_insight": "Identity-paired progressive depth training (IP-PDT) avoids initialization shock by adding forward/inverse layer pairs that start as identity, revealing that optimization can keep improving even after the expressible circuit saturates.",
+  "engineering_relevance": "For hardware-efficient VQAs, IP-PDT offers a practical training schedule that reduces CNOT overhead, stabilizes depth growth, and can improve convergence on near-term quantum devices.",
   "method": [
-    "Train a shallow variational circuit first, then append forward/inverse block pairs that cancel to identity at initialization.",
-    "Use a single entangling layer plus overparameterized single-qubit rotations so depth increases mainly expand local parameterization, not entangling cost.",
-    "Apply a continuation-style acceptance rule to guarantee monotone energy improvement during progressive training."
+    "Train shallow-first, then append identity-paired forward/inverse blocks instead of raw new layers.",
+    "Use the cancellation of adjacent CNOT rings so added depth mainly increases local rotation parameters, not entangling cost.",
+    "Apply an acceptance-based continuation rule to keep energy monotonically improving during depth growth."
   ],
-  "evidence_signal": "The abstract reports a theoretical reachable-set saturation result, monotone energy guarantees, fidelity-error bounds via spectral gaps, and a resource analysis showing lower total gate cost than baseline methods.",
-  "watch_item": "The benefits rely on the identity-pair construction and a single effective entangling layer, so performance may be sensitive to ansatz design, hardware constraints, and whether the accepted continuation steps avoid poor local minima.",
+  "evidence_signal": "The abstract reports theoretical guarantees, including a reachable-set saturation theorem, monotone energy under the acceptance rule, and resource analysis showing lower total gate cost than baselines.",
+  "watch_item": "The method relies on careful layer-acceptance and cancellation structure, so performance may depend on ansatz design and precise circuit implementation.",
   "hashtags": [
     "#QuantumComputing",
     "#VariationalAlgorithms",
-    "#QuantumOptimization",
-    "#CircuitDesign",
-    "#Trainability"
+    "#Trainability",
+    "#DepthTraining",
+    "#QuantumML"
   ],
   "paper_id": "2026-07-18-arxiv-identity_paired_progressive_depth_training_when_trainability_persists_beyond_expressibilit",
   "paper_title": "Identity-Paired Progressive Depth Training: When Trainability Persists Beyond Expressibility",
   "paper_date": "2026-07-18",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-07-21T11:46:16",
+  "generated_at": "2026-07-22T11:46:30",
   "generator": "openai"
 }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "QuantiSpect replaces dense 3D convolutions with factorized spatial, temporal, and spatio-temporal branches to make surface-code pre-decoding much lighter without losing decoding quality.",
-  "engineering_relevance": "The design reduces parameters and compute enough to improve real-time quantum error correction scalability, which is critical for low-latency fault-tolerant hardware control.",
+  "key_insight": "QuantiSpect replaces dense 3D convolutions with structure-aware factorized branches to keep surface-code decoding accurate while dramatically cutting model size and compute.",
+  "engineering_relevance": "This makes real-time quantum error correction more practical by lowering decoder latency and resource cost for scalable fault-tolerant quantum hardware.",
   "method": [
-    "Depthwise spatial branch for syndrome-local patterns",
-    "Depthwise temporal branch for time-correlated errors",
-    "Grouped spatio-temporal branch + squeeze-and-excitation gate"
+    "Uses a lightweight 3D CNN pre-decoder for the rotated surface code.",
+    "Replaces each dense residual block with depthwise spatial, depthwise temporal, and grouped spatio-temporal branches.",
+    "Adds squeeze-and-excitation channel gating to fuse branch outputs and exploit syndrome structure."
   ],
-  "evidence_signal": "On a 4×A100 benchmark, QuantiSpect matched the Accurate baseline’s receptive field at R=13 while using 0.663M vs 1.80M parameters and ~2.84× fewer per-voxel MACs, with threshold and accuracy parity at moderate/large distances.",
-  "watch_item": "Performance gains depend on architecture-specific factorization and benchmark conditions, so hardware integration and decoding latency must still be validated in full system settings.",
+  "evidence_signal": "On a 4×A100 benchmark, the R=13 model matched the Accurate baseline’s receptive field with 0.663M vs 1.80M parameters and about 2.84× fewer per-voxel MACs, while the expanded R=21 variant improved threshold to about 0.80% and further reduced logical error rates.",
+  "watch_item": "The approach is benchmarked on specific code distances and hardware assumptions, so deployment still needs validation for different noise models, decoder stacks, and system-level latency constraints.",
   "hashtags": [
     "#QuantumErrorCorrection",
     "#SurfaceCode",
     "#DeepLearning",
-    "#3DCNN",
+    "#LowLatencyDecoding",
     "#FaultTolerantQuantumComputing"
   ],
   "paper_id": "2026-07-20-arxiv-quantispect_a_structure_aware_lightweight_3d_cnn_pre_decoder_for_scalable_surface_code_qua",
   "paper_title": "QuantiSpect: A Structure-Aware Lightweight 3D CNN Pre-Decoder for Scalable Surface Code Quantum Error Correction",
   "paper_date": "2026-07-20",
   "paper_category": "Quantum Error Correction",
-  "generated_at": "2026-07-22T11:46:25",
+  "generated_at": "2026-07-23T11:50:19",
   "generator": "openai"
 }

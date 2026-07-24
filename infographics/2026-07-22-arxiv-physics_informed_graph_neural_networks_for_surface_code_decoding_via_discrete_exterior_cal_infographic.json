@@ -1,13 +1,13 @@
 {
-  "key_insight": "A physics-informed graph neural network can decode the surface code by learning syndrome-adaptive edge weights while a discrete Poisson solver produces a single topological scalar that captures the logical-error signal.",
-  "engineering_relevance": "This offers an exact, parameter-free readout that is simple to implement and can match stronger full-field decoders, making it attractive for scalable quantum error-correction pipelines.",
+  "key_insight": "A physics-informed graph neural network can decode the surface code by learning a syndrome-adaptive discrete Poisson metric and then extracting a single topological scalar that captures the logical error signal.",
+  "engineering_relevance": "This provides an exact, parameter-free readout that is simpler than full-field decoding yet can match strong decoders on rotated surface code data, making it attractive for scalable quantum error correction pipelines.",
   "method": [
-    "Encode the syndrome graph with a GNN that learns edge weights from the observed syndrome.",
-    "Solve a discrete Poisson equation to obtain node potentials and edge currents under a hard physics prior.",
-    "Read out the logical signal as the difference in current drained by sinks placed on the two code boundaries linked by the logical operator."
+    "Build a syndrome graph and impose a discrete Poisson equation as a hard physics prior.",
+    "Learn edge weights with a graph encoder, then solve differentiably for node potentials and edge currents.",
+    "Read out the logical decision from the difference in current drained by the two code boundaries linked by the logical operator."
   ],
-  "evidence_signal": "On the rotated surface code under circuit-level depolarising noise, the proposed topological scalar matches the best full-field readout, with stronger gains suggested at larger code distances.",
-  "watch_item": "Performance depends on the learned metric and boundary placement, so robust training and solver integration are important for stable deployment.",
+  "evidence_signal": "On the rotated surface code with circuit-level depolarising noise, the single topological scalar matches the best full-field readout, and the advantage appears stronger at larger code distances.",
+  "watch_item": "The approach relies on a learned metric and boundary-specific pairing, so performance may depend on how well the solver, topology, and boundary conditions are implemented for each code geometry.",
   "hashtags": [
     "#QuantumErrorCorrection",
     "#SurfaceCode",
@@ -19,6 +19,6 @@
   "paper_title": "Physics-Informed Graph Neural Networks for Surface Code Decoding via Discrete Exterior Calculus",
   "paper_date": "2026-07-22",
   "paper_category": "Quantum Error Correction",
-  "generated_at": "2026-07-23T11:50:21",
+  "generated_at": "2026-07-24T11:42:24",
   "generator": "openai"
 }

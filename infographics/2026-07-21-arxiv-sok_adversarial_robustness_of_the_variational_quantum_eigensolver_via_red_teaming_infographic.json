@@ -1,13 +1,13 @@
 {
-  "key_insight": "VQE can be substantially manipulated by adversarial attacks in cloud-style workflows, with noise-induced attacks that exploit the Zero-Noise Extrapolation pipeline causing the largest energy-error amplification.",
-  "engineering_relevance": "For quantum chemistry and materials workflows, VQE results should be treated as security-sensitive outputs and defended with benchmarking, monitoring, and pipeline hardening across the full transpilation-to-execution stack.",
+  "key_insight": "VQE is vulnerable to adversarial tampering across the cloud workflow, and a unified benchmark shows that noise-manipulating attacks can hurt it far more than parameter- or circuit-level backdoors.",
+  "engineering_relevance": "For quantum software and cloud deployment teams, this work provides a common red-teaming framework to compare attack severity and prioritize defenses for VQE-as-a-service pipelines.",
   "method": [
-    "Built VQE-AdvBench, a unified red-teaming benchmark for adversarial robustness of VQE.",
-    "Organized attacks by black-, gray-, and white-box access to compare threats under one protocol.",
-    "Evaluated seven attack scenarios across H2 and H3+ on five noise-calibrated IBM backends using a fixed molecule-ansatz-backend-metric setup."
+    "Built VQE-AdvBench, a unified red-teaming benchmark for VQE robustness.",
+    "Covers black-, gray-, and white-box attacks across circuit, parameter, and noise/ZNE manipulation.",
+    "Evaluated seven attack scenarios on H2 and H3+ using five noise-calibrated IBM backends."
   ],
-  "evidence_signal": "Across the benchmark, noise-induced QNBAD variants were most damaging with up to 8.84× error amplification, followed by QTrojan at 7.52×, while QDoor reached only 1.37×.",
-  "watch_item": "Results are benchmark-specific and depend on the chosen molecules, ansatz, backends, and noise calibration, so broader generalization to other VQE settings still needs validation.",
+  "evidence_signal": "The benchmark reports a clear severity ranking, with ZNE-related noise attacks amplifying energy error by up to 8.84×, QTrojan by 7.52×, and QDoor by only 1.37×.",
+  "watch_item": "Results are bounded to specific molecules, ansatz-backend choices, and IBM hardware settings, so attack impact may differ for other VQE configurations or mitigation pipelines.",
   "hashtags": [
     "#QuantumComputing",
     "#VQE",
@@ -19,6 +19,6 @@
   "paper_title": "SoK: Adversarial Robustness of the Variational Quantum Eigensolver via Red-Teaming",
   "paper_date": "2026-07-21",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-07-25T11:09:46",
+  "generated_at": "2026-07-26T11:19:05",
   "generator": "openai"
 }

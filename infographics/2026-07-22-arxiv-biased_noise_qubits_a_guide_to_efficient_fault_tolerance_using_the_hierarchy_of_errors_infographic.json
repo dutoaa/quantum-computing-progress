@@ -1,13 +1,13 @@
 {
-  "key_insight": "Biased-noise qubits can dramatically lower fault-tolerance overhead only if the hardware operations preserve the error bias; otherwise, the advantage largely disappears.",
-  "engineering_relevance": "The paper guides which gate sets and architectures can actually exploit biased noise, pointing to CX-based or measurement-based designs as the most promising for efficient quantum hardware.",
+  "key_insight": "Biased-noise qubits can greatly reduce fault-tolerance overhead only when the hardware operations preserve the noise bias, letting phase-flip and bit-flip errors be corrected with different code layers.",
+  "engineering_relevance": "The paper points to concrete hardware targets—especially bias-preserving gates or high-fidelity multi-qubit Z readout—that can make quantum computing more resource-efficient on spin and cat-qubit platforms.",
   "method": [
-    "Organize fault-tolerant protocols by the available bias-preserving operations.",
-    "Compare CZ-only schemes against CX-enabled schemes and measurement-based architectures.",
-    "Use code structure and magic-state preparation that match the hierarchy of phase-flip versus bit-flip errors."
+    "Organize fault-tolerant protocols by which bias-preserving operations are available.",
+    "Compare CZ + X-basis preparation/measurement against the case with a bias-preserving CX gate.",
+    "Propose a measurement-based architecture using quantum non-demolition multi-qubit Pauli Z readout to extend the savings beyond CX-capable hardware."
   ],
-  "evidence_signal": "From the abstract’s comparative analysis, CZ-only syndrome extraction is shown to cancel most of the bias advantage at experimentally relevant error rates, while CX-enabled and QND-readout approaches recover substantial overhead reductions.",
-  "watch_item": "The main limitation is that naturally biased platforms typically do not support a bias-preserving CX gate, and even engineered platforms may struggle to implement it with sufficient fidelity.",
+  "evidence_signal": "From the abstract’s review-based comparison, the authors argue that with only CZ plus X-basis operations, syndrome-extraction overhead cancels the advantage of bias at experimentally relevant error rates, while a CX gate or equivalent readout changes the scaling favorably.",
+  "watch_item": "The main limitation is that naturally biased platforms do not support a bias-preserving CX easily, so realizing the promised savings depends on hardware that can maintain bias through operations without converting phase-flips into bit-flips.",
   "hashtags": [
     "#QuantumComputing",
     "#FaultTolerance",
@@ -19,6 +19,6 @@
   "paper_title": "Biased-noise qubits: a guide to efficient fault-tolerance using the hierarchy of errors",
   "paper_date": "2026-07-22",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-07-25T11:10:06",
+  "generated_at": "2026-07-26T11:19:25",
   "generator": "openai"
 }

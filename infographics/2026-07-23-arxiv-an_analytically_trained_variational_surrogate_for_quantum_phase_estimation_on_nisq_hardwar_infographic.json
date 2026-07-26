@@ -1,24 +1,24 @@
 {
-  "key_insight": "A shallow variational quantum circuit can be trained analytically from the Dirichlet-kernel QPE target distribution to mimic quantum phase estimation without expensive quantum circuit simulation.",
-  "engineering_relevance": "This offers a hardware-efficient route to molecular energy estimation on NISQ devices by replacing deep QPE circuits with a linearly scaling surrogate.",
+  "key_insight": "A shallow variational quantum circuit can be trained analytically to mimic Quantum Phase Estimation measurement outcomes without simulating the full quantum circuit, enabling hardware-friendly molecular energy estimation on NISQ devices.",
+  "engineering_relevance": "This replaces an exponentially costly QPE simulation step with a classically computed training target, making surrogate-based quantum algorithms more practical for near-term quantum hardware.",
   "method": [
-    "Compute the QPE measurement target classically from the FCI ground-state energy, ancilla count, and evolution time using the Dirichlet kernel.",
-    "Train shallow VQC ansätze on IBM Quantum hardware and compare entangler topologies, depths, and dynamical decoupling settings.",
-    "Validate surrogate quality with distributional metrics and test chemical-accuracy recovery for H2."
+    "Compute the QPE target distribution classically using the Dirichlet kernel from FCI energy, ancilla count, and evolution time.",
+    "Train a shallow VQC to reproduce the QPE distribution on IBM Quantum hardware.",
+    "Compare entangler topologies, circuit depths, and dynamical decoupling under multiple distribution metrics."
   ],
-  "evidence_signal": "The abstract reports a four-stage hardware study using Hellinger distance, fidelity error, total variation distance, and Jensen-Shannon divergence, with the best configuration recovering ground-state energy within chemical accuracy.",
-  "watch_item": "Performance depends on hardware noise and ansatz choice, so deeper circuits or mismatched entanglers may reduce fidelity despite the analytic target.",
+  "evidence_signal": "Across four experimental stages on H$_2$, the study evaluated linear vs full entanglers, p=1 to 5 layers, and DD/no-DD settings using Hellinger distance, fidelity error, total variation distance, and Jensen-Shannon divergence, recovering chemical-accuracy energy.",
+  "watch_item": "Performance is tuned to a specific noise profile and small molecular benchmark, so transfer to deeper circuits, larger molecules, or different hardware may require re-optimization.",
   "hashtags": [
     "#QuantumComputing",
     "#QPE",
     "#NISQ",
-    "#VariationalQuantumCircuits",
+    "#VariationalQuantumCircuit",
     "#QuantumHardware"
   ],
   "paper_id": "2026-07-23-arxiv-an_analytically_trained_variational_surrogate_for_quantum_phase_estimation_on_nisq_hardwar",
   "paper_title": "An Analytically Trained Variational Surrogate for Quantum Phase Estimation on NISQ Hardware",
   "paper_date": "2026-07-23",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-07-25T11:09:49",
+  "generated_at": "2026-07-26T11:19:08",
   "generator": "openai"
 }

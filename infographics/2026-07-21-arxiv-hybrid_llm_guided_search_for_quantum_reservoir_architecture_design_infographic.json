@@ -1,13 +1,13 @@
 {
-  "key_insight": "A hybrid LLM-guided search loop can effectively propose quantum reservoir architectures, but it works best as a controller inside a rigorous search pipeline rather than as a standalone optimizer.",
-  "engineering_relevance": "For near-term quantum machine learning, this suggests LLMs can speed up architecture exploration across encoding, entanglement, measurement, and readout choices while keeping evaluation on a simulator-based benchmark.",
+  "key_insight": "A hybrid LLM-guided search loop can effectively propose quantum reservoir architectures, but its benefit comes from being embedded in a constrained, reproducible optimization framework rather than from the LLM alone.",
+  "engineering_relevance": "The work turns quantum reservoir design into a practical black-box architecture search problem, offering a template for using AI assistants to automate near-term quantum ML system tuning.",
   "method": [
-    "Frames QRC design as constrained black-box architecture search.",
-    "Compares random, evolutionary, Bayesian/TPE, feedback LLM, and hybrid LLM+memory/mutation/crossover policies.",
-    "Uses identical evaluation budgets to test whether generative proposals improve search efficiency."
+    "Benchmark QRC architecture search with five policies: random, evolutionary, Bayesian/TPE, feedback LLM, and a hybrid LLM-based controller.",
+    "Search over key design choices including input encoding, reservoir depth, entanglement topology, measurement features, reset policy, feature construction, and readout regularization.",
+    "Use memory, mutation, crossover, duplicate avoidance, and exploration to strengthen LLM proposals in the hybrid policy."
   ],
-  "evidence_signal": "Across NARMA10, Mackey-Glass, and temporal parity, the hybrid policy is most consistent, ranking first on two tasks and achieving a 23.6% relative error reduction over random search on Mackey-Glass under a 25-evaluation, three-seed budget.",
-  "watch_item": "The gains are benchmark-specific and simulator-based, so the approach should not be interpreted as universal evidence that LLMs reliably optimize all QRC designs or hardware settings.",
+  "evidence_signal": "Across NARMA10, Mackey-Glass, and temporal parity under a 25-evaluation budget and three seeds, the hybrid policy was most consistent, ranking first on two tasks and improving over random search on all tasks, including a 23.6% relative error reduction on Mackey-Glass.",
+  "watch_item": "Results are benchmark-specific and do not demonstrate that LLMs are universally superior optimizers for quantum reservoir design; performance depends on the surrounding search protocol and evaluation budget.",
   "hashtags": [
     "#QuantumMachineLearning",
     "#QuantumReservoirComputing",
@@ -19,6 +19,6 @@
   "paper_title": "Hybrid LLM-Guided Search for Quantum Reservoir Architecture Design",
   "paper_date": "2026-07-21",
   "paper_category": "Quantum Machine Learning",
-  "generated_at": "2026-07-25T11:09:33",
+  "generated_at": "2026-07-26T11:18:52",
   "generator": "openai"
 }

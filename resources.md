@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-07-31
+Generated: 2026-08-01
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. LLM-Guided Initialization for Accelerated Hybrid Quantum-Classical Medical Image Classification

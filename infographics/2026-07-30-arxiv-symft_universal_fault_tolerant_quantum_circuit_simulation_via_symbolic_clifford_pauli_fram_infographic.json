@@ -1,24 +1,24 @@
 {
-  "key_insight": "SymFT speeds up fault-tolerant quantum circuit simulation by separating symbolic Clifford/Pauli frame effects from the few operations that actually change sampling probabilities, while adapting stabilizer coordinates to minimize per-shot work.",
-  "engineering_relevance": "This makes large-scale simulation of error-corrected and near-Clifford circuits more practical for benchmarking, protocol design, and performance analysis on standard CPU hardware.",
+  "key_insight": "SymFT speeds up fault-tolerant quantum circuit simulation by separating symbolic Clifford/Pauli frames from the small set of non-stabilizer degrees of freedom that actually affect sampling.",
+  "engineering_relevance": "It offers a practical, high-throughput simulator for error-correction and near-Clifford workloads where many shots are dominated by stabilizer structure, making large-scale benchmarking and protocol development cheaper.",
   "method": [
-    "Symbolic Clifford–Pauli frame factorization: treat residual Clifford/Pauli frames and sign-flipped noise/feedback symbolically so they do not need to be applied every shot.",
-    "Adaptive stabilizer-coordinate planning: use a shared stabilizer–destabilizer tableau to define a basis and keep only active non-stabilizer degrees of freedom in a compact dense vector.",
-    "Direct multi-coordinate sampling: resolve basis changes once and generate sampling instructions without per-shot tableau updates or localization-induced Clifford transforms."
+    "Symbolic Clifford--Pauli frame factorization keeps residual Clifford/Pauli operations symbolic so they do not need to be applied every shot.",
+    "Adaptive stabilizer-coordinate planning uses a shared tableau to define the basis and stores only active non-stabilizer coordinates in a compact dense vector.",
+    "Direct multi-coordinate sampling instructions avoid per-shot tableau updates and localization-induced Clifford transformations."
   ],
-  "evidence_signal": "In the abstract’s evaluation, SymFT outperforms Stim by 2.51–2.56× on surface-code circuits, Clifft by 1.86–3.51× on magic-state cultivation/distillation circuits, and exceeds the authors’ prior SOFT simulator by over two orders of magnitude on tested cultivation circuits.",
-  "watch_item": "The approach depends on careful symbolic bookkeeping and adaptive basis management, so implementation complexity and correctness of frame/coordinate updates are important concerns.",
+  "evidence_signal": "On tested pure-Clifford and near-Clifford circuits, SymFT outperformed Stim by 2.51–2.56× on surface-code circuits, outperformed Clifft by 1.86–3.51× on cultivation and distillation circuits, and beat SOFT by more than two orders of magnitude on tested cultivation circuits.",
+  "watch_item": "The approach relies on efficient basis planning and symbolic frame handling, so performance may depend on circuit structure and the cost of managing dynamically changing active coordinates.",
   "hashtags": [
     "#QuantumComputing",
-    "#FaultTolerance",
-    "#QuantumSimulation",
-    "#StabilizerMethods",
-    "#CliffordCircuits"
+    "#QuantumErrorCorrection",
+    "#FaultTolerantQuantumComputing",
+    "#CircuitSimulation",
+    "#StabilizerFormalism"
   ],
   "paper_id": "2026-07-30-arxiv-symft_universal_fault_tolerant_quantum_circuit_simulation_via_symbolic_clifford_pauli_fram",
   "paper_title": "SymFT: Universal Fault-Tolerant Quantum Circuit Simulation via Symbolic Clifford--Pauli Frames and Stabilizer Coordinates",
   "paper_date": "2026-07-30",
   "paper_category": "Quantum Error Correction",
-  "generated_at": "2026-07-31T12:00:30",
+  "generated_at": "2026-08-01T11:16:56",
   "generator": "openai"
 }

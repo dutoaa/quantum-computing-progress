@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-08-14
+Generated: 2026-08-15
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Hybrid HPC-Quantum Simulations: DFT-Quantum Embedding for Molecular Systems
@@ -75,7 +75,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.11563v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-efficient_quantum_modular_reduction_crandall_reduction_and_its_fault_tolerant_resource_ana_infographic.json
 
-## 10. Clifford Circuit Synthesis for Distributed Quantum Architectures with Arbitrary Network Topology
+## 10. Hamilton-Zero: A Neural Tensor-Network Foundation Model for Ground States of Arbitrary Quadratic Qubit Hamiltonians
+
+- Date: 2026-08-12
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.11911v2
+- PDF: https://arxiv.org/pdf/2608.11911v2
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-hamilton_zero_a_neural_tensor_network_foundation_model_for_ground_states_of_arbitrary_quad_infographic.json
+
+## 11. Clifford Circuit Synthesis for Distributed Quantum Architectures with Arbitrary Network Topology
 
 - Date: 2026-08-13
 - Category: Quantum Error Correction
@@ -83,7 +91,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.13543v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-clifford_circuit_synthesis_for_distributed_quantum_architectures_with_arbitrary_network_to_infographic.json
 
-## 11. Mid-circuit ground-state cooling and ancilla readout in the $\textit{omg}$ architecture
+## 12. Mid-circuit ground-state cooling and ancilla readout in the $\textit{omg}$ architecture
 
 - Date: 2026-08-13
 - Category: Quantum Error Correction
@@ -91,7 +99,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.13181v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-mid_circuit_ground_state_cooling_and_ancilla_readout_in_the_textit_omg_architecture_infographic.json
 
-## 12. CoQui: A Coordinate-Conditioned Quantum Implicit Generative Adversarial Network for End-to-End Image Generation
+## 13. CoQui: A Coordinate-Conditioned Quantum Implicit Generative Adversarial Network for End-to-End Image Generation
 
 - Date: 2026-08-12
 - Category: Quantum Machine Learning
@@ -99,7 +107,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.11884v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-coqui_a_coordinate_conditioned_quantum_implicit_generative_adversarial_network_for_end_to_infographic.json
 
-## 13. Efficient Compilation for Hamiltonian Simulation via Global Binary Symplectic Form Simplification
+## 14. Efficient Compilation for Hamiltonian Simulation via Global Binary Symplectic Form Simplification
 
 - Date: 2026-08-12
 - Category: Quantum Algorithms
@@ -107,7 +115,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.11579v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-efficient_compilation_for_hamiltonian_simulation_via_global_binary_symplectic_form_simplif_infographic.json
 
-## 14. Spatially Dense, Continuous-Variable Quantum Computing with Solid State Spin Nonlinearities
+## 15. Spatially Dense, Continuous-Variable Quantum Computing with Solid State Spin Nonlinearities
 
 - Date: 2026-08-12
 - Category: Quantum Error Correction
@@ -115,7 +123,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.12504v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-spatially_dense_continuous_variable_quantum_computing_with_solid_state_spin_nonlinearities_infographic.json
 
-## 15. Shots-to-Approximate-Solution Scaling in Neutral-Atom Quantum Optimization
+## 16. Shots-to-Approximate-Solution Scaling in Neutral-Atom Quantum Optimization
 
 - Date: 2026-08-13
 - Category: Quantum Optimization
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.12858v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-shots_to_approximate_solution_scaling_in_neutral_atom_quantum_optimization_infographic.json
 
-## 16. Quantum simulation of non-Markovian dynamical systems
+## 17. Quantum simulation of non-Markovian dynamical systems
 
 - Date: 2026-08-13
 - Category: Quantum Simulation
@@ -131,21 +139,13 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.13533v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-quantum_simulation_of_non_markovian_dynamical_systems_infographic.json
 
-## 17. Robust Genuine Multipartite Entanglement in Two Walker Quantum Walks
+## 18. Robust Genuine Multipartite Entanglement in Two Walker Quantum Walks
 
 - Date: 2026-08-13
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2608.13338v1
 - PDF: https://arxiv.org/pdf/2608.13338v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-robust_genuine_multipartite_entanglement_in_two_walker_quantum_walks_infographic.json
-
-## 18. Hamilton-Zero: A Neural Tensor-Network Foundation Model for Ground States of Arbitrary Quadratic Qubit Hamiltonians
-
-- Date: 2026-08-12
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2608.11911v2
-- PDF: https://arxiv.org/pdf/2608.11911v2
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-hamilton_zero_a_neural_tensor_network_foundation_model_for_ground_states_of_arbitrary_quad_infographic.json
 
 ## 19. Ambient unitaries don't enable shallow group designs
 

@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-08-15
+Generated: 2026-08-16
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Hybrid HPC-Quantum Simulations: DFT-Quantum Embedding for Molecular Systems

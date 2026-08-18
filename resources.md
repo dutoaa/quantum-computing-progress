@@ -1,33 +1,145 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-08-17
+Generated: 2026-08-18
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
-## 1. Hybrid HPC-Quantum Simulations: DFT-Quantum Embedding for Molecular Systems
+## 1. Machine Learning Approaches to Decoding Topological Quantum Codes
 
-- Date: 2026-08-13
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.12884v1
-- PDF: https://arxiv.org/pdf/2608.12884v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-hybrid_hpc_quantum_simulations_dft_quantum_embedding_for_molecular_systems_infographic.json
+- Date: 2026-08-16
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2608.15760v1
+- PDF: https://arxiv.org/pdf/2608.15760v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-16-arxiv-machine_learning_approaches_to_decoding_topological_quantum_codes_infographic.json
 
-## 2. AutoQuREO: A Framework for Automated Quantum Resource Estimation and Optimization
+## 2. Qudit-ADAPT-VQE: an adaptive variational algorithm with counterdiabatic-inspired improvements for qudits
 
-- Date: 2026-08-13
+- Date: 2026-08-15
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2608.12936v1
-- PDF: https://arxiv.org/pdf/2608.12936v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-autoqureo_a_framework_for_automated_quantum_resource_estimation_and_optimization_infographic.json
+- arXiv: https://arxiv.org/abs/2608.14981v1
+- PDF: https://arxiv.org/pdf/2608.14981v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-15-arxiv-qudit_adapt_vqe_an_adaptive_variational_algorithm_with_counterdiabatic_inspired_improvemen_infographic.json
 
-## 3. SPLIT-Q: A Scalable Sequential Quantum Computing Framework for Coherent Controlled Islanding
+## 3. Quantum Simulation of QCD in Axial Gauge
 
-- Date: 2026-08-13
+- Date: 2026-08-17
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.16783v1
+- PDF: https://arxiv.org/pdf/2608.16783v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-quantum_simulation_of_qcd_in_axial_gauge_infographic.json
+
+## 4. Scientific applications of quantum computing: challenges and opportunities
+
+- Date: 2026-08-17
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.16568v1
+- PDF: https://arxiv.org/pdf/2608.16568v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-scientific_applications_of_quantum_computing_challenges_and_opportunities_infographic.json
+
+## 5. zenDot: An LLM-integrated quantum TCAD platform for semiconductor quantum-device design and optimization automation
+
+- Date: 2026-08-17
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.16048v1
+- PDF: https://arxiv.org/pdf/2608.16048v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-zendot_an_llm_integrated_quantum_tcad_platform_for_semiconductor_quantum_device_design_and_infographic.json
+
+## 6. Scalable nuclear shell model calculations on noisy quantum computers
+
+- Date: 2026-08-17
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2608.16371v1
+- PDF: https://arxiv.org/pdf/2608.16371v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-scalable_nuclear_shell_model_calculations_on_noisy_quantum_computers_infographic.json
+
+## 7. Continuous Quantum Feedback Control via Kraus-Parameterized Belief Reinforcement Learning
+
+- Date: 2026-08-16
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2608.15715v1
+- PDF: https://arxiv.org/pdf/2608.15715v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-16-arxiv-continuous_quantum_feedback_control_via_kraus_parameterized_belief_reinforcement_learning_infographic.json
+
+## 8. Hundred-hertz quantum circuit iteration rate in a reusable neutral-atom array
+
+- Date: 2026-08-17
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.12711v1
-- PDF: https://arxiv.org/pdf/2608.12711v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-split_q_a_scalable_sequential_quantum_computing_framework_for_coherent_controlled_islandin_infographic.json
+- arXiv: https://arxiv.org/abs/2608.16815v1
+- PDF: https://arxiv.org/pdf/2608.16815v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-hundred_hertz_quantum_circuit_iteration_rate_in_a_reusable_neutral_atom_array_infographic.json
 
-## 4. Qu-Trefoil: Large-Scale Quantum Circuit Simulator Working on FPGA With SATA Storages
+## 9. ChainForge: Characterizing Embedding as the Bottleneck in Quantum Annealer Workloads
+
+- Date: 2026-08-16
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2608.15961v1
+- PDF: https://arxiv.org/pdf/2608.15961v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-16-arxiv-chainforge_characterizing_embedding_as_the_bottleneck_in_quantum_annealer_workloads_infographic.json
+
+## 10. Fault-Tolerant Quantum Computation with Adversarial Errors
+
+- Date: 2026-08-17
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2608.16857v1
+- PDF: https://arxiv.org/pdf/2608.16857v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-fault_tolerant_quantum_computation_with_adversarial_errors_infographic.json
+
+## 11. Resource Analysis for Quantum Simulation of Spatially Varying Transport-Reaction Equations
+
+- Date: 2026-08-16
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.15827v1
+- PDF: https://arxiv.org/pdf/2608.15827v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-16-arxiv-resource_analysis_for_quantum_simulation_of_spatially_varying_transport_reaction_equations_infographic.json
+
+## 12. Dynamical spectral functions from bitstring-sampled quantum subspaces: entanglement, not one-body magic, tracks the sampling cost
+
+- Date: 2026-08-17
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2608.16436v1
+- PDF: https://arxiv.org/pdf/2608.16436v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-dynamical_spectral_functions_from_bitstring_sampled_quantum_subspaces_entanglement_not_one_infographic.json
+
+## 13. Optimizing Subspace Expansion in Quantum Chemistry through Operator Selection and Reference State Choice
+
+- Date: 2026-08-17
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2608.16362v1
+- PDF: https://arxiv.org/pdf/2608.16362v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-optimizing_subspace_expansion_in_quantum_chemistry_through_operator_selection_and_referenc_infographic.json
+
+## 14. Negative quasiprobability trajectories for Bell-diagonal states under local decoherence
+
+- Date: 2026-08-17
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.16358v1
+- PDF: https://arxiv.org/pdf/2608.16358v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-negative_quasiprobability_trajectories_for_bell_diagonal_states_under_local_decoherence_infographic.json
+
+## 15. Designing Quantum Error Correcting Codes to fit decoders via Reinforcement Learning
+
+- Date: 2026-08-16
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2608.15754v1
+- PDF: https://arxiv.org/pdf/2608.15754v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-16-arxiv-designing_quantum_error_correcting_codes_to_fit_decoders_via_reinforcement_learning_infographic.json
+
+## 16. Engineering two-qubit gates via anisotropic exchange in germanium spin qubits
+
+- Date: 2026-08-17
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.16716v1
+- PDF: https://arxiv.org/pdf/2608.16716v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-engineering_two_qubit_gates_via_anisotropic_exchange_in_germanium_spin_qubits_infographic.json
+
+## 17. Enabling Hybrid HPCQC Workflows with a Heterogeneous Software Stack
+
+- Date: 2026-08-14
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2608.14827v1
+- PDF: https://arxiv.org/pdf/2608.14827v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-14-arxiv-enabling_hybrid_hpcqc_workflows_with_a_heterogeneous_software_stack_infographic.json
+
+## 18. Qu-Trefoil: Large-Scale Quantum Circuit Simulator Working on FPGA With SATA Storages
 
 - Date: 2026-08-14
 - Category: Quantum Simulation
@@ -35,130 +147,18 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.14285v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-14-arxiv-qu_trefoil_large_scale_quantum_circuit_simulator_working_on_fpga_with_sata_storages_infographic.json
 
-## 5. Evaluating QAOA expectation values can be as hard as counting optimal solutions
+## 19. Global Minimax Readout of a Qubit Direction
 
-- Date: 2026-08-11
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2608.11385v1
-- PDF: https://arxiv.org/pdf/2608.11385v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-11-arxiv-evaluating_qaoa_expectation_values_can_be_as_hard_as_counting_optimal_solutions_infographic.json
-
-## 6. Heuristic Lookahead Distillation Protocol Search
-
-- Date: 2026-08-13
+- Date: 2026-08-17
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.13644v1
-- PDF: https://arxiv.org/pdf/2608.13644v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-heuristic_lookahead_distillation_protocol_search_infographic.json
+- arXiv: https://arxiv.org/abs/2608.16840v1
+- PDF: https://arxiv.org/pdf/2608.16840v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-global_minimax_readout_of_a_qubit_direction_infographic.json
 
-## 7. Time evolution of nonlinear dynamics on a quantum processor
+## 20. Quantum Permutations and Beyond Quantum Controlled Reference Frames
 
-- Date: 2026-08-13
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2608.13041v1
-- PDF: https://arxiv.org/pdf/2608.13041v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-time_evolution_of_nonlinear_dynamics_on_a_quantum_processor_infographic.json
-
-## 8. Parity Mapping for Quantum Optimization on Frustrated Ising Rings
-
-- Date: 2026-08-12
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2608.12213v1
-- PDF: https://arxiv.org/pdf/2608.12213v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-parity_mapping_for_quantum_optimization_on_frustrated_ising_rings_infographic.json
-
-## 9. Witnessing the architecture of quantum circuits
-
-- Date: 2026-08-13
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.13169v1
-- PDF: https://arxiv.org/pdf/2608.13169v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-witnessing_the_architecture_of_quantum_circuits_infographic.json
-
-## 10. Photonic Quantum Computing vs. Classical Solvers in Constrained Factor Portfolio Optimization
-
-- Date: 2026-08-14
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2608.14134v1
-- PDF: https://arxiv.org/pdf/2608.14134v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-14-arxiv-photonic_quantum_computing_vs_classical_solvers_in_constrained_factor_portfolio_optimizati_infographic.json
-
-## 11. Strong unitary designs in optimal depth and space
-
-- Date: 2026-08-13
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2608.13491v1
-- PDF: https://arxiv.org/pdf/2608.13491v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-strong_unitary_designs_in_optimal_depth_and_space_infographic.json
-
-## 12. Efficient Quantum Modular Reduction: Crandall reduction and its Fault-tolerant resource analysis
-
-- Date: 2026-08-12
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2608.11563v1
-- PDF: https://arxiv.org/pdf/2608.11563v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-efficient_quantum_modular_reduction_crandall_reduction_and_its_fault_tolerant_resource_ana_infographic.json
-
-## 13. Hamilton-Zero: A Neural Tensor-Network Foundation Model for Ground States of Arbitrary Quadratic Qubit Hamiltonians
-
-- Date: 2026-08-12
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2608.11911v2
-- PDF: https://arxiv.org/pdf/2608.11911v2
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-hamilton_zero_a_neural_tensor_network_foundation_model_for_ground_states_of_arbitrary_quad_infographic.json
-
-## 14. Classical Limits of Spectral Filtering in Quantum Generative Models
-
-- Date: 2026-08-14
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2608.14169v1
-- PDF: https://arxiv.org/pdf/2608.14169v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-14-arxiv-classical_limits_of_spectral_filtering_in_quantum_generative_models_infographic.json
-
-## 15. Clifford Circuit Synthesis for Distributed Quantum Architectures with Arbitrary Network Topology
-
-- Date: 2026-08-13
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2608.13543v1
-- PDF: https://arxiv.org/pdf/2608.13543v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-clifford_circuit_synthesis_for_distributed_quantum_architectures_with_arbitrary_network_to_infographic.json
-
-## 16. Mid-circuit ground-state cooling and ancilla readout in the $\textit{omg}$ architecture
-
-- Date: 2026-08-13
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2608.13181v1
-- PDF: https://arxiv.org/pdf/2608.13181v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-13-arxiv-mid_circuit_ground_state_cooling_and_ancilla_readout_in_the_textit_omg_architecture_infographic.json
-
-## 17. CoQui: A Coordinate-Conditioned Quantum Implicit Generative Adversarial Network for End-to-End Image Generation
-
-- Date: 2026-08-12
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2608.11884v1
-- PDF: https://arxiv.org/pdf/2608.11884v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-coqui_a_coordinate_conditioned_quantum_implicit_generative_adversarial_network_for_end_to_infographic.json
-
-## 18. Efficient Compilation for Hamiltonian Simulation via Global Binary Symplectic Form Simplification
-
-- Date: 2026-08-12
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2608.11579v1
-- PDF: https://arxiv.org/pdf/2608.11579v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-12-arxiv-efficient_compilation_for_hamiltonian_simulation_via_global_binary_symplectic_form_simplif_infographic.json
-
-## 19. Native multi-qubit gates on a single-junction unimon circuit
-
-- Date: 2026-08-14
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.14357v1
-- PDF: https://arxiv.org/pdf/2608.14357v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-14-arxiv-native_multi_qubit_gates_on_a_single_junction_unimon_circuit_infographic.json
-
-## 20. Exchange-only qubit stabilized by a single-spin qubit
-
-- Date: 2026-08-14
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.14214v1
-- PDF: https://arxiv.org/pdf/2608.14214v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-14-arxiv-exchange_only_qubit_stabilized_by_a_single_spin_qubit_infographic.json
+- Date: 2026-08-17
+- Category: AI quantum computing
+- arXiv: https://arxiv.org/abs/2608.16532v1
+- PDF: https://arxiv.org/pdf/2608.16532v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-17-arxiv-quantum_permutations_and_beyond_quantum_controlled_reference_frames_infographic.json

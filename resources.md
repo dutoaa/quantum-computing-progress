@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-08-21
+Generated: 2026-08-22
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. AlphaClifford: Efficient Clifford Synthesis and Transpilation with Model-based RL
@@ -139,7 +139,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.20133v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-20-arxiv-preparation_of_large_fock_states_in_resonators_with_high_probability_infographic.json
 
-## 18. Good Stabilizer Codes from Shallow Clifford Circuits with Random Matchings
+## 18. Resource-Efficient Bio-Molecular Docking on a NISQ-era Digital Quantum Computer
+
+- Date: 2026-08-20
+- Category: Quantum Optimization
+- arXiv: https://arxiv.org/abs/2608.19868v1
+- PDF: https://arxiv.org/pdf/2608.19868v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-20-arxiv-resource_efficient_bio_molecular_docking_on_a_nisq_era_digital_quantum_computer_infographic.json
+
+## 19. Good Stabilizer Codes from Shallow Clifford Circuits with Random Matchings
 
 - Date: 2026-08-19
 - Category: Quantum Error Correction
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.18536v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-19-arxiv-good_stabilizer_codes_from_shallow_clifford_circuits_with_random_matchings_infographic.json
 
-## 19. M-QAM MIMO Maximum-Likelihood Detection with QAOA: ML-Rate Offline Angle Design and Correlated Infinite-Size Spin-Glass Models
+## 20. M-QAM MIMO Maximum-Likelihood Detection with QAOA: ML-Rate Offline Angle Design and Correlated Infinite-Size Spin-Glass Models
 
 - Date: 2026-08-18
 - Category: Quantum Algorithms
 - arXiv: https://arxiv.org/abs/2608.17721v1
 - PDF: https://arxiv.org/pdf/2608.17721v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-18-arxiv-m_qam_mimo_maximum_likelihood_detection_with_qaoa_ml_rate_offline_angle_design_and_correla_infographic.json
-
-## 20. Generalizing Pauli Checks for Qudit-based Quantum Error Detection and Mitigation
-
-- Date: 2026-08-18
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.18332v1
-- PDF: https://arxiv.org/pdf/2608.18332v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-18-arxiv-generalizing_pauli_checks_for_qudit_based_quantum_error_detection_and_mitigation_infographic.json

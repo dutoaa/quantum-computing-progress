@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-08-22
+Generated: 2026-08-23
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. AlphaClifford: Efficient Clifford Synthesis and Transpilation with Model-based RL

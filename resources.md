@@ -1,9 +1,57 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-08-27
+Generated: 2026-08-28
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
-## 1. Hardware-Aware Fermion-to-Qubit Mappings for Simulating the 2D Hubbard Model on Heavy-Hexagon Quantum Processors
+## 1. Quantum-enhanced ghost imaging recognition via joint optimization of speckle patterns and quantum network parameters
+
+- Date: 2026-08-27
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2608.26972v1
+- PDF: https://arxiv.org/pdf/2608.26972v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-quantum_enhanced_ghost_imaging_recognition_via_joint_optimization_of_speckle_patterns_and_infographic.json
+
+## 2. Spectral Fingerprints of Gauge Theories on a Quantum Computer
+
+- Date: 2026-08-27
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.27457v1
+- PDF: https://arxiv.org/pdf/2608.27457v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-spectral_fingerprints_of_gauge_theories_on_a_quantum_computer_infographic.json
+
+## 3. Exploiting overcompleteness of Platonic-solid POVMs for shadow estimation
+
+- Date: 2026-08-26
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2608.26318v1
+- PDF: https://arxiv.org/pdf/2608.26318v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-exploiting_overcompleteness_of_platonic_solid_povms_for_shadow_estimation_infographic.json
+
+## 4. Towards Reproducible Evaluation of Distributed Quantum Circuit Partitioning Algorithms
+
+- Date: 2026-08-27
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2608.27099v1
+- PDF: https://arxiv.org/pdf/2608.27099v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-towards_reproducible_evaluation_of_distributed_quantum_circuit_partitioning_algorithms_infographic.json
+
+## 5. Factorized Boolean representations for efficient quantum synthesis
+
+- Date: 2026-08-27
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2608.27430v1
+- PDF: https://arxiv.org/pdf/2608.27430v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-factorized_boolean_representations_for_efficient_quantum_synthesis_infographic.json
+
+## 6. Detuning-robust Rydberg entangling gates from echoed pulses
+
+- Date: 2026-08-26
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2608.26446v1
+- PDF: https://arxiv.org/pdf/2608.26446v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-detuning_robust_rydberg_entangling_gates_from_echoed_pulses_infographic.json
+
+## 7. Hardware-Aware Fermion-to-Qubit Mappings for Simulating the 2D Hubbard Model on Heavy-Hexagon Quantum Processors
 
 - Date: 2026-08-25
 - Category: Quantum Hardware
@@ -11,15 +59,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.25024v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-hardware_aware_fermion_to_qubit_mappings_for_simulating_the_2d_hubbard_model_on_heavy_hexa_infographic.json
 
-## 2. A Unified Quantum Neural Network Framework for Hamiltonian Learning and Emulation of Unknown Quantum Systems
-
-- Date: 2026-08-24
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2608.23025v1
-- PDF: https://arxiv.org/pdf/2608.23025v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-24-arxiv-a_unified_quantum_neural_network_framework_for_hamiltonian_learning_and_emulation_of_unkno_infographic.json
-
-## 3. Fault-tolerant $|\sqrt{ \mathrm{T} }\rangle$ state preparation and injection for more efficient fine-grained quantum circuit synthesis
+## 8. Fault-tolerant $|\sqrt{ \mathrm{T} }\rangle$ state preparation and injection for more efficient fine-grained quantum circuit synthesis
 
 - Date: 2026-08-26
 - Category: Quantum Hardware
@@ -27,7 +67,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.25797v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-fault_tolerant_sqrt_mathrm_t_rangle_state_preparation_and_injection_for_more_efficient_fin_infographic.json
 
-## 4. Dissipatively Stabilized 0-n Fock Qubits for Noise-Biased Quantum Computing
+## 9. Fault-tolerant quantum computation cannot be achieved with constant spacetime overhead
+
+- Date: 2026-08-26
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2608.26272v1
+- PDF: https://arxiv.org/pdf/2608.26272v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-fault_tolerant_quantum_computation_cannot_be_achieved_with_constant_spacetime_overhead_infographic.json
+
+## 10. Dissipatively Stabilized 0-n Fock Qubits for Noise-Biased Quantum Computing
 
 - Date: 2026-08-26
 - Category: Quantum Hardware
@@ -35,15 +83,39 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.25959v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-dissipatively_stabilized_0_n_fock_qubits_for_noise_biased_quantum_computing_infographic.json
 
-## 5. No Free Compression in Quantum Relaxations for Optimization
+## 11. Dynamics of local quantum information in random unitary circuits
 
-- Date: 2026-08-25
+- Date: 2026-08-27
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.27440v1
+- PDF: https://arxiv.org/pdf/2608.27440v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-dynamics_of_local_quantum_information_in_random_unitary_circuits_infographic.json
+
+## 12. Efficient Quantum Simulations of Yang-Mills theory with Maximal-tree Gauge
+
+- Date: 2026-08-27
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2608.27267v1
+- PDF: https://arxiv.org/pdf/2608.27267v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-efficient_quantum_simulations_of_yang_mills_theory_with_maximal_tree_gauge_infographic.json
+
+## 13. A Superconducting Phase Transition Single-Electron Transistor
+
+- Date: 2026-08-27
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.25151v1
-- PDF: https://arxiv.org/pdf/2608.25151v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-no_free_compression_in_quantum_relaxations_for_optimization_infographic.json
+- arXiv: https://arxiv.org/abs/2608.27045v1
+- PDF: https://arxiv.org/pdf/2608.27045v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-a_superconducting_phase_transition_single_electron_transistor_infographic.json
 
-## 6. Distributed Resource Theory of Entanglement and Magic
+## 14. Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing
+
+- Date: 2026-08-27
+- Category: Quantum Optimization
+- arXiv: https://arxiv.org/abs/2608.26894v1
+- PDF: https://arxiv.org/pdf/2608.26894v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-correcting_connectivity_in_arc_based_qubo_models_for_fixed_fleet_vehicle_routing_infographic.json
+
+## 15. Distributed Resource Theory of Entanglement and Magic
 
 - Date: 2026-08-25
 - Category: Quantum Error Correction
@@ -51,7 +123,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.24299v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-distributed_resource_theory_of_entanglement_and_magic_infographic.json
 
-## 7. A Unified Framework for Operator Backpropagation and Observable Measurement in Quantum Computing
+## 16. A Unified Framework for Operator Backpropagation and Observable Measurement in Quantum Computing
 
 - Date: 2026-08-25
 - Category: Quantum Hardware
@@ -59,7 +131,23 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.25042v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-a_unified_framework_for_operator_backpropagation_and_observable_measurement_in_quantum_com_infographic.json
 
-## 8. QML for Quantum Sensing under Measurement-Induced Information Loss
+## 17. Detuning- and Stark-robust Rydberg gates
+
+- Date: 2026-08-27
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2608.27426v1
+- PDF: https://arxiv.org/pdf/2608.27426v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-27-arxiv-detuning_and_stark_robust_rydberg_gates_infographic.json
+
+## 18. No Free Compression in Quantum Relaxations for Optimization
+
+- Date: 2026-08-25
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2608.25151v1
+- PDF: https://arxiv.org/pdf/2608.25151v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-no_free_compression_in_quantum_relaxations_for_optimization_infographic.json
+
+## 19. QML for Quantum Sensing under Measurement-Induced Information Loss
 
 - Date: 2026-08-25
 - Category: Quantum Machine Learning
@@ -67,98 +155,10 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2608.23934v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-qml_for_quantum_sensing_under_measurement_induced_information_loss_infographic.json
 
-## 9. Yang-Lee Criticality as a Dissipative Dynamical Phase Transition: Quantum Simulation of non-Hermitian Physics without Post-selection
+## 20. Yang-Lee Criticality as a Dissipative Dynamical Phase Transition: Quantum Simulation of non-Hermitian Physics without Post-selection
 
 - Date: 2026-08-26
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2608.26082v1
 - PDF: https://arxiv.org/pdf/2608.26082v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-yang_lee_criticality_as_a_dissipative_dynamical_phase_transition_quantum_simulation_of_non_infographic.json
-
-## 10. Certified decoding of quantum LDPC codes
-
-- Date: 2026-08-26
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2608.25545v1
-- PDF: https://arxiv.org/pdf/2608.25545v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-certified_decoding_of_quantum_ldpc_codes_infographic.json
-
-## 11. Low-leakage superconducting-qubit measurement with sub-100-ns total duration
-
-- Date: 2026-08-26
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.25484v1
-- PDF: https://arxiv.org/pdf/2608.25484v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-low_leakage_superconducting_qubit_measurement_with_sub_100_ns_total_duration_infographic.json
-
-## 12. Generalized Efficient Quantum Circuit Implementation of Discrete-Time Quantum Walks on Cayley Graphs
-
-- Date: 2026-08-25
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.25136v1
-- PDF: https://arxiv.org/pdf/2608.25136v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-generalized_efficient_quantum_circuit_implementation_of_discrete_time_quantum_walks_on_cay_infographic.json
-
-## 13. The Gain-Engineered Transmon
-
-- Date: 2026-08-26
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.26018v1
-- PDF: https://arxiv.org/pdf/2608.26018v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-the_gain_engineered_transmon_infographic.json
-
-## 14. Physics-informed quantum algorithms for glueball-like excitations in a $\mathbb{Z}_2$ lattice gauge theory
-
-- Date: 2026-08-26
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2608.25696v1
-- PDF: https://arxiv.org/pdf/2608.25696v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-physics_informed_quantum_algorithms_for_glueball_like_excitations_in_a_mathbb_z_2_lattice_infographic.json
-
-## 15. A heterogeneously integrated coupled-cavity frequency beam splitter
-
-- Date: 2026-08-26
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.26028v1
-- PDF: https://arxiv.org/pdf/2608.26028v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-a_heterogeneously_integrated_coupled_cavity_frequency_beam_splitter_infographic.json
-
-## 16. Distributed Trotterization with optimal time-scaling entanglement cost
-
-- Date: 2026-08-26
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2608.25896v1
-- PDF: https://arxiv.org/pdf/2608.25896v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-distributed_trotterization_with_optimal_time_scaling_entanglement_cost_infographic.json
-
-## 17. Affine-Profile Stabilizer Thresholds for Magic in Codeword-Stabilized Quantum Codes
-
-- Date: 2026-08-26
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2608.25414v1
-- PDF: https://arxiv.org/pdf/2608.25414v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-26-arxiv-affine_profile_stabilizer_thresholds_for_magic_in_codeword_stabilized_quantum_codes_infographic.json
-
-## 18. Numerical Evaluation of ZX Calculus Optimization for Solovay Kitaev Quantum Circuit Synthesis
-
-- Date: 2026-08-24
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2608.22810v1
-- PDF: https://arxiv.org/pdf/2608.22810v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-24-arxiv-numerical_evaluation_of_zx_calculus_optimization_for_solovay_kitaev_quantum_circuit_synthe_infographic.json
-
-## 19. The bottleneck dimension of quantum operations
-
-- Date: 2026-08-25
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2608.25010v1
-- PDF: https://arxiv.org/pdf/2608.25010v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-the_bottleneck_dimension_of_quantum_operations_infographic.json
-
-## 20. Improved Quantum Codes with Transversal T Gates
-
-- Date: 2026-08-25
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2608.24000v1
-- PDF: https://arxiv.org/pdf/2608.24000v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-08-25-arxiv-improved_quantum_codes_with_transversal_t_gates_infographic.json

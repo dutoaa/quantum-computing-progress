@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-08-29
+Generated: 2026-08-30
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Quantum-enhanced ghost imaging recognition via joint optimization of speckle patterns and quantum network parameters

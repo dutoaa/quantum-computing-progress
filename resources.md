@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-09-04
+Generated: 2026-09-05
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Optimized Matrix-Product State Simulations of Quantum Error Correction Circuits
@@ -107,7 +107,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2609.04132v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-03-arxiv-characterizing_large_scale_quantum_systems_with_error_per_circuit_layer_infographic.json
 
-## 14. Variational preparation of thermofield double states for SYK models via multi-angle QAOA: sequential angle pruning for circuit reduction
+## 14. Energetic Costs of Subspace Quantum Error Correction
+
+- Date: 2026-09-03
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2609.03825v1
+- PDF: https://arxiv.org/pdf/2609.03825v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-03-arxiv-energetic_costs_of_subspace_quantum_error_correction_infographic.json
+
+## 15. Variational preparation of thermofield double states for SYK models via multi-angle QAOA: sequential angle pruning for circuit reduction
 
 - Date: 2026-09-02
 - Category: Quantum Algorithms
@@ -115,7 +123,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2609.02793v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-02-arxiv-variational_preparation_of_thermofield_double_states_for_syk_models_via_multi_angle_qaoa_s_infographic.json
 
-## 15. Quantum MeanFlow: single-shot generative sampling on NISQ hardware
+## 16. Quantum MeanFlow: single-shot generative sampling on NISQ hardware
 
 - Date: 2026-09-02
 - Category: Quantum Machine Learning
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2609.02186v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-02-arxiv-quantum_meanflow_single_shot_generative_sampling_on_nisq_hardware_infographic.json
 
-## 16. Quantum communication and Bell nonlocality require infinite classical communication to simulate
+## 17. Quantum communication and Bell nonlocality require infinite classical communication to simulate
 
 - Date: 2026-09-03
 - Category: Quantum Simulation
@@ -131,7 +139,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2609.04182v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-03-arxiv-quantum_communication_and_bell_nonlocality_require_infinite_classical_communication_to_sim_infographic.json
 
-## 17. Vanilla Exact Synthesis of CNOT Circuits is NP-hard
+## 18. Vanilla Exact Synthesis of CNOT Circuits is NP-hard
 
 - Date: 2026-09-03
 - Category: Quantum Simulation
@@ -139,7 +147,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2609.04160v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-03-arxiv-vanilla_exact_synthesis_of_cnot_circuits_is_np_hard_infographic.json
 
-## 18. Programming anharmonic potentials in a superconducting harmonic oscillator
+## 19. Programming anharmonic potentials in a superconducting harmonic oscillator
 
 - Date: 2026-09-02
 - Category: Quantum Hardware
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2609.02405v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-02-arxiv-programming_anharmonic_potentials_in_a_superconducting_harmonic_oscillator_infographic.json
 
-## 19. Need One Bell-pair Only (NOBOL) for Low-Overhead Fault-Tolerant Quantum Computing
+## 20. Need One Bell-pair Only (NOBOL) for Low-Overhead Fault-Tolerant Quantum Computing
 
 - Date: 2026-09-01
 - Category: Quantum Error Correction
 - arXiv: https://arxiv.org/abs/2609.01901v1
 - PDF: https://arxiv.org/pdf/2609.01901v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-01-arxiv-need_one_bell_pair_only_nobol_for_low_overhead_fault_tolerant_quantum_computing_infographic.json
-
-## 20. Optimal Fusion Strategies for Quantum Computation
-
-- Date: 2026-09-02
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2609.02559v1
-- PDF: https://arxiv.org/pdf/2609.02559v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-02-arxiv-optimal_fusion_strategies_for_quantum_computation_infographic.json

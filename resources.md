@@ -1,164 +1,164 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-09-12
+Generated: 2026-09-16
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
-## 1. Virtual quantum neural networks
+## 1. Quantum Codes for Generalized Amplitude-damping Noise
 
-- Date: 2026-09-10
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2609.11327v1
-- PDF: https://arxiv.org/pdf/2609.11327v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-virtual_quantum_neural_networks_infographic.json
+- Date: 2026-09-14
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2609.15924v1
+- PDF: https://arxiv.org/pdf/2609.15924v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-quantum_codes_for_generalized_amplitude_damping_noise_infographic.json
 
-## 2. Certifying Adversarial Robustness of Quantum Classifiers under Known-Readout Query Access
+## 2. Quantum Compiler Design for Fault-Tolerant Quantum Computing
 
-- Date: 2026-09-10
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2609.11637v1
-- PDF: https://arxiv.org/pdf/2609.11637v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-certifying_adversarial_robustness_of_quantum_classifiers_under_known_readout_query_access_infographic.json
+- Date: 2026-09-15
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2609.17465v1
+- PDF: https://arxiv.org/pdf/2609.17465v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-15-arxiv-quantum_compiler_design_for_fault_tolerant_quantum_computing_infographic.json
 
-## 3. Distributed variational quantum computing with deterministic entanglement tuning
+## 3. Towards Surrogate Based Dequantization of Quantum Reinforcement Learning
 
-- Date: 2026-09-10
+- Date: 2026-09-14
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2609.10932v1
-- PDF: https://arxiv.org/pdf/2609.10932v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-distributed_variational_quantum_computing_with_deterministic_entanglement_tuning_infographic.json
+- arXiv: https://arxiv.org/abs/2609.16266v1
+- PDF: https://arxiv.org/pdf/2609.16266v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-towards_surrogate_based_dequantization_of_quantum_reinforcement_learning_infographic.json
 
-## 4. The cost of simulating classically tractable quantum circuits and dynamics
+## 4. Beyond Hardware: Adaptive Algorithmic Control by State-Proxy Equalization
 
-- Date: 2026-09-10
+- Date: 2026-09-15
 - Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2609.11847v1
-- PDF: https://arxiv.org/pdf/2609.11847v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-the_cost_of_simulating_classically_tractable_quantum_circuits_and_dynamics_infographic.json
+- arXiv: https://arxiv.org/abs/2609.17497v1
+- PDF: https://arxiv.org/pdf/2609.17497v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-15-arxiv-beyond_hardware_adaptive_algorithmic_control_by_state_proxy_equalization_infographic.json
 
-## 5. Loss-correcting fault-tolerant quantum computing architecture for neutral atoms
+## 5. When is global evolutionary search useful for variational quantum algorithms? A landscape-first study
 
-- Date: 2026-09-09
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2609.10079v1
-- PDF: https://arxiv.org/pdf/2609.10079v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-09-arxiv-loss_correcting_fault_tolerant_quantum_computing_architecture_for_neutral_atoms_infographic.json
-
-## 6. Low-cost algorithm-to-execution framework for surface-code quantum computing
-
-- Date: 2026-09-10
+- Date: 2026-09-13
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2609.10965v1
-- PDF: https://arxiv.org/pdf/2609.10965v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-low_cost_algorithm_to_execution_framework_for_surface_code_quantum_computing_infographic.json
+- arXiv: https://arxiv.org/abs/2609.14594v1
+- PDF: https://arxiv.org/pdf/2609.14594v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-13-arxiv-when_is_global_evolutionary_search_useful_for_variational_quantum_algorithms_a_landscape_f_infographic.json
 
-## 7. Enhancing Pauli Correlation Encoding for quantum optimization via systematic expressivity analysis
+## 6. A Case Study on Noise Resilient Operator Selection in Adaptive Variational Quantum Algorithms
 
-- Date: 2026-09-09
+- Date: 2026-09-15
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2609.17501v1
+- PDF: https://arxiv.org/pdf/2609.17501v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-15-arxiv-a_case_study_on_noise_resilient_operator_selection_in_adaptive_variational_quantum_algorit_infographic.json
+
+## 7. Investigating Interacting Fermionic Models with Locality-Preserving Qubit Encodings
+
+- Date: 2026-09-14
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2609.16142v1
+- PDF: https://arxiv.org/pdf/2609.16142v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-investigating_interacting_fermionic_models_with_locality_preserving_qubit_encodings_infographic.json
+
+## 8. Why Are We Unrolling? The Importance of Structured Quantum Programs for Compilation
+
+- Date: 2026-09-14
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2609.16171v1
+- PDF: https://arxiv.org/pdf/2609.16171v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-why_are_we_unrolling_the_importance_of_structured_quantum_programs_for_compilation_infographic.json
+
+## 9. Disentangling QAOA: From Weakly Entangled Circuits to a Classical QUBO Solver
+
+- Date: 2026-09-14
 - Category: Quantum Optimization
-- arXiv: https://arxiv.org/abs/2609.09718v1
-- PDF: https://arxiv.org/pdf/2609.09718v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-09-arxiv-enhancing_pauli_correlation_encoding_for_quantum_optimization_via_systematic_expressivity_infographic.json
+- arXiv: https://arxiv.org/abs/2609.15738v1
+- PDF: https://arxiv.org/pdf/2609.15738v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-disentangling_qaoa_from_weakly_entangled_circuits_to_a_classical_qubo_solver_infographic.json
 
-## 8. Near-optimal synthesis of non-Gaussian phase gates via qubit-oscillator Rabi control
+## 10. A Hybrid Quantum-Classical Coordination Architecture for Portfolio Optimization via Global Context Injection
 
-- Date: 2026-09-08
+- Date: 2026-09-14
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2609.09132v1
-- PDF: https://arxiv.org/pdf/2609.09132v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-08-arxiv-near_optimal_synthesis_of_non_gaussian_phase_gates_via_qubit_oscillator_rabi_control_infographic.json
+- arXiv: https://arxiv.org/abs/2609.15708v1
+- PDF: https://arxiv.org/pdf/2609.15708v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-a_hybrid_quantum_classical_coordination_architecture_for_portfolio_optimization_via_global_infographic.json
 
-## 9. Engineered two-photon dissipative confinement of a Kerr-cat qubit using SISIS quantum circuit refrigerator
+## 11. Probabilistic Error Cancellation for Single-Mode Gottesman-Kitaev-Preskill Codes
 
-- Date: 2026-09-10
+- Date: 2026-09-15
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2609.11034v1
-- PDF: https://arxiv.org/pdf/2609.11034v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-engineered_two_photon_dissipative_confinement_of_a_kerr_cat_qubit_using_sisis_quantum_circ_infographic.json
+- arXiv: https://arxiv.org/abs/2609.17095v1
+- PDF: https://arxiv.org/pdf/2609.17095v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-15-arxiv-probabilistic_error_cancellation_for_single_mode_gottesman_kitaev_preskill_codes_infographic.json
 
-## 10. Lifted surgery: Fast processing with QLDPC codes
+## 12. Hyperbolic color codes with constant rate and polynomial distance
 
-- Date: 2026-09-10
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2609.11723v1
-- PDF: https://arxiv.org/pdf/2609.11723v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-lifted_surgery_fast_processing_with_qldpc_codes_infographic.json
-
-## 11. Generative Replay Mitigates Sample Starvation in Quantum Architecture Search
-
-- Date: 2026-09-10
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2609.11248v1
-- PDF: https://arxiv.org/pdf/2609.11248v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-generative_replay_mitigates_sample_starvation_in_quantum_architecture_search_infographic.json
-
-## 12. Computational framework for quantum state tomography of spin ensembles
-
-- Date: 2026-09-10
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2609.11868v1
-- PDF: https://arxiv.org/pdf/2609.11868v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-computational_framework_for_quantum_state_tomography_of_spin_ensembles_infographic.json
-
-## 13. From Block-encoding to Generalized Quantum Signal Processing: Principles, Algorithms and Applications
-
-- Date: 2026-09-09
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2609.09977v1
-- PDF: https://arxiv.org/pdf/2609.09977v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-09-arxiv-from_block_encoding_to_generalized_quantum_signal_processing_principles_algorithms_and_app_infographic.json
-
-## 14. Python in the front, party in the Backline: compiling quantum workloads across CPUs, GPUs, and FPGAs
-
-- Date: 2026-09-08
+- Date: 2026-09-14
 - Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2609.09270v1
-- PDF: https://arxiv.org/pdf/2609.09270v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-08-arxiv-python_in_the_front_party_in_the_backline_compiling_quantum_workloads_across_cpus_gpus_and_infographic.json
+- arXiv: https://arxiv.org/abs/2609.16125v1
+- PDF: https://arxiv.org/pdf/2609.16125v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-hyperbolic_color_codes_with_constant_rate_and_polynomial_distance_infographic.json
 
-## 15. Private communication via zero-private-capacity quantum channels
+## 13. Large-scale quantum simulations of dissipative spin-1/2 Heisenberg chains
 
-- Date: 2026-09-09
+- Date: 2026-09-14
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2609.10520v1
-- PDF: https://arxiv.org/pdf/2609.10520v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-09-arxiv-private_communication_via_zero_private_capacity_quantum_channels_infographic.json
+- arXiv: https://arxiv.org/abs/2609.16108v1
+- PDF: https://arxiv.org/pdf/2609.16108v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-large_scale_quantum_simulations_of_dissipative_spin_1_2_heisenberg_chains_infographic.json
 
-## 16. The generalised semi-Clifford conjecture is false
+## 14. Truncated hybrid tensor networks for distributed quantum simulation
 
-- Date: 2026-09-10
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2609.11903v1
-- PDF: https://arxiv.org/pdf/2609.11903v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-the_generalised_semi_clifford_conjecture_is_false_infographic.json
+- Date: 2026-09-15
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2609.16520v1
+- PDF: https://arxiv.org/pdf/2609.16520v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-15-arxiv-truncated_hybrid_tensor_networks_for_distributed_quantum_simulation_infographic.json
 
-## 17. Strong Converse for Quantum Capacity via a Fully Quantum Blowing-Up Lemma
+## 15. Feature-Adaptive Fusion in Hybrid Quantum-Classical Neural Networks for Robust Biomedical Image Classification
 
-- Date: 2026-09-10
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2609.11771v1
-- PDF: https://arxiv.org/pdf/2609.11771v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-strong_converse_for_quantum_capacity_via_a_fully_quantum_blowing_up_lemma_infographic.json
-
-## 18. An exchange-assisted entangling gate between 87Rb and 171Yb Rydberg atoms
-
-- Date: 2026-09-10
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2609.11730v1
-- PDF: https://arxiv.org/pdf/2609.11730v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-an_exchange_assisted_entangling_gate_between_87rb_and_171yb_rydberg_atoms_infographic.json
-
-## 19. Entanglement Meets Reality: A Network Engineering Assessment and Forecast of Rackable Entanglement Sources
-
-- Date: 2026-09-10
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2609.11387v1
-- PDF: https://arxiv.org/pdf/2609.11387v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-10-arxiv-entanglement_meets_reality_a_network_engineering_assessment_and_forecast_of_rackable_entan_infographic.json
-
-## 20. Quantum Feature Engineering for Credit Default Prediction: When and Why IQP Circuits Help Linear Classifiers
-
-- Date: 2026-09-09
+- Date: 2026-09-14
 - Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2609.10505v1
-- PDF: https://arxiv.org/pdf/2609.10505v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-09-arxiv-quantum_feature_engineering_for_credit_default_prediction_when_and_why_iqp_circuits_help_l_infographic.json
+- arXiv: https://arxiv.org/abs/2609.15267v1
+- PDF: https://arxiv.org/pdf/2609.15267v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-feature_adaptive_fusion_in_hybrid_quantum_classical_neural_networks_for_robust_biomedical_infographic.json
+
+## 16. Adaptive Relational Learning on Multi-instance Quantum Data with Photonic Processors
+
+- Date: 2026-09-15
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2609.17352v1
+- PDF: https://arxiv.org/pdf/2609.17352v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-15-arxiv-adaptive_relational_learning_on_multi_instance_quantum_data_with_photonic_processors_infographic.json
+
+## 17. Link-middle-cut lower bounds for Clifford circuit synthesis
+
+- Date: 2026-09-14
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2609.16208v1
+- PDF: https://arxiv.org/pdf/2609.16208v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-link_middle_cut_lower_bounds_for_clifford_circuit_synthesis_infographic.json
+
+## 18. Fermionic quantum error correction is never free
+
+- Date: 2026-09-14
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2609.15059v1
+- PDF: https://arxiv.org/pdf/2609.15059v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-fermionic_quantum_error_correction_is_never_free_infographic.json
+
+## 19. NAQsim: Full-Stack Architecture Simulation Framework for Fast and Space-Efficient Neutral Atom Quantum Computing
+
+- Date: 2026-09-13
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2609.14478v1
+- PDF: https://arxiv.org/pdf/2609.14478v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-13-arxiv-naqsim_full_stack_architecture_simulation_framework_for_fast_and_space_efficient_neutral_a_infographic.json
+
+## 20. Variational Real-Time Dynamics on Reduced Operator Manifolds
+
+- Date: 2026-09-14
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2609.15272v1
+- PDF: https://arxiv.org/pdf/2609.15272v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-14-arxiv-variational_real_time_dynamics_on_reduced_operator_manifolds_infographic.json

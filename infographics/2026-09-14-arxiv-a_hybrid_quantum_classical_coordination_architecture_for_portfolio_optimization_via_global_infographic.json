@@ -1,24 +1,24 @@
 {
-  "key_insight": "Context-Aware Folding (CAF) adds a compressed global risk signal to each local portfolio subproblem, helping hybrid quantum-classical solvers coordinate beyond purely local decomposition.",
-  "engineering_relevance": "CAF is a lightweight coordination layer that can improve scalability for portfolio optimization while remaining compatible with classical solvers, QAOA, SQA, and NISQ hardware.",
+  "key_insight": "Context-Aware Folding (CAF) improves portfolio optimization by injecting compressed global risk context into each local quantum-classical subproblem, reducing the loss from purely local decomposition.",
+  "engineering_relevance": "CAF is a lightweight coordination layer that can sit between decomposition and solver execution, making large-scale portfolio optimization more practical across classical, quantum-inspired, and NISQ backends.",
   "method": [
-    "Inject a global risk state as a state-dependent linear bias into each local subproblem.",
-    "Decouple local candidate generation from global commitment using a sequential acceptance rule.",
-    "Use a monotonic non-divergence guarantee to preserve stable coordination across folds."
+    "Compress global covariance/risk into a shared state.",
+    "Add a state-dependent linear bias to each local subproblem.",
+    "Use sequential acceptance to commit candidates with monotonic non-divergence."
   ],
-  "evidence_signal": "On a Russell 3000 subset (N=484), CAF with SA improved the scalarized mean-variance objective by 6.59% with 20/20 wins, and on an additional 2018 panel (N=1397) it improved by 0.2579% with 17/20 wins.",
-  "watch_item": "Performance gains depend on the quality of the compressed global state and the chosen folding/acceptance setup, so hardware and solver compatibility should be validated case by case.",
+  "evidence_signal": "On a 2016 Russell 3000 subset (N=484), CAF with SA improved the scalarized mean-variance objective by 6.59% over a static baseline with 20/20 wins, with additional gains on a 2018 panel (N=1397) and compatibility tests for QAOA/SQA plus one frozen hardware run on Wukong 180.",
+  "watch_item": "Performance depends on how well the compressed global state preserves cross-cluster covariance, and the hardware result is limited to a single warm-started small subproblem.",
   "hashtags": [
-    "#QuantumComputing",
+    "#QuantumOptimization",
     "#PortfolioOptimization",
     "#HybridAlgorithms",
-    "#QAOA",
-    "#NISQ"
+    "#NISQ",
+    "#QAOA"
   ],
   "paper_id": "2026-09-14-arxiv-a_hybrid_quantum_classical_coordination_architecture_for_portfolio_optimization_via_global",
   "paper_title": "A Hybrid Quantum-Classical Coordination Architecture for Portfolio Optimization via Global Context Injection",
   "paper_date": "2026-09-14",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-09-16T14:37:41",
+  "generated_at": "2026-09-17T14:42:42",
   "generator": "openai"
 }

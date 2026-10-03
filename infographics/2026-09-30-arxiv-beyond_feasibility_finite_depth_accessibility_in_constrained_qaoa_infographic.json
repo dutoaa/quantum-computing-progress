@@ -1,24 +1,24 @@
 {
-  "key_insight": "Feasibility alone is not enough: for constrained QAOA, the shallow circuit can only reach a finite-depth accessible set, and the quality of that reachable set predicts performance better than global mixer connectivity.",
-  "engineering_relevance": "This provides a practical, parameter-independent way to judge whether a constrained QAOA design is worth its qubit and depth budget before running expensive optimization.",
+  "key_insight": "Finite feasibility is not enough: shallow constrained QAOA can only access a finite-depth subset of feasible states, and that accessible subset better predicts performance than feasibility alone.",
+  "engineering_relevance": "For resource-bounded quantum optimization, the paper provides a practical diagnostic to compare mixer schedules by both reachable volume and objective quality before running expensive circuits.",
   "method": [
-    "Define the finite-depth accessible set R_p(M,x0) for a chosen feasible start state, mixer schedule, and circuit depth.",
-    "Upper-bound achievable objective quality with f_R^* = max_{x in R_p} f(x) and normalize it as reachable-quality Q_R.",
-    "Test block-local XY mixer schedules on constrained portfolio optimization and synthetic block-constrained quadratic problems, including compilation-cost analysis."
+    "Define the finite-depth accessible set R_p(M,x0) for a specific feasible start state, mixer schedule, and circuit depth.",
+    "Derive an objective ceiling f_R^* and normalized reachable-quality metric Q_R from the accessible set.",
+    "Test resource-matched block-local XY mixer schedules on constrained portfolio optimization and synthetic block-constrained quadratic problems."
   ],
-  "evidence_signal": "Across 207 favorable-tail CVaR QAOA configurations, Q_R had the strongest association with realized shallow-QAOA performance among the structural diagnostics, with Pearson 0.7003 and Spearman 0.8057 correlations.",
-  "watch_item": "The accessible-set diagnostic depends on the specific initial state, finite depth, and compiled mixer/phase-separator routing, so results may change substantially under different circuit synthesis choices or hardware constraints.",
+  "evidence_signal": "Across 207 favorable-tail CVaR QAOA configurations, Q_R showed the strongest association with realized shallow-QAOA performance, with Pearson 0.7003 and Spearman 0.8057 correlations.",
+  "watch_item": "The diagnostic is circuit- and schedule-specific, so its usefulness depends on accurately modeling the implemented mixer order, initialization, and compilation effects.",
   "hashtags": [
+    "#QuantumAlgorithms",
     "#QAOA",
-    "#QuantumOptimization",
-    "#ConstraintPreservingMixers",
-    "#QuantumCompilation",
-    "#FiniteDepthAccessibility"
+    "#ConstrainedOptimization",
+    "#QuantumComputing",
+    "#AlgorithmDesign"
   ],
   "paper_id": "2026-09-30-arxiv-beyond_feasibility_finite_depth_accessibility_in_constrained_qaoa",
   "paper_title": "Beyond Feasibility: Finite-Depth Accessibility in Constrained QAOA",
   "paper_date": "2026-09-30",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-02T16:07:35",
+  "generated_at": "2026-10-03T14:34:47",
   "generator": "openai"
 }

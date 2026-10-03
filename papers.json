@@ -24,29 +24,29 @@
         "url": "https://arxiv.org/pdf/2610.00887v1"
       }
     ],
-    "score": 114,
+    "score": 109,
     "infographic": {
-      "key_insight": "The paper shows that codon optimization can be reformulated as an Ising Hamiltonian and solved with gate-based quantum algorithms such as VQE, SVQE, and QAOA.",
-      "engineering_relevance": "This provides a reproducible quantum workflow for a biologically relevant combinatorial optimization problem, with potential impact on protein engineering and synthetic biology.",
+      "key_insight": "The paper reformulates codon optimization as an Ising Hamiltonian and shows that gate-based quantum methods can recover exact solutions on a small benchmark.",
+      "engineering_relevance": "This provides a reproducible quantum workflow for synthetic biology sequence design, with potential to scale codon optimization beyond classical search as hardware improves.",
       "method": [
-        "Encode codon optimization as an Ising model with Pauli operators.",
-        "Solve the objective using VQE, SVQE, and QAOA.",
-        "Benchmark against exact diagonalization, classical optimization, and quantum annealing, then test on IBM Quantum hardware."
+        "Encode codon optimization objective as Pauli-based Ising Hamiltonian",
+        "Solve with VQE, SVQE, and QAOA",
+        "Benchmark against exact diagonalization, classical optimization, and quantum annealing"
       ],
-      "evidence_signal": "On a three-amino-acid benchmark, the methods reproduced the exact ground-state solutions and were evaluated for ansatz choice, initialization, optimization strategy, and hardware settings.",
-      "watch_item": "Results are currently limited to a small benchmark, so scaling to larger protein sequences may face noise, circuit depth, and hardware connectivity constraints.",
+      "evidence_signal": "On a three-amino-acid benchmark, the proposed methods reproduced the exact ground-state solutions and were tested on IBM Quantum hardware.",
+      "watch_item": "The demonstrated results are limited to a very small benchmark, so scalability and noise sensitivity on larger protein sequences remain open concerns.",
       "hashtags": [
         "#QuantumComputing",
-        "#CodonOptimization",
-        "#VQE",
         "#QAOA",
+        "#VQE",
+        "#CodonOptimization",
         "#SyntheticBiology"
       ],
       "paper_id": "2026-10-01-arxiv-a_gate_based_quantum_computing_framework_for_codon_optimization",
       "paper_title": "A Gate-Based Quantum Computing Framework for Codon Optimization",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-10-02T16:06:52",
+      "generated_at": "2026-10-03T14:34:17",
       "generator": "openai"
     }
   },
@@ -75,81 +75,29 @@
         "url": "https://arxiv.org/pdf/2610.00945v1"
       }
     ],
-    "score": 94,
+    "score": 89,
     "infographic": {
-      "key_insight": "TATVA frames quantum circuit synthesis as a sequential reinforcement-learning problem, using DQN and PPO to build compact high-fidelity circuits gate by gate.",
-      "engineering_relevance": "It offers an automated path to prepare quantum states with fewer hand-designed rules, which is useful for scalable quantum algorithm compilation and near-term hardware workflows.",
+      "key_insight": "TATVA reframes quantum circuit synthesis as a sequential reinforcement learning problem, using RL agents to build high-fidelity circuits gate by gate.",
+      "engineering_relevance": "It offers an automated path to compact, high-accuracy quantum state preparation, which is critical for practical quantum algorithms and scalable circuit design.",
       "method": [
-        "Two RL agents (DQN and PPO) propose gates one step at a time.",
-        "After each gate, fidelity is evaluated and the best action is selected.",
-        "A post-hoc optimization step reduces circuit depth while preserving fidelity."
+        "Two RL agents, DQN and PPO, propose gates one step at a time.",
+        "After each gate, the system evaluates fidelity using Qiskit's statevector simulator and selects the best-performing circuit.",
+        "A post-hoc optimization stage reduces circuit depth while preserving fidelity."
       ],
-      "evidence_signal": "The abstract reports synthesis up to 5 qubits, achieving fidelity as high as 0.999999 and testing generalization on target states not seen during training.",
-      "watch_item": "Results may depend on simulator fidelity and the approach could be harder to scale as qubit count and action space grow.",
+      "evidence_signal": "The abstract reports synthesis for up to 5 qubits with fidelity reaching 0.999999, and evaluation includes unseen target states plus metrics such as success rate, gate count, and circuit depth.",
+      "watch_item": "Results are based on statevector simulation, so performance may not directly transfer to noisy hardware or larger qubit counts without further validation.",
       "hashtags": [
         "#QuantumComputing",
+        "#QuantumMachineLearning",
         "#ReinforcementLearning",
         "#CircuitSynthesis",
-        "#Qiskit",
-        "#QuantumML"
+        "#Qiskit"
       ],
       "paper_id": "2026-10-01-arxiv-tatva_a_reinforcement_learning_framework_for_quantum_circuit_synthesis",
       "paper_title": "TATVA: A Reinforcement Learning Framework for Quantum Circuit Synthesis",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-10-02T16:06:54",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-01-arxiv-hardware_efficient_ground_state_preparation_using_variational_imaginary_time_majorana_evol",
-    "arxiv_id": "2610.01954v1",
-    "date": "2026-10-01",
-    "title": "Hardware-Efficient Ground-State Preparation using Variational Imaginary-Time Majorana Evolution",
-    "authors": "Federico Santona, Manuel G. Algaba, Aeishah Ameera Anuar, Anna M. Wernbacher, Prachi Sharma, Fedor Šimkovic",
-    "abstract": "Compact ground-state preparation circuits are essential for early fault-tolerant quantum chemistry. We introduce Variational Imaginary-time Majorana Evolution (VIME), a classical pre-training algorithm that extends operator-projected variational quantum imaginary-time evolution (OVQITE) to molecular electronic structure using a single compiled Majorana-propagation (MP) surrogate graph. We pair VIME with a compressed tiled Unitary Product State (c-tUPS) ansatz that we develop to reduce both classical simulation and quantum state-preparation costs. In the strongly correlated ruthenium complex TLD-1411, active-space calculations requiring up to 52 qubits achieve chemical precision against DMRG reference energies, with energy errors approximately $400\\times$ smaller than those from ADAPT-VQE-based variational Majorana-propagation (ADAPT-VMPE). Across the strongly multireference acene series up to heptacene (60 qubits), VIME matches or improves on the MP-reported energy accuracy of the ADAPT-VMPE comparison points with up to $26\\times$ fewer CNOTs and $167\\times$ lower two-qubit depth. These results establish imaginary-time classical pre-training of compressed variational ansätze as a promising route to resource-efficient molecular ground-state preparation.",
-    "category": "Quantum Algorithms",
-    "source": "arXiv",
-    "published": "2026-10-01T16:12:45Z",
-    "updated": "2026-10-01T16:12:45Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph",
-      "physics.chem-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.01954v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.01954v1"
-      }
-    ],
-    "score": 87,
-    "infographic": {
-      "key_insight": "VIME uses classical imaginary-time pre-training plus a compressed ansatz to prepare molecular ground states with much lower quantum resource cost than prior variational Majorana methods.",
-      "engineering_relevance": "The approach targets near-term fault-tolerant quantum chemistry by cutting CNOT count and two-qubit depth while preserving chemically accurate energies on challenging correlated molecules.",
-      "method": [
-        "Extends OVQITE to molecular electronic structure via a single compiled Majorana-propagation surrogate graph",
-        "Pairs the algorithm with a compressed tiled Unitary Product State (c-tUPS) ansatz to reduce simulation and state-preparation cost",
-        "Uses classical pre-training before quantum execution to improve hardware efficiency"
-      ],
-      "evidence_signal": "On TLD-1411 and acene benchmarks up to 60 qubits, VIME reaches chemical precision and matches or improves ADAPT-VMPE accuracy with up to 26× fewer CNOTs and 167× lower two-qubit depth.",
-      "watch_item": "Performance depends on the quality of the surrogate graph, ansatz compression, and active-space setup, so benefits may vary across molecules and hardware constraints.",
-      "hashtags": [
-        "#QuantumChemistry",
-        "#VariationalAlgorithms",
-        "#ImaginaryTimeEvolution",
-        "#FaultTolerantQuantumComputing",
-        "#QuantumHardwareEfficiency"
-      ],
-      "paper_id": "2026-10-01-arxiv-hardware_efficient_ground_state_preparation_using_variational_imaginary_time_majorana_evol",
-      "paper_title": "Hardware-Efficient Ground-State Preparation using Variational Imaginary-Time Majorana Evolution",
-      "paper_date": "2026-10-01",
-      "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-10-02T16:06:57",
+      "generated_at": "2026-10-03T14:34:20",
       "generator": "openai"
     }
   },
@@ -180,232 +128,79 @@
     ],
     "score": 86,
     "infographic": {
-      "key_insight": "Symmetry in quantum Fourier models reorganizes Fourier frequencies into orbits, enabling exact variance relations and stronger control of expressivity under symmetrization.",
-      "engineering_relevance": "The paper provides practical symmetry-aware design rules and a randomized encoding method that can implement invariant quantum models without ancillas or extra twirling depth.",
+      "key_insight": "Symmetry reshapes the Fourier spectrum of quantum Fourier models into orbit-wise symmetrized coefficients, giving a principled way to analyze and improve expressivity in geometric quantum machine learning.",
+      "engineering_relevance": "This provides a practical route to build invariant quantum models with better-controlled trainability, including an ancilla-free randomized encoding approach that avoids the extra depth of quantum twirling.",
       "method": [
-        "Group Fourier coefficients into symmetry orbits and define symmetrized coefficients by summing within each orbit.",
-        "Derive variance identities for exact 2-design trainable layers and deviation bounds for single-layer \\u03b5-approximate 2-designs.",
-        "Use randomized encoding to realize invariant QFMs efficiently, and test them as QPINNs on PDE benchmarks."
+        "Organize Fourier coefficients into symmetry orbits and sum them into symmetrized coefficients.",
+        "Analyze variance under independent exact 2-design trainable layers, and derive bounds for ε-approximate 2-designs.",
+        "Use randomized encoding to implement invariant QFMs without ancillas or extra circuit depth."
       ],
-      "evidence_signal": "In two-dimensional screened Poisson and stationary viscous Hamilton-Jacobi benchmarks, hard-boundary QPINNs with exact symmetrization and randomized encoding achieved the lowest mean errors in their respective tests.",
-      "watch_item": "The strongest theoretical guarantees rely on exact or near-2-design assumptions, so practical performance may depend on how well real trainable layers approximate these regimes.",
+      "evidence_signal": "On two 2D QPINN benchmarks (screened Poisson and stationary viscous Hamilton-Jacobi), the hard-boundary models with exact symmetrization and randomized encoding achieved the lowest mean errors in their respective tests.",
+      "watch_item": "The strongest guarantees depend on exact or near-2-design trainable layers, so performance and bounds may weaken if the ansatz deviates from these assumptions.",
       "hashtags": [
         "#QuantumMachineLearning",
-        "#GeometricML",
-        "#FourierModels",
-        "#QuantumPDEs",
-        "#Symmetry"
+        "#FourierAnalysis",
+        "#Symmetry",
+        "#QPINNs",
+        "#QuantumComputing"
       ],
       "paper_id": "2026-10-01-arxiv-fourier_symmetrization_for_geometric_quantum_machine_learning",
       "paper_title": "Fourier Symmetrization for Geometric Quantum Machine Learning",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-10-02T16:07:00",
+      "generated_at": "2026-10-03T14:34:22",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-01-arxiv-on_the_pseudorandomness_of_simple_quantum_processes",
-    "arxiv_id": "2610.02100v1",
+    "id": "2026-10-01-arxiv-hardware_efficient_ground_state_preparation_using_variational_imaginary_time_majorana_evol",
+    "arxiv_id": "2610.01954v1",
     "date": "2026-10-01",
-    "title": "On the pseudorandomness of simple quantum processes",
-    "authors": "Jesko Dujmovic, Jonas Haferkamp, Alexander Poremba",
-    "abstract": "Can simple processes appear highly complex? Gowers (Comb. Prob. Comp. '96) conjectured that repeatedly composing local random reversible operations can yield global permutations that are indistinguishable from random. In this work, we study the unitary quantum analog of this question, in an attempt to make new progress on this longstanding conjecture. Our first result shows that statistical moment matching in the form of unitary designs does not generically lead to pseudorandomness---even for the simplest quantum processes: for every fixed $t$, we give an efficiently samplable family $\\{ν_n\\}_n$ of distributions on one- and two-qubit gates such that, after $T=O_t(n^2\\log^2 n)$ independent steps, the resulting $n$-qubit ensemble is an approximate unitary $t$-design with negligible error $\\exp(-Ω(\\log^2 n))$, yet an efficient quantum algorithm distinguishes it from random using only $O_t(\\log^2 n)$ queries. This refutes the unitary analog of the Hoory--Magen--Myers--Rackoff conjecture (ICALP '04) for permutations. Our second result is a stronger separation between unitary designs and pseudorandom unitaries at polynomially bounded moments; our counterexample, however, requires highly structured ensembles, in contrast with the simple local walks from before. This suggests caution when using unitary designs to model information scrambling in black-hole physics, as even maximally scrambled systems can exhibit structure which is accessible to efficient experiments. Motivated by these findings, we then propose new conjectures for how pseudorandomness can plausibly emerge within simple quantum processes, such as random quantum circuits.",
+    "title": "Hardware-Efficient Ground-State Preparation using Variational Imaginary-Time Majorana Evolution",
+    "authors": "Federico Santona, Manuel G. Algaba, Aeishah Ameera Anuar, Anna M. Wernbacher, Prachi Sharma, Fedor Šimkovic",
+    "abstract": "Compact ground-state preparation circuits are essential for early fault-tolerant quantum chemistry. We introduce Variational Imaginary-time Majorana Evolution (VIME), a classical pre-training algorithm that extends operator-projected variational quantum imaginary-time evolution (OVQITE) to molecular electronic structure using a single compiled Majorana-propagation (MP) surrogate graph. We pair VIME with a compressed tiled Unitary Product State (c-tUPS) ansatz that we develop to reduce both classical simulation and quantum state-preparation costs. In the strongly correlated ruthenium complex TLD-1411, active-space calculations requiring up to 52 qubits achieve chemical precision against DMRG reference energies, with energy errors approximately $400\\times$ smaller than those from ADAPT-VQE-based variational Majorana-propagation (ADAPT-VMPE). Across the strongly multireference acene series up to heptacene (60 qubits), VIME matches or improves on the MP-reported energy accuracy of the ADAPT-VMPE comparison points with up to $26\\times$ fewer CNOTs and $167\\times$ lower two-qubit depth. These results establish imaginary-time classical pre-training of compressed variational ansätze as a promising route to resource-efficient molecular ground-state preparation.",
     "category": "Quantum Algorithms",
     "source": "arXiv",
-    "published": "2026-10-01T17:26:18Z",
-    "updated": "2026-10-01T17:26:18Z",
+    "published": "2026-10-01T16:12:45Z",
+    "updated": "2026-10-01T16:12:45Z",
     "primary_category": "quant-ph",
     "categories": [
       "quant-ph",
-      "cs.CR"
+      "physics.chem-ph"
     ],
     "links": [
       {
         "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.02100v1"
+        "url": "https://arxiv.org/abs/2610.01954v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.02100v1"
+        "url": "https://arxiv.org/pdf/2610.01954v1"
       }
     ],
-    "score": 81,
+    "score": 82,
     "infographic": {
-      "key_insight": "Simple local quantum processes can look highly scrambled in moments (as unitary designs) yet still be efficiently distinguishable from truly random unitaries, so design-like behavior does not imply pseudorandomness.",
-      "engineering_relevance": "For quantum circuit design, verification, and black-hole-inspired simulation, this means moment-matching metrics alone are insufficient to certify randomness or information scrambling.",
+      "key_insight": "VIME combines classical imaginary-time pre-training with a compressed ansatz to generate much cheaper ground-state preparation circuits while preserving high energy accuracy.",
+      "engineering_relevance": "The method directly targets early fault-tolerant quantum chemistry by reducing qubit, CNOT, and circuit-depth demands for preparing molecular ground states.",
       "method": [
-        "Construct efficiently samplable distributions over 1- and 2-qubit gates.",
-        "Analyze the resulting n-qubit ensemble after O_t(n^2 log^2 n) independent steps.",
-        "Compare unitary-design properties against distinguishability by an efficient quantum query algorithm."
+        "Extends operator-projected variational imaginary-time evolution to molecular electronic structure using a single compiled Majorana-propagation surrogate graph.",
+        "Pairs this with a compressed tiled Unitary Product State (c-tUPS) ansatz to lower both classical simulation cost and quantum state-preparation cost.",
+        "Uses classical pre-training to produce hardware-efficient circuit structures before deployment on quantum devices."
       ],
-      "evidence_signal": "The abstract reports approximate unitary t-designs with negligible error exp(-Ω(log^2 n)) but still an efficient distinguisher using only O_t(log^2 n) queries.",
-      "watch_item": "The strongest separation beyond local walks uses highly structured ensembles, so the counterexample may not directly generalize to natural random-circuit implementations.",
-      "hashtags": [
-        "#QuantumComputing",
-        "#UnitaryDesigns",
-        "#Pseudorandomness",
-        "#RandomQuantumCircuits",
-        "#QuantumAlgorithms"
-      ],
-      "paper_id": "2026-10-01-arxiv-on_the_pseudorandomness_of_simple_quantum_processes",
-      "paper_title": "On the pseudorandomness of simple quantum processes",
-      "paper_date": "2026-10-01",
-      "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-10-02T16:07:03",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-30-arxiv-quantum_circuit_pruning_from_nisq_architectures_to_fault_tolerant_operations",
-    "arxiv_id": "2610.00669v1",
-    "date": "2026-09-30",
-    "title": "Quantum Circuit Pruning: From NISQ Architectures to Fault-Tolerant Operations",
-    "authors": "Pau Escofet, Carmen G. Almudéver, Sergi Abadal, Eduard Alarcón",
-    "abstract": "We present a routing-aware pruning strategy for quantum circuits that selectively removes parametric two-qubit gates whose computational contribution is outweighed by the fidelity cost of their execution, and assess it across both Noisy Intermediate-Scale Quantum (NISQ) and fault-tolerant quantum computing (FTQC) architectures. Each two-qubit gate of a circuit is evaluated by comparing an architecture-independent lower bound on the fidelity cost of omitting the gate against a hardware-specific model for the routing execution cost in each setting. We additionally provide an analytical characterization of the pruning boundary as a function of rotation angle, qubit distance, and hardware noise. Simulations on benchmark circuits demonstrate gate count reductions of up to 48.6% and fidelity improvements of up to 47.7% in the NISQ regime, while a feasibility analysis on FT hardware indicates that pruning is expected to remain relevant across a range of code distances and physical error rates. These results establish routing-aware pruning as a practical and unified compilation strategy across the quantum computing stack.",
-    "category": "Quantum Hardware",
-    "source": "arXiv",
-    "published": "2026-09-30T20:04:51Z",
-    "updated": "2026-09-30T20:04:51Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.00669v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.00669v1"
-      }
-    ],
-    "score": 81,
-    "infographic": {
-      "key_insight": "The paper introduces routing-aware pruning that removes two-qubit parametric gates when their expected fidelity benefit is lower than the cost of executing them on a given quantum architecture.",
-      "engineering_relevance": "This provides a unified compilation rule for both NISQ and fault-tolerant systems, helping reduce circuit depth, gate count, and routing overhead while improving end-to-end fidelity.",
-      "method": [
-        "Compare an architecture-independent lower bound for omitting a gate against hardware-specific execution cost.",
-        "Evaluate each two-qubit gate based on rotation angle, qubit distance, and noise level.",
-        "Use the pruning boundary to decide whether a gate should be kept or removed across NISQ and FTQC settings."
-      ],
-      "evidence_signal": "Benchmarks show up to 48.6% fewer gates and up to 47.7% fidelity improvement in NISQ simulations, with FTQC analysis indicating pruning remains useful across multiple code distances and physical error rates.",
-      "watch_item": "Pruning decisions depend on accurate hardware cost and noise models, so performance may degrade if calibration or routing estimates are inaccurate.",
-      "hashtags": [
-        "#QuantumComputing",
-        "#QuantumCompilation",
-        "#NISQ",
-        "#FaultTolerantQuantumComputing",
-        "#CircuitOptimization"
-      ],
-      "paper_id": "2026-09-30-arxiv-quantum_circuit_pruning_from_nisq_architectures_to_fault_tolerant_operations",
-      "paper_title": "Quantum Circuit Pruning: From NISQ Architectures to Fault-Tolerant Operations",
-      "paper_date": "2026-09-30",
-      "paper_category": "Quantum Hardware",
-      "generated_at": "2026-10-02T16:07:06",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-30-arxiv-two_stage_quantum_classical_distribution_network_reconfiguration_via_cycle_edge_encoding",
-    "arxiv_id": "2609.40264v1",
-    "date": "2026-09-30",
-    "title": "Two-Stage Quantum-Classical Distribution Network Reconfiguration via Cycle-Edge Encoding",
-    "authors": "Nowar Alashkar, Cade Kennedy, Phillip C. Lotshaw, Shaked Regev, Miguel Angel Lopez-Ruiz, Ananth Kaushik",
-    "abstract": "Distribution network reconfiguration (DNR) is a combinatorial optimization problem that seeks a low-loss network topology subject to topological and electrical operating constraints. In this work, we propose a two-stage quantum-classical method for DNR. First, an iterative linear-ramp Quantum Alternating Operator Ansatz (LR-QAOA) searches topologically feasible subspaces constructed using a novel cycle-edge encoding. The encoding guarantees that every represented configuration is a spanning tree while allowing the size and coverage of each subspace to be adjusted to the available qubit budget. Second, the resulting sample distribution is used to guide a mixed-integer second-order-cone programming (MISOCP) solver. The method is evaluated on six distribution networks ranging from 33 to 417 buses through simulation and execution on trapped-ion quantum hardware. Across all six test systems, the MISOCP solver guided by hardware-derived distributions reaches an incumbent within 1\\% of the best-known solution in less median solver time than the corresponding unguided solver.",
-    "category": "Quantum Hardware",
-    "source": "arXiv",
-    "published": "2026-09-30T17:42:57Z",
-    "updated": "2026-09-30T17:42:57Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2609.40264v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2609.40264v1"
-      }
-    ],
-    "score": 79,
-    "infographic": {
-      "key_insight": "A two-stage quantum-classical pipeline uses LR-QAOA with cycle-edge encoding to generate feasible distribution-network topologies, then steers a MISOCP solver toward lower-loss reconfiguration solutions.",
-      "engineering_relevance": "This approach offers a hardware-aware way to accelerate distribution network reconfiguration while respecting spanning-tree feasibility and electrical constraints.",
-      "method": [
-        "Cycle-edge encoding restricts the quantum search space to spanning-tree configurations.",
-        "Iterative LR-QAOA samples feasible topologies within a qubit-budgeted subspace.",
-        "Hardware-derived samples guide a downstream MISOCP solver to refine the best topology."
-      ],
-      "evidence_signal": "Across six benchmark networks (33 to 417 buses), hardware-guided MISOCP reached an incumbent within 1% of the best-known solution in less median solver time than an unguided solver.",
-      "watch_item": "Performance depends on how well the sampled quantum distribution transfers to the classical optimizer, and the approach may be limited by qubit budget and hardware noise.",
-      "hashtags": [
-        "#QuantumComputing",
-        "#QAOA",
-        "#PowerSystems",
-        "#Optimization",
-        "#HardwareAcceleration"
-      ],
-      "paper_id": "2026-09-30-arxiv-two_stage_quantum_classical_distribution_network_reconfiguration_via_cycle_edge_encoding",
-      "paper_title": "Two-Stage Quantum-Classical Distribution Network Reconfiguration via Cycle-Edge Encoding",
-      "paper_date": "2026-09-30",
-      "paper_category": "Quantum Hardware",
-      "generated_at": "2026-10-02T16:07:09",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-01-arxiv-adaptivity_is_all_you_need_optimal_stabilizer_learning_using_just_single_copy_measurements",
-    "arxiv_id": "2610.02031v1",
-    "date": "2026-10-01",
-    "title": "Adaptivity is all you need: Optimal stabilizer learning using just single-copy measurements",
-    "authors": "L. Bittel, J. Eisert, W. Gong, A. A. Mele, L. Schatzki",
-    "abstract": "Stabilizer states are central to quantum computing, underlying quantum error correction, benchmarking, and efficient classical simulation. Yet their learnability exhibits a striking gap: an $n$-qubit stabilizer state can be learned from $Θ(n)$ copies using two-copy Bell measurements, whereas non-adaptive single-copy measurements require $Ω(n^2)$ copies. Here we show that adaptivity completely closes this gap. We give a polynomial-time adaptive algorithm that learns an arbitrary $n$-qubit stabilizer state from $Θ(n)$ single-copy Clifford measurements, matching the optimal sample complexity of Bell sampling without any multi-copy measurements. The same ideas yield a sample-optimal single-copy tolerant tester and, with $k$ qubits of quantum memory, the optimal testing tradeoff $Θ(n-k+1/\\varepsilon)$ at infidelity $\\varepsilon$. Finally, we show that this adaptive mechanism extends beyond exact stabilizer states: states of stabilizer nullity at most $r$, including states prepared by Clifford circuits with a bounded number of $T$ gates, can be learned using $O(n2^{r})$ single-copy measurements.",
-    "category": "Quantum Algorithms",
-    "source": "arXiv",
-    "published": "2026-10-01T16:48:31Z",
-    "updated": "2026-10-01T16:48:31Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.02031v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.02031v1"
-      }
-    ],
-    "score": 78,
-    "infographic": {
-      "key_insight": "Adaptive single-copy Clifford measurements can learn any n-qubit stabilizer state with optimal Θ(n) sample complexity, closing the gap to two-copy Bell-measurement methods.",
-      "engineering_relevance": "This reduces measurement overhead for quantum state characterization, improving practical workflows for error-correction benchmarking, verification, and stabilizer-based simulation.",
-      "method": [
-        "Use adaptive, polynomial-time single-copy Clifford measurements instead of multi-copy Bell measurements.",
-        "Exploit measurement choices conditioned on previous outcomes to recover the stabilizer structure efficiently.",
-        "Extend the same adaptive strategy to tolerant testing and low-nullity near-stabilizer states."
-      ],
-      "evidence_signal": "The abstract reports optimal Θ(n) learning with single-copy measurements, a sample-optimal tolerant tester, a Θ(n-k+1/ε) testing tradeoff with k qubits of memory, and O(n2^r) scaling for states of stabilizer nullity at most r.",
-      "watch_item": "The approach relies on adaptive measurement control and Clifford-capable hardware, so runtime and coherence constraints may limit performance in near-term implementations.",
+      "evidence_signal": "On TLD-1411, active-space calculations up to 52 qubits reached chemical precision versus DMRG with energy errors about 400× smaller than ADAPT-VQE-based VMPE, and across acenes up to heptacene (60 qubits) VIME matched or improved accuracy with up to 26× fewer CNOTs and 167× lower two-qubit depth.",
+      "watch_item": "Results depend on active-space selection and pre-training quality, so performance may vary for molecules where the surrogate Majorana graph or compressed ansatz is less expressive.",
       "hashtags": [
         "#QuantumAlgorithms",
-        "#StabilizerStates",
-        "#AdaptiveMeasurements",
-        "#QuantumVerification",
-        "#ErrorCorrection"
+        "#QuantumChemistry",
+        "#VariationalMethods",
+        "#FaultTolerantQuantum",
+        "#GroundStatePreparation"
       ],
-      "paper_id": "2026-10-01-arxiv-adaptivity_is_all_you_need_optimal_stabilizer_learning_using_just_single_copy_measurements",
-      "paper_title": "Adaptivity is all you need: Optimal stabilizer learning using just single-copy measurements",
+      "paper_id": "2026-10-01-arxiv-hardware_efficient_ground_state_preparation_using_variational_imaginary_time_majorana_evol",
+      "paper_title": "Hardware-Efficient Ground-State Preparation using Variational Imaginary-Time Majorana Evolution",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-10-02T16:07:13",
+      "generated_at": "2026-10-03T14:34:25",
       "generator": "openai"
     }
   },
@@ -436,18 +231,18 @@
     ],
     "score": 78,
     "infographic": {
-      "key_insight": "QPI-DeepONet-MAC is a hybrid classical-quantum physics-informed operator network that aims to keep DeepONet expressivity while improving trainability and stability for solving parametric PDEs.",
-      "engineering_relevance": "The framework could enable scalable surrogate models for high-dimensional physics simulations, especially where classical PI-DeepONets struggle with optimization and sample efficiency.",
+      "key_insight": "QPI-DeepONet-MAC merges physics-informed operator learning with a hybrid quantum-classical coupling to improve expressivity while preserving trainability for parametric PDEs.",
+      "engineering_relevance": "The framework targets scalable, stable surrogate modeling for scientific computing workflows where accurate PDE solvers are expensive or high-dimensional.",
       "method": [
-        "Uses a multiplicative-and-additive coupling (MAC) between classical DeepONet features and quantum expectation values.",
-        "Integrates parameterized quantum circuits into a physics-informed operator-learning pipeline.",
-        "Adds analytical trainability and regularization tools to reduce barren plateaus and coherence loss."
+        "Injects parameterized quantum circuits into PI-DeepONets using multiplicative-and-additive coupling (MAC) between classical features and quantum expectations.",
+        "Proves universal operator approximation capability for the hybrid architecture.",
+        "Derives gradient bounds, a trainability scaling criterion, sensor-count lower bounds, and a coherence/fidelity-based regularizer."
       ],
-      "evidence_signal": "The abstract reports analytic proofs and derived bounds: universal operator approximation, gradient bounds for avoiding barren plateaus, and a lower bound on required sensors tied to regularity, dimension, and PDE growth.",
-      "watch_item": "Practical performance may depend on circuit size, noise sensitivity, and whether the quantum components remain trainable at scale on near-term hardware.",
+      "evidence_signal": "The abstract reports theoretical guarantees and analytical bounds rather than experimental benchmark results.",
+      "watch_item": "Practical performance may still depend on circuit depth, sensor availability, and controlling quantum coherence loss during training.",
       "hashtags": [
         "#QuantumMachineLearning",
-        "#PhysicsInformedML",
+        "#PhysicsInformedLearning",
         "#DeepOperatorNetworks",
         "#ParametricPDEs",
         "#HybridQuantumClassical"
@@ -456,59 +251,59 @@
       "paper_title": "QPI-DeepONet-MAC: A Scalable and Stable Hybrid Classical-Quantum Architecture for Physics-Informed Deep Operator Networks",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-10-02T16:07:15",
+      "generated_at": "2026-10-03T14:34:26",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-30-arxiv-neural_fourier_surrogates_for_data_reuploading_quantum_neural_networks",
-    "arxiv_id": "2610.00841v1",
-    "date": "2026-09-30",
-    "title": "Neural Fourier Surrogates for Data Reuploading Quantum Neural Networks",
-    "authors": "Oliver Knitter, Jonathan Mei, Sang Hyub Kim, Chi Chen, Masako Yamada, Martin Roetteler",
-    "abstract": "For quantum machine learning, the exact boundary between classical and quantum advantage is still poorly understood. Direct comparison between quantum neural networks (QNNs) and existing classical models, which encompass fundamentally different function classes, often fails to provide broader insight into the difference between the two. Inspired by the techniques of Neural Quantum States and Random Fourier Features, this work introduces Neural Fourier Surrogates (NFS), a stochastic classical neural network architecture for efficiently learning coefficients over the same finite Fourier series support as quantum neural networks. Testing on a selection of tabular benchmark datasets, we find that NFS is an effective classifier architecture broadly competitive with established classical baselines, including a comparable Random Fourier Features model, and possessing comparable performance to data-reuploading QNNs; combined with additional analysis comparing the learned Fourier spectra of QNNs and NFS on synthetic data, these results establish NFS as a natural classical baseline for evaluating QNN performance.",
-    "category": "Quantum Machine Learning",
+    "id": "2026-10-01-arxiv-on_the_pseudorandomness_of_simple_quantum_processes",
+    "arxiv_id": "2610.02100v1",
+    "date": "2026-10-01",
+    "title": "On the pseudorandomness of simple quantum processes",
+    "authors": "Jesko Dujmovic, Jonas Haferkamp, Alexander Poremba",
+    "abstract": "Can simple processes appear highly complex? Gowers (Comb. Prob. Comp. '96) conjectured that repeatedly composing local random reversible operations can yield global permutations that are indistinguishable from random. In this work, we study the unitary quantum analog of this question, in an attempt to make new progress on this longstanding conjecture. Our first result shows that statistical moment matching in the form of unitary designs does not generically lead to pseudorandomness---even for the simplest quantum processes: for every fixed $t$, we give an efficiently samplable family $\\{ν_n\\}_n$ of distributions on one- and two-qubit gates such that, after $T=O_t(n^2\\log^2 n)$ independent steps, the resulting $n$-qubit ensemble is an approximate unitary $t$-design with negligible error $\\exp(-Ω(\\log^2 n))$, yet an efficient quantum algorithm distinguishes it from random using only $O_t(\\log^2 n)$ queries. This refutes the unitary analog of the Hoory--Magen--Myers--Rackoff conjecture (ICALP '04) for permutations. Our second result is a stronger separation between unitary designs and pseudorandom unitaries at polynomially bounded moments; our counterexample, however, requires highly structured ensembles, in contrast with the simple local walks from before. This suggests caution when using unitary designs to model information scrambling in black-hole physics, as even maximally scrambled systems can exhibit structure which is accessible to efficient experiments. Motivated by these findings, we then propose new conjectures for how pseudorandomness can plausibly emerge within simple quantum processes, such as random quantum circuits.",
+    "category": "Quantum Algorithms",
     "source": "arXiv",
-    "published": "2026-09-30T23:56:20Z",
-    "updated": "2026-09-30T23:56:20Z",
+    "published": "2026-10-01T17:26:18Z",
+    "updated": "2026-10-01T17:26:18Z",
     "primary_category": "quant-ph",
     "categories": [
       "quant-ph",
-      "cs.LG"
+      "cs.CR"
     ],
     "links": [
       {
         "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.00841v1"
+        "url": "https://arxiv.org/abs/2610.02100v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.00841v1"
+        "url": "https://arxiv.org/pdf/2610.02100v1"
       }
     ],
-    "score": 77,
+    "score": 76,
     "infographic": {
-      "key_insight": "Neural Fourier Surrogates (NFS) provide a classical stochastic baseline that learns the same finite Fourier support as data-reuploading QNNs, enabling a more direct comparison of quantum and classical expressivity.",
-      "engineering_relevance": "For quantum ML practitioners, NFS offers a practical benchmark to test whether QNN gains come from quantum effects or from Fourier-spectrum capacity that can be matched classically.",
+      "key_insight": "Local random quantum processes can match high-order unitary moments without becoming truly pseudorandom, so unitary designs do not automatically imply indistinguishability.",
+      "engineering_relevance": "For quantum circuit design, benchmarking, and scrambling studies, this means moment-based validation can miss efficiently detectable structure in highly mixed-looking systems.",
       "method": [
-        "Uses a stochastic neural architecture to estimate coefficients over a finite Fourier series support.",
-        "Draws inspiration from Neural Quantum States and Random Fourier Features.",
-        "Compares learned Fourier spectra of QNNs and NFS on synthetic data."
+        "Construct efficiently samplable distributions over 1- and 2-qubit gates.",
+        "Analyze repeated local random walks over T = O_t(n^2 log^2 n) steps.",
+        "Compare approximate unitary t-design behavior against efficient quantum distinguishers."
       ],
-      "evidence_signal": "On tabular benchmark datasets, NFS is reported to be broadly competitive with standard classical baselines and comparable to data-reuploading QNNs.",
-      "watch_item": "Because NFS is a surrogate baseline rather than a quantum model, parity in performance does not by itself demonstrate quantum advantage or absence of hardware-related constraints.",
+      "evidence_signal": "The abstract reports negligible t-design error exp(-Ω(log^2 n)) after O_t(n^2 log^2 n) steps, yet an efficient quantum algorithm distinguishes the ensemble from Haar-random using only O_t(log^2 n) queries.",
+      "watch_item": "High-order design guarantees are not sufficient evidence of pseudorandomness; structured ensembles may still be distinguishable by efficient experiments.",
       "hashtags": [
-        "#QuantumMachineLearning",
-        "#NeuralFourierSurrogates",
-        "#QuantumNeuralNetworks",
-        "#RandomFourierFeatures",
-        "#ClassicalBaseline"
+        "#QuantumComputing",
+        "#UnitaryDesigns",
+        "#Pseudorandomness",
+        "#RandomQuantumCircuits",
+        "#QuantumAlgorithms"
       ],
-      "paper_id": "2026-09-30-arxiv-neural_fourier_surrogates_for_data_reuploading_quantum_neural_networks",
-      "paper_title": "Neural Fourier Surrogates for Data Reuploading Quantum Neural Networks",
-      "paper_date": "2026-09-30",
-      "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-10-02T16:07:18",
+      "paper_id": "2026-10-01-arxiv-on_the_pseudorandomness_of_simple_quantum_processes",
+      "paper_title": "On the pseudorandomness of simple quantum processes",
+      "paper_date": "2026-10-01",
+      "paper_category": "Quantum Algorithms",
+      "generated_at": "2026-10-03T14:34:28",
       "generator": "openai"
     }
   },
@@ -541,27 +336,27 @@
     ],
     "score": 76,
     "infographic": {
-      "key_insight": "The paper introduces trapdoored Clifford distributions that look random to outsiders but can be sampled and implemented much faster when a secret trapdoor is available.",
-      "engineering_relevance": "This could make randomized benchmarking, classical shadows, quantum authentication, and related Clifford-based protocols far more practical for larger quantum systems.",
+      "key_insight": "The paper introduces trapdoored Clifford distributions that look random to outsiders but can be sampled and implemented much faster by someone holding a trapdoor.",
+      "engineering_relevance": "This could speed up quantum benchmarking, shadow tomography, and authentication workflows while also enabling more efficient classical simulation and low-depth Clifford implementations.",
       "method": [
-        "Constructs trapdoored Clifford operators under a learning-parity-with-noise-style assumption.",
-        "Provides fast tableau updates for classical simulation and polylog-depth implementation options.",
-        "Builds trapdoored finite-field matrices with efficient forward and inverse multiplication, enabling Clifford and matrix applications."
+        "Construct a trapdoored Clifford family under a variant of the learning parity with noise assumption.",
+        "Design fast tableau action on Pauli labels for efficient classical simulation.",
+        "Build trapdoored finite-field matrices with efficient forward and inverse multiplication, then use them for Clifford synthesis and batching hardness results."
       ],
-      "evidence_signal": "The abstract reports cryptographic indistinguishability guarantees, near-linear sampling/implementation, polylog-depth variants, and hardness reductions tied to matrix multiplication and Clifford synthesis.",
-      "watch_item": "The speedups and security properties depend on cryptographic assumptions, so practical deployment may be limited if those assumptions weaken or if trapdoor generation becomes costly.",
+      "evidence_signal": "The abstract reports near-linear-time sampling/implementation, polylogarithmic-depth optimizations, and new worst-case-to-average-case reductions for matrix and Clifford problems.",
+      "watch_item": "Security and performance gains rely on a cryptographic assumption and may be sensitive to constant factors, approximation settings, and the overhead of realizing the trapdoor in practice.",
       "hashtags": [
         "#QuantumComputing",
-        "#CliffordOperators",
-        "#QuantumCryptography",
-        "#RandomizedBenchmarking",
-        "#ClassicalShadows"
+        "#CliffordCircuits",
+        "#QuantumHardware",
+        "#Cryptography",
+        "#RandomizedBenchmarking"
       ],
       "paper_id": "2026-10-01-arxiv-trapdoored_clifford_operators_and_applications",
       "paper_title": "Trapdoored Clifford Operators and Applications",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-10-02T16:07:21",
+      "generated_at": "2026-10-03T14:34:30",
       "generator": "openai"
     }
   },
@@ -592,41 +387,41 @@
     ],
     "score": 76,
     "infographic": {
-      "key_insight": "Geometric locality lets Hamiltonian simulation be done in nearly optimal nearest-neighbor depth: the paper reduces the overhead to O(T log(nT/ε)) and proves a matching lower bound up to a doubly logarithmic factor for XXZ dynamics.",
-      "engineering_relevance": "For quantum hardware with local connectivity, this suggests time evolution can be compiled with shallow circuits whose depth scales mainly with lattice size, evolution time, and target precision rather than with full-system complexity.",
+      "key_insight": "Geometric locality lets Hamiltonian dynamics be simulated with near-optimal nearest-neighbor circuit depth, reducing overhead to a single logarithm while keeping high precision.",
+      "engineering_relevance": "This sharpens the practical cost model for quantum simulation on hardware with local connectivity, indicating that depth can scale almost linearly in evolution time and only logarithmically in system size and target error.",
       "method": [
-        "Use a Lieb–Robinson-style spatial block decomposition to organize the simulation into logarithmic-scale regions.",
-        "Within each block, combine a constant-order product formula with a correction step to recover exponential accuracy.",
-        "Implement the correction with depth proportional to block diameter, avoiding extra asymptotic depth overhead."
+        "Use Lieb–Robinson block decomposition to localize the simulation into logarithmic-scale spatial blocks.",
+        "Apply a constant-order product formula within each block and add a correction to recover exponential accuracy.",
+        "Implement the correction with depth proportional to block diameter, avoiding any extra asymptotic depth penalty."
       ],
-      "evidence_signal": "The abstract reports an upper bound of O(T log(nT/ε)) circuit depth and O(nT log(nT/ε)) gate count, plus an unconditional lower bound of Ω(log n/log log n) for uniform XXZ Hamiltonians at fixed T and small ε.",
-      "watch_item": "The result is asymptotic and relies on finite-range, geometrically local Hamiltonians on a fixed-dimensional lattice, so constant factors and hardware-specific compilation overhead may still matter in practice.",
+      "evidence_signal": "The abstract reports an upper bound of O(T log(nT/ε)) depth and gate count O(nT log(nT/ε)), plus a lower bound of Ω(log n / log log n) for uniform XXZ Hamiltonians at fixed time and small fixed error.",
+      "watch_item": "The result is for finite-range, geometrically local Hamiltonians on a fixed-dimensional lattice and relies on nearest-neighbor hardware assumptions, so the practical benefit may narrow on nonlocal architectures or outside this regime.",
       "hashtags": [
         "#QuantumSimulation",
         "#HamiltonianSimulation",
         "#CircuitDepth",
-        "#QuantumAlgorithms",
-        "#Locality"
+        "#LiebRobinson",
+        "#QuantumComputing"
       ],
       "paper_id": "2026-10-01-arxiv-toward_optimal_circuit_depth_for_geometrically_local_hamiltonian_simulation",
       "paper_title": "Toward Optimal Circuit Depth for Geometrically Local Hamiltonian Simulation",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-10-02T16:07:24",
+      "generated_at": "2026-10-03T14:34:32",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-30-arxiv-first_quantized_quantum_simulation_with_non_local_potentials_by_matrix_product_state_encod",
-    "arxiv_id": "2610.00521v1",
+    "id": "2026-09-30-arxiv-quantum_circuit_pruning_from_nisq_architectures_to_fault_tolerant_operations",
+    "arxiv_id": "2610.00669v1",
     "date": "2026-09-30",
-    "title": "First-quantized quantum simulation with non-local potentials by matrix-product-state encoding",
-    "authors": "Kazuki Tsuoka, Taichi Kosugi, Masari Watanabe, Hirofumi Nishi, Yu-ichiro Matsushita",
-    "abstract": "Quantum simulations based on first-quantized approaches can offer lower space and gate complexities than second-quantized approaches. The gate requirements for these simulations can be further reduced by employing pseudopotentials, a technique widely used in classical quantum chemistry calculations to decrease the number of simulated electrons. However, implementing pseudopotentials in quantum circuits remains challenging due to their non-local nature. In this study, we proposed a method to efficiently implement non-local potentials using matrix product state (MPS) encoding. MPS encoding allows us to efficiently implement a Trotter step operator with a circuit depth of $O(\\mathrm{deg}(V_{\\mathrm{loc}}) n^{\\mathrm{deg}(V_{\\mathrm{loc}})} + 8Lnn_{\\mathrm{atom}}χ^2 + 2n^2)$, where $\\mathrm{deg}(V_{\\mathrm{loc}})$ is the degree of the polynomial local potential, $n_{\\mathrm{atom}}$ is the number of atoms in the system, $L$ is the maximum number of projector functions across all atoms, and $n$ is the number of qubits used to represent the binary-encoded wave function in one-dimensional space. We demonstrated the effectiveness of this approach by applying it to a model of the ionization of a one-dimensional hydrogen atom driven by an ultrashort laser pulse. Our results showed that MPS encoding significantly reduces the required circuit depth compared to a direct unitary decomposition, providing a pathway for practical first-quantized simulations.",
-    "category": "Quantum Simulation",
+    "title": "Quantum Circuit Pruning: From NISQ Architectures to Fault-Tolerant Operations",
+    "authors": "Pau Escofet, Carmen G. Almudéver, Sergi Abadal, Eduard Alarcón",
+    "abstract": "We present a routing-aware pruning strategy for quantum circuits that selectively removes parametric two-qubit gates whose computational contribution is outweighed by the fidelity cost of their execution, and assess it across both Noisy Intermediate-Scale Quantum (NISQ) and fault-tolerant quantum computing (FTQC) architectures. Each two-qubit gate of a circuit is evaluated by comparing an architecture-independent lower bound on the fidelity cost of omitting the gate against a hardware-specific model for the routing execution cost in each setting. We additionally provide an analytical characterization of the pruning boundary as a function of rotation angle, qubit distance, and hardware noise. Simulations on benchmark circuits demonstrate gate count reductions of up to 48.6% and fidelity improvements of up to 47.7% in the NISQ regime, while a feasibility analysis on FT hardware indicates that pruning is expected to remain relevant across a range of code distances and physical error rates. These results establish routing-aware pruning as a practical and unified compilation strategy across the quantum computing stack.",
+    "category": "Quantum Hardware",
     "source": "arXiv",
-    "published": "2026-09-30T18:11:56Z",
-    "updated": "2026-09-30T18:11:56Z",
+    "published": "2026-09-30T20:04:51Z",
+    "updated": "2026-09-30T20:04:51Z",
     "primary_category": "quant-ph",
     "categories": [
       "quant-ph"
@@ -634,36 +429,36 @@
     "links": [
       {
         "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.00521v1"
+        "url": "https://arxiv.org/abs/2610.00669v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.00521v1"
+        "url": "https://arxiv.org/pdf/2610.00669v1"
       }
     ],
     "score": 76,
     "infographic": {
-      "key_insight": "Matrix-product-state (MPS) encoding makes non-local pseudopotentials practical in first-quantized quantum simulation by sharply lowering Trotter-step circuit depth.",
-      "engineering_relevance": "This provides a more hardware-feasible route to quantum chemistry and strong-field simulation, especially where pseudopotentials reduce electron count but introduce difficult non-local operators.",
+      "key_insight": "Routing-aware pruning removes two-qubit gates only when their expected fidelity gain outweighs the hardware cost of executing them, making circuit simplification compatible with both NISQ and fault-tolerant quantum systems.",
+      "engineering_relevance": "This offers a unified compilation lever to cut routing overhead, reduce gate counts, and improve output fidelity across different quantum hardware stacks.",
       "method": [
-        "Encode the wave function in MPS form instead of direct unitary decomposition",
-        "Implement non-local pseudopotentials efficiently through the MPS structure",
-        "Combine with first-quantized Trotterization to reduce depth to O(deg(V_loc) n^deg(V_loc) + 8Lnn_atomχ^2 + 2n^2)"
+        "Evaluate each parametric two-qubit gate against an architecture-independent fidelity-loss bound for omitting it.",
+        "Compare that bound with a hardware-specific routing execution cost model for NISQ and FTQC settings.",
+        "Derive an analytical pruning boundary using rotation angle, qubit distance, and noise parameters."
       ],
-      "evidence_signal": "The authors tested the approach on ionization of a one-dimensional hydrogen atom driven by an ultrashort laser pulse and reported significantly lower circuit depth than direct unitary decomposition.",
-      "watch_item": "The depth advantage depends on MPS bond dimension χ and pseudopotential structure, so performance may degrade for more entangled or higher-dimensional systems.",
+      "evidence_signal": "Benchmarks show up to 48.6% gate-count reduction and up to 47.7% fidelity improvement in NISQ simulations, with FT hardware analysis indicating the approach remains useful across code distances and physical error rates.",
+      "watch_item": "Pruning decisions depend on accurate hardware noise and routing-cost models, so mismatch between the model and deployed hardware could reduce expected gains.",
       "hashtags": [
-        "#QuantumSimulation",
-        "#FirstQuantization",
-        "#MPS",
-        "#Pseudopotentials",
-        "#QuantumChemistry"
+        "#QuantumComputing",
+        "#QuantumCircuitPruning",
+        "#NISQ",
+        "#FaultTolerantQuantumComputing",
+        "#QuantumCompilation"
       ],
-      "paper_id": "2026-09-30-arxiv-first_quantized_quantum_simulation_with_non_local_potentials_by_matrix_product_state_encod",
-      "paper_title": "First-quantized quantum simulation with non-local potentials by matrix-product-state encoding",
+      "paper_id": "2026-09-30-arxiv-quantum_circuit_pruning_from_nisq_architectures_to_fault_tolerant_operations",
+      "paper_title": "Quantum Circuit Pruning: From NISQ Architectures to Fault-Tolerant Operations",
       "paper_date": "2026-09-30",
-      "paper_category": "Quantum Simulation",
-      "generated_at": "2026-10-02T16:07:27",
+      "paper_category": "Quantum Hardware",
+      "generated_at": "2026-10-03T14:34:34",
       "generator": "openai"
     }
   },
@@ -696,27 +491,232 @@
     ],
     "score": 74,
     "infographic": {
-      "key_insight": "The paper shows that decoded quantum interferometry can give an unconditional streaming-memory advantage, with a quantum algorithm solving a Hermite-interpolation generalization of optimal polynomial intersection using polylogarithmic space where classical methods need polynomial space.",
-      "engineering_relevance": "This matters for memory-constrained quantum and classical data processing because it demonstrates a concrete setting where quantum algorithms reduce storage and per-item processing cost, not just runtime.",
+      "key_insight": "Decoded quantum interferometry can achieve an unconditional quantum memory advantage in streaming optimization, beating classical algorithms on space while maintaining strong constraint satisfaction.",
+      "engineering_relevance": "The result suggests quantum streaming architectures could reduce memory overhead for large, constraint-heavy workloads where storing and revisiting data is costly.",
       "method": [
-        "Adapt DQI to a streaming version of Hermite interpolation with values and Hasse-derivative constraints.",
-        "Use a one-pass quantum algorithm with polylogarithmic space and polylogarithmic time per streamed entry.",
-        "Prove a classical lower bound even for multi-pass algorithms with unlimited time."
+        "Adapt DQI to a Hermite interpolation / Hasse-derivative version of optimal polynomial intersection.",
+        "Run in a single pass over the stream with polylogarithmic space and polylogarithmic per-item time.",
+        "Construct an output polynomial satisfying 93% of constraints while matching a full classical tradeoff curve."
       ],
-      "evidence_signal": "From the abstract, the quantum method satisfies 93% of constraints, while any classical algorithm achieving only 76% satisfaction still requires polynomial space.",
-      "watch_item": "The advantage is established for a specific generalized streaming formulation and approximation threshold, so practical gains may depend on how well real hardware can support the required quantum memory and fault tolerance.",
+      "evidence_signal": "The abstract reports a concrete separation: the quantum algorithm satisfies 93% of constraints with polylog space, while any classical algorithm reaching only 76% of constraints needs polynomial space even with multiple passes and unlimited time.",
+      "watch_item": "The advantage is for a specific streaming formulation and approximation regime, so practical benefit depends on whether real problems can be mapped to this model and on fault-tolerant quantum overheads.",
       "hashtags": [
         "#QuantumComputing",
-        "#QuantumAlgorithms",
-        "#StreamingAlgorithms",
         "#QuantumAdvantage",
-        "#ErrorCorrection"
+        "#StreamingAlgorithms",
+        "#ErrorCorrection",
+        "#ComputationalScience"
       ],
       "paper_id": "2026-10-01-arxiv-exponential_quantum_advantages_for_decoded_quantum_interferometry_in_the_streaming_setting",
       "paper_title": "Exponential quantum advantages for decoded quantum interferometry in the streaming setting",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-10-02T16:07:30",
+      "generated_at": "2026-10-03T14:34:36",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-30-arxiv-two_stage_quantum_classical_distribution_network_reconfiguration_via_cycle_edge_encoding",
+    "arxiv_id": "2609.40264v1",
+    "date": "2026-09-30",
+    "title": "Two-Stage Quantum-Classical Distribution Network Reconfiguration via Cycle-Edge Encoding",
+    "authors": "Nowar Alashkar, Cade Kennedy, Phillip C. Lotshaw, Shaked Regev, Miguel Angel Lopez-Ruiz, Ananth Kaushik",
+    "abstract": "Distribution network reconfiguration (DNR) is a combinatorial optimization problem that seeks a low-loss network topology subject to topological and electrical operating constraints. In this work, we propose a two-stage quantum-classical method for DNR. First, an iterative linear-ramp Quantum Alternating Operator Ansatz (LR-QAOA) searches topologically feasible subspaces constructed using a novel cycle-edge encoding. The encoding guarantees that every represented configuration is a spanning tree while allowing the size and coverage of each subspace to be adjusted to the available qubit budget. Second, the resulting sample distribution is used to guide a mixed-integer second-order-cone programming (MISOCP) solver. The method is evaluated on six distribution networks ranging from 33 to 417 buses through simulation and execution on trapped-ion quantum hardware. Across all six test systems, the MISOCP solver guided by hardware-derived distributions reaches an incumbent within 1\\% of the best-known solution in less median solver time than the corresponding unguided solver.",
+    "category": "Quantum Hardware",
+    "source": "arXiv",
+    "published": "2026-09-30T17:42:57Z",
+    "updated": "2026-09-30T17:42:57Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2609.40264v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2609.40264v1"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "A two-stage quantum-classical pipeline uses a cycle-edge encoded LR-QAOA to sample only feasible spanning-tree reconfigurations, then feeds those samples to a MISOCP solver for faster distribution network reconfiguration.",
+      "engineering_relevance": "The approach targets practical power-system planning by reducing search over infeasible topologies and improving solution quality/time on real distribution networks.",
+      "method": [
+        "Stage 1: iterative linear-ramp QAOA explores topologically feasible subspaces.",
+        "Cycle-edge encoding guarantees every quantum state maps to a spanning tree.",
+        "Stage 2: the sampled distribution guides a MISOCP solver to refine the final reconfiguration."
+      ],
+      "evidence_signal": "Evaluated on six distribution feeders from 33 to 417 buses using simulation and trapped-ion hardware, the guided MISOCP reached an incumbent within 1% of the best-known solution in less median time than the unguided solver.",
+      "watch_item": "Performance depends on how well the encoded subspace fits the available qubit budget, so hardware scaling and encoding overhead may limit near-term deployment.",
+      "hashtags": [
+        "#QuantumComputing",
+        "#QAOA",
+        "#PowerSystems",
+        "#Optimization",
+        "#TrappedIon"
+      ],
+      "paper_id": "2026-09-30-arxiv-two_stage_quantum_classical_distribution_network_reconfiguration_via_cycle_edge_encoding",
+      "paper_title": "Two-Stage Quantum-Classical Distribution Network Reconfiguration via Cycle-Edge Encoding",
+      "paper_date": "2026-09-30",
+      "paper_category": "Quantum Hardware",
+      "generated_at": "2026-10-03T14:34:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-01-arxiv-adaptivity_is_all_you_need_optimal_stabilizer_learning_using_just_single_copy_measurements",
+    "arxiv_id": "2610.02031v1",
+    "date": "2026-10-01",
+    "title": "Adaptivity is all you need: Optimal stabilizer learning using just single-copy measurements",
+    "authors": "L. Bittel, J. Eisert, W. Gong, A. A. Mele, L. Schatzki",
+    "abstract": "Stabilizer states are central to quantum computing, underlying quantum error correction, benchmarking, and efficient classical simulation. Yet their learnability exhibits a striking gap: an $n$-qubit stabilizer state can be learned from $Θ(n)$ copies using two-copy Bell measurements, whereas non-adaptive single-copy measurements require $Ω(n^2)$ copies. Here we show that adaptivity completely closes this gap. We give a polynomial-time adaptive algorithm that learns an arbitrary $n$-qubit stabilizer state from $Θ(n)$ single-copy Clifford measurements, matching the optimal sample complexity of Bell sampling without any multi-copy measurements. The same ideas yield a sample-optimal single-copy tolerant tester and, with $k$ qubits of quantum memory, the optimal testing tradeoff $Θ(n-k+1/\\varepsilon)$ at infidelity $\\varepsilon$. Finally, we show that this adaptive mechanism extends beyond exact stabilizer states: states of stabilizer nullity at most $r$, including states prepared by Clifford circuits with a bounded number of $T$ gates, can be learned using $O(n2^{r})$ single-copy measurements.",
+    "category": "Quantum Algorithms",
+    "source": "arXiv",
+    "published": "2026-10-01T16:48:31Z",
+    "updated": "2026-10-01T16:48:31Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2610.02031v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2610.02031v1"
+      }
+    ],
+    "score": 73,
+    "infographic": {
+      "key_insight": "Adaptivity closes the stabilizer-learning sample-complexity gap: with only single-copy Clifford measurements, an optimal algorithm learns any n-qubit stabilizer state in Θ(n) copies.",
+      "engineering_relevance": "This enables resource-efficient quantum state verification and learning protocols for benchmarking, error-correction workflows, and near-term devices where multi-copy Bell measurements are impractical.",
+      "method": [
+        "Use adaptive single-copy Clifford measurements instead of two-copy Bell measurements.",
+        "Update each measurement choice based on previous outcomes to recover the stabilizer structure in polynomial time.",
+        "Extend the same adaptive strategy to tolerant testing and to low-nullity states with bounded T-gate content."
+      ],
+      "evidence_signal": "From the abstract, the method matches the optimal Θ(n) copy complexity for exact stabilizer learning and achieves the stated testing tradeoff Θ(n-k+1/ε) with k qubits of quantum memory.",
+      "watch_item": "Performance and robustness will depend on adaptive control accuracy and measurement noise, which may complicate implementation on hardware.",
+      "hashtags": [
+        "#QuantumComputing",
+        "#StabilizerStates",
+        "#AdaptiveAlgorithms",
+        "#QuantumLearning",
+        "#CliffordCircuits"
+      ],
+      "paper_id": "2026-10-01-arxiv-adaptivity_is_all_you_need_optimal_stabilizer_learning_using_just_single_copy_measurements",
+      "paper_title": "Adaptivity is all you need: Optimal stabilizer learning using just single-copy measurements",
+      "paper_date": "2026-10-01",
+      "paper_category": "Quantum Algorithms",
+      "generated_at": "2026-10-03T14:34:39",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-30-arxiv-neural_fourier_surrogates_for_data_reuploading_quantum_neural_networks",
+    "arxiv_id": "2610.00841v1",
+    "date": "2026-09-30",
+    "title": "Neural Fourier Surrogates for Data Reuploading Quantum Neural Networks",
+    "authors": "Oliver Knitter, Jonathan Mei, Sang Hyub Kim, Chi Chen, Masako Yamada, Martin Roetteler",
+    "abstract": "For quantum machine learning, the exact boundary between classical and quantum advantage is still poorly understood. Direct comparison between quantum neural networks (QNNs) and existing classical models, which encompass fundamentally different function classes, often fails to provide broader insight into the difference between the two. Inspired by the techniques of Neural Quantum States and Random Fourier Features, this work introduces Neural Fourier Surrogates (NFS), a stochastic classical neural network architecture for efficiently learning coefficients over the same finite Fourier series support as quantum neural networks. Testing on a selection of tabular benchmark datasets, we find that NFS is an effective classifier architecture broadly competitive with established classical baselines, including a comparable Random Fourier Features model, and possessing comparable performance to data-reuploading QNNs; combined with additional analysis comparing the learned Fourier spectra of QNNs and NFS on synthetic data, these results establish NFS as a natural classical baseline for evaluating QNN performance.",
+    "category": "Quantum Machine Learning",
+    "source": "arXiv",
+    "published": "2026-09-30T23:56:20Z",
+    "updated": "2026-09-30T23:56:20Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2610.00841v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2610.00841v1"
+      }
+    ],
+    "score": 72,
+    "infographic": {
+      "key_insight": "Neural Fourier Surrogates (NFS) provide a classical model that matches the finite Fourier-series support of data-reuploading quantum neural networks, making them a more direct baseline for judging quantum performance.",
+      "engineering_relevance": "NFS offers a practical benchmarking tool for quantum machine learning by separating gains due to Fourier feature structure from gains due to genuine quantum effects.",
+      "method": [
+        "Stochastic classical neural architecture that learns coefficients over the same finite Fourier support as QNNs.",
+        "Inspired by Neural Quantum States and Random Fourier Features.",
+        "Compared against tabular benchmarks, Random Fourier Features, and data-reuploading QNNs; Fourier spectra also analyzed on synthetic data."
+      ],
+      "evidence_signal": "On a selection of tabular benchmark datasets, NFS was broadly competitive with established classical baselines and achieved performance comparable to data-reuploading QNNs, with synthetic-data analysis showing similar learned Fourier spectra.",
+      "watch_item": "As a stochastic surrogate, NFS still depends on Fourier support choices and training stability, so benchmark conclusions may be sensitive to architecture and optimization details.",
+      "hashtags": [
+        "#QuantumMachineLearning",
+        "#NeuralFourierSurrogates",
+        "#QuantumNeuralNetworks",
+        "#RandomFourierFeatures",
+        "#ClassicalBaseline"
+      ],
+      "paper_id": "2026-09-30-arxiv-neural_fourier_surrogates_for_data_reuploading_quantum_neural_networks",
+      "paper_title": "Neural Fourier Surrogates for Data Reuploading Quantum Neural Networks",
+      "paper_date": "2026-09-30",
+      "paper_category": "Quantum Machine Learning",
+      "generated_at": "2026-10-03T14:34:41",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-30-arxiv-first_quantized_quantum_simulation_with_non_local_potentials_by_matrix_product_state_encod",
+    "arxiv_id": "2610.00521v1",
+    "date": "2026-09-30",
+    "title": "First-quantized quantum simulation with non-local potentials by matrix-product-state encoding",
+    "authors": "Kazuki Tsuoka, Taichi Kosugi, Masari Watanabe, Hirofumi Nishi, Yu-ichiro Matsushita",
+    "abstract": "Quantum simulations based on first-quantized approaches can offer lower space and gate complexities than second-quantized approaches. The gate requirements for these simulations can be further reduced by employing pseudopotentials, a technique widely used in classical quantum chemistry calculations to decrease the number of simulated electrons. However, implementing pseudopotentials in quantum circuits remains challenging due to their non-local nature. In this study, we proposed a method to efficiently implement non-local potentials using matrix product state (MPS) encoding. MPS encoding allows us to efficiently implement a Trotter step operator with a circuit depth of $O(\\mathrm{deg}(V_{\\mathrm{loc}}) n^{\\mathrm{deg}(V_{\\mathrm{loc}})} + 8Lnn_{\\mathrm{atom}}χ^2 + 2n^2)$, where $\\mathrm{deg}(V_{\\mathrm{loc}})$ is the degree of the polynomial local potential, $n_{\\mathrm{atom}}$ is the number of atoms in the system, $L$ is the maximum number of projector functions across all atoms, and $n$ is the number of qubits used to represent the binary-encoded wave function in one-dimensional space. We demonstrated the effectiveness of this approach by applying it to a model of the ionization of a one-dimensional hydrogen atom driven by an ultrashort laser pulse. Our results showed that MPS encoding significantly reduces the required circuit depth compared to a direct unitary decomposition, providing a pathway for practical first-quantized simulations.",
+    "category": "Quantum Simulation",
+    "source": "arXiv",
+    "published": "2026-09-30T18:11:56Z",
+    "updated": "2026-09-30T18:11:56Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2610.00521v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2610.00521v1"
+      }
+    ],
+    "score": 71,
+    "infographic": {
+      "key_insight": "Matrix-product-state (MPS) encoding makes non-local pseudopotentials practical in first-quantized quantum simulation by lowering circuit depth for Trotter steps.",
+      "engineering_relevance": "This is a useful route toward cheaper quantum chemistry and atomistic simulations on near-term hardware because it reduces gate overhead without abandoning first-quantized representations.",
+      "method": [
+        "Encode the wave function with MPS to represent non-local projector terms efficiently.",
+        "Decompose the Trotter step using MPS-based operations for local and pseudopotential parts.",
+        "Apply the method to 1D hydrogen-ionization under an ultrashort laser pulse as a proof of concept."
+      ],
+      "evidence_signal": "The abstract reports a circuit-depth scaling of O(deg(V_loc) n^deg(V_loc) + 8Lnn_atomχ^2 + 2n^2) and states that the MPS approach significantly reduces depth versus direct unitary decomposition in the hydrogen-atom benchmark.",
+      "watch_item": "Performance depends on the MPS bond dimension χ and the complexity of the pseudopotentials, so large entanglement or many projectors may still limit efficiency.",
+      "hashtags": [
+        "#QuantumSimulation",
+        "#FirstQuantization",
+        "#MPS",
+        "#QuantumChemistry",
+        "#Pseudopotentials"
+      ],
+      "paper_id": "2026-09-30-arxiv-first_quantized_quantum_simulation_with_non_local_potentials_by_matrix_product_state_encod",
+      "paper_title": "First-quantized quantum simulation with non-local potentials by matrix-product-state encoding",
+      "paper_date": "2026-09-30",
+      "paper_category": "Quantum Simulation",
+      "generated_at": "2026-10-03T14:34:43",
       "generator": "openai"
     }
   },
@@ -745,29 +745,29 @@
         "url": "https://arxiv.org/pdf/2610.01466v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Amplitude damping mainly changes variational quantum circuit features by a zero-temperature bias, while its infinite-temperature twirl preserves contraction but removes that bias, so accuracy differences are often a feature-scaling effect rather than pure noise strength.",
-      "engineering_relevance": "A trainable output scale can recover much of the lost accuracy, but the price shifts to higher measurement-shot cost, making noise-model choice and calibration important for practical quantum ML hardware deployment.",
+      "key_insight": "The paper shows that zero-temperature bias in amplitude damping mostly changes the scale of learned features, while the Pauli-twirled infinite-temperature version isolates the contraction effect and reveals when damping is effectively a gauge choice.",
+      "engineering_relevance": "For noisy variational quantum circuits, a simple output rescaling can recover much of the accuracy lost to damping, but the same correction shifts the burden to measurement-shot cost and circuit-design choices.",
       "method": [
-        "Compare amplitude damping with its Pauli-twirled infinite-temperature counterpart in variational circuits",
-        "Analyze feature scaling, sampling cost, and depth dependence under random parameters and trained models",
-        "Study when damping direction is gauge-dependent versus physically meaningful in circuit layouts"
+        "Compare amplitude damping (AD) with its Pauli-twirled generalized amplitude damping counterpart across variational circuits.",
+        "Analyze feature scaling, damping-induced floors, and depth dependence under random parameters and trained output scaling.",
+        "Study how noise placement and circuit structure make damping either a removable gauge or a physical effect."
       ],
-      "evidence_signal": "Across simulations up to eight qubits, AD and its twirls differ by only about 3 percentage points after output scaling, while a four-qubit classifier at p=0.3 and 10^3 shots/image stays within 1.5 points of noiseless accuracy under AD but loses up to 33 points under the twirled models.",
-      "watch_item": "The damping direction can be a gauge only in certain circuit architectures; in decomposed two-qubit gates or eigensolver settings, it becomes a physical effect and cannot be ignored.",
+      "evidence_signal": "Simulations up to eight qubits show AD features saturate to a damping-dependent floor, and with 10^3 shots per image a four-qubit classifier at p=0.3 stays within 1.5 percentage points of noiseless accuracy, while twirled versions can lose up to 33 points.",
+      "watch_item": "The gauge interpretation depends on the noise occurring after complete entangling layers with trainable boundaries; inside decomposed two-qubit gates, the damping direction becomes physically meaningful.",
       "hashtags": [
-        "#QuantumML",
+        "#QuantumHardware",
+        "#VariationalQuantumCircuits",
         "#AmplitudeDamping",
-        "#VariationalCircuits",
-        "#QuantumNoise",
-        "#HardwareAwareAI"
+        "#NoiseMitigation",
+        "#QuantumML"
       ],
       "paper_id": "2026-10-01-arxiv-zero_versus_infinite_temperature_damping_in_variational_quantum_circuits_feature_scale_sam",
       "paper_title": "Zero- Versus Infinite-Temperature Damping in Variational Quantum Circuits: Feature Scale, Sampling Cost, and Frame Gauge",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-10-02T16:07:33",
+      "generated_at": "2026-10-03T14:34:45",
       "generator": "openai"
     }
   },
@@ -797,29 +797,29 @@
         "url": "https://arxiv.org/pdf/2610.00736v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Feasibility alone is not enough: for constrained QAOA, the shallow circuit can only reach a finite-depth accessible set, and the quality of that reachable set predicts performance better than global mixer connectivity.",
-      "engineering_relevance": "This provides a practical, parameter-independent way to judge whether a constrained QAOA design is worth its qubit and depth budget before running expensive optimization.",
+      "key_insight": "Finite feasibility is not enough: shallow constrained QAOA can only access a finite-depth subset of feasible states, and that accessible subset better predicts performance than feasibility alone.",
+      "engineering_relevance": "For resource-bounded quantum optimization, the paper provides a practical diagnostic to compare mixer schedules by both reachable volume and objective quality before running expensive circuits.",
       "method": [
-        "Define the finite-depth accessible set R_p(M,x0) for a chosen feasible start state, mixer schedule, and circuit depth.",
-        "Upper-bound achievable objective quality with f_R^* = max_{x in R_p} f(x) and normalize it as reachable-quality Q_R.",
-        "Test block-local XY mixer schedules on constrained portfolio optimization and synthetic block-constrained quadratic problems, including compilation-cost analysis."
+        "Define the finite-depth accessible set R_p(M,x0) for a specific feasible start state, mixer schedule, and circuit depth.",
+        "Derive an objective ceiling f_R^* and normalized reachable-quality metric Q_R from the accessible set.",
+        "Test resource-matched block-local XY mixer schedules on constrained portfolio optimization and synthetic block-constrained quadratic problems."
       ],
-      "evidence_signal": "Across 207 favorable-tail CVaR QAOA configurations, Q_R had the strongest association with realized shallow-QAOA performance among the structural diagnostics, with Pearson 0.7003 and Spearman 0.8057 correlations.",
-      "watch_item": "The accessible-set diagnostic depends on the specific initial state, finite depth, and compiled mixer/phase-separator routing, so results may change substantially under different circuit synthesis choices or hardware constraints.",
+      "evidence_signal": "Across 207 favorable-tail CVaR QAOA configurations, Q_R showed the strongest association with realized shallow-QAOA performance, with Pearson 0.7003 and Spearman 0.8057 correlations.",
+      "watch_item": "The diagnostic is circuit- and schedule-specific, so its usefulness depends on accurately modeling the implemented mixer order, initialization, and compilation effects.",
       "hashtags": [
+        "#QuantumAlgorithms",
         "#QAOA",
-        "#QuantumOptimization",
-        "#ConstraintPreservingMixers",
-        "#QuantumCompilation",
-        "#FiniteDepthAccessibility"
+        "#ConstrainedOptimization",
+        "#QuantumComputing",
+        "#AlgorithmDesign"
       ],
       "paper_id": "2026-09-30-arxiv-beyond_feasibility_finite_depth_accessibility_in_constrained_qaoa",
       "paper_title": "Beyond Feasibility: Finite-Depth Accessibility in Constrained QAOA",
       "paper_date": "2026-09-30",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-10-02T16:07:35",
+      "generated_at": "2026-10-03T14:34:47",
       "generator": "openai"
     }
   },
@@ -848,29 +848,29 @@
         "url": "https://arxiv.org/pdf/2610.02135v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
-      "key_insight": "Moment matching alone gives a quantified but limited approximation to Haar-random output probabilities; adding local invariance sharply improves the full distributional accuracy.",
-      "engineering_relevance": "For quantum circuit designers, this clarifies when approximate unitary designs are sufficient for randomness-sensitive metrics like output-probability statistics and entropy.",
+      "key_insight": "Approximate unitary designs do match moments, but their output-probability distributions can still deviate from Haar randomness by a quantifiable amount unless extra structural invariance is present.",
+      "engineering_relevance": "For quantum hardware and randomized circuit benchmarking, this gives a sharper guarantee of how well random circuits emulate ideal randomness and what additional circuit structure is needed to improve accuracy.",
       "method": [
-        "Proved Kolmogorov-distance bounds between single-output probabilities of strong approximate unitary k-designs and the finite-dimensional Porter-Thomas law.",
-        "Showed the bound scales as O(sqrt(2^n/(k(k+2^n))) + ε) and is optimal up to constants.",
-        "Identified extra local translation invariance on O(log k) qubits as a structure that improves errors to 2^{-Ω(k)} in Kolmogorov distance and total variation."
+        "Proves Kolmogorov-distance bounds between single-output probabilities of strong \\u03b5-approximate unitary k-designs and the finite-dimensional Porter-Thomas distribution.",
+        "Shows the bound is optimal up to constants for general strong approximate designs.",
+        "Uses local translation invariance on \\log k+O(1) qubits to obtain exponentially better error decay and total-variation guarantees."
       ],
-      "evidence_signal": "The abstract reports analytical guarantees and optimality results, not an empirical benchmark, with additional entropy-error bounds derived from the distributional distance result.",
-      "watch_item": "The strongest improvements require extra local invariance beyond generic approximate k-designs, so standard design constructions may not achieve the exponential error decay.",
+      "evidence_signal": "The abstract reports theoretical error bounds scaling as O(\\sqrt{2^n/(k(k+2^n))}+\\u03b5) in general and 2^{-\\u03a9(k)}+O(\\u03b5) with local invariance, plus an entropy deviation bound of O(\\sqrt{\\eta}).",
+      "watch_item": "The strongest guarantees require additional local invariance; moment matching alone does not ensure uniformly small distributional error for individual output probabilities.",
       "hashtags": [
         "#QuantumComputing",
         "#RandomCircuits",
         "#UnitaryDesigns",
-        "#HaarRandomness",
+        "#PorterThomas",
         "#QuantumHardware"
       ],
       "paper_id": "2026-10-01-arxiv-random_quantum_circuits_beyond_moment_matching",
       "paper_title": "Random Quantum Circuits Beyond Moment Matching",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-10-02T16:07:39",
+      "generated_at": "2026-10-03T14:34:49",
       "generator": "openai"
     }
   },
@@ -900,29 +900,80 @@
         "url": "https://arxiv.org/pdf/2610.02133v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
-      "key_insight": "By exploiting symmetry, the paper turns the hard problem of constructing optimal quantum transducers into a structured block-diagonal design problem, enabling exact optimal algorithms for several standard primitives.",
-      "engineering_relevance": "This gives quantum algorithm designers a practical route to reduce query complexity overheads and build composition-friendly subroutines for search, amplitude amplification, and amplitude estimation.",
+      "key_insight": "Symmetry can be used to simplify and solve optimal quantum transducer design by forcing catalysts and unitaries into structured, block-diagonal forms.",
+      "engineering_relevance": "This provides a practical route to deriving exact, low-overhead quantum query algorithms for foundational primitives like search, amplitude amplification, and amplitude estimation.",
       "method": [
-        "Symmetrize the adversary-based optimization so the optimal catalyst respects the problem’s group symmetry.",
-        "Use representation theory to show the transducer intertwines group representations and decomposes block-diagonally.",
-        "Construct explicit optimal transducers within each isotypic block to recover optimal constants."
+        "Symmetrize the adversary SDP so an optimal catalyst can be chosen covariant under the problem’s symmetry group.",
+        "Use representation theory to show the transducer intertwines two group representations, enabling block-diagonalization in an isotypic decomposition.",
+        "Construct explicit optimal transducers for benchmark primitives with optimal constants."
       ],
-      "evidence_signal": "The abstract reports optimal transducers with optimal constants for unstructured search, amplitude amplification, and amplitude estimation.",
-      "watch_item": "The approach still depends on identifying the relevant symmetry group and performing representation-theoretic decomposition, which may be nontrivial for less structured problems.",
+      "evidence_signal": "The abstract reports derived optimal transducers with optimal constants for unstructured search, amplitude amplification, and amplitude estimation, matching the adversary-bound characterization of query complexity.",
+      "watch_item": "The approach still relies on solving the adversary SDP and constructing the corresponding unitary, so implementation can remain mathematically involved for new problems.",
       "hashtags": [
         "#QuantumAlgorithms",
         "#QuantumQueryComplexity",
         "#RepresentationTheory",
-        "#AdversaryMethod",
+        "#SemidefiniteProgramming",
         "#AmplitudeEstimation"
       ],
       "paper_id": "2026-10-01-arxiv-optimal_transducers_using_symmetries",
       "paper_title": "Optimal transducers using symmetries",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-10-02T16:07:42",
+      "generated_at": "2026-10-03T14:34:50",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-01-arxiv-loss_tolerant_distributed_lattice_surgery_using_fusion_networks",
+    "arxiv_id": "2610.01923v1",
+    "date": "2026-10-01",
+    "title": "Loss-tolerant distributed lattice surgery using fusion networks",
+    "authors": "Felix Burt, Richard Meister, Sheng-Ku Lin, Kuan-Cheng Chen, Michael Hanks, Roberto Bondesan",
+    "abstract": "Networking matter-based quantum processing units (QPUs) offers a promising route to scaling fault-tolerant quantum computers. This requires distributed logical operations to be performed across photonic links, where noise is characteristically different from and stronger than in local QPUs owing to photon loss and probabilistic linear-optical operations. Measurement- and fusion-based quantum computing are designed to be robust against loss and probabilistic photonic operations, suggesting they could complement circuit-based error correction at the interface between networked QPUs. We use ZX calculus transformations to construct hybrid syndrome extraction protocols and apply them to distributed rotated surface code lattice surgery, demonstrating that several protocols attain a $50\\%$ interface-erasure threshold when local noise is absent, including circuit-based lattice surgery using fused Bell pairs and hybrid protocols using linear cluster states. Relative to a straight Bell-pair interface geometry, the hybrid protocols increase the merge-observable interface distance from $d+1$ to $2d+1$ and restore the perpendicular-observable interface distance from $\\lfloor(d+1)/2\\rfloor$ to $d$. We calculate how the threshold decreases when using truncated resource states and map correctable regions under resource-state errors, local circuit noise, and fusion erasure. We then convert these erasure thresholds into photon-loss thresholds and probe subthreshold performance using fusion boosting. At circuit and resource-state error rates of $10^{-3}$, local errors largely mask the interface-distance advantage. As local noise is reduced to $10^{-4}$ and below, the linear-chain protocols improve more rapidly with decreasing erasure, suggesting that interface distance enhancements are effective in low local noise regimes.",
+    "category": "Quantum Error Correction",
+    "source": "arXiv",
+    "published": "2026-10-01T15:57:13Z",
+    "updated": "2026-10-01T15:57:13Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2610.01923v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2610.01923v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "The paper shows that loss-tolerant fusion-network interfaces can enable distributed lattice surgery for surface codes with high erasure tolerance, reaching a 50% interface-erasure threshold in low-noise regimes.",
+      "engineering_relevance": "This provides a practical path for networking matter-based QPUs using photonic links while preserving fault-tolerant logical operations across noisy, lossy interfaces.",
+      "method": [
+        "Used ZX-calculus transformations to derive hybrid syndrome-extraction protocols.",
+        "Applied the protocols to distributed rotated surface-code lattice surgery with Bell-pair, fused, and linear-cluster-state interfaces.",
+        "Analyzed thresholds under resource-state truncation, local circuit noise, fusion erasure, and photon loss, including fusion boosting."
+      ],
+      "evidence_signal": "The abstract reports 50% interface-erasure thresholds for several protocols when local noise is absent, and maps how thresholds degrade under realistic resource-state and circuit errors.",
+      "watch_item": "The interface-distance advantage is largely masked at local and resource-state error rates around 10^-3, so benefits may require substantially lower local noise to matter in practice.",
+      "hashtags": [
+        "#QuantumErrorCorrection",
+        "#LatticeSurgery",
+        "#SurfaceCode",
+        "#QuantumNetworking",
+        "#PhotonLoss"
+      ],
+      "paper_id": "2026-10-01-arxiv-loss_tolerant_distributed_lattice_surgery_using_fusion_networks",
+      "paper_title": "Loss-tolerant distributed lattice surgery using fusion networks",
+      "paper_date": "2026-10-01",
+      "paper_category": "Quantum Error Correction",
+      "generated_at": "2026-10-03T14:34:52",
       "generator": "openai"
     }
   },
@@ -952,82 +1003,29 @@
         "url": "https://arxiv.org/pdf/2610.01777v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
-      "key_insight": "QUFIG uses a circuit-DAG GNN to rank gate-fault pairs by vulnerability, enabling gate-level quantum fault injection analysis with precision.",
-      "engineering_relevance": "It helps quantum engineers prioritize which gates to inspect and harden first under limited verification budgets in cloud quantum workflows.",
+      "key_insight": "QUFIG uses a circuit-DAG GNN to rank gate-fault pairs by predicted impact on circuit fidelity, enabling gate-level quantum fault vulnerability detection under limited inspection budgets.",
+      "engineering_relevance": "This helps quantum engineers prioritize the most security-critical gates for testing and defense, improving runtime resilience in cloud quantum workflows.",
       "method": [
-        "Builds a circuit-DAG graph representation of the quantum circuit.",
-        "Uses a GNN backbone to predict vulnerability scores for each gate-fault pair.",
-        "Ranks pairs by predicted impact on circuit fidelity for inspection prioritization."
+        "Builds a GNN over the quantum circuit DAG to model gate-level structure.",
+        "Predicts a vulnerability score for each gate-fault pair based on fidelity impact.",
+        "Ranks gate-fault pairs to guide inspection under restricted budgets."
       ],
-      "evidence_signal": "On QASMbench and HamLib MaxCut, QUFIG finds high-impact vulnerable pairs with fewer inspections than random and depth-based heuristics, reducing gates needing inspection by 2.9–19.8%.",
-      "watch_item": "Performance depends on the quality of the circuit graph representation and the training/evaluation coverage of fault types, so generalization to unseen hardware or attack patterns may need validation.",
+      "evidence_signal": "On QASMbench and HamLib MaxCut, QUFIG finds high-impact vulnerable gate-fault pairs with fewer inspections than random and depth-based heuristics, reducing gates requiring inspection by 2.9–19.8%.",
+      "watch_item": "Performance depends on the quality and representativeness of training/evaluation circuits, so generalization to new hardware, noise regimes, or unseen fault types should be validated carefully.",
       "hashtags": [
         "#QuantumComputing",
         "#GraphNeuralNetworks",
         "#FaultInjection",
         "#QuantumSecurity",
-        "#MachineLearning"
+        "#QuantumML"
       ],
       "paper_id": "2026-10-01-arxiv-qufig_gnn_based_prediction_of_quantum_fault_injection_vulnerabilities_with_gate_level_prec",
       "paper_title": "QUFIG: GNN-Based Prediction of Quantum Fault Injection Vulnerabilities with Gate-Level Precision",
       "paper_date": "2026-10-01",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-10-02T16:07:44",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-30-arxiv-efficient_calculation_of_equilibrium_correlation_functions",
-    "arxiv_id": "2609.40349v1",
-    "date": "2026-09-30",
-    "title": "Efficient Calculation of Equilibrium Correlation Functions",
-    "authors": "Yizhi Shen, Roel Van Beeumen, Wibe A. de Jong, Efekan Kökcü",
-    "abstract": "A majority of measurable dynamic quantities of a physical system is described as an equilibrium correlation function of the form $G_{AB}(t-t') = \\left<A(t)B(t')\\right>$, where $t'$ represents the impact time and $t$ represents the response time. Conventional quantum algorithms to compute such quantities via Hamiltonian simulation such as the Hadamard test, variational methods, or linear-response-based algorithms share one feature in common: each time point $t-t'$ is calculated by a different quantum circuit, leading to at least $O(N_t)$ total shots, and at least $O(N_t^2)$ total quantum gates. Here, we provide a different approach: utilizing $O(\\log N_t)$ ancilla qubits to store time as a quantum variable, and effectively parallelize the computation of an equilibrium correlation function by requiring only a single quantum circuit for all time points. We show that this circuit needs to be run only $O(\\log N_t)$ times, which in total requires $O(N_t \\log N_t)$ quantum resources in the large system size limits. We prove that this scaling is optimal, and demonstrate our algorithm calculating the Green's function of a one-dimensional spinless Hubbard model.",
-    "category": "Quantum Algorithms",
-    "source": "arXiv",
-    "published": "2026-09-30T17:59:06Z",
-    "updated": "2026-09-30T17:59:06Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph",
-      "cond-mat.stat-mech",
-      "physics.comp-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2609.40349v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2609.40349v1"
-      }
-    ],
-    "score": 73,
-    "infographic": {
-      "key_insight": "The paper encodes time as a quantum variable with O(log N_t) ancilla qubits, allowing one circuit to evaluate equilibrium correlation functions for all time points in parallel.",
-      "engineering_relevance": "This reduces repeated circuit construction and execution for dynamic observables, offering a more scalable path to Green's functions and other response calculations on quantum hardware.",
-      "method": [
-        "Store time indices in O(log N_t) ancilla qubits.",
-        "Use a single quantum circuit to process all time points simultaneously.",
-        "Run the circuit only O(log N_t) times, yielding O(N_t log N_t) total resources in the large-system limit."
-      ],
-      "evidence_signal": "The abstract states the method is proven optimal and demonstrated on the Green's function of a one-dimensional spinless Hubbard model.",
-      "watch_item": "The approach still depends on fault-tolerant-looking resource scaling and may face practical overhead from ancilla control, circuit depth, and Hamiltonian simulation accuracy on near-term devices.",
-      "hashtags": [
-        "#QuantumAlgorithms",
-        "#HamiltonianSimulation",
-        "#GreenFunction",
-        "#QuantumSimulation",
-        "#ComputationalPhysics"
-      ],
-      "paper_id": "2026-09-30-arxiv-efficient_calculation_of_equilibrium_correlation_functions",
-      "paper_title": "Efficient Calculation of Equilibrium Correlation Functions",
-      "paper_date": "2026-09-30",
-      "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-10-02T16:07:47",
+      "generated_at": "2026-10-03T14:34:54",
       "generator": "openai"
     }
   }

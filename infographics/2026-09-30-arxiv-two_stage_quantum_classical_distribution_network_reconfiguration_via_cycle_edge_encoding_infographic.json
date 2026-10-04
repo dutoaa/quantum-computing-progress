@@ -1,24 +1,24 @@
 {
-  "key_insight": "A two-stage quantum-classical pipeline uses a cycle-edge encoded LR-QAOA to sample only feasible spanning-tree reconfigurations, then feeds those samples to a MISOCP solver for faster distribution network reconfiguration.",
-  "engineering_relevance": "The approach targets practical power-system planning by reducing search over infeasible topologies and improving solution quality/time on real distribution networks.",
+  "key_insight": "A two-stage quantum-classical workflow uses quantum sampling over guaranteed-feasible spanning trees to speed up distribution network reconfiguration.",
+  "engineering_relevance": "The approach targets lower-loss power distribution operation by reducing the search burden on a MISOCP solver while respecting electrical and topological constraints.",
   "method": [
-    "Stage 1: iterative linear-ramp QAOA explores topologically feasible subspaces.",
-    "Cycle-edge encoding guarantees every quantum state maps to a spanning tree.",
-    "Stage 2: the sampled distribution guides a MISOCP solver to refine the final reconfiguration."
+    "Build a cycle-edge encoding that represents only spanning trees and can be scaled to fit the available qubit budget.",
+    "Run iterative linear-ramp QAOA to sample feasible topologies from these subspaces.",
+    "Use the quantum-derived sample distribution to warm-start a mixed-integer second-order-cone programming solver."
   ],
-  "evidence_signal": "Evaluated on six distribution feeders from 33 to 417 buses using simulation and trapped-ion hardware, the guided MISOCP reached an incumbent within 1% of the best-known solution in less median time than the unguided solver.",
-  "watch_item": "Performance depends on how well the encoded subspace fits the available qubit budget, so hardware scaling and encoding overhead may limit near-term deployment.",
+  "evidence_signal": "The method was tested on six distribution networks from 33 to 417 buses in simulation and on trapped-ion hardware, where the guided MISOCP reached within 1% of the best-known solution in less median time than the unguided solver.",
+  "watch_item": "Performance depends on how well the sampled subspace and hardware output capture high-quality topologies, so limited qubit budgets or noisy sampling may reduce gains.",
   "hashtags": [
     "#QuantumComputing",
-    "#QAOA",
     "#PowerSystems",
-    "#Optimization",
-    "#TrappedIon"
+    "#DistributionNetworkReconfiguration",
+    "#QAOA",
+    "#HybridOptimization"
   ],
   "paper_id": "2026-09-30-arxiv-two_stage_quantum_classical_distribution_network_reconfiguration_via_cycle_edge_encoding",
   "paper_title": "Two-Stage Quantum-Classical Distribution Network Reconfiguration via Cycle-Edge Encoding",
   "paper_date": "2026-09-30",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-03T14:34:38",
+  "generated_at": "2026-10-04T15:09:46",
   "generator": "openai"
 }

@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-03
+Generated: 2026-10-04
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. A Gate-Based Quantum Computing Framework for Codon Optimization
@@ -35,15 +35,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.01954v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-hardware_efficient_ground_state_preparation_using_variational_imaginary_time_majorana_evol_infographic.json
 
-## 5. QPI-DeepONet-MAC: A Scalable and Stable Hybrid Classical-Quantum Architecture for Physics-Informed Deep Operator Networks
-
-- Date: 2026-10-01
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2610.01824v1
-- PDF: https://arxiv.org/pdf/2610.01824v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-qpi_deeponet_mac_a_scalable_and_stable_hybrid_classical_quantum_architecture_for_physics_i_infographic.json
-
-## 6. On the pseudorandomness of simple quantum processes
+## 5. On the pseudorandomness of simple quantum processes
 
 - Date: 2026-10-01
 - Category: Quantum Algorithms
@@ -51,7 +43,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.02100v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-on_the_pseudorandomness_of_simple_quantum_processes_infographic.json
 
-## 7. Trapdoored Clifford Operators and Applications
+## 6. Trapdoored Clifford Operators and Applications
 
 - Date: 2026-10-01
 - Category: Quantum Hardware
@@ -59,15 +51,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.01848v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-trapdoored_clifford_operators_and_applications_infographic.json
 
-## 8. Toward Optimal Circuit Depth for Geometrically Local Hamiltonian Simulation
-
-- Date: 2026-10-01
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2610.01839v1
-- PDF: https://arxiv.org/pdf/2610.01839v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-toward_optimal_circuit_depth_for_geometrically_local_hamiltonian_simulation_infographic.json
-
-## 9. Quantum Circuit Pruning: From NISQ Architectures to Fault-Tolerant Operations
+## 7. Quantum Circuit Pruning: From NISQ Architectures to Fault-Tolerant Operations
 
 - Date: 2026-09-30
 - Category: Quantum Hardware
@@ -75,7 +59,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.00669v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-30-arxiv-quantum_circuit_pruning_from_nisq_architectures_to_fault_tolerant_operations_infographic.json
 
-## 10. Exponential quantum advantages for decoded quantum interferometry in the streaming setting
+## 8. Exponential quantum advantages for decoded quantum interferometry in the streaming setting
 
 - Date: 2026-10-01
 - Category: Quantum Error Correction
@@ -83,7 +67,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.01902v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-exponential_quantum_advantages_for_decoded_quantum_interferometry_in_the_streaming_setting_infographic.json
 
-## 11. Two-Stage Quantum-Classical Distribution Network Reconfiguration via Cycle-Edge Encoding
+## 9. Two-Stage Quantum-Classical Distribution Network Reconfiguration via Cycle-Edge Encoding
 
 - Date: 2026-09-30
 - Category: Quantum Hardware
@@ -91,7 +75,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2609.40264v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-30-arxiv-two_stage_quantum_classical_distribution_network_reconfiguration_via_cycle_edge_encoding_infographic.json
 
-## 12. Adaptivity is all you need: Optimal stabilizer learning using just single-copy measurements
+## 10. Adaptivity is all you need: Optimal stabilizer learning using just single-copy measurements
 
 - Date: 2026-10-01
 - Category: Quantum Algorithms
@@ -99,13 +83,29 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.02031v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-adaptivity_is_all_you_need_optimal_stabilizer_learning_using_just_single_copy_measurements_infographic.json
 
-## 13. Neural Fourier Surrogates for Data Reuploading Quantum Neural Networks
+## 11. QPI-DeepONet-MAC: A Scalable and Stable Hybrid Classical-Quantum Architecture for Physics-Informed Deep Operator Networks
+
+- Date: 2026-10-01
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.01824v1
+- PDF: https://arxiv.org/pdf/2610.01824v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-qpi_deeponet_mac_a_scalable_and_stable_hybrid_classical_quantum_architecture_for_physics_i_infographic.json
+
+## 12. Neural Fourier Surrogates for Data Reuploading Quantum Neural Networks
 
 - Date: 2026-09-30
 - Category: Quantum Machine Learning
 - arXiv: https://arxiv.org/abs/2610.00841v1
 - PDF: https://arxiv.org/pdf/2610.00841v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-09-30-arxiv-neural_fourier_surrogates_for_data_reuploading_quantum_neural_networks_infographic.json
+
+## 13. Toward Optimal Circuit Depth for Geometrically Local Hamiltonian Simulation
+
+- Date: 2026-10-01
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2610.01839v1
+- PDF: https://arxiv.org/pdf/2610.01839v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-01-arxiv-toward_optimal_circuit_depth_for_geometrically_local_hamiltonian_simulation_infographic.json
 
 ## 14. First-quantized quantum simulation with non-local potentials by matrix-product-state encoding
 

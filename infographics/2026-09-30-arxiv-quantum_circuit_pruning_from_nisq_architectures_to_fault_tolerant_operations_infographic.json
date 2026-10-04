@@ -1,24 +1,24 @@
 {
-  "key_insight": "Routing-aware pruning removes two-qubit gates only when their expected fidelity gain outweighs the hardware cost of executing them, making circuit simplification compatible with both NISQ and fault-tolerant quantum systems.",
-  "engineering_relevance": "This offers a unified compilation lever to cut routing overhead, reduce gate counts, and improve output fidelity across different quantum hardware stacks.",
+  "key_insight": "Routing-aware pruning removes two-qubit gates only when their expected fidelity cost is lower than the cost of executing them, and this criterion works across both NISQ and fault-tolerant quantum architectures.",
+  "engineering_relevance": "The method offers a compilation-level way to reduce circuit depth, routing overhead, and error exposure without changing the target algorithm, making it useful for near-term hardware and future FTQC stacks.",
   "method": [
-    "Evaluate each parametric two-qubit gate against an architecture-independent fidelity-loss bound for omitting it.",
-    "Compare that bound with a hardware-specific routing execution cost model for NISQ and FTQC settings.",
-    "Derive an analytical pruning boundary using rotation angle, qubit distance, and noise parameters."
+    "Estimate an architecture-independent lower bound for the fidelity loss caused by omitting each parametric two-qubit gate.",
+    "Compare that bound against a hardware-specific routing execution cost model for the given architecture.",
+    "Prune gates whose computational benefit does not justify their execution cost, with an analytical boundary based on rotation angle, qubit distance, and noise."
   ],
-  "evidence_signal": "Benchmarks show up to 48.6% gate-count reduction and up to 47.7% fidelity improvement in NISQ simulations, with FT hardware analysis indicating the approach remains useful across code distances and physical error rates.",
-  "watch_item": "Pruning decisions depend on accurate hardware noise and routing-cost models, so mismatch between the model and deployed hardware could reduce expected gains.",
+  "evidence_signal": "Benchmark simulations report up to 48.6% fewer gates and up to 47.7% higher fidelity in the NISQ regime, while FTQC analysis suggests pruning remains useful across multiple code distances and physical error rates.",
+  "watch_item": "Pruning decisions depend on the accuracy of the routing and noise models, so miscalibration could cause overly aggressive gate removal or missed optimization opportunities.",
   "hashtags": [
     "#QuantumComputing",
-    "#QuantumCircuitPruning",
+    "#QuantumCompilation",
     "#NISQ",
     "#FaultTolerantQuantumComputing",
-    "#QuantumCompilation"
+    "#CircuitOptimization"
   ],
   "paper_id": "2026-09-30-arxiv-quantum_circuit_pruning_from_nisq_architectures_to_fault_tolerant_operations",
   "paper_title": "Quantum Circuit Pruning: From NISQ Architectures to Fault-Tolerant Operations",
   "paper_date": "2026-09-30",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-03T14:34:34",
+  "generated_at": "2026-10-04T15:09:42",
   "generator": "openai"
 }

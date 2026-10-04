@@ -1,24 +1,24 @@
 {
-  "key_insight": "Finite feasibility is not enough: shallow constrained QAOA can only access a finite-depth subset of feasible states, and that accessible subset better predicts performance than feasibility alone.",
-  "engineering_relevance": "For resource-bounded quantum optimization, the paper provides a practical diagnostic to compare mixer schedules by both reachable volume and objective quality before running expensive circuits.",
+  "key_insight": "Finite-depth constrained QAOA is limited not just by feasibility, but by which feasible states are actually reachable by a specific shallow circuit and mixer schedule.",
+  "engineering_relevance": "This provides a practical diagnostic for designing resource-bounded QAOA circuits, helping engineers judge whether added depth or a different mixer is likely to improve objective quality rather than only expand feasible support.",
   "method": [
-    "Define the finite-depth accessible set R_p(M,x0) for a specific feasible start state, mixer schedule, and circuit depth.",
-    "Derive an objective ceiling f_R^* and normalized reachable-quality metric Q_R from the accessible set.",
-    "Test resource-matched block-local XY mixer schedules on constrained portfolio optimization and synthetic block-constrained quadratic problems."
+    "Define the finite-depth accessible set R_p(M,x0) for a given feasible start state, mixer schedule, and circuit depth.",
+    "Use R_p to form a parameter-independent quality ceiling f_R* and a normalized reachable-quality score Q_R.",
+    "Compare structural diagnostics against shallow QAOA performance on constrained portfolio optimization and synthetic block-constrained quadratic problems."
   ],
-  "evidence_signal": "Across 207 favorable-tail CVaR QAOA configurations, Q_R showed the strongest association with realized shallow-QAOA performance, with Pearson 0.7003 and Spearman 0.8057 correlations.",
-  "watch_item": "The diagnostic is circuit- and schedule-specific, so its usefulness depends on accurately modeling the implemented mixer order, initialization, and compilation effects.",
+  "evidence_signal": "Across 207 favorable-tail CVaR QAOA configurations, Q_R had the strongest association with realized shallow-QAOA performance, with Pearson correlation 0.7003 and Spearman correlation 0.8057.",
+  "watch_item": "R_p is a circuit- and schedule-specific upper bound, so its usefulness depends on accurate modeling of the compiled mixer/phase-separator implementation and may change with different hardware or compilation constraints.",
   "hashtags": [
     "#QuantumAlgorithms",
     "#QAOA",
-    "#ConstrainedOptimization",
-    "#QuantumComputing",
-    "#AlgorithmDesign"
+    "#ConstraintPreservingMixers",
+    "#QuantumOptimization",
+    "#ComputationalScience"
   ],
   "paper_id": "2026-09-30-arxiv-beyond_feasibility_finite_depth_accessibility_in_constrained_qaoa",
   "paper_title": "Beyond Feasibility: Finite-Depth Accessibility in Constrained QAOA",
   "paper_date": "2026-09-30",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-03T14:34:47",
+  "generated_at": "2026-10-04T15:10:04",
   "generator": "openai"
 }

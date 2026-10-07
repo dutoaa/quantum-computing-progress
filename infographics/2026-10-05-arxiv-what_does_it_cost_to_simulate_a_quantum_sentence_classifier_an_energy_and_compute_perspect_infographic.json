@@ -1,24 +1,24 @@
 {
-  "key_insight": "Classical simulation dominates the practical cost of near-term QNLP: the VQC is often much slower than a matched classical baseline, and only a small fraction of configurations show any clear accuracy gain.",
-  "engineering_relevance": "For quantum ML practitioners, simulator runtime is the main feasibility bottleneck to budget, profile, and optimize before expecting algorithmic advantages.",
+  "key_insight": "Simulating near-term QNLP sentence classifiers on a classical state-vector backend is dramatically more expensive than training a matched classical baseline, with only limited and unstable accuracy gains.",
+  "engineering_relevance": "For practitioners, this paper quantifies the real compute burden of simulator-based QNLP experiments and shows that runtime, not just model accuracy, must be budgeted when evaluating feasibility.",
   "method": [
-    "PennyLane state-vector VQC on SST-2 sentiment classification",
-    "27-grid sweep over qubits (4/6/8), training sizes (200/500/1000), and depths",
-    "Compared against PCA-matched logistic regression and uncompressed TF-IDF logistic regression"
+    "Ran a variational quantum classifier for SST-2 sentiment on PennyLane’s state-vector simulator",
+    "Swept 27 configurations across training size (N=200, 500, 1000), qubits (4, 6, 8), and circuit depth",
+    "Compared against logistic regression on the same PCA-reduced inputs plus an uncompressed TF-IDF baseline"
   ],
-  "evidence_signal": "Across 27 single-seed runs, the VQC won only 6 times; after additional seeds, only 1 case retained a positive mean advantage, while training was 886–21,127× slower than the matched classical fit.",
-  "watch_item": "Results come from one dataset, one ansatz, one simulator, and one CPU setup, so they show feasibility cost rather than a general performance verdict.",
+  "evidence_signal": "Across 27 single-seed runs, the VQC beat its matched classical baseline in 6 cases, but after two additional seeds only 1 case retained a positive mean advantage, and paired tests did not confirm a robust gain.",
+  "watch_item": "The results are tightly scoped to one dataset, ansatz, simulator, and CPU environment, so the findings should be treated as a reproducible cost measurement rather than a general QNLP performance conclusion.",
   "hashtags": [
     "#QuantumML",
     "#QNLP",
-    "#QuantumComputing",
-    "#SimulationCost",
+    "#ComputeCost",
+    "#SimulatorBenchmark",
     "#EnergyEfficiency"
   ],
   "paper_id": "2026-10-05-arxiv-what_does_it_cost_to_simulate_a_quantum_sentence_classifier_an_energy_and_compute_perspect",
   "paper_title": "What Does It Cost to Simulate a Quantum Sentence Classifier? An Energy and Compute Perspective on Near-Term QNLP",
   "paper_date": "2026-10-05",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-06T16:31:21",
+  "generated_at": "2026-10-07T17:18:11",
   "generator": "openai"
 }

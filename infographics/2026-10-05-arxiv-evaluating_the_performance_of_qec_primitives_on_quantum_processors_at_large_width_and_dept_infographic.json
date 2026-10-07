@@ -1,24 +1,24 @@
 {
-  "key_insight": "A low-resource LR-QAOA benchmark can mimic QEC syndrome-extraction behavior and turn the decay of an algorithmic signal into an effective hardware error metric.",
-  "engineering_relevance": "This gives hardware teams a practical way to compare quantum processors and QEC implementations, including mid-circuit measurement, reset, feed-forward, and scheduling, before running full logical-memory experiments.",
+  "key_insight": "The paper proposes a low-cost benchmark, LR-QAOA, that uses mid-circuit measurement and QEC-style connectivity to estimate how quantum hardware handles error-correction primitives at large width and depth.",
+  "engineering_relevance": "It gives hardware teams a practical pre-logical benchmark for comparing QPUs, diagnosing QEC control flow, and estimating an effective two-qubit depolarizing error rate before full logical-memory tests.",
   "method": [
-    "Construct QAOA circuits from a code’s check structure to reproduce QEC-like connectivity and measurement patterns.",
-    "Run linear-parameter LR-QAOA with mid-circuit measurement to obtain an approximation ratio r as the benchmark signal.",
-    "Fit the decay of r versus depth to estimate an equivalent two-qubit depolarizing rate λ_eff."
+    "Build a QAOA circuit from a code’s check structure so the circuit mirrors syndrome extraction, reset, measurement, and feed-forward patterns.",
+    "Track the decay of the approximation ratio r with QAOA depth and convert it into an effective hardware error λ_eff.",
+    "Compare direct vs mid-circuit-measurement implementations across multiple QPUs and code families, including surface code, triangular color code, and qLDPC structures."
   ],
-  "evidence_signal": "The authors evaluated 10 QPUs from IBM, IQM, and Quantinuum, including circuits with up to 2950 MCM operations and code-structured runs up to 81, 91, and 48 data qubits on Quantinuum hardware.",
-  "watch_item": "Because the benchmark maps algorithmic decay to an equivalent depolarizing rate, the interpretation may depend on code choice, compilation, and hardware-specific control errors rather than QEC primitives alone.",
+  "evidence_signal": "The authors evaluate the benchmark on 10 QPUs from IBM, IQM, and Quantinuum, with circuits up to 2950 MCM operations and code-structured runs up to 81, 91, and 48 data qubits on Helios-1, H2-1, and ibm_phoenix.",
+  "watch_item": "Because the metric is indirect and hardware-specific, λ_eff should be interpreted as a benchmark proxy rather than a literal physical error rate.",
   "hashtags": [
+    "#QuantumComputing",
     "#QuantumErrorCorrection",
     "#MidCircuitMeasurement",
     "#QAOA",
-    "#QuantumHardware",
     "#Benchmarking"
   ],
   "paper_id": "2026-10-05-arxiv-evaluating_the_performance_of_qec_primitives_on_quantum_processors_at_large_width_and_dept",
   "paper_title": "Evaluating the performance of QEC primitives on quantum processors at large width and depth",
   "paper_date": "2026-10-05",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-06T16:30:50",
+  "generated_at": "2026-10-07T17:17:36",
   "generator": "openai"
 }

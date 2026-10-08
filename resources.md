@@ -1,17 +1,65 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-07
+Generated: 2026-10-08
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
-## 1. A Practical Introduction to VQE: Methods, Challenges, and Applications in Physics and Chemistry
+## 1. Benchmarking Modular Optimization Strategies for Parameterized Quantum Circuits
 
-- Date: 2026-10-05
+- Date: 2026-10-07
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.06448v1
-- PDF: https://arxiv.org/pdf/2610.06448v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-a_practical_introduction_to_vqe_methods_challenges_and_applications_in_physics_and_chemist_infographic.json
+- arXiv: https://arxiv.org/abs/2610.10254v1
+- PDF: https://arxiv.org/pdf/2610.10254v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-benchmarking_modular_optimization_strategies_for_parameterized_quantum_circuits_infographic.json
 
-## 2. Connectivity Controls Variational Accessibility in Symmetry-Preserving Quantum Circuits
+## 2. Divide et Impera quantum neural networks for modular hybrid computing architectures
+
+- Date: 2026-10-07
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.09623v1
+- PDF: https://arxiv.org/pdf/2610.09623v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-divide_et_impera_quantum_neural_networks_for_modular_hybrid_computing_architectures_infographic.json
+
+## 3. Quantum Optimization of the Color-of-Money Problem on IBM Quantum Hardware: A Proof-of-Concept Study
+
+- Date: 2026-10-07
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2610.09798v1
+- PDF: https://arxiv.org/pdf/2610.09798v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-quantum_optimization_of_the_color_of_money_problem_on_ibm_quantum_hardware_a_proof_of_conc_infographic.json
+
+## 4. Q-PhotoMarket: A Design Space Exploration Framework for Photonic Hybrid Quantum Neural Networks in Financial Market Prediction
+
+- Date: 2026-10-07
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.09641v1
+- PDF: https://arxiv.org/pdf/2610.09641v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-q_photomarket_a_design_space_exploration_framework_for_photonic_hybrid_quantum_neural_netw_infographic.json
+
+## 5. Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization
+
+- Date: 2026-10-07
+- Category: Quantum Optimization
+- arXiv: https://arxiv.org/abs/2610.10351v1
+- PDF: https://arxiv.org/pdf/2610.10351v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-measurement_efficient_differentiable_quantum_architecture_search_for_combinatorial_optimiz_infographic.json
+
+## 6. On the Expressive Power and Capacity of Quantum Data Reuploaders
+
+- Date: 2026-10-07
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.09947v1
+- PDF: https://arxiv.org/pdf/2610.09947v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-on_the_expressive_power_and_capacity_of_quantum_data_reuploaders_infographic.json
+
+## 7. Quantum anomaly detection in real scarce data
+
+- Date: 2026-10-07
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.09635v1
+- PDF: https://arxiv.org/pdf/2610.09635v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-quantum_anomaly_detection_in_real_scarce_data_infographic.json
+
+## 8. Connectivity Controls Variational Accessibility in Symmetry-Preserving Quantum Circuits
 
 - Date: 2026-10-05
 - Category: Quantum Simulation
@@ -19,7 +67,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.07173v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-connectivity_controls_variational_accessibility_in_symmetry_preserving_quantum_circuits_infographic.json
 
-## 3. Pauli Flat Quantum States Mimicking Maximal Magic
+## 9. Pauli Flat Quantum States Mimicking Maximal Magic
 
 - Date: 2026-10-05
 - Category: Quantum Error Correction
@@ -27,7 +75,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.07172v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-pauli_flat_quantum_states_mimicking_maximal_magic_infographic.json
 
-## 4. Protecting bosonic codes from ancilla-induced errors with continuous-variable flags
+## 10. Protecting bosonic codes from ancilla-induced errors with continuous-variable flags
 
 - Date: 2026-10-05
 - Category: Quantum Hardware
@@ -35,15 +83,31 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.07139v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-protecting_bosonic_codes_from_ancilla_induced_errors_with_continuous_variable_flags_infographic.json
 
-## 5. Evaluating the performance of QEC primitives on quantum processors at large width and depth
+## 11. Binary Optimization of Measurement Groupings for Quantum Energy Estimation
 
-- Date: 2026-10-05
+- Date: 2026-10-07
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.05928v1
-- PDF: https://arxiv.org/pdf/2610.05928v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-evaluating_the_performance_of_qec_primitives_on_quantum_processors_at_large_width_and_dept_infographic.json
+- arXiv: https://arxiv.org/abs/2610.10339v1
+- PDF: https://arxiv.org/pdf/2610.10339v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-binary_optimization_of_measurement_groupings_for_quantum_energy_estimation_infographic.json
 
-## 6. Demonstration of Parallel Multi-QPU Execution for Fragment-Based Quantum Chemistry Using On-Premises Hardware
+## 12. Quantum Approximation Complexity of Classical Optimization Problems
+
+- Date: 2026-10-07
+- Category: Quantum Optimization
+- arXiv: https://arxiv.org/abs/2610.09584v1
+- PDF: https://arxiv.org/pdf/2610.09584v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-quantum_approximation_complexity_of_classical_optimization_problems_infographic.json
+
+## 13. Efficient Estimation of Logical Sensitivities Through Fault-Counting
+
+- Date: 2026-10-07
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.10531v1
+- PDF: https://arxiv.org/pdf/2610.10531v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-efficient_estimation_of_logical_sensitivities_through_fault_counting_infographic.json
+
+## 14. Demonstration of Parallel Multi-QPU Execution for Fragment-Based Quantum Chemistry Using On-Premises Hardware
 
 - Date: 2026-10-06
 - Category: Quantum Simulation
@@ -51,7 +115,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.07702v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-06-arxiv-demonstration_of_parallel_multi_qpu_execution_for_fragment_based_quantum_chemistry_using_o_infographic.json
 
-## 7. When Expressivity Is Not Enough: Discrete Routing Geometry in Variational Quantum Circuits
+## 15. When Expressivity Is Not Enough: Discrete Routing Geometry in Variational Quantum Circuits
 
 - Date: 2026-10-06
 - Category: Quantum Algorithms
@@ -59,7 +123,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.07697v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-06-arxiv-when_expressivity_is_not_enough_discrete_routing_geometry_in_variational_quantum_circuits_infographic.json
 
-## 8. Designing Group-Valued Codes with Full Regular Low-Weight Bases
+## 16. Designing Group-Valued Codes with Full Regular Low-Weight Bases
 
 - Date: 2026-10-05
 - Category: Quantum Error Correction
@@ -67,7 +131,23 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.06820v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-designing_group_valued_codes_with_full_regular_low_weight_bases_infographic.json
 
-## 9. CV-QAOA: Efficient Low-Depth Quantum Optimization of Continuous Variables
+## 17. Optimized discrete Wigner representations and non-stabilizerness in qubit systems
+
+- Date: 2026-10-07
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.10471v1
+- PDF: https://arxiv.org/pdf/2610.10471v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-optimized_discrete_wigner_representations_and_non_stabilizerness_in_qubit_systems_infographic.json
+
+## 18. A Cognitive-Aware QML-CRL Framework for Detecting Affinity and Romance-Investment Fraud
+
+- Date: 2026-10-06
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.09141v1
+- PDF: https://arxiv.org/pdf/2610.09141v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-06-arxiv-a_cognitive_aware_qml_crl_framework_for_detecting_affinity_and_romance_investment_fraud_infographic.json
+
+## 19. CV-QAOA: Efficient Low-Depth Quantum Optimization of Continuous Variables
 
 - Date: 2026-10-05
 - Category: Quantum Algorithms
@@ -75,90 +155,10 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.06815v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-cv_qaoa_efficient_low_depth_quantum_optimization_of_continuous_variables_infographic.json
 
-## 10. Quantum Algorithms for Multivariable Polynomial Transformations: From Efficient Synthesis to Quantum Channel Transformations
+## 20. Sufficient quantum provenance: retained fields and certified recording precision
 
-- Date: 2026-10-06
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.08714v1
-- PDF: https://arxiv.org/pdf/2610.08714v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-06-arxiv-quantum_algorithms_for_multivariable_polynomial_transformations_from_efficient_synthesis_t_infographic.json
-
-## 11. Quantum Machine Learning for Few-Shot Impersonation Detection in Digital Account Opening
-
-- Date: 2026-10-05
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2610.07242v1
-- PDF: https://arxiv.org/pdf/2610.07242v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-quantum_machine_learning_for_few_shot_impersonation_detection_in_digital_account_opening_infographic.json
-
-## 12. Polynomial-time classical algorithms for mean-field models up to the glass transition
-
-- Date: 2026-10-05
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.06807v1
-- PDF: https://arxiv.org/pdf/2610.06807v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-polynomial_time_classical_algorithms_for_mean_field_models_up_to_the_glass_transition_infographic.json
-
-## 13. Random Order in Quantum Streaming: Replenishment and Robust Lower Bounds
-
-- Date: 2026-10-05
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.06727v1
-- PDF: https://arxiv.org/pdf/2610.06727v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-random_order_in_quantum_streaming_replenishment_and_robust_lower_bounds_infographic.json
-
-## 14. When Equivalent Quantum Circuits Lose Synthesis Choices
-
-- Date: 2026-10-05
+- Date: 2026-10-07
 - Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2610.06142v1
-- PDF: https://arxiv.org/pdf/2610.06142v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-when_equivalent_quantum_circuits_lose_synthesis_choices_infographic.json
-
-## 15. Post-Selection-Free Quantum Automated Learning
-
-- Date: 2026-10-06
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.08219v1
-- PDF: https://arxiv.org/pdf/2610.08219v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-06-arxiv-post_selection_free_quantum_automated_learning_infographic.json
-
-## 16. Symmetry and AI-assisted discovery of magic-state factories
-
-- Date: 2026-10-05
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2610.06535v1
-- PDF: https://arxiv.org/pdf/2610.06535v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-symmetry_and_ai_assisted_discovery_of_magic_state_factories_infographic.json
-
-## 17. What Does It Cost to Simulate a Quantum Sentence Classifier? An Energy and Compute Perspective on Near-Term QNLP
-
-- Date: 2026-10-05
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.06176v1
-- PDF: https://arxiv.org/pdf/2610.06176v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-what_does_it_cost_to_simulate_a_quantum_sentence_classifier_an_energy_and_compute_perspect_infographic.json
-
-## 18. Protecting Quantum Computers against Untrusted Users
-
-- Date: 2026-10-05
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.06812v1
-- PDF: https://arxiv.org/pdf/2610.06812v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-protecting_quantum_computers_against_untrusted_users_infographic.json
-
-## 19. Tight bounds for hybrid quantum-classical query algorithms
-
-- Date: 2026-10-05
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.06803v1
-- PDF: https://arxiv.org/pdf/2610.06803v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-tight_bounds_for_hybrid_quantum_classical_query_algorithms_infographic.json
-
-## 20. Efficient Logic with Ultra-High-Rate Quantum Codes
-
-- Date: 2026-10-05
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2610.06749v1
-- PDF: https://arxiv.org/pdf/2610.06749v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-05-arxiv-efficient_logic_with_ultra_high_rate_quantum_codes_infographic.json
+- arXiv: https://arxiv.org/abs/2610.09931v1
+- PDF: https://arxiv.org/pdf/2610.09931v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-sufficient_quantum_provenance_retained_fields_and_certified_recording_precision_infographic.json

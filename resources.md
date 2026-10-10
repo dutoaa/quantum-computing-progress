@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-09
+Generated: 2026-10-10
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Benchmarking Modular Optimization Strategies for Parameterized Quantum Circuits
@@ -83,7 +83,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.11710v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-parameter_dependent_noise_resilience_in_the_quantum_approximate_optimization_algorithm_infographic.json
 
-## 11. Scaling Quantum Optimization to the Thousand-Qubit Scale with Distributed Quantum Sampling
+## 11. Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization
+
+- Date: 2026-10-07
+- Category: Quantum Optimization
+- arXiv: https://arxiv.org/abs/2610.10351v1
+- PDF: https://arxiv.org/pdf/2610.10351v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-measurement_efficient_differentiable_quantum_architecture_search_for_combinatorial_optimiz_infographic.json
+
+## 12. Scaling Quantum Optimization to the Thousand-Qubit Scale with Distributed Quantum Sampling
 
 - Date: 2026-10-07
 - Category: Quantum Hardware
@@ -91,7 +99,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.10772v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-scaling_quantum_optimization_to_the_thousand_qubit_scale_with_distributed_quantum_sampling_infographic.json
 
-## 12. Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation
+## 13. Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation
 
 - Date: 2026-10-08
 - Category: Quantum Simulation
@@ -99,21 +107,13 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.12334v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-quantum_co_design_of_inhomogeneous_many_body_neutrino_fast_flavor_transformation_infographic.json
 
-## 13. An Efficient Quantum Circuit for Flow Model Execution Using Quantum Neural Networks
+## 14. An Efficient Quantum Circuit for Flow Model Execution Using Quantum Neural Networks
 
 - Date: 2026-10-08
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2610.11537v1
 - PDF: https://arxiv.org/pdf/2610.11537v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-an_efficient_quantum_circuit_for_flow_model_execution_using_quantum_neural_networks_infographic.json
-
-## 14. Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization
-
-- Date: 2026-10-07
-- Category: Quantum Optimization
-- arXiv: https://arxiv.org/abs/2610.10351v1
-- PDF: https://arxiv.org/pdf/2610.10351v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-measurement_efficient_differentiable_quantum_architecture_search_for_combinatorial_optimiz_infographic.json
 
 ## 15. On the Expressive Power and Capacity of Quantum Data Reuploaders
 
@@ -139,7 +139,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.10948v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-geometry_optimized_hyperbolic_codes_for_modular_fault_tolerant_quantum_architectures_infographic.json
 
-## 18. High-Rate Concatenated Quantum Error-Correcting Codes for Qudits
+## 18. Autonomous Code Migration for Quantum Programming Languages: A Case Study with QED-C Benchmarks
+
+- Date: 2026-10-08
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2610.12187v1
+- PDF: https://arxiv.org/pdf/2610.12187v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-autonomous_code_migration_for_quantum_programming_languages_a_case_study_with_qed_c_benchm_infographic.json
+
+## 19. High-Rate Concatenated Quantum Error-Correcting Codes for Qudits
 
 - Date: 2026-10-08
 - Category: Quantum Error Correction
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.11225v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-high_rate_concatenated_quantum_error_correcting_codes_for_qudits_infographic.json
 
-## 19. Quantum Simulation of a Hyperbolically Driven Quantum System with Superconducting Circuits
+## 20. Quantum Simulation of a Hyperbolically Driven Quantum System with Superconducting Circuits
 
 - Date: 2026-10-08
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2610.11081v1
 - PDF: https://arxiv.org/pdf/2610.11081v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-quantum_simulation_of_a_hyperbolically_driven_quantum_system_with_superconducting_circuits_infographic.json
-
-## 20. Structured leakage in OAM-encoded qubits revealed by distributed quantum feature extraction
-
-- Date: 2026-10-07
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2610.11001v1
-- PDF: https://arxiv.org/pdf/2610.11001v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-structured_leakage_in_oam_encoded_qubits_revealed_by_distributed_quantum_feature_extractio_infographic.json

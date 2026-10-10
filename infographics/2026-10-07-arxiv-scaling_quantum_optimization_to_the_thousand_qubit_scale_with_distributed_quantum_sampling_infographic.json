@@ -1,24 +1,24 @@
 {
-  "key_insight": "Distributed QAOA sampling, combined with classical repair and partitioning, can scale quantum-assisted optimization to thousand-variable constrained problems on current quantum hardware.",
-  "engineering_relevance": "The workflow offers a practical route for large-scale scheduling and energy-trading optimization by making quantum sampling executable through graph partitioning and circuit packing.",
+  "key_insight": "A distributed QAOA + classical repair pipeline can scale quantum-assisted Minimum Birkhoff Decomposition to thousand-variable problems by partitioning the task into hardware-feasible subproblems.",
+  "engineering_relevance": "This provides a practical route for applying near-term quantum processors to large constrained optimization workloads in power systems, scheduling, and energy trading.",
   "method": [
-    "Spectrally partition the matching problem into hardware-sized subproblems.",
-    "Run single-layer QAOA sampling on each partition, then apply greedy feasibility repair.",
-    "Use E-FCFW to assemble sparse weighted matchings into the final Minimum Birkhoff Decomposition."
+    "Spectrally partition the matching graph into smaller quantum subproblems.",
+    "Run single-layer QAOA sampling on each partition and repair infeasible samples classically.",
+    "Combine samples with E-FCFW optimization and spatial circuit packing to improve efficiency."
   ],
-  "evidence_signal": "On the PEGASE-1354 benchmark, repaired QAOA samples outperformed simulated annealing and random sampling, with the best hardware run using a 50-qubit partition and spatial packing cutting execution time by about 3×.",
-  "watch_item": "Smaller partitions such as 20 qubits reduce convergence quality, and heavy MPS truncation can degrade candidate quality, so preserving enough quantum structure per partition remains important.",
+  "evidence_signal": "On the PEGASE-1354 benchmark, repaired QAOA samples outperformed simulated annealing and uniform random baselines, and spatial circuit packing cut hardware execution time by about 3×.",
+  "watch_item": "Performance depends on partition size and correlation retention; overly small partitions and aggressive MPS truncation can weaken candidate quality and convergence.",
   "hashtags": [
     "#QuantumOptimization",
     "#QAOA",
+    "#DistributedQuantumComputing",
     "#QuantumHardware",
-    "#GraphPartitioning",
-    "#HighPerformanceComputing"
+    "#PowerSystems"
   ],
   "paper_id": "2026-10-07-arxiv-scaling_quantum_optimization_to_the_thousand_qubit_scale_with_distributed_quantum_sampling",
   "paper_title": "Scaling Quantum Optimization to the Thousand-Qubit Scale with Distributed Quantum Sampling",
   "paper_date": "2026-10-07",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-09T16:49:43",
+  "generated_at": "2026-10-10T15:44:42",
   "generator": "openai"
 }

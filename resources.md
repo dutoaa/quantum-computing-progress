@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-10
+Generated: 2026-10-11
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Benchmarking Modular Optimization Strategies for Parameterized Quantum Circuits
@@ -139,15 +139,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.10948v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-geometry_optimized_hyperbolic_codes_for_modular_fault_tolerant_quantum_architectures_infographic.json
 
-## 18. Autonomous Code Migration for Quantum Programming Languages: A Case Study with QED-C Benchmarks
-
-- Date: 2026-10-08
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.12187v1
-- PDF: https://arxiv.org/pdf/2610.12187v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-autonomous_code_migration_for_quantum_programming_languages_a_case_study_with_qed_c_benchm_infographic.json
-
-## 19. High-Rate Concatenated Quantum Error-Correcting Codes for Qudits
+## 18. High-Rate Concatenated Quantum Error-Correcting Codes for Qudits
 
 - Date: 2026-10-08
 - Category: Quantum Error Correction
@@ -155,10 +147,18 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.11225v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-high_rate_concatenated_quantum_error_correcting_codes_for_qudits_infographic.json
 
-## 20. Quantum Simulation of a Hyperbolically Driven Quantum System with Superconducting Circuits
+## 19. Quantum Simulation of a Hyperbolically Driven Quantum System with Superconducting Circuits
 
 - Date: 2026-10-08
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2610.11081v1
 - PDF: https://arxiv.org/pdf/2610.11081v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-quantum_simulation_of_a_hyperbolically_driven_quantum_system_with_superconducting_circuits_infographic.json
+
+## 20. Structured leakage in OAM-encoded qubits revealed by distributed quantum feature extraction
+
+- Date: 2026-10-07
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2610.11001v1
+- PDF: https://arxiv.org/pdf/2610.11001v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-structured_leakage_in_oam_encoded_qubits_revealed_by_distributed_quantum_feature_extractio_infographic.json

@@ -1,24 +1,24 @@
 {
-  "key_insight": "A hybrid pipeline that combines QAOA sampling with classical partitioning and repair can scale constrained quantum optimization to a 1,710-variable matching problem on thousand-node power-grid data.",
-  "engineering_relevance": "The approach offers a practical route to deploy current superconducting quantum hardware for large scheduling and energy-network optimization tasks that are too large for unpartitioned quantum encoding.",
+  "key_insight": "A distributed QAOA-plus-classical-repair pipeline can scale quantum-assisted Minimum Birkhoff Decomposition to a 1,354-node, 1,710-variable problem by partitioning the task and preserving useful quantum sampling within each block.",
+  "engineering_relevance": "The approach offers a practical path for running constrained optimization on current superconducting hardware by reducing qubit demand, improving execution efficiency, and keeping candidate quality high enough for large-scale infrastructure problems.",
   "method": [
-    "Spectrally partition the matching problem into hardware-manageable subproblems.",
-    "Run single-layer QAOA on each partition and repair infeasible samples classically with greedy fixes.",
-    "Use E-FCFW to assemble a sparse weighted decomposition from improved candidate matchings."
+    "Use spectral graph partitioning to split the native matching optimization into hardware-manageable subproblems.",
+    "Generate candidates with single-layer QAOA sampling, then apply greedy feasibility repair and E-FCFW updates to refine the decomposition.",
+    "Pack circuits spatially to reduce hardware execution time and support distributed execution on IBM quantum processors."
   ],
-  "evidence_signal": "On the PEGASE-1354 benchmark, repaired QAOA samples outperformed simulated annealing and random sampling, and spatial circuit packing cut hardware execution time by about 3×.",
-  "watch_item": "Performance depends on partition size and quantum correlation retention, so overly small partitions or aggressive MPS truncation can degrade solution quality.",
+  "evidence_signal": "On the PEGASE-1354 benchmark, repaired QAOA samples outperform simulated annealing and uniform random baselines in residual decomposition error, with 50-qubit partitions performing better than 20-qubit partitions and spatial packing cutting hardware time by about 3×.",
+  "watch_item": "Performance depends on partition size and correlation retention, so overly small blocks or aggressive MPS truncation can weaken convergence and candidate quality.",
   "hashtags": [
     "#QuantumOptimization",
     "#QAOA",
-    "#QuantumHardware",
-    "#PowerSystems",
-    "#DistributedQuantumSampling"
+    "#DistributedQuantumComputing",
+    "#GraphPartitioning",
+    "#HardwareEfficientQC"
   ],
   "paper_id": "2026-10-07-arxiv-scaling_quantum_optimization_to_the_thousand_qubit_scale_with_distributed_quantum_sampling",
   "paper_title": "Scaling Quantum Optimization to the Thousand-Qubit Scale with Distributed Quantum Sampling",
   "paper_date": "2026-10-07",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-11T16:09:35",
+  "generated_at": "2026-10-12T19:38:50",
   "generator": "openai"
 }

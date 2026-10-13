@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-12
+Generated: 2026-10-13
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. An Annealing-based Quantum Neural Network with Discrete Wavelet Transforms for Enhanced Air Pollution Nowcasting
@@ -75,31 +75,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.13694v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-09-arxiv-qtn_rqnn_quantum_tensor_network_based_recurrent_quantum_neural_network_infographic.json
 
-## 10. Parameter-Dependent Noise Resilience in the Quantum Approximate Optimization Algorithm
-
-- Date: 2026-10-08
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.11710v1
-- PDF: https://arxiv.org/pdf/2610.11710v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-parameter_dependent_noise_resilience_in_the_quantum_approximate_optimization_algorithm_infographic.json
-
-## 11. Diversity-Aware Ensemble of Quantum-Classical Models via Combinatorial Fusion
-
-- Date: 2026-10-09
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2610.13808v1
-- PDF: https://arxiv.org/pdf/2610.13808v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-09-arxiv-diversity_aware_ensemble_of_quantum_classical_models_via_combinatorial_fusion_infographic.json
-
-## 12. Circuit Design Problems in Binary Polynomial Quantum Optimization
-
-- Date: 2026-10-09
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2610.13283v1
-- PDF: https://arxiv.org/pdf/2610.13283v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-09-arxiv-circuit_design_problems_in_binary_polynomial_quantum_optimization_infographic.json
-
-## 13. Entanglement entropy and magic of ZX-diagrams
+## 10. Entanglement entropy and magic of ZX-diagrams
 
 - Date: 2026-10-08
 - Category: Quantum Simulation
@@ -107,7 +83,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.12447v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-entanglement_entropy_and_magic_of_zx_diagrams_infographic.json
 
-## 14. Measure Now, Mitigate Later: Virtual Error Cancellation for Logical Quantum Circuits
+## 11. Measure Now, Mitigate Later: Virtual Error Cancellation for Logical Quantum Circuits
 
 - Date: 2026-10-08
 - Category: Quantum Error Correction
@@ -115,7 +91,39 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.12400v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-measure_now_mitigate_later_virtual_error_cancellation_for_logical_quantum_circuits_infographic.json
 
-## 15. Error Mitigation by Zero-Noise Extrapolation (ZNE) in Indirect-Control System
+## 12. Parameter-Dependent Noise Resilience in the Quantum Approximate Optimization Algorithm
+
+- Date: 2026-10-08
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2610.11710v1
+- PDF: https://arxiv.org/pdf/2610.11710v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-parameter_dependent_noise_resilience_in_the_quantum_approximate_optimization_algorithm_infographic.json
+
+## 13. Diversity-Aware Ensemble of Quantum-Classical Models via Combinatorial Fusion
+
+- Date: 2026-10-09
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.13808v1
+- PDF: https://arxiv.org/pdf/2610.13808v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-09-arxiv-diversity_aware_ensemble_of_quantum_classical_models_via_combinatorial_fusion_infographic.json
+
+## 14. Circuit Design Problems in Binary Polynomial Quantum Optimization
+
+- Date: 2026-10-09
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.13283v1
+- PDF: https://arxiv.org/pdf/2610.13283v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-09-arxiv-circuit_design_problems_in_binary_polynomial_quantum_optimization_infographic.json
+
+## 15. Scaling Quantum Optimization to the Thousand-Qubit Scale with Distributed Quantum Sampling
+
+- Date: 2026-10-07
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.10772v1
+- PDF: https://arxiv.org/pdf/2610.10772v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-scaling_quantum_optimization_to_the_thousand_qubit_scale_with_distributed_quantum_sampling_infographic.json
+
+## 16. Error Mitigation by Zero-Noise Extrapolation (ZNE) in Indirect-Control System
 
 - Date: 2026-10-09
 - Category: Quantum Hardware
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.13038v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-09-arxiv-error_mitigation_by_zero_noise_extrapolation_zne_in_indirect_control_system_infographic.json
 
-## 16. An Efficient Quantum Circuit for Flow Model Execution Using Quantum Neural Networks
+## 17. An Efficient Quantum Circuit for Flow Model Execution Using Quantum Neural Networks
 
 - Date: 2026-10-08
 - Category: Quantum Simulation
@@ -131,21 +139,13 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.11537v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-08-arxiv-an_efficient_quantum_circuit_for_flow_model_execution_using_quantum_neural_networks_infographic.json
 
-## 17. Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization
+## 18. Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization
 
 - Date: 2026-10-07
 - Category: Quantum Optimization
 - arXiv: https://arxiv.org/abs/2610.10351v1
 - PDF: https://arxiv.org/pdf/2610.10351v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-measurement_efficient_differentiable_quantum_architecture_search_for_combinatorial_optimiz_infographic.json
-
-## 18. Scaling Quantum Optimization to the Thousand-Qubit Scale with Distributed Quantum Sampling
-
-- Date: 2026-10-07
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2610.10772v1
-- PDF: https://arxiv.org/pdf/2610.10772v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-07-arxiv-scaling_quantum_optimization_to_the_thousand_qubit_scale_with_distributed_quantum_sampling_infographic.json
 
 ## 19. Encoding Matters: A Qubit-Efficient Reformulation for Quantum Resilient Routing
 

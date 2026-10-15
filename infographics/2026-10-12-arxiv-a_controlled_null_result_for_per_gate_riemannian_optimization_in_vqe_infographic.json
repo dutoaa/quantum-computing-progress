@@ -1,24 +1,24 @@
 {
-  "key_insight": "For per-gate VQE optimization, Riemannian methods on U(2) showed no practical advantage over a well-tuned Euler-angle Adam baseline.",
-  "engineering_relevance": "Optimizer choice alone is unlikely to improve VQE training unless benchmark design, parameterization, and validation are handled carefully.",
+  "key_insight": "For this VQE benchmark, direct Riemannian optimization on each gate did not outperform a well-tuned unconstrained Euler-angle Adam baseline in practice.",
+  "engineering_relevance": "For quantum algorithm engineering, the result suggests that adding manifold-optimization machinery to per-gate VQE training may not deliver real gains unless the benchmark and optimizer details are validated carefully.",
   "method": [
-    "Compared direct manifold optimization on each single-qubit gate in U(2) against Adam on an equivalent unconstrained Euler-angle chart.",
-    "Initialized both methods from the same unitaries and tuned learning rates separately.",
-    "Tested metric, retraction, and momentum transport variants to check robustness."
+    "Optimize each single-qubit gate directly on U(2) with Riemannian methods",
+    "Compare against Adam on an Euler-angle parameterization of the same unitary, using matched initial unitaries and tuned learning rates",
+    "Test metric, retraction, and momentum transport variants to check whether the conclusion changes"
   ],
-  "evidence_signal": "On a validated hydrogen-chain benchmark, the two approaches were interleaved in final error and success rate, and the classical baseline was not slower in successful runs.",
-  "watch_item": "Reported gains can be fabricated by subtle benchmark or implementation issues, including non-unitary retractions, projected-step baselines, trivial test cases, or learning-rate sweeps that only succeed at the grid boundary.",
+  "evidence_signal": "On a validated hydrogen-chain benchmark, the two methods were interleaved in final error and success rate, with no measurable practical advantage for the Riemannian approach.",
+  "watch_item": "Beware of false positives from flawed baselines or retractions, especially non-unitary Cayley-style updates, boundary-optimal learning-rate grids, and benchmarks that are too trivial.",
   "hashtags": [
-    "#QuantumAlgorithms",
     "#VQE",
-    "#RiemannianOptimization",
     "#QuantumComputing",
+    "#RiemannianOptimization",
+    "#Optimization",
     "#Benchmarking"
   ],
   "paper_id": "2026-10-12-arxiv-a_controlled_null_result_for_per_gate_riemannian_optimization_in_vqe",
   "paper_title": "A Controlled Null Result for Per-Gate Riemannian Optimization in VQE",
   "paper_date": "2026-10-12",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-14T14:53:40",
+  "generated_at": "2026-10-15T14:41:13",
   "generator": "openai"
 }

@@ -1,13 +1,13 @@
 {
-  "key_insight": "Post-optimization corrections can substantially improve optimized ADAPT-VQE results without adding new ansatz layers or re-running nonlinear optimization.",
-  "engineering_relevance": "These methods lower circuit depth and measurement cost for quantum chemistry, making variational quantum algorithms more practical on near-term hardware.",
+  "key_insight": "Post-optimization corrections can improve ADAPT-VQE results without growing the ansatz, cutting both circuit depth and measurement cost.",
+  "engineering_relevance": "These methods make quantum chemistry workflows more practical on near-term hardware by reducing adaptive-layer growth and lowering the experimental burden of Hamiltonian measurements.",
   "method": [
-    "Apply Hamiltonian-moment Krylov subspace diagonalization to the optimized ADAPT-VQE state.",
+    "Apply Hamiltonian-moment Krylov subspace diagonalization to an optimized ADAPT-VQE state.",
     "Use identity-augmented q-sc-EOM to recover accuracy from truncated or sampled-ranked ansätze.",
-    "Avoid further ansatz growth and additional gradient-based operator selection after optimization."
+    "Avoid further nonlinear optimization or ansatz expansion after the initial ADAPT-VQE run."
   ],
-  "evidence_signal": "Across molecular systems up to 20 qubits, Krylov correction reduced the iterations needed to reach the 1.6 mEh threshold by up to about 6× and lowered measurement cost by up to about 40× under a resource-cost model.",
-  "watch_item": "Performance depends on the quality of the optimized starting state and on the chosen resource-cost model, so gains may vary across molecules and hardware settings.",
+  "evidence_signal": "Across molecular systems up to 20 qubits, first-order Krylov correction reduced the iterations needed to reach the 1.6 mEh threshold by up to about 6×, with measurement-cost reductions up to about 40× under a resource-cost model.",
+  "watch_item": "Benefits depend on a suitable resource-cost model and on the quality of the optimized/truncated starting state, so performance may vary for harder molecules or noisier hardware.",
   "hashtags": [
     "#QuantumAlgorithms",
     "#VQE",
@@ -19,6 +19,6 @@
   "paper_title": "Post-Optimization Subspace Corrections to Quantum Ansätze",
   "paper_date": "2026-10-13",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-15T14:41:01",
+  "generated_at": "2026-10-16T14:33:24",
   "generator": "openai"
 }

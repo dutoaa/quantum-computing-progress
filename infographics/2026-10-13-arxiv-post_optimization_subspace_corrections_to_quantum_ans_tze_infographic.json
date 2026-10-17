@@ -1,24 +1,24 @@
 {
-  "key_insight": "Post-optimization corrections can improve ADAPT-VQE results without growing the ansatz, cutting both circuit depth and measurement cost.",
-  "engineering_relevance": "These methods make quantum chemistry workflows more practical on near-term hardware by reducing adaptive-layer growth and lowering the experimental burden of Hamiltonian measurements.",
+  "key_insight": "Post-optimization subspace corrections can significantly improve ADAPT-VQE results without growing the ansatz or rerunning nonlinear optimization, cutting both circuit depth and measurement cost.",
+  "engineering_relevance": "This gives a practical path to make quantum chemistry workflows more hardware-efficient by extracting more accuracy from already-optimized states on near-term quantum devices.",
   "method": [
-    "Apply Hamiltonian-moment Krylov subspace diagonalization to an optimized ADAPT-VQE state.",
-    "Use identity-augmented q-sc-EOM to recover accuracy from truncated or sampled-ranked ansätze.",
-    "Avoid further nonlinear optimization or ansatz expansion after the initial ADAPT-VQE run."
+    "Apply Hamiltonian-moment Krylov subspace diagonalization after ADAPT-VQE optimization.",
+    "Use identity-augmented q-sc-EOM to correct truncated or sampled-rank ADAPT-VQE states.",
+    "Estimate performance against energy-error and resource-cost thresholds without adding new adaptive layers."
   ],
-  "evidence_signal": "Across molecular systems up to 20 qubits, first-order Krylov correction reduced the iterations needed to reach the 1.6 mEh threshold by up to about 6×, with measurement-cost reductions up to about 40× under a resource-cost model.",
-  "watch_item": "Benefits depend on a suitable resource-cost model and on the quality of the optimized/truncated starting state, so performance may vary for harder molecules or noisier hardware.",
+  "evidence_signal": "Across molecular systems up to 20 qubits, first-order Krylov correction reduced the optimized iterations needed to reach 1.6 mEh by up to about 6× and lowered measurement cost by up to about 40×.",
+  "watch_item": "The gains depend on the quality of the optimized state and the chosen resource-cost model, so benefits may be smaller for low-entropy systems or noise-prone hardware runs.",
   "hashtags": [
-    "#QuantumAlgorithms",
+    "#QuantumComputing",
     "#VQE",
-    "#ADAPTVQE",
     "#QuantumChemistry",
-    "#QuantumComputing"
+    "#ADAPTVQE",
+    "#QuantumAlgorithms"
   ],
   "paper_id": "2026-10-13-arxiv-post_optimization_subspace_corrections_to_quantum_ans_tze",
   "paper_title": "Post-Optimization Subspace Corrections to Quantum Ansätze",
   "paper_date": "2026-10-13",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-16T14:33:24",
+  "generated_at": "2026-10-17T13:28:14",
   "generator": "openai"
 }

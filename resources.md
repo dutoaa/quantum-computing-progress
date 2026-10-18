@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-17
+Generated: 2026-10-18
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Discovering state-of-the-art quantum circuits with large language models
@@ -91,15 +91,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.22207v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-efficient_quantum_simulation_of_unitary_gates_based_on_atomic_ensembles_infographic.json
 
-## 12. Superconducting circuits host two-level systems with lifetimes exceeding one second
-
-- Date: 2026-10-15
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2610.21853v1
-- PDF: https://arxiv.org/pdf/2610.21853v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-superconducting_circuits_host_two_level_systems_with_lifetimes_exceeding_one_second_infographic.json
-
-## 13. ZZ-Free bSWAP Gates under Strong Driving in Far-Detuned Fixed-Frequency Transmons
+## 12. ZZ-Free bSWAP Gates under Strong Driving in Far-Detuned Fixed-Frequency Transmons
 
 - Date: 2026-10-15
 - Category: Quantum Hardware
@@ -107,7 +99,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.21936v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-zz_free_bswap_gates_under_strong_driving_in_far_detuned_fixed_frequency_transmons_infographic.json
 
-## 14. A modular quantum computer based on Cornucopia codes
+## 13. A modular quantum computer based on Cornucopia codes
 
 - Date: 2026-10-13
 - Category: Quantum Error Correction
@@ -115,7 +107,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.19073v2
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-a_modular_quantum_computer_based_on_cornucopia_codes_infographic.json
 
-## 15. Deterministic and programmable generation of mechanical multipartite entangled states
+## 14. Deterministic and programmable generation of mechanical multipartite entangled states
 
 - Date: 2026-10-13
 - Category: Quantum Hardware
@@ -123,7 +115,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.18778v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-deterministic_and_programmable_generation_of_mechanical_multipartite_entangled_states_infographic.json
 
-## 16. Dynamical Decoupling of Nonclassical States in a Biased-Noise Spin Qudit
+## 15. Dynamical Decoupling of Nonclassical States in a Biased-Noise Spin Qudit
 
 - Date: 2026-10-14
 - Category: Quantum Error Correction
@@ -131,7 +123,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.19676v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-14-arxiv-dynamical_decoupling_of_nonclassical_states_in_a_biased_noise_spin_qudit_infographic.json
 
-## 17. The Generalized BEADS Representation: An Informationally Complete Visualization of Mixed Quantum States
+## 16. The Generalized BEADS Representation: An Informationally Complete Visualization of Mixed Quantum States
 
 - Date: 2026-10-13
 - Category: Quantum Hardware
@@ -139,7 +131,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.19054v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-the_generalized_beads_representation_an_informationally_complete_visualization_of_mixed_qu_infographic.json
 
-## 18. Gaussian entanglement and quantum communication: geodesic optimization and multimode bounds
+## 17. Gaussian entanglement and quantum communication: geodesic optimization and multimode bounds
 
 - Date: 2026-10-13
 - Category: Quantum Algorithms
@@ -147,7 +139,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.18827v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-gaussian_entanglement_and_quantum_communication_geodesic_optimization_and_multimode_bounds_infographic.json
 
-## 19. Looking Beyond Visibility: Resolving the Temporal Structure of Continuous-Wave Four-Photon Hong-Ou-Mandel Interference
+## 18. Looking Beyond Visibility: Resolving the Temporal Structure of Continuous-Wave Four-Photon Hong-Ou-Mandel Interference
 
 - Date: 2026-10-15
 - Category: Quantum Optimization
@@ -155,10 +147,18 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.21909v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-looking_beyond_visibility_resolving_the_temporal_structure_of_continuous_wave_four_photon_infographic.json
 
-## 20. Classification of quantum states through conserved operators
+## 19. Classification of quantum states through conserved operators
 
 - Date: 2026-10-14
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2610.20988v1
 - PDF: https://arxiv.org/pdf/2610.20988v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-14-arxiv-classification_of_quantum_states_through_conserved_operators_infographic.json
+
+## 20. Sparse-QITE: Discovering Compact Generators for Quantum Imaginary-Time Evolution via Regularization Methods
+
+- Date: 2026-10-14
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2610.20791v1
+- PDF: https://arxiv.org/pdf/2610.20791v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-14-arxiv-sparse_qite_discovering_compact_generators_for_quantum_imaginary_time_evolution_via_regula_infographic.json

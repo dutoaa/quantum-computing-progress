@@ -1,24 +1,24 @@
 {
-  "key_insight": "Single-qubit re-uploading circuits can match the expressivity of multi-qubit circuits with the same encoding budget, but their first-order training is much harder because all parameters become phase-locked on the Bloch sphere.",
-  "engineering_relevance": "For quantum machine learning, increasing circuit depth instead of width can preserve function class while sharply degrading optimization reliability, so architecture choice must consider trainability as well as expressivity.",
+  "key_insight": "Single-qubit re-uploading circuits can match the expressive power of multi-qubit circuits with the same encoding budget, but they are much harder to train by first-order methods because their parameters become phase-locked on the Bloch sphere.",
+  "engineering_relevance": "For quantum model design, this shows that trading qubit width for circuit depth may preserve function class but can sharply reduce optimization reliability and training efficiency.",
   "method": [
-    "Analyzed Fourier-series expressivity of angle-encoded variational circuits with encoding budget E.",
-    "Proved the serial single-qubit circuit has at most 2E+2 tangent directions, while a comparable two-qubit control generically has at least 6E+6.",
-    "Benchmarked gradient descent, Adam, and Levenberg–Marquardt on exact flat-spectrum targets and three real-world time series."
+    "Compare serial single-qubit and two-qubit control circuits under the same encoding budget E.",
+    "Analyze tangent directions and Fourier-coefficient capacity to explain the phase-locking effect.",
+    "Evaluate convergence on synthetic flat-spectrum targets and three real-world time series using gradient descent, Adam, and Levenberg-Marquardt."
   ],
-  "evidence_signal": "At E=32 on the exact loss, the serial circuit converged in 3/53/83 runs under gradient descent/Adam/Levenberg–Marquardt, versus 99/100/100 for the two-qubit control; on real data it also showed worse or only matched held-out error depending on optimizer.",
-  "watch_item": "The advantage of the wider control model is demonstrated under matched encoding budget and parameter-count settings, so results may depend on optimizer choice, initialization, and the specific one-dimensional encoding regime.",
+  "evidence_signal": "At E=32 on the exact-loss benchmark, the serial circuit converged in 3, 53, and 83 runs for gradient descent, Adam, and Levenberg-Marquardt, while the two-qubit control converged in 99, 100, and 100 runs; on real series, the control also reached the optimum far more often and usually achieved lower test error.",
+  "watch_item": "The results depend on first-order training dynamics and matched parameter-count comparisons, so practical performance may vary with initialization, optimizer settings, and hardware noise.",
   "hashtags": [
-    "#QuantumML",
+    "#QuantumMachineLearning",
     "#VariationalCircuits",
     "#Trainability",
-    "#PhaseLocking",
-    "#FourierSeries"
+    "#QuantumAlgorithms",
+    "#Optimization"
   ],
   "paper_id": "2026-10-15-arxiv-same_spectrum_harder_first_order_training_phase_locking_in_single_versus_multi_qubit_re_up",
   "paper_title": "Same Spectrum, Harder First-Order Training: Phase-Locking in Single- versus Multi-Qubit Re-Uploading Circuits",
   "paper_date": "2026-10-15",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-18T13:47:04",
+  "generated_at": "2026-10-19T16:48:51",
   "generator": "openai"
 }

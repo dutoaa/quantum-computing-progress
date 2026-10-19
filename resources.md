@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-18
+Generated: 2026-10-19
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Discovering state-of-the-art quantum circuits with large language models
@@ -11,23 +11,71 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.22367v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-discovering_state_of_the_art_quantum_circuits_with_large_language_models_infographic.json
 
-## 2. Post-Optimization Subspace Corrections to Quantum Ansätze
-
-- Date: 2026-10-13
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.19109v1
-- PDF: https://arxiv.org/pdf/2610.19109v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-post_optimization_subspace_corrections_to_quantum_ans_tze_infographic.json
-
-## 3. Jianmu-Q: Bridging Quantum Field Theory and Quantum Hardware with AI Agents
+## 2. Quantum-Classical Neural Networks for Solving Lindblad Master Equations
 
 - Date: 2026-10-15
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2610.21942v1
-- PDF: https://arxiv.org/pdf/2610.21942v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-jianmu_q_bridging_quantum_field_theory_and_quantum_hardware_with_ai_agents_infographic.json
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.22691v1
+- PDF: https://arxiv.org/pdf/2610.22691v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-quantum_classical_neural_networks_for_solving_lindblad_master_equations_infographic.json
 
-## 4. Energetics of Fault-Tolerant Spin-Qubit Quantum Computation
+## 3. Demonstration of Logical Error Suppression in a Surface Code Memory on a Cloud-Accessible IBM Superconducting Processor
+
+- Date: 2026-10-16
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.23840v1
+- PDF: https://arxiv.org/pdf/2610.23840v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-demonstration_of_logical_error_suppression_in_a_surface_code_memory_on_a_cloud_accessible_infographic.json
+
+## 4. Learning angles for quantum approximate optimization
+
+- Date: 2026-10-16
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2610.23296v1
+- PDF: https://arxiv.org/pdf/2610.23296v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-learning_angles_for_quantum_approximate_optimization_infographic.json
+
+## 5. Leveraging verifiable structure in quantum circuits to find more efficient compilations with agentic AI
+
+- Date: 2026-10-16
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2610.23832v1
+- PDF: https://arxiv.org/pdf/2610.23832v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-leveraging_verifiable_structure_in_quantum_circuits_to_find_more_efficient_compilations_wi_infographic.json
+
+## 6. Task-aligned spectral inductive biases in parameterized quantum circuits
+
+- Date: 2026-10-16
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.23834v1
+- PDF: https://arxiv.org/pdf/2610.23834v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-task_aligned_spectral_inductive_biases_in_parameterized_quantum_circuits_infographic.json
+
+## 7. SpinControl: Control Software for Prototyping and Benchmarking of Spin-Qubit Devices and Measurement Protocols
+
+- Date: 2026-10-16
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.23316v1
+- PDF: https://arxiv.org/pdf/2610.23316v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-spincontrol_control_software_for_prototyping_and_benchmarking_of_spin_qubit_devices_and_me_infographic.json
+
+## 8. Programmable Preparation of Topological Entangled States
+
+- Date: 2026-10-15
+- Category: AI quantum computing
+- arXiv: https://arxiv.org/abs/2610.22738v1
+- PDF: https://arxiv.org/pdf/2610.22738v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-programmable_preparation_of_topological_entangled_states_infographic.json
+
+## 9. Circuit Synthesis for Variational Quantum Algorithms: The Depth of Algebra and Geometry
+
+- Date: 2026-10-15
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2610.22689v1
+- PDF: https://arxiv.org/pdf/2610.22689v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-circuit_synthesis_for_variational_quantum_algorithms_the_depth_of_algebra_and_geometry_infographic.json
+
+## 10. Energetics of Fault-Tolerant Spin-Qubit Quantum Computation
 
 - Date: 2026-10-15
 - Category: Quantum Error Correction
@@ -35,15 +83,31 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.22199v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-energetics_of_fault_tolerant_spin_qubit_quantum_computation_infographic.json
 
-## 5. Connectivity Bounds for GHZ Graphs
+## 11. Jianmu-Q: Bridging Quantum Field Theory and Quantum Hardware with AI Agents
 
 - Date: 2026-10-15
-- Category: AI quantum computing
-- arXiv: https://arxiv.org/abs/2610.22190v1
-- PDF: https://arxiv.org/pdf/2610.22190v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-connectivity_bounds_for_ghz_graphs_infographic.json
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.21942v1
+- PDF: https://arxiv.org/pdf/2610.21942v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-jianmu_q_bridging_quantum_field_theory_and_quantum_hardware_with_ai_agents_infographic.json
 
-## 6. Magic in quantum trajectory unravelings of noisy random quantum circuits
+## 12. Expressivity of IQP Feature-Map Quantum Kernels via Reproducing Kernel Hilbert Spaces
+
+- Date: 2026-10-16
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2610.23692v1
+- PDF: https://arxiv.org/pdf/2610.23692v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-expressivity_of_iqp_feature_map_quantum_kernels_via_reproducing_kernel_hilbert_spaces_infographic.json
+
+## 13. Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds
+
+- Date: 2026-10-16
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2610.22954v1
+- PDF: https://arxiv.org/pdf/2610.22954v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-quantum_assisted_unambiguous_discrimination_of_pure_states_with_robustness_bounds_infographic.json
+
+## 14. Magic in quantum trajectory unravelings of noisy random quantum circuits
 
 - Date: 2026-10-15
 - Category: Quantum Simulation
@@ -51,7 +115,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.22318v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-magic_in_quantum_trajectory_unravelings_of_noisy_random_quantum_circuits_infographic.json
 
-## 7. Agent-assisted experimental strategy transfer across quantum processors
+## 15. Agent-assisted experimental strategy transfer across quantum processors
 
 - Date: 2026-10-15
 - Category: Quantum Hardware
@@ -59,7 +123,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.21047v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-agent_assisted_experimental_strategy_transfer_across_quantum_processors_infographic.json
 
-## 8. SynDebug: A Framework to Debug Logic Bugs in Fault-Tolerant Quantum Computing Programs
+## 16. Solving Large-Scale Parameter Inference in Controllable Nuclear Fusion via Coherent Ising Machines and Block Coordinate Descent
+
+- Date: 2026-10-16
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.23507v1
+- PDF: https://arxiv.org/pdf/2610.23507v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-solving_large_scale_parameter_inference_in_controllable_nuclear_fusion_via_coherent_ising_infographic.json
+
+## 17. SynDebug: A Framework to Debug Logic Bugs in Fault-Tolerant Quantum Computing Programs
 
 - Date: 2026-10-15
 - Category: Quantum Error Correction
@@ -67,98 +139,26 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.22275v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-syndebug_a_framework_to_debug_logic_bugs_in_fault_tolerant_quantum_computing_programs_infographic.json
 
-## 9. Quantum control of solid state qubits via Reinforcement Learning
+## 18. ConQUESTA: Topology-Aware Post-Training Structural Pruning of Quantum Neural Networks
+
+- Date: 2026-10-16
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2610.23415v1
+- PDF: https://arxiv.org/pdf/2610.23415v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-16-arxiv-conquesta_topology_aware_post_training_structural_pruning_of_quantum_neural_networks_infographic.json
+
+## 19. Connectivity Bounds for GHZ Graphs
 
 - Date: 2026-10-15
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2610.21987v1
-- PDF: https://arxiv.org/pdf/2610.21987v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-quantum_control_of_solid_state_qubits_via_reinforcement_learning_infographic.json
+- Category: AI quantum computing
+- arXiv: https://arxiv.org/abs/2610.22190v1
+- PDF: https://arxiv.org/pdf/2610.22190v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-connectivity_bounds_for_ghz_graphs_infographic.json
 
-## 10. Same Spectrum, Harder First-Order Training: Phase-Locking in Single- versus Multi-Qubit Re-Uploading Circuits
+## 20. Same Spectrum, Harder First-Order Training: Phase-Locking in Single- versus Multi-Qubit Re-Uploading Circuits
 
 - Date: 2026-10-15
 - Category: Quantum Algorithms
 - arXiv: https://arxiv.org/abs/2610.21778v1
 - PDF: https://arxiv.org/pdf/2610.21778v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-same_spectrum_harder_first_order_training_phase_locking_in_single_versus_multi_qubit_re_up_infographic.json
-
-## 11. Efficient quantum simulation of unitary gates based on atomic ensembles
-
-- Date: 2026-10-15
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2610.22207v1
-- PDF: https://arxiv.org/pdf/2610.22207v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-efficient_quantum_simulation_of_unitary_gates_based_on_atomic_ensembles_infographic.json
-
-## 12. ZZ-Free bSWAP Gates under Strong Driving in Far-Detuned Fixed-Frequency Transmons
-
-- Date: 2026-10-15
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2610.21936v1
-- PDF: https://arxiv.org/pdf/2610.21936v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-zz_free_bswap_gates_under_strong_driving_in_far_detuned_fixed_frequency_transmons_infographic.json
-
-## 13. A modular quantum computer based on Cornucopia codes
-
-- Date: 2026-10-13
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2610.19073v2
-- PDF: https://arxiv.org/pdf/2610.19073v2
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-a_modular_quantum_computer_based_on_cornucopia_codes_infographic.json
-
-## 14. Deterministic and programmable generation of mechanical multipartite entangled states
-
-- Date: 2026-10-13
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2610.18778v1
-- PDF: https://arxiv.org/pdf/2610.18778v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-deterministic_and_programmable_generation_of_mechanical_multipartite_entangled_states_infographic.json
-
-## 15. Dynamical Decoupling of Nonclassical States in a Biased-Noise Spin Qudit
-
-- Date: 2026-10-14
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2610.19676v1
-- PDF: https://arxiv.org/pdf/2610.19676v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-14-arxiv-dynamical_decoupling_of_nonclassical_states_in_a_biased_noise_spin_qudit_infographic.json
-
-## 16. The Generalized BEADS Representation: An Informationally Complete Visualization of Mixed Quantum States
-
-- Date: 2026-10-13
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2610.19054v1
-- PDF: https://arxiv.org/pdf/2610.19054v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-the_generalized_beads_representation_an_informationally_complete_visualization_of_mixed_qu_infographic.json
-
-## 17. Gaussian entanglement and quantum communication: geodesic optimization and multimode bounds
-
-- Date: 2026-10-13
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.18827v1
-- PDF: https://arxiv.org/pdf/2610.18827v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-13-arxiv-gaussian_entanglement_and_quantum_communication_geodesic_optimization_and_multimode_bounds_infographic.json
-
-## 18. Looking Beyond Visibility: Resolving the Temporal Structure of Continuous-Wave Four-Photon Hong-Ou-Mandel Interference
-
-- Date: 2026-10-15
-- Category: Quantum Optimization
-- arXiv: https://arxiv.org/abs/2610.21909v1
-- PDF: https://arxiv.org/pdf/2610.21909v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-15-arxiv-looking_beyond_visibility_resolving_the_temporal_structure_of_continuous_wave_four_photon_infographic.json
-
-## 19. Classification of quantum states through conserved operators
-
-- Date: 2026-10-14
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2610.20988v1
-- PDF: https://arxiv.org/pdf/2610.20988v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-14-arxiv-classification_of_quantum_states_through_conserved_operators_infographic.json
-
-## 20. Sparse-QITE: Discovering Compact Generators for Quantum Imaginary-Time Evolution via Regularization Methods
-
-- Date: 2026-10-14
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.20791v1
-- PDF: https://arxiv.org/pdf/2610.20791v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-14-arxiv-sparse_qite_discovering_compact_generators_for_quantum_imaginary_time_evolution_via_regula_infographic.json

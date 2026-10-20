@@ -1,24 +1,24 @@
 {
-  "key_insight": "ConQUESTA prunes quantum neural networks by jointly considering task accuracy and hardware-aware compiler cost, so it removes entanglers without exploding SWAPs, depth, or two-qubit gates.",
-  "engineering_relevance": "This makes QNN deployment more practical on sparse quantum hardware by turning pruning into a topology-aware post-training optimization problem with explicit accuracy constraints.",
+  "key_insight": "ConQUESTA prunes quantum neural networks by jointly considering task accuracy, hardware topology, and compiler cost, so it can reduce entangling resources without sacrificing much performance.",
+  "engineering_relevance": "This gives quantum software/hardware teams a practical post-training method to make QNNs more deployable on sparse devices by lowering two-qubit gates, SWAPs, and circuit depth.",
   "method": [
-    "Screens candidate entanglers using both saliency and estimated compiler cost.",
-    "Searches complete pruning masks under a user-defined accuracy constraint rather than ranking gates one-by-one.",
-    "Transpiles each mask as a whole across multiple coupling topologies to account for routing effects."
+    "Screens candidate entanglers using both saliency and transpilation-aware cost.",
+    "Searches complete pruning masks under an explicit accuracy constraint instead of one-shot ranking.",
+    "Evaluates each mask as a whole across multiple coupling topologies to account for routing effects."
   ],
-  "evidence_signal": "Across 4-, 6-, and 8-qubit QNNs at 55% pruning, ConQUESTA achieved mean resource reductions of 61.6% on Breast Cancer, 72.0% on Digits01, and 82.2% on Iris, and improved fixed-mask feasibility from 16/24 to 22/24 runs.",
-  "watch_item": "The approach may be computationally heavier than simple ranking methods because it evaluates many whole-mask candidates under multiple hardware topologies.",
+  "evidence_signal": "At 55% pruning across 4-, 6-, and 8-qubit QNNs and eight seeds, ConQUESTA reduced resources by 61.6% on Breast Cancer, 72.0% on Digits01, and 82.2% on Iris, with fixed-mask recovery improving feasible runs from 16/24 to 22/24.",
+  "watch_item": "The method increases search and transpilation overhead because it evaluates many complete masks and its benefits may depend on the chosen topology, resource weights, and pruning budget.",
   "hashtags": [
-    "#QuantumNeuralNetworks",
-    "#QuantumComputing",
-    "#ModelPruning",
-    "#HardwareAwareAI",
-    "#PostTrainingOptimization"
+    "#QuantumML",
+    "#QNN",
+    "#QuantumCompilation",
+    "#Pruning",
+    "#HardwareAwareAI"
   ],
   "paper_id": "2026-10-16-arxiv-conquesta_topology_aware_post_training_structural_pruning_of_quantum_neural_networks",
   "paper_title": "ConQUESTA: Topology-Aware Post-Training Structural Pruning of Quantum Neural Networks",
   "paper_date": "2026-10-16",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-19T16:48:45",
+  "generated_at": "2026-10-20T00:12:22",
   "generator": "openai"
 }

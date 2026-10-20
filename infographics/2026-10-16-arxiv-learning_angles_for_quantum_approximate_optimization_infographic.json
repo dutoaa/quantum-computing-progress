@@ -1,24 +1,24 @@
 {
-  "key_insight": "They learn to predict high-quality QAOA angles directly from the problem instance, replacing expensive per-instance angle optimization with a fast forward pass.",
-  "engineering_relevance": "This amortizes a major QAOA bottleneck, making variational quantum optimization more practical for repeated industrial workloads on similar graph instances.",
+  "key_insight": "The paper learns to predict high-quality QAOA angles directly from the problem instance, replacing expensive per-instance classical tuning with a fast forward pass.",
+  "engineering_relevance": "This amortizes a major QAOA bottleneck, making variational quantum optimization more practical for repeated industrial workloads with similar problem structures.",
   "method": [
-    "Train a model to map an optimization problem instance to QAOA variational angles.",
-    "Use the predicted angles in the QAOA circuit instead of running a classical solver for each instance.",
-    "Add topology-aware features so the model generalizes better across graph families."
+    "Train models to map an optimization instance to QAOA variational angles.",
+    "Use topology-aware features so the predictor adapts to graph structure.",
+    "Replace classical solver-based angle search with learned inference at deployment."
   ],
-  "evidence_signal": "The abstract reports that the learned angles are several orders of magnitude faster to obtain than the solver while maintaining near-identical quality, and hardware experiments show indistinguishable QAOA samples versus solver-produced angles.",
-  "watch_item": "The upfront data generation and training cost can be substantial, so the approach is most attractive when many similar optimization instances are solved repeatedly.",
+  "evidence_signal": "The abstract reports that learned angles achieve near-identical quality to solver-optimized angles, run several orders of magnitude faster, generalize to unseen graph topologies, and match hardware samples indistinguishably from solver angles.",
+  "watch_item": "The approach requires up-front data generation and training, so its benefit depends on having enough recurring, similar problem instances to amortize that cost.",
   "hashtags": [
-    "#QuantumComputing",
     "#QAOA",
-    "#QuantumAlgorithms",
-    "#Optimization",
-    "#MachineLearning"
+    "#QuantumComputing",
+    "#VariationalAlgorithms",
+    "#MachineLearning",
+    "#Optimization"
   ],
   "paper_id": "2026-10-16-arxiv-learning_angles_for_quantum_approximate_optimization",
   "paper_title": "Learning angles for quantum approximate optimization",
   "paper_date": "2026-10-16",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-19T16:48:13",
+  "generated_at": "2026-10-20T00:12:03",
   "generator": "openai"
 }

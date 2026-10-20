@@ -1,24 +1,26 @@
 {
-  "key_insight": "The paper learns to predict high-quality QAOA angles directly from the problem instance, replacing expensive per-instance classical tuning with a fast forward pass.",
-  "engineering_relevance": "This amortizes a major QAOA bottleneck, making variational quantum optimization more practical for repeated industrial workloads with similar problem structures.",
+  "key_insight": "Learned models predict high-quality QAOA angles in a single forward pass, replacing costly per-instance optimization with near-identical solution quality.",
+  "engineering_relevance": "Repeated optimization of similar problems could amortize model training costs while accelerating the classical angle-selection step of hybrid quantum workflows.",
   "method": [
-    "Train models to map an optimization instance to QAOA variational angles.",
-    "Use topology-aware features so the predictor adapts to graph structure.",
-    "Replace classical solver-based angle search with learned inference at deployment."
+    "Learn a mapping from problem instances to QAOA angles.",
+    "Use topology-sensitive models to improve angle quality.",
+    "Replace per-instance angle optimization with model inference."
   ],
-  "evidence_signal": "The abstract reports that learned angles achieve near-identical quality to solver-optimized angles, run several orders of magnitude faster, generalize to unseen graph topologies, and match hardware samples indistinguishably from solver angles.",
-  "watch_item": "The approach requires up-front data generation and training, so its benefit depends on having enough recurring, similar problem instances to amortize that cost.",
+  "evidence_signal": "The abstract reports inference several orders of magnitude faster than the solver, generalization to unseen Barabási–Albert and 2D grid topologies, and quantum-hardware samples indistinguishable from those using solver angles.",
+  "watch_item": "Up-front data generation and training costs must be amortized, and generalization beyond the evaluated problem distributions remains uncertain.",
   "hashtags": [
-    "#QAOA",
     "#QuantumComputing",
-    "#VariationalAlgorithms",
+    "#QAOA",
     "#MachineLearning",
-    "#Optimization"
+    "#CombinatorialOptimization",
+    "#HybridQuantumClassical"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-16-arxiv-learning_angles_for_quantum_approximate_optimization",
   "paper_title": "Learning angles for quantum approximate optimization",
   "paper_date": "2026-10-16",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-20T00:12:03",
+  "generated_at": "2026-10-20T00:14:06",
   "generator": "openai"
 }

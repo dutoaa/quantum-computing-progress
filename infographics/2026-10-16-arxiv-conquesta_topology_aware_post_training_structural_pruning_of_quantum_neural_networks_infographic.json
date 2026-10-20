@@ -1,24 +1,26 @@
 {
-  "key_insight": "ConQUESTA prunes quantum neural networks by jointly considering task accuracy, hardware topology, and compiler cost, so it can reduce entangling resources without sacrificing much performance.",
-  "engineering_relevance": "This gives quantum software/hardware teams a practical post-training method to make QNNs more deployable on sparse devices by lowering two-qubit gates, SWAPs, and circuit depth.",
+  "key_insight": "ConQUESTA prunes quantum neural network entanglers using task saliency and hardware-topology-aware compilation costs to reduce resources under an explicit accuracy constraint.",
+  "engineering_relevance": "The framework targets sparse quantum hardware, where pruning must account for compiler-induced two-qubit gates, SWAPs, and circuit depth.",
   "method": [
-    "Screens candidate entanglers using both saliency and transpilation-aware cost.",
-    "Searches complete pruning masks under an explicit accuracy constraint instead of one-shot ranking.",
-    "Evaluates each mask as a whole across multiple coupling topologies to account for routing effects."
+    "Screen candidate entanglers using task saliency and compiler cost.",
+    "Search complete pruning masks, transpiling each across multiple coupling topologies.",
+    "Apply fixed-mask recovery to improve accuracy-constraint feasibility."
   ],
-  "evidence_signal": "At 55% pruning across 4-, 6-, and 8-qubit QNNs and eight seeds, ConQUESTA reduced resources by 61.6% on Breast Cancer, 72.0% on Digits01, and 82.2% on Iris, with fixed-mask recovery improving feasible runs from 16/24 to 22/24.",
-  "watch_item": "The method increases search and transpilation overhead because it evaluates many complete masks and its benefits may depend on the chosen topology, resource weights, and pruning budget.",
+  "evidence_signal": "Across 4-, 6-, and 8-qubit QNNs with eight model seeds at 55% pruning, mean resource reductions were 61.6%–82.2% across three datasets, exceeding the strongest matched simple baseline by 1.7–8.9 percentage points.",
+  "watch_item": "Recovery improved feasibility to 22/24 runs, but accuracy constraints were not always met; scaling evidence extends only to a 12-qubit probe.",
   "hashtags": [
-    "#QuantumML",
-    "#QNN",
-    "#QuantumCompilation",
-    "#Pruning",
-    "#HardwareAwareAI"
+    "#QuantumComputing",
+    "#QuantumNeuralNetworks",
+    "#QuantumHardware",
+    "#TopologyAwarePruning",
+    "#QuantumCompilation"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-16-arxiv-conquesta_topology_aware_post_training_structural_pruning_of_quantum_neural_networks",
   "paper_title": "ConQUESTA: Topology-Aware Post-Training Structural Pruning of Quantum Neural Networks",
   "paper_date": "2026-10-16",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-20T00:12:22",
+  "generated_at": "2026-10-20T00:14:27",
   "generator": "openai"
 }

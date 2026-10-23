@@ -1,19 +1,19 @@
 {
-  "key_insight": "QuTOP replaces device-first, iterative quantum compiler tuning with top-down selection guided by reusable rules and learned predictors.",
-  "engineering_relevance": "Jointly considering hardware targets and compiler settings can avoid backend choices that limit execution fidelity while reducing online selection latency.",
+  "key_insight": "QuTOP uses offline oracle knowledge to select quantum hardware and compiler settings jointly, avoiding the limitations of choosing a device before tuning compilation.",
+  "engineering_relevance": "Rule-guided prediction offers a way to improve circuit execution fidelity while reducing configuration-selection latency without iterative online search.",
   "method": [
     "Build QuOPTBench by exhaustively searching configurations for 268 quantum circuits.",
     "Use an LLM to extract transferable configuration-selection rules from sampled circuits.",
-    "Combine those rules with predictors trained on enumerated configuration data to select configurations without iterative online search."
+    "Combine these rules with predictors trained on enumerated configuration data to select configurations for new circuits."
   ],
-  "evidence_signal": "Across evaluations including ten representative LLMs, vanilla LLMs remained far from oracle performance, distilled rules improved LLM selection, and QuTOP achieved the strongest overall quality–latency balance among tested baselines.",
-  "watch_item": "Transfer to unseen circuit families or changing hardware calibrations needs validation, and exhaustive offline search may become costly as configuration spaces grow.",
+  "evidence_signal": "The study evaluates ten representative LLMs, finds vanilla models far from oracle performance, and reports that QuTOP achieves the strongest overall quality–latency balance among evaluated baselines.",
+  "watch_item": "Offline enumeration adds upfront cost, and changing hardware characteristics may require refreshing the learned rules and predictors.",
   "hashtags": [
     "#QuantumComputing",
     "#QuantumCompilation",
+    "#QuantumHardware",
     "#MachineLearning",
-    "#LLM",
-    "#HardwareSoftwareCodesign"
+    "#CompilerOptimization"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Turning Quantum Compiler Configuration Selection Upside Down: A Top-Down Paradigm",
   "paper_date": "2026-10-21",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-22T14:53:18",
+  "generated_at": "2026-10-23T14:41:28",
   "generator": "openai"
 }

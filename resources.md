@@ -1,23 +1,23 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-23
+Generated: 2026-10-24
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
-## 1. Resource Analysis of Quantum Optimization Algorithms via Variational Methods
-
-- Date: 2026-10-21
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.29919v1
-- PDF: https://arxiv.org/pdf/2610.29919v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-21-arxiv-resource_analysis_of_quantum_optimization_algorithms_via_variational_methods_infographic.json
-
-## 2. Automating quantum circuit optimization with AI agents
+## 1. Automating quantum circuit optimization with AI agents
 
 - Date: 2026-10-22
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2610.31352v1
 - PDF: https://arxiv.org/pdf/2610.31352v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-22-arxiv-automating_quantum_circuit_optimization_with_ai_agents_infographic.json
+
+## 2. Resource Analysis of Quantum Optimization Algorithms via Variational Methods
+
+- Date: 2026-10-21
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2610.29919v1
+- PDF: https://arxiv.org/pdf/2610.29919v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-21-arxiv-resource_analysis_of_quantum_optimization_algorithms_via_variational_methods_infographic.json
 
 ## 3. Quantum Fokker-Planck solvers as trainable generative models
 

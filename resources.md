@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-24
+Generated: 2026-10-25
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Automating quantum circuit optimization with AI agents

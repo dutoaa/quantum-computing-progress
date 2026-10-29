@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-28
+Generated: 2026-10-29
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Quantum Anomaly Detection in network traffic using Variational Quantum Classifiers

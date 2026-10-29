@@ -1,13 +1,13 @@
 {
-  "key_insight": "DiffSimuQ transforms a broad class of sample-returning analog quantum experiments into executable derivative experiments whose expected outcomes equal the desired gradients.",
-  "engineering_relevance": "Source and derivative experiments share a compiler that produces neutral-atom controls and selects between two gradient strategies using estimated cost.",
+  "key_insight": "DiffSimuQ transforms analog quantum experiments into executable derivative experiments whose expected outcomes exactly equal the desired gradients.",
+  "engineering_relevance": "Source and derivative experiments share a compiler that lowers branches to neutral-atom controls and selects gradient strategies by estimated cost.",
   "method": [
-    "Compositionally transform experiment programs into derivative programs in the same language.",
-    "Use the Nyquist shift rule for general time-dependent evolution, exploiting band-limited responses even with non-commuting controls.",
-    "Use a parameter-shift rule for involutory generators, inserting a parameter-independent operation at a sampled time."
+    "Compositionally transform experiment programs without accessing the internal quantum state.",
+    "Use the Nyquist shift rule for general time-dependent evolution, including non-commuting controls.",
+    "Use sampled-time parameter-shift insertions for involutory generators."
   ],
-  "evidence_signal": "Machine-level noisy emulation reports avoidance of the finite-difference error floor, improved closed-loop optimization, and at most 0.3% additional source compilation time per derivative branch at 1,000 qubits.",
-  "watch_item": "Exactness concerns expected outcomes; finite-shot uncertainty and hardware realization errors remain practical concerns, and reported evaluation uses emulation rather than physical-device experiments.",
+  "evidence_signal": "In machine-level noisy emulation, both methods avoid the finite-difference error floor and improve closed-loop optimization; at 1,000 qubits, each derivative branch adds at most 0.3% to source compilation time.",
+  "watch_item": "Exact gradient identities do not eliminate sampling costs or hardware realization errors, and the reported evaluation uses emulation rather than physical-device experiments.",
   "hashtags": [
     "#QuantumComputing",
     "#AnalogQuantum",
@@ -21,6 +21,6 @@
   "paper_title": "Analog Quantum Experiments Meet Automatic Differentiation - from Programs to Atoms",
   "paper_date": "2026-10-26",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-28T16:27:02",
+  "generated_at": "2026-10-29T16:37:55",
   "generator": "openai"
 }

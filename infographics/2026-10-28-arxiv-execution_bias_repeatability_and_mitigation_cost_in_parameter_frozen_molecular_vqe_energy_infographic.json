@@ -1,13 +1,13 @@
 {
-  "key_insight": "Smaller reported uncertainty did not guarantee accurate molecular VQE energies: hardware execution bias and cross-job variability could dominate.",
-  "engineering_relevance": "Validate workload-specific bias and repeatability before buying more shots or mitigation, since mitigation gains can carry substantial QPU cost.",
+  "key_insight": "Smaller reported uncertainty did not ensure accurate molecular energies: hardware bias and cross-job variability persisted, while mitigation improved some results at added cost.",
+  "engineering_relevance": "Validate workloads with known-state controls and repeated runs before spending more QPU time on sampling or mitigation.",
   "method": [
     "Evaluate noiselessly optimized molecular VQE states on IBM Aachen and Pittsburgh 156-qubit Heron processors.",
-    "Freeze parameters, layouts and compiled circuits, with dynamical decoupling disabled.",
-    "Compare raw and mitigated energies across molecular cohorts, repeated windows and known-state controls."
+    "Freeze parameters, layouts and compiled circuits; disable dynamical decoupling.",
+    "Compare raw evaluation, zero-noise extrapolation (ZNE) and twirled readout error extinction (TREX), alongside known-state controls."
   ],
-  "evidence_signal": "Across 110 jobs and 28.2 billed QPU minutes, Raw 1024 O2 and BeH2 mean residuals were 12–32 times returned uncertainty; ZNE reduced O2 absolute residuals by 49.7–83.5% at about fourfold charge.",
-  "watch_item": "Mitigated estimates require physical-validity checks: 13 energy point estimates fell outside the mapped spectrum, versus none for raw estimates.",
+  "evidence_signal": "Across 110 jobs and 28.2 billed QPU minutes, Raw 1024 O2 and BeH2 mean residuals were 12–32 times returned uncertainty; ZNE reduced O2 absolute residuals by 49.7–83.5% at roughly fourfold charge.",
+  "watch_item": "Mitigation requires physical-validity checks: 13 mitigated energy point estimates fell outside the mapped spectrum, versus none among raw estimates.",
   "hashtags": [
     "#QuantumComputing",
     "#VQE",
@@ -21,6 +21,6 @@
   "paper_title": "Execution bias, repeatability and mitigation cost in parameter-frozen molecular VQE energy evaluation",
   "paper_date": "2026-10-28",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-10-30T16:33:20",
+  "generated_at": "2026-10-31T15:37:09",
   "generator": "openai"
 }

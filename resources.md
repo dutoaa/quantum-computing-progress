@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-10-30
+Generated: 2026-10-31
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Fast and accurate neural triage decoding of ultra-high-rate quantum LDPC codes
@@ -43,21 +43,21 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2610.38803v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-28-arxiv-generalized_mean_field_ising_model_as_a_benchmark_family_with_exact_solutions_infographic.json
 
-## 6. A VLSI-Like Design and Verification Flow for Quantum Circuits: A Case Study in PI Estimation
-
-- Date: 2026-10-29
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2610.39263v1
-- PDF: https://arxiv.org/pdf/2610.39263v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-29-arxiv-a_vlsi_like_design_and_verification_flow_for_quantum_circuits_a_case_study_in_pi_estimatio_infographic.json
-
-## 7. Quantum Computing through Computational Imaging: Representations, Measurement, and Inference
+## 6. Quantum Computing through Computational Imaging: Representations, Measurement, and Inference
 
 - Date: 2026-10-29
 - Category: Quantum Algorithms
 - arXiv: https://arxiv.org/abs/2610.40393v1
 - PDF: https://arxiv.org/pdf/2610.40393v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-29-arxiv-quantum_computing_through_computational_imaging_representations_measurement_and_inference_infographic.json
+
+## 7. A VLSI-Like Design and Verification Flow for Quantum Circuits: A Case Study in PI Estimation
+
+- Date: 2026-10-29
+- Category: Quantum Algorithms
+- arXiv: https://arxiv.org/abs/2610.39263v1
+- PDF: https://arxiv.org/pdf/2610.39263v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-10-29-arxiv-a_vlsi_like_design_and_verification_flow_for_quantum_circuits_a_case_study_in_pi_estimatio_infographic.json
 
 ## 8. Provably efficient experimental classification of quantum data with quantum kernels
 

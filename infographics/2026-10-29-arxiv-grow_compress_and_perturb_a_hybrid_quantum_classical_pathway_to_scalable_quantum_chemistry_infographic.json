@@ -1,13 +1,13 @@
 {
-  "key_insight": "VULCAN combines Hamiltonian-gradient-free ansatz growth, circuit compression, and perturbative correction to reduce the measurement cost of quantum chemistry calculations.",
-  "engineering_relevance": "The framework targets measurement overhead, circuit depth, and qubit requirements, offering a resource-efficient pathway toward larger quantum chemistry simulations.",
+  "key_insight": "VULCAN combines gradient-free ansatz growth, circuit compression, and perturbative correction to reduce the quantum measurement cost of electronic-structure calculations.",
+  "engineering_relevance": "Smaller operator pools, controlled circuit depth, and reduced qubit requirements offer a resource-efficient pathway toward quantum chemistry on quantum computers.",
   "method": [
-    "Grow full operator layers using Variational Double Bracket Flow and a linearly scaling pool, avoiding Hamiltonian-gradient measurements for operator selection.",
-    "Compress circuits through state-overlap measurements and reduce qubit requirements via dominant-determinant subspace projection.",
-    "Apply GPU-accelerated stochastic Epstein–Nesbet perturbation theory (ENPT2) to recover residual correlation and enable early termination."
+    "Generate operators with Variational Double Bracket Flow and append full layers without Hamiltonian-gradient measurements.",
+    "Compress grown circuits using state-overlap measurements and project the Hamiltonian onto a dominant-determinant subspace.",
+    "Apply GPU-accelerated stochastic Epstein–Nesbet perturbation theory (ENPT2) to recover residual correlation and enable early stopping."
   ],
-  "evidence_signal": "Emulation up to 32 logical qubits reports chemical accuracy at 5–20% of batched ADAPT-VQE's measurement cost for hydrogen chains, BeH2, and H2O; one VULCAN layer plus ENPT2 also reaches chemical accuracy for 32-qubit C3H6.",
-  "watch_item": "Results rely on emulation; robustness to hardware noise and the total cost of compression and classical ENPT2 post-processing remain implementation concerns.",
+  "evidence_signal": "In emulation up to 32 logical qubits, VULCAN reached chemical accuracy for hydrogen chains, BeH2, and H2O at 5–20% of batched ADAPT-VQE’s measurement cost; one layer plus ENPT2 also reached chemical accuracy for 32-qubit C3H6, where the baseline did not.",
+  "watch_item": "Results are based on high-performance emulation; noisy-hardware performance and end-to-end costs including compression and classical ENPT2 remain important validation targets.",
   "hashtags": [
     "#QuantumComputing",
     "#QuantumChemistry",
@@ -21,6 +21,6 @@
   "paper_title": "Grow, Compress, and Perturb: A Hybrid Quantum-Classical Pathway to Scalable Quantum Chemistry on Quantum Computers",
   "paper_date": "2026-10-29",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-10-30T16:33:12",
+  "generated_at": "2026-10-31T15:37:02",
   "generator": "openai"
 }

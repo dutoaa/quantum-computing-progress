@@ -1,0 +1,56 @@
+{
+  "repo_title": "AI Quantum Computing",
+  "period": "month",
+  "label": "2026-10",
+  "author": "William Sun with help from OpenAI",
+  "paper_count": 256,
+  "analysis": {
+    "title": "AI Quantum Computing: October 2026 Research Review",
+    "author": "William Sun with help from OpenAI",
+    "period": "2026-10",
+    "evidence_note": "This review synthesizes the supplied paper metadata. Most abstracts are truncated, so reported findings are attributed to the papers and should not be interpreted as independently verified results or demonstrations of practical quantum advantage.",
+    "executive_summary": "The supplied October papers emphasize improving the efficiency, trainability, and verification of hybrid AI–quantum workflows rather than establishing broad quantum advantage. AI-assisted circuit discovery combines language models or reinforcement learning with explicit evaluators, while classical pre-training, modular architectures, and measurement-efficient architecture search target the costs of variational quantum learning. Quantum machine learning research also develops stronger theoretical foundations through Hamiltonian embeddings, Fourier analysis, and task-dependent quantum-kernel guarantees. Applications span forecasting, environmental monitoring, cybersecurity, chemistry, and optimization, but their evidence ranges from small simulations to hardware demonstrations and should not be treated as equivalent. Supporting advances in neural decoding, logical-error suppression, execution management, and distributed sampling address obstacles beyond model design. Across these contributions, the strongest shared direction is toward resource-aware, independently checked quantum workflows with more credible classical comparisons.",
+    "major_themes": [
+      "AI for quantum circuit design: language models, autonomous agents, and reinforcement learning propose circuits, with verification and resource scoring becoming central to credible optimization.",
+      "Reducing training overhead: Pauli-propagation surrogates, GPU acceleration, classical pre-training, and measurement-efficient architecture search seek to reduce quantum evaluations and gradient costs.",
+      "Trainability through structure: localized capsules, divide-and-conquer networks, symmetry, connectivity, and digital-analog interactions reshape the trade-off between expressive models and stable optimization.",
+      "More rigorous benchmarking: modular optimizer comparisons, matched evaluation budgets, exact-solution benchmark families, and a controlled null result challenge assumptions about algorithmic improvements.",
+      "Quantum learning theory and trustworthy inference: Hamiltonian embeddings, Fourier characterizations, quantum-kernel guarantees, and blind or verifiable sampling clarify when learning and delegation can be efficient.",
+      "Scaling through hybrid decomposition: hierarchical QAOA, distributed quantum sampling, molecular subproblem aggregation, and heterogeneous-QPU scheduling extend workflows beyond individual device limits.",
+      "Fault-tolerance and systems readiness: neural decoding, syndrome-based mitigation, surface-code experiments, bosonic protection, and control-stack studies address the reliability and infrastructure required for useful quantum computation."
+    ],
+    "notable_papers": [
+      "Discovering state-of-the-art quantum circuits with large language models — Introduces an evolutionary search framework in which LLMs propose circuits and an independent evaluator verifies and scores them. The abstract reports reductions in both Toffoli and qubit counts in seven of eight tasks, making this a notable AI-for-quantum contribution. The truncated text does not identify the complete comparison baselines or reduction magnitudes.",
+      "Automating quantum circuit optimization with AI agents — Couples iterative agent-driven optimization with a frozen, exact verifier. Its emphasis on testing the verifier against solved cases, deliberately broken solutions, and published results is important for making automated research outputs auditable. Exact verification certifies candidate validity, not necessarily global optimality.",
+      "Classical Pre-Training of Large Shallow Parametrized Quantum Circuits through Pauli Propagation and deployment on Quantum Hardware — Uses backward observable propagation to obtain a classically optimizable loss expression, with truncation strategies intended to support larger circuits. It targets quantum training overhead while distinguishing access to selected observables from full classical access to quantum states or samples; deployment outcomes are not visible in the supplied abstract.",
+      "Measurement-Efficient Differentiable Quantum Architecture Search for Combinatorial Optimization — Derives a measurement-reduction scheme that preserves the optimization objective for the stated problem and gate classes. Tests on 3-SAT and MaxCut report approximately 39–41% fewer requested gradient measurements with negligible classical post-processing overhead, providing a concrete resource-saving result.",
+      "Fast and accurate neural triage decoding of ultra-high-rate quantum LDPC codes — Proposes allocating neural computation adaptively according to syndrome consistency, with a local message-passing network providing rapid initial correction predictions. This directly connects AI inference to fault-tolerance latency constraints, although the supplied excerpt omits final accuracy and timing results.",
+      "Provably efficient experimental classification of quantum data with quantum kernels — Establishes sufficient conditions for accurate classification with polynomial measurement requirements and reports a photonic demonstration involving stellar-rank classification. Its significance lies in connecting learning guarantees to quantum-data structure rather than assuming generic quantum learning advantage.",
+      "A Controlled Null Result for Per-Gate Riemannian Optimization in VQE — Finds no measurable practical advantage over a carefully matched Adam baseline on a validated hydrogen-chain benchmark. Matching physical initializations and tuning learning rates makes this a useful corrective to claims that a more sophisticated optimization geometry necessarily improves VQE training.",
+      "Scaling Quantum Optimization to the Thousand-Qubit Scale with Distributed Quantum Sampling — Combines shallow QAOA sampling, classical optimization, graph partitioning, and feasibility repair for a 1,710-variable matching formulation. The best reported hardware result uses a 50-qubit partition bound; the contribution is a distributed hybrid workflow, not execution of a single 1,710-qubit circuit.",
+      "Q-Capsule: A Localized Capsule-Based Quantum Neural Architecture for Barren Plateau Mitigation — Combines register partitioning, local readout, sparse coupling, data re-uploading, and adaptive depth growth. The abstract reports stable gradient variance as register width increases, suggesting an architecture-level route to improving trainability while leaving broader task performance and scalability to be assessed.",
+      "Benchmarking Modular Optimization Strategies for Parameterized Quantum Circuits — Separates quantum search-direction estimation from classical parameter updates and distinguishes objective evaluations from sample-circuit costs. Its coverage of QAOA, classification, and molecular VQE provides a useful framework for fairer optimizer comparisons, although comparative outcomes are absent from the supplied excerpt."
+    ],
+    "field_progress": [
+      "AI-assisted circuit optimization is increasingly paired with independent evaluators and exact verification. This strengthens confidence in candidate correctness while keeping correctness, resource improvement, and global optimality distinct.",
+      "Resource accounting is becoming more specific. Papers separately address measurement requests, circuit evaluations, qubit counts, depth, decoding latency, scheduling, and energy instead of treating predictive accuracy or final energy as sufficient performance measures.",
+      "Classical computation is increasingly integrated into quantum workflows through pre-training, observable propagation, GPU execution, decomposition, and post-optimization corrections. These approaches shift work away from scarce quantum hardware, but require end-to-end accounting of the resulting classical cost.",
+      "Theory and experiments are becoming more closely connected in selected areas. Quantum-kernel classification supplies conditional measurement-efficiency guarantees alongside a photonic demonstration, while Fourier and Lie-algebra analyses clarify limitations of model expressivity and accessibility.",
+      "Benchmark quality receives greater attention through matched optimization budgets, controlled negative findings, and exactly solvable benchmark families. Nevertheless, the supplied application abstracts do not establish broad, reproducible superiority over strong classical methods."
+    ],
+    "open_questions": [
+      "Do AI-discovered circuit improvements persist across unseen tasks, hardware-native gate sets, noise conditions, and resource accounting that includes search and verification costs?",
+      "When do classical pre-training and truncated Pauli propagation provide a net end-to-end benefit, and how reliably do their approximation errors predict performance after quantum deployment?",
+      "Can localized or modular quantum neural networks retain useful task-level expressivity while avoiding vanishing gradients at substantially larger widths and depths?",
+      "Do distributed quantum sampling and hierarchical optimization improve solution quality, time, or cost over strong classical decomposition methods once communication, sampling, repair, and aggregation are included?",
+      "Can neural triage decoders meet hardware timing requirements while maintaining low logical-error rates under correlated noise, calibration drift, and rare error patterns?",
+      "Which quantum learning applications retain a measurable advantage after accounting for data encoding, measurement, classical preprocessing, privacy protocols, and statistically robust evaluation?"
+    ],
+    "outlook": "The next important step is to combine these advances into reproducible end-to-end evaluations. AI-generated circuits should be tested with fixed verifiers and hardware-aware objectives; quantum learning models should be compared against tuned classical baselines under matched resource budgets; and distributed workflows should report total classical and quantum costs rather than aggregate problem size alone. Neural decoding and logical-error mitigation also need evaluation under realistic timing and noise constraints. Based on the supplied metadata, October's clearest progress is methodological: more structured automation, lower-overhead training, better characterization of model limitations, and stronger attention to verification. Whether these improvements translate into practical quantum advantage remains an open empirical question.",
+    "model": "gpt-6.1-sol",
+    "service_tier": "ultrafast",
+    "generator": "openai"
+  },
+  "markdown_file": "2026-10.md",
+  "generated_at": "2026-11-02T08:04:33"
+}

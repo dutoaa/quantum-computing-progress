@@ -1,18 +1,18 @@
 {
-  "key_insight": "DiffSequence-Q uses quantum auxiliary supervision during training to improve protein generation conditioned on secondary structure and solubility, while keeping generation entirely classical.",
-  "engineering_relevance": "The hybrid design integrates quantum learning into a Transformer-based diffusion training pipeline without requiring quantum computation at generation time.",
+  "key_insight": "DiffSequence-Q uses quantum auxiliary supervision during training to guide protein diffusion design toward secondary structure requirements and solubility targets, while generation remains entirely classical.",
+  "engineering_relevance": "The hybrid approach allows quantum models to influence protein design without requiring quantum computation during sequence generation.",
   "method": [
     "Condition multinomial diffusion on per-residue secondary structure and a continuous solubility target.",
-    "Attach a QNN or QKAN solubility prediction head to shared Transformer representations and jointly optimize auxiliary and diffusion losses.",
-    "Generate protein sequences using classical reverse diffusion."
+    "Jointly train a shared Transformer with diffusion loss and an auxiliary solubility prediction loss from a QNN or QKAN.",
+    "Generate protein sequences through classical reverse diffusion."
   ],
-  "evidence_signal": "On CATH, DiffSequence-Q led four evaluated models in secondary structure recovery for complete sequence generation; the best QNN and QKAN configurations achieved 14.0% and 22.7% higher mean predicted solubility than the MLP baseline, respectively, with biological activity demonstrated in three protein families.",
-  "watch_item": "Solubility gains were measured by a separately trained predictor, and the abstract does not establish quantum hardware efficiency or computational advantage.",
+  "evidence_signal": "On CATH, DiffSequence-Q led four evaluated models in complete-generation secondary structure recovery; the best QNN and QKAN configurations scored 14.0% and 22.7% above the MLP baseline in mean predicted solubility, and selected proteins showed antifungal or enzymatic activity experimentally.",
+  "watch_item": "Solubility improvements were assessed by a separate prediction model; the abstract does not establish measured solubility gains or practical quantum advantage.",
   "hashtags": [
     "#QuantumMachineLearning",
     "#ProteinDesign",
     "#DiffusionModels",
-    "#HybridQuantumClassical",
+    "#QuantumNeuralNetworks",
     "#ComputationalBiology"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "DiffSequence-Q: Diffusion Design with Quantum Assistance for Biologically Active Proteins",
   "paper_date": "2026-11-05",
   "paper_category": "Quantum Machine Learning",
-  "generated_at": "2026-11-07T16:06:57",
+  "generated_at": "2026-11-08T16:31:01",
   "generator": "openai"
 }

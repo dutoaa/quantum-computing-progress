@@ -25,23 +25,23 @@
         "url": "https://arxiv.org/pdf/2611.08220v1"
       }
     ],
-    "score": 91,
+    "score": 81,
     "infographic": {
-      "key_insight": "QDIFF tests quantum software stacks by comparing output distributions from program variants generated through semantics-preserving transformations.",
-      "engineering_relevance": "The approach supports testing quantum languages, compilers, simulators, and hardware execution while filtering circuits unlikely to yield useful hardware tests.",
+      "key_insight": "QDIFF tests quantum software stacks by comparing output distributions across semantically equivalent program variants.",
+      "engineering_relevance": "It targets correctness across quantum languages, compilers, simulators, and hardware execution while reducing costly hardware tests.",
       "method": [
-        "Generate equivalent program variants using source-to-source transformations.",
-        "Filter hardware tests using circuit depth, two-qubit operations, gate error rates, and T1 relaxation time.",
-        "Check output-distribution equivalence with extensible comparisons such as Kolmogorov–Smirnov tests and cross entropy."
+        "Generate program variants using semantics-preserving source-to-source transformations.",
+        "Filter circuits before hardware execution using depth, two-qubit operations, gate error rates, and T1 relaxation time.",
+        "Check distribution equivalence using extensible comparisons such as Kolmogorov–Smirnov tests and cross entropy."
       ],
-      "evidence_signal": "The abstract describes the testing design but reports no quantitative evaluation, bug counts, or measured speedups.",
-      "watch_item": "Probabilistic outputs and hardware noise make equivalence checks sensitive to sampling budgets and comparison thresholds.",
+      "evidence_signal": "The abstract describes the testing approach but reports no benchmark sizes, bug counts, or measured speedups.",
+      "watch_item": "Statistical comparisons must account for sampling variability and hardware noise to avoid flagging expected variation as software defects.",
       "hashtags": [
         "#QuantumComputing",
         "#DifferentialTesting",
         "#QuantumSoftware",
         "#CompilerTesting",
-        "#SoftwareVerification"
+        "#SoftwareReliability"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -49,7 +49,7 @@
       "paper_title": "QDiff: Differential Testing of Quantum Software Stacks",
       "paper_date": "2026-11-05",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-07T16:06:43",
+      "generated_at": "2026-11-08T16:30:46",
       "generator": "openai"
     }
   },
@@ -78,23 +78,23 @@
         "url": "https://arxiv.org/pdf/2611.06698v1"
       }
     ],
-    "score": 80,
+    "score": 75,
     "infographic": {
-      "key_insight": "In small exact simulations, fixed-angle QASPA-MaxCut achieved group-mean selection ratios of 0.955–1.000, exceeding the reported depth-one QAOA mean scores.",
-      "engineering_relevance": "The study highlights how circuit design, classical candidate selection, and optimizer restart budgets jointly affect shallow quantum Max-Cut performance.",
+      "key_insight": "In small exact simulations, fixed-angle QASPA-MaxCut achieves mean selection ratios of 0.955–1.000, exceeding the reported depth-one QAOA mean expected ratios.",
+      "engineering_relevance": "The results motivate testing whether shallow edge-encoding circuits can reduce classical optimization effort for Max-Cut.",
       "method": [
         "Encode graph edges with CX–Ry(θ)–CX blocks in a shift-phase circuit.",
-        "Score QASPA by retaining the best cut among its four leading bit strings.",
-        "Compare against depth-one QAOA expected approximation ratios with 1–10 optimization restarts."
+        "Evaluate the four leading QASPA bit strings classically and retain the best cut.",
+        "Compare against depth-one QAOA with one to ten classical optimization restarts."
       ],
-      "evidence_signal": "Seed-42 exact state-vector tests covered backbone-augmented random graphs at four edge probabilities and 19 custom unweighted topologies; retained finite-shot checks preserved topology-level readout.",
-      "watch_item": "QASPA’s best-of-four selection score and QAOA’s expected ratio are different metrics, and small simulations do not establish hardware-scale advantage.",
+      "evidence_signal": "Seed-42 exact state-vector tests cover backbone-augmented random graphs at four additional-edge probabilities and 19 custom unweighted topologies; retained finite-shot checks preserve topology-level readouts under the stated shot rule.",
+      "watch_item": "QASPA’s best-of-four selection score and QAOA’s expected ratio are different metrics, so these small simulations do not establish an equal-budget or hardware advantage.",
       "hashtags": [
         "#QuantumComputing",
         "#MaxCut",
-        "#QASPA",
         "#QAOA",
-        "#QuantumOptimization"
+        "#QuantumOptimization",
+        "#ComputationalScience"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -102,7 +102,7 @@
       "paper_title": "QASPA-MaxCut on Unweighted Graphs: Edge Encoding and QAOA Restarts",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-07T16:06:46",
+      "generated_at": "2026-11-08T16:30:48",
       "generator": "openai"
     }
   },
@@ -131,17 +131,17 @@
         "url": "https://arxiv.org/pdf/2611.06797v1"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "Resource-efficient Knapsack QUBO formulations improve optimal-solution success rates, with a slackless formulation delivering gains of several orders of magnitude.",
-      "engineering_relevance": "Choosing a better QUBO formulation can reduce encoding overhead and improve quantum optimization performance without changing the underlying Knapsack problem.",
+      "key_insight": "Resource-efficient Knapsack QUBO formulations improve optimal-solution success, with a slackless formulation delivering gains of several orders of magnitude in the reported tests.",
+      "engineering_relevance": "Choosing a better QUBO formulation can reduce auxiliary-variable overhead or penalty strength while improving quantum optimization performance.",
       "method": [
         "Derive a smaller penalty constant for the standard formulation.",
-        "Reduce the number of slack variables used to encode the capacity constraint.",
+        "Reduce the number of slack variables used to encode capacity constraints.",
         "Use an alternative formulation that eliminates slack variables entirely."
       ],
-      "evidence_signal": "All three approaches improved success probabilities in LR-QAOA simulations and on a D-Wave quantum annealer; the slackless method performed best, even for relatively small instances.",
-      "watch_item": "The abstract does not establish large-instance scalability or an advantage over classical Knapsack solvers.",
+      "evidence_signal": "All three approaches increased optimal-solution probabilities in LR-QAOA simulations and on a D-Wave quantum annealer; the slackless method performed best.",
+      "watch_item": "The abstract does not establish scaling to large instances or an advantage over classical optimization methods.",
       "hashtags": [
         "#QuantumComputing",
         "#QuantumOptimization",
@@ -155,7 +155,7 @@
       "paper_title": "Resource-efficient formulations of the Knapsack problem for quantum computing",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Optimization",
-      "generated_at": "2026-11-07T16:06:48",
+      "generated_at": "2026-11-08T16:30:51",
       "generator": "openai"
     }
   },
@@ -184,22 +184,22 @@
         "url": "https://arxiv.org/pdf/2611.08461v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
       "key_insight": "Quantum knowledge distillation enables transfer across quantum and classical models, but reported benefits depend on the task and architecture.",
       "engineering_relevance": "Distillation may support model compression, circuit approximation, distributed learning, and classical deployment using quantum-derived supervision.",
       "method": [
         "Classify approaches by teacher–student configuration and the role of quantum resources.",
         "Distinguish quantum-inspired methods from classical quantum simulation and quantum-hardware execution.",
-        "Review transfer signals and assess baselines, execution conditions, uncertainty, and resource costs."
+        "Review transfer mechanisms and assess baselines, execution conditions, uncertainty, and resource costs."
       ],
-      "evidence_signal": "The surveyed studies report improvements for selected quantum students alongside negligible gains or degradation, with limited full-pipeline evaluation on physical quantum hardware.",
-      "watch_item": "Heterogeneous evaluation protocols and incomplete resource reporting prevent general conclusions about practical quantum advantage.",
+      "evidence_signal": "The surveyed studies report improvements for selected quantum students alongside negligible gains or degradation, with limited evaluation of complete learning pipelines on physical quantum hardware.",
+      "watch_item": "Heterogeneous protocols and incomplete resource reporting prevent general conclusions about practical quantum advantage.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#KnowledgeDistillation",
         "#QuantumComputing",
-        "#HybridAI",
+        "#ModelCompression",
         "#ReproducibleResearch"
       ],
       "model": "gpt-6.1-sol",
@@ -208,7 +208,7 @@
       "paper_title": "Quantum Knowledge Distillation: State-of-the-art, Applications and Open Problems",
       "paper_date": "2026-11-05",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-07T16:06:50",
+      "generated_at": "2026-11-08T16:30:53",
       "generator": "openai"
     }
   },
@@ -238,17 +238,17 @@
         "url": "https://arxiv.org/pdf/2611.08151v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Machine-learning models compress quantum measurement data to supply wavefunction overlaps efficiently, accelerating quantum-classical Monte Carlo by orders of magnitude.",
-      "engineering_relevance": "Reusing learned quantum-state information reduces classical measurement-processing overhead, improving the scalability of hybrid quantum simulations.",
+      "key_insight": "Machine-learning models compress quantum measurement data to rapidly supply wavefunction overlaps, accelerating quantum-classical Monte Carlo by orders of magnitude.",
+      "engineering_relevance": "Reusing learned quantum-state information reduces classical processing costs that constrain hybrid quantum simulation workflows.",
       "method": [
-        "Prepare trial wavefunctions on a quantum processor.",
+        "Prepare trial wavefunctions on a quantum processor to guide classical quantum Monte Carlo.",
         "Compress quantum measurement data into machine-learning models.",
-        "Use predicted wavefunction overlaps to guide classical quantum Monte Carlo."
+        "Use model-provided wavefunction overlaps during Monte Carlo simulation."
       ],
-      "evidence_signal": "Using measurements from Google's Willow processor, the authors report chemically accurate simulations of hydrogen chains and strongly correlated iron-sulfur clusters on up to 40 qubits.",
-      "watch_item": "Broader deployment requires validating that learned overlap errors remain controlled for new systems and quantum measurement conditions.",
+      "evidence_signal": "The abstract reports chemically accurate simulations up to 40 qubits on hydrogen chains and strongly correlated iron-sulfur clusters using measurements from Google's Willow processor.",
+      "watch_item": "The abstract does not quantify training costs or how overlap-prediction errors affect accuracy beyond the demonstrated systems.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#QuantumMonteCarlo",
@@ -262,7 +262,7 @@
       "paper_title": "Machine learning quantum data to accelerate quantum Monte Carlo",
       "paper_date": "2026-11-05",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-07T16:06:53",
+      "generated_at": "2026-11-08T16:30:55",
       "generator": "openai"
     }
   },
@@ -291,21 +291,21 @@
         "url": "https://arxiv.org/pdf/2611.06291v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
       "key_insight": "Deterministically optimized twirling sequences shape coherent-error trajectories to keep accumulated error bounded at O(1), versus O(√N) scaling for randomized compiling.",
       "engineering_relevance": "The framework connects pulse-level robust control with circuit compilation to suppress coherent errors without logical encoding or ancillary qubits.",
       "method": [
-        "Map discrete circuit-error accumulation into trajectories in a high-dimensional error space.",
-        "Optimize twirling gate sequences to induce destructive interference between errors.",
-        "Combine circuit-level correction with pulse-level robust control."
+        "Map coherent-error accumulation in digital circuits to trajectories in a high-dimensional error space.",
+        "Optimize twirling sequences deterministically to cancel error contributions through destructive interference.",
+        "Combine circuit-level trajectory shaping with pulse-level robust control."
       ],
-      "evidence_signal": "The abstract reports bounded O(1) error scaling and an analytical bridge between pulse and circuit dynamics, but provides no numerical benchmarks or hardware-validation details.",
-      "watch_item": "Practical benefits require validation under realistic noise and the added implementation cost of twirling gates.",
+      "evidence_signal": "The abstract reports bounded O(1) error scaling and synergy with robust pulses, but provides no numerical benchmarks or hardware-validation details.",
+      "watch_item": "Practical performance may depend on coherent-noise characterization and the errors introduced by additional twirling gates.",
       "hashtags": [
         "#QuantumComputing",
         "#QuantumHardware",
-        "#ErrorSuppression",
+        "#CoherentErrorSuppression",
         "#RobustControl",
         "#QuantumCompilation"
       ],
@@ -315,7 +315,7 @@
       "paper_title": "Bridging Pulse and Circuit Levels: A Geometric Framework for Deterministic Error Suppression",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-07T16:06:55",
+      "generated_at": "2026-11-08T16:30:57",
       "generator": "openai"
     }
   },
@@ -344,22 +344,22 @@
         "url": "https://arxiv.org/pdf/2611.08434v1"
       }
     ],
-    "score": 72,
+    "score": 67,
     "infographic": {
-      "key_insight": "DiffSequence-Q uses quantum auxiliary supervision during training to improve protein generation conditioned on secondary structure and solubility, while keeping generation entirely classical.",
-      "engineering_relevance": "The hybrid design integrates quantum learning into a Transformer-based diffusion training pipeline without requiring quantum computation at generation time.",
+      "key_insight": "DiffSequence-Q uses quantum auxiliary supervision during training to guide protein diffusion design toward secondary structure requirements and solubility targets, while generation remains entirely classical.",
+      "engineering_relevance": "The hybrid approach allows quantum models to influence protein design without requiring quantum computation during sequence generation.",
       "method": [
         "Condition multinomial diffusion on per-residue secondary structure and a continuous solubility target.",
-        "Attach a QNN or QKAN solubility prediction head to shared Transformer representations and jointly optimize auxiliary and diffusion losses.",
-        "Generate protein sequences using classical reverse diffusion."
+        "Jointly train a shared Transformer with diffusion loss and an auxiliary solubility prediction loss from a QNN or QKAN.",
+        "Generate protein sequences through classical reverse diffusion."
       ],
-      "evidence_signal": "On CATH, DiffSequence-Q led four evaluated models in secondary structure recovery for complete sequence generation; the best QNN and QKAN configurations achieved 14.0% and 22.7% higher mean predicted solubility than the MLP baseline, respectively, with biological activity demonstrated in three protein families.",
-      "watch_item": "Solubility gains were measured by a separately trained predictor, and the abstract does not establish quantum hardware efficiency or computational advantage.",
+      "evidence_signal": "On CATH, DiffSequence-Q led four evaluated models in complete-generation secondary structure recovery; the best QNN and QKAN configurations scored 14.0% and 22.7% above the MLP baseline in mean predicted solubility, and selected proteins showed antifungal or enzymatic activity experimentally.",
+      "watch_item": "Solubility improvements were assessed by a separate prediction model; the abstract does not establish measured solubility gains or practical quantum advantage.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#ProteinDesign",
         "#DiffusionModels",
-        "#HybridQuantumClassical",
+        "#QuantumNeuralNetworks",
         "#ComputationalBiology"
       ],
       "model": "gpt-6.1-sol",
@@ -368,7 +368,7 @@
       "paper_title": "DiffSequence-Q: Diffusion Design with Quantum Assistance for Biologically Active Proteins",
       "paper_date": "2026-11-05",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-07T16:06:57",
+      "generated_at": "2026-11-08T16:31:01",
       "generator": "openai"
     }
   },
@@ -398,23 +398,23 @@
         "url": "https://arxiv.org/pdf/2611.06502v1"
       }
     ],
-    "score": 72,
+    "score": 67,
     "infographic": {
-      "key_insight": "For the scheduling instance and initialization studied, an entanglement-free VQA found feasible schedules without the simulation overhead of entangled alternatives.",
-      "engineering_relevance": "The approach addresses workforce scheduling with skill, capacity, priority, deadline, and rescheduling-stability considerations while limiting each daily batch to at most 30 qubits.",
+      "key_insight": "For the scheduling instance and initialization studied, an entanglement-free VQA produced feasible schedules without gains from entangling circuits.",
+      "engineering_relevance": "Day-by-day decomposition and logarithmic binary encoding kept scheduling batches within 30 qubits while accounting for worker capacities, skills, priorities, deadlines, and calendar stability.",
       "method": [
-        "Formulate multi-skill project scheduling as a QUBO.",
-        "Decompose scheduling into daily batches, propagate remaining workload, and use logarithmic binary encoding.",
-        "Compare linear and brick-wall entangling ansätze against a parameter-matched entanglement-free reference using COBYLA and Adam with SPSA gradients."
+        "Formulate multi-skill project scheduling as a QUBO and propagate remaining workload between daily batches.",
+        "Compare linear and brick-wall entangling ansätze with an entanglement-free reference using equal parameter counts.",
+        "Train each configuration with COBYLA and Adam using SPSA gradient estimates."
       ],
-      "evidence_signal": "In simulations, the entanglement-free reference produced feasible schedules with both optimizers; with COBYLA, it came closest to the required workload at a fraction of the entangled topologies' simulation cost.",
-      "watch_item": "Results are limited to the studied instance and initialization; broader scalability and performance on noisy quantum hardware remain unestablished.",
+      "evidence_signal": "In simulation, the entanglement-free reference yielded feasible schedules with both optimizers; with COBYLA, it came closest to the required workload at a fraction of the entangled circuits’ simulation cost.",
+      "watch_item": "Results are limited to the instance and initialization studied; broader performance and robustness on noisy quantum hardware remain unestablished.",
       "hashtags": [
-        "#QuantumComputing",
+        "#QuantumAlgorithms",
         "#VariationalQuantumAlgorithms",
         "#ProjectScheduling",
         "#QUBO",
-        "#OperationsResearch"
+        "#QuantumOptimization"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -422,7 +422,7 @@
       "paper_title": "A Variational Quantum Algorithm for Multi-Skill Project Scheduling",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-07T16:07:00",
+      "generated_at": "2026-11-08T16:31:04",
       "generator": "openai"
     }
   },
@@ -451,21 +451,21 @@
         "url": "https://arxiv.org/pdf/2611.05865v2"
       }
     ],
-    "score": 72,
+    "score": 67,
     "infographic": {
-      "key_insight": "Symmetry-guided optimization uses Hilbert–Schmidt asymmetry to steer variational quantum states toward a target symmetry sector without requiring symmetry-preserving circuits.",
-      "engineering_relevance": "This approach can improve the reliability of variational quantum eigensolvers while retaining flexibility in state-preparation circuit design.",
+      "key_insight": "Hilbert–Schmidt asymmetry can guide variational quantum optimization toward a target symmetry sector without requiring symmetry-preserving preparation circuits.",
+      "engineering_relevance": "Symmetry-based guidance offers a way to improve VQE accuracy and reliability while retaining flexibility in circuit design.",
       "method": [
-        "Quantify deviation from a specified symmetry using quantum-accessible Hilbert–Schmidt asymmetry.",
-        "Use asymmetry to guide optimization toward the target sector alongside the energy objective.",
-        "Test singlet-state targeting under collective SU(2) symmetry."
+        "Quantify deviations from symmetry using quantum-accessible Hilbert–Schmidt asymmetry.",
+        "Use the asymmetry objective to guide optimization toward collective SU(2) singlet states.",
+        "Benchmark against direct energy minimization."
       ],
-      "evidence_signal": "Proof-of-principle tests on a five-qubit nuclear two-cluster Hamiltonian and collective spin models with up to 12 particles increased singlet probability and improved energy accuracy and ground-state fidelity compared with direct energy minimization.",
-      "watch_item": "Performance beyond these benchmarks, including the measurement cost and noise sensitivity of asymmetry estimation, remains to be established.",
+      "evidence_signal": "Proof-of-principle tests on a five-qubit nuclear two-cluster Hamiltonian and collective spin models with up to 12 particles increased singlet probability and improved energy accuracy and ground-state fidelity, with substantial fidelity gains in larger spin systems.",
+      "watch_item": "The abstract does not establish measurement overhead, noise robustness, or scalability beyond the tested systems.",
       "hashtags": [
         "#QuantumComputing",
-        "#QuantumSimulation",
         "#VariationalQuantumEigensolver",
+        "#QuantumSimulation",
         "#Symmetry",
         "#QuantumOptimization"
       ],
@@ -475,7 +475,7 @@
       "paper_title": "Symmetry-guided algorithms for variational quantum optimization",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-11-07T16:07:02",
+      "generated_at": "2026-11-08T16:31:06",
       "generator": "openai"
     }
   },
@@ -505,23 +505,23 @@
         "url": "https://arxiv.org/pdf/2611.07175v1"
       }
     ],
-    "score": 70,
+    "score": 65,
     "infographic": {
-      "key_insight": "A graph-based transpilation method lowers routing costs and scales to distributed superconducting quantum architectures with restricted connectivity.",
-      "engineering_relevance": "Connectivity-aware mapping and fast routing make circuit compilation more practical for multi-QPU systems without assuming ideal hardware links.",
+      "key_insight": "A quantum interaction graph (QIG) transpilation method lowers routing costs and scales to distributed superconducting quantum architectures with restricted connectivity.",
+      "engineering_relevance": "Hardware-aware mapping and routing can make compilation more practical for multi-QPU systems without assuming ideal connectivity.",
       "method": [
-        "Represent circuit interactions with a quantum interaction graph (QIG).",
-        "Use graph partitioning to map qubits across modules.",
-        "Apply a fast SABRE-inspired heuristic to route under connectivity constraints."
+        "Represent circuit interactions using a quantum interaction graph.",
+        "Partition the graph to map computations across QPUs.",
+        "Apply a fast SABRE-inspired heuristic to route under inter- and intra-module connectivity constraints."
       ],
-      "evidence_signal": "On 48 qubits, the method reduced average aggregated costs by up to 24.72% and delivered >250× speed-ups on structured workloads versus DMapS; on 399-qubit IBM Flamingo, it maintained practical runtimes and cut structured routing costs by up to 51.96% versus DQC-adapted SABRE.",
-      "watch_item": "Reported gains depend on workload, topology, and baseline; the abstract does not establish hardware-executed fidelity improvements.",
+      "evidence_signal": "On a 48-qubit system, QIG reduced average aggregated costs by up to 24.72% and delivered over 250× speed-ups for structured workloads versus DMapS; on 399-qubit IBM Flamingo, it maintained practical runtimes and cut structured routing costs by up to 51.96% versus DQC-adapted SABRE.",
+      "watch_item": "Reported gains depend on workload, topology, and baseline; the abstract does not establish execution-fidelity improvements on physical hardware.",
       "hashtags": [
         "#DistributedQuantumComputing",
-        "#QuantumTranspilation",
+        "#QuantumCompilation",
         "#SuperconductingQubits",
         "#QuantumRouting",
-        "#ScalableCompilation"
+        "#ScalableTranspilation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -529,7 +529,7 @@
       "paper_title": "Scalable Transpilation for Overcoming Restricted Connectivity in Distributed Superconducting Quantum Architectures",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-07T16:07:04",
+      "generated_at": "2026-11-08T16:31:08",
       "generator": "openai"
     }
   },
@@ -559,17 +559,17 @@
         "url": "https://arxiv.org/pdf/2611.08107v1"
       }
     ],
-    "score": 69,
+    "score": 64,
     "infographic": {
-      "key_insight": "Geometric, semi-analytical synthesis produces smooth, robust single-qubit controls in tens of milliseconds rather than minutes.",
-      "engineering_relevance": "Faster dynamically corrected gate synthesis could reduce control-design overhead while preserving high fidelity and resilience to quasistatic amplitude and dephasing errors.",
+      "key_insight": "A semi-analytical geometric method synthesizes robust single-qubit controls in tens of milliseconds rather than minutes, with comparable fidelity and robustness.",
+      "engineering_relevance": "Faster pulse synthesis could reduce control-design overhead for quantum hardware while suppressing sensitivity to amplitude and dephasing errors.",
       "method": [
-        "Map quantum evolution to space curves using Space Curve Quantum Control and a Frenet–Serret frame.",
-        "Apply the Pontryagin Maximum Principle, solve the boundary-value problem by shooting, and integrate frames with Rodrigues’ formula.",
+        "Map quantum evolution to space curves using Space Curve Quantum Control and Frenet–Serret geometry.",
+        "Apply the Pontryagin Maximum Principle and solve the resulting boundary-value problem by shooting.",
         "Build a reference-solution library across rotation angles and interpolate initial guesses for new gates."
       ],
-      "evidence_signal": "Across 2,000 single-qubit rotations, mean local optimization took 39.945 ms per gate after interpolation-base preparation; quantum propagation showed nominal infidelities below 10^-9 after virtual phase correction and verified quasistatic-error robustness.",
-      "watch_item": "Reported timings exclude interpolation-base preparation, and performance under hardware constraints or time-varying noise remains to be established.",
+      "evidence_signal": "Across 2,000 single-qubit rotations, mean local optimization took 39.945 ms per gate after interpolation-base preparation; quantum propagation gave nominal infidelities below 10^-9 after virtual phase correction and verified robustness to quasistatic amplitude and dephasing errors.",
+      "watch_item": "The reported timing excludes interpolation-base preparation, and the abstract does not establish experimental hardware performance or robustness to time-varying noise.",
       "hashtags": [
         "#QuantumControl",
         "#QuantumComputing",
@@ -583,7 +583,7 @@
       "paper_title": "Semi-Analytical Geometric Synthesis of Robust Quantum Controls",
       "paper_date": "2026-11-05",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-07T16:07:06",
+      "generated_at": "2026-11-08T16:31:10",
       "generator": "openai"
     }
   },
@@ -613,17 +613,17 @@
         "url": "https://arxiv.org/pdf/2611.08460v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
-      "key_insight": "Boron nitride nanotubes host multiple room-temperature single-photon emitters at different visible wavelengths within one compact structure.",
-      "engineering_relevance": "With radii of approximately 25 nm, these nanotubes offer a compact platform for potential integration into quantum-photonic waveguides and interferometric filters.",
+      "key_insight": "Boron nitride nanotubes host multiple room-temperature single-photon emitters at different visible wavelengths within a compact, approximately 25 nm radius.",
+      "engineering_relevance": "These nanotubes offer a potential platform for compact multiwavelength quantum light sources integrated with waveguides and interferometric filters.",
       "method": [
         "Locate and characterize emitters using confocal photoluminescence microscopy.",
         "Assess single-photon emission using Hanbury Brown–Twiss interferometry.",
-        "Apply surface passivation or coatings to reduce blinking."
+        "Apply surface passivation or coating to reduce blinking."
       ],
-      "evidence_signal": "The abstract reports emitters across the visible spectrum, lifetimes as short as 0.5 ns—about twice as fast as the fastest hBN emitters—and reduced blinking after surface treatment.",
-      "watch_item": "The abstract does not quantify photon purity, device yield, or long-term stability, and deterministic photonic integration remains to be demonstrated.",
+      "evidence_signal": "The abstract reports emitters spanning the visible spectrum, multiple emission wavelengths along individual tubes, lifetimes as short as 0.5 ns, and improved stability after surface treatment.",
+      "watch_item": "Deterministic placement and photonic-circuit integration remain prospective; the abstract provides no quantitative photon-purity or long-term stability metrics.",
       "hashtags": [
         "#QuantumPhotonics",
         "#SinglePhotonEmitters",
@@ -637,60 +637,7 @@
       "paper_title": "Room-Temperature Quantum Emission from Boron Nitride Nanotubes",
       "paper_date": "2026-11-05",
       "paper_category": "AI quantum computing",
-      "generated_at": "2026-11-07T16:07:08",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-05-arxiv-certifying_quantum_code_and_circuit_distances_at_scale",
-    "arxiv_id": "2611.08247v1",
-    "date": "2026-11-05",
-    "title": "Certifying quantum code and circuit distances at scale",
-    "authors": "Bin Cheng, Naixu Guo, Feng Pan",
-    "abstract": "Code and circuit distances characterize how strongly quantum error correction suppresses logical errors and guide code comparisons, schedule choices and resource estimates. Yet many published distances are only upper bounds from heuristic searches. Here, we express both distances as tropical partition functions and evaluate them with rank-based dynamic programming and weight-bounded search. Circuit reductions and relaxations shrink the problems, and proved lower bounds with explicit logical errors of matching weight certify exact values. On two benchmarks, our method certifies more instances than all other tested exact solvers combined. We certify distances for codes with up to 31,200 qubits, such as Google's modular hyperbolic codes, and for memory circuits with up to $8\\times10^5$ fault mechanisms, such as those of high-rate Cornucopia codes. Our audit of 26 recent papers identifies overestimated distances and non-tight upper bounds in 10 papers, with a maximum discrepancy of at least eight. Certified distances also guide circuit design and show which defective chips remain usable. In particular, we certify circuit distance 16 for IBM's two-gross memory circuits with the standard schedule, not the assumed 18, whereas redesigned schedules reach 18 at one noisy cycle, at the cost of one more timestep per cycle. At 99.98% junction yield, keeping gross-code memory blocks with dead checks that are certified at distance 10 or more raises the estimated usable share from 53% for perfect blocks alone to 94% with an improved schedule.",
-    "category": "Quantum Error Correction",
-    "source": "arXiv",
-    "published": "2026-11-05T16:25:02Z",
-    "updated": "2026-11-05T16:25:02Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.08247v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.08247v1"
-      }
-    ],
-    "score": 68,
-    "infographic": {
-      "key_insight": "Exact certification reveals that some reported quantum error-correction distances are wrong, with discrepancies of at least eight in the audited literature.",
-      "engineering_relevance": "Certified distances can guide circuit scheduling and defective-chip acceptance, improving error protection and estimated hardware usability.",
-      "method": [
-        "Express code and circuit distances as tropical partition functions.",
-        "Evaluate them using rank-based dynamic programming and weight-bounded search.",
-        "Certify exact values by matching proved lower bounds with explicit logical errors."
-      ],
-      "evidence_signal": "The method certified more instances than all other tested exact solvers combined on two benchmarks, scaling to 31,200-qubit codes and memory circuits with up to 800,000 fault mechanisms.",
-      "watch_item": "Schedule improvements can add overhead: restoring IBM two-gross circuit distance from 16 to 18 at one noisy cycle required one extra timestep per cycle.",
-      "hashtags": [
-        "#QuantumErrorCorrection",
-        "#QuantumComputing",
-        "#DistanceCertification",
-        "#CircuitOptimization",
-        "#FaultTolerance"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-05-arxiv-certifying_quantum_code_and_circuit_distances_at_scale",
-      "paper_title": "Certifying quantum code and circuit distances at scale",
-      "paper_date": "2026-11-05",
-      "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-07T16:07:11",
+      "generated_at": "2026-11-08T16:31:13",
       "generator": "openai"
     }
   },
@@ -720,16 +667,17 @@
         "url": "https://arxiv.org/pdf/2611.06341v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Improved multiplication-to-QFT constructions remove a logarithmic overhead, yielding an exact quantum Fourier transform with O(q log q) gates.",
-      "engineering_relevance": "Lower QFT gate counts could reduce logical circuit costs for phase estimation and Shor-style algorithms, though hardware-level savings are not established.",
+      "key_insight": "A tighter reduction from integer multiplication to the quantum Fourier transform (QFT) removes one logarithmic factor from prior exact and approximate QFT gate bounds.",
+      "engineering_relevance": "Lower QFT gate counts could reduce the resources needed for phase estimation and Shor-type algorithms.",
       "method": [
-        "Convert an O(n(log n)^α)-gate integer multiplication circuit into an O(q(log q)^α)-gate exact QFT.",
-        "Improve approximate QFT complexity to O(q(log log(q/ε))^α), removing one power of the nested logarithm."
+        "Convert an O(n(log n)^α)-gate multiplication circuit into an O(q(log q)^α)-gate exact QFT circuit.",
+        "Obtain an O(q log q) exact QFT gate bound.",
+        "Reduce the approximate QFT bound to O(q(log log(q/ε))^α), where ε controls approximation error."
       ],
-      "evidence_signal": "The abstract reports theoretical asymptotic gate-count improvements over prior constructions, not experimental benchmarks or hardware evaluations.",
-      "watch_item": "Practical benefits depend on multiplication-circuit realizations and compilation overhead; sub-O(q log q) exact QFT remains conditional on faster multiplication.",
+      "evidence_signal": "The abstract reports theoretical circuit-complexity improvements over prior constructions, not hardware experiments or empirical benchmarks.",
+      "watch_item": "Asymptotic gate savings do not establish practical hardware speedups, and the suggested sub-O(q log q) possibility is conditional on improved multiplication circuits.",
       "hashtags": [
         "#QuantumComputing",
         "#QuantumFourierTransform",
@@ -743,7 +691,7 @@
       "paper_title": "Improved Exact and Approximate Quantum Fourier Transforms from Multiplication",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-07T16:07:13",
+      "generated_at": "2026-11-08T16:31:15",
       "generator": "openai"
     }
   },
@@ -772,20 +720,20 @@
         "url": "https://arxiv.org/pdf/2611.05883v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Neural surrogates trained on quantum-hardware QAOA samples accelerated autocorrelation decay in constrained Boltzmann sampling with over 1,000 binary variables.",
-      "engineering_relevance": "A divide-and-conquer implementation enables quantum-assisted proposals for large constrained sampling problems without placing the full system on quantum hardware.",
+      "key_insight": "Neural surrogates trained on quantum-hardware samples accelerated autocorrelation decay in constrained Boltzmann sampling with more than 1,000 binary variables.",
+      "engineering_relevance": "A divide-and-conquer implementation extends quantum-assisted sampling to large systems by using neural surrogates for quantum-generated proposals.",
       "method": [
-        "Generate QAOA training samples using an IBM Quantum Heron r2 processor.",
-        "Train neural surrogates to support quantum-enhanced MCMC proposals.",
-        "Use a divide-and-conquer strategy to handle larger systems through subproblems."
+        "Generate QAOA training samples on an IBM Quantum Heron r2 processor.",
+        "Train neural surrogates for quantum-enhanced MCMC.",
+        "Use divide-and-conquer subproblems to support larger systems."
       ],
       "evidence_signal": "Experiments covered N=144 and N=1064; at N=1064, autocorrelation decay per MCMC step was approximately 5.2× and 12.3× faster than global and local Kawasaki dynamics, respectively.",
-      "watch_item": "Larger subproblem blocks challenged neural-surrogate learning, and faster decay per MCMC step does not establish end-to-end runtime advantage.",
+      "watch_item": "Larger subproblems challenged neural-surrogate learning, and faster decay per MCMC step does not establish an end-to-end runtime advantage.",
       "hashtags": [
         "#QuantumComputing",
-        "#MachineLearning",
+        "#NeuralSurrogates",
         "#MCMC",
         "#BoltzmannSampling",
         "#QAOA"
@@ -796,60 +744,7 @@
       "paper_title": "Hardware Demonstration of Neural-Surrogated Quantum-Enhanced MCMC for Large-Scale Constrained Boltzmann Sampling",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-07T16:07:15",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-05-arxiv-entropic_measures_of_quantum_information",
-    "arxiv_id": "2611.08254v1",
-    "date": "2026-11-05",
-    "title": "Entropic measures of quantum information",
-    "authors": "Roberto Rubboli, Bartosz Regula, Mario Berta, Ludovico Lami, Marco Tomamichel",
-    "abstract": "Entropy has played a pivotal role in physics ever since its inception by Clausius in the early industrial age. Shannon ushered the concept into the information age by using it to describe fundamental limits of information processing, founding the field of information theory. Today, a fruitful interaction between information theory and physics is pushing our understanding of entropy forward. It has revealed, in particular, that no single notion of entropy suffices to capture all relevant properties of physical systems, making it necessary to consider a variety of entropic measures of quantum information, each with distinct features and uses. This review surveys these recent advances in a structured way, covering a comprehensive array of information measures, including Rényi and smooth entropies, together with their interrelations. Starting with a systematic characterization of entropies that motivates their definitions from natural physical principles, we discuss their applications ranging from quantum communication and cryptography to resource theories, thermodynamics, and many-body physics.",
-    "category": "Quantum Simulation",
-    "source": "arXiv",
-    "published": "2026-11-05T16:29:35Z",
-    "updated": "2026-11-05T16:29:35Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.08254v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.08254v1"
-      }
-    ],
-    "score": 65,
-    "infographic": {
-      "key_insight": "No single entropy captures all properties of quantum systems; complementary measures address distinct information-processing tasks.",
-      "engineering_relevance": "Choosing an appropriate entropy measure helps characterize limits in quantum communication, cryptography, thermodynamics, and many-body systems.",
-      "method": [
-        "Characterize entropies using natural physical principles.",
-        "Survey Rényi and smooth entropies and their interrelations.",
-        "Connect information measures to quantum applications."
-      ],
-      "evidence_signal": "The abstract describes a structured review, not a new experimental or numerical evaluation, and reports no quantitative benchmarks.",
-      "watch_item": "This is not an AI-method paper; applying its framework requires matching entropy definitions and assumptions to the specific quantum task.",
-      "hashtags": [
-        "#QuantumInformation",
-        "#QuantumEntropy",
-        "#RenyiEntropy",
-        "#QuantumCryptography",
-        "#QuantumThermodynamics"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-05-arxiv-entropic_measures_of_quantum_information",
-      "paper_title": "Entropic measures of quantum information",
-      "paper_date": "2026-11-05",
-      "paper_category": "Quantum Simulation",
-      "generated_at": "2026-11-07T16:07:18",
+      "generated_at": "2026-11-08T16:31:18",
       "generator": "openai"
     }
   },
@@ -878,23 +773,23 @@
         "url": "https://arxiv.org/pdf/2611.05502v1"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "Magic state injections enable universal transversal quantum circuits while keeping sequential decoding volumes statistically bounded in the random circuits studied.",
-      "engineering_relevance": "Sequentially decoding measurements and committing corrections could make space-time correlated decoding practical for large fault-tolerant quantum computations.",
+      "key_insight": "Magic state injections enable universal computation in transversal architectures while keeping sequential decoding volumes statistically bounded in the random circuits studied.",
+      "engineering_relevance": "Sequential decoding could make space-time correlated error correction scalable by preventing decoding instances from growing with total circuit volume.",
       "method": [
         "Backpropagate logical measurement operators to construct space-time decoding graphs.",
         "Decode measurements sequentially, commit corrections, and exclude previously processed syndrome data.",
-        "Compare decoding volumes across injection densities, measurement products, circuit connectivities, and Clifford gate ensembles."
+        "Compare decoding volumes across measurement-product choices, circuit connectivities, and Clifford gate ensembles."
       ],
-      "evidence_signal": "In random circuits, mid-circuit decoding volumes approach a stationary average set by magic state injection density, with exponentially suppressed large instances and similar qualitative behavior across tested circuit variations.",
-      "watch_item": "The abstract establishes decoding-volume behavior in random circuits, not end-to-end decoder runtime or performance on structured quantum algorithms.",
+      "evidence_signal": "For random circuits, mid-circuit decoding volumes approach a stationary average set by magic state injection density, with large instances exponentially suppressed and similar qualitative behavior across tested circuit variants.",
+      "watch_item": "The abstract does not establish end-to-end decoder runtime or real-time performance for structured, application-scale algorithms.",
       "hashtags": [
         "#QuantumComputing",
         "#FaultTolerance",
         "#QuantumErrorCorrection",
         "#MagicStates",
-        "#QuantumDecoding"
+        "#TransversalGates"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -902,7 +797,60 @@
       "paper_title": "Bounded decoding complexity in transversal circuits with magic state injection",
       "paper_date": "2026-11-03",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-07T16:07:20",
+      "generated_at": "2026-11-08T16:31:20",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-05-arxiv-certifying_quantum_code_and_circuit_distances_at_scale",
+    "arxiv_id": "2611.08247v1",
+    "date": "2026-11-05",
+    "title": "Certifying quantum code and circuit distances at scale",
+    "authors": "Bin Cheng, Naixu Guo, Feng Pan",
+    "abstract": "Code and circuit distances characterize how strongly quantum error correction suppresses logical errors and guide code comparisons, schedule choices and resource estimates. Yet many published distances are only upper bounds from heuristic searches. Here, we express both distances as tropical partition functions and evaluate them with rank-based dynamic programming and weight-bounded search. Circuit reductions and relaxations shrink the problems, and proved lower bounds with explicit logical errors of matching weight certify exact values. On two benchmarks, our method certifies more instances than all other tested exact solvers combined. We certify distances for codes with up to 31,200 qubits, such as Google's modular hyperbolic codes, and for memory circuits with up to $8\\times10^5$ fault mechanisms, such as those of high-rate Cornucopia codes. Our audit of 26 recent papers identifies overestimated distances and non-tight upper bounds in 10 papers, with a maximum discrepancy of at least eight. Certified distances also guide circuit design and show which defective chips remain usable. In particular, we certify circuit distance 16 for IBM's two-gross memory circuits with the standard schedule, not the assumed 18, whereas redesigned schedules reach 18 at one noisy cycle, at the cost of one more timestep per cycle. At 99.98% junction yield, keeping gross-code memory blocks with dead checks that are certified at distance 10 or more raises the estimated usable share from 53% for perfect blocks alone to 94% with an improved schedule.",
+    "category": "Quantum Error Correction",
+    "source": "arXiv",
+    "published": "2026-11-05T16:25:02Z",
+    "updated": "2026-11-05T16:25:02Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.08247v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.08247v1"
+      }
+    ],
+    "score": 58,
+    "infographic": {
+      "key_insight": "Exact certification reveals that some reported quantum code and circuit distances are overstated, changing reliability estimates and design choices.",
+      "engineering_relevance": "Certified distances help engineers compare codes, optimize error-correction schedules, and retain defective hardware that still meets protection targets.",
+      "method": [
+        "Express code and circuit distances as tropical partition functions.",
+        "Evaluate using rank-based dynamic programming and weight-bounded search, aided by reductions and relaxations.",
+        "Certify exact distances by matching proved lower bounds with explicit logical errors."
+      ],
+      "evidence_signal": "The authors certify codes with up to 31,200 qubits and circuits with up to 800,000 fault mechanisms; an audit finds distance discrepancies in 10 of 26 papers.",
+      "watch_item": "Schedule improvements can add overhead: restoring IBM two-gross circuit distance from 16 to 18 at one noisy cycle requires an extra timestep per cycle.",
+      "hashtags": [
+        "#QuantumErrorCorrection",
+        "#QuantumComputing",
+        "#DistanceCertification",
+        "#FaultTolerance",
+        "#CircuitOptimization"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-05-arxiv-certifying_quantum_code_and_circuit_distances_at_scale",
+      "paper_title": "Certifying quantum code and circuit distances at scale",
+      "paper_date": "2026-11-05",
+      "paper_category": "Quantum Error Correction",
+      "generated_at": "2026-11-08T16:31:22",
       "generator": "openai"
     }
   },
@@ -932,23 +880,23 @@
         "url": "https://arxiv.org/pdf/2611.06819v1"
       }
     ],
-    "score": 61,
+    "score": 56,
     "infographic": {
-      "key_insight": "GFlowQEC learns to propose promising quantum LDPC codes, finding more new top-scoring designs per expensive evaluation than tuned parallel tempering.",
-      "engineering_relevance": "A pretrained code proposer can stretch limited quantum-code evaluation budgets by prioritizing candidates before costly scoring.",
+      "key_insight": "A pretrained generative proposer can find more high-scoring quantum LDPC codes per expensive evaluation than tuned search baselines.",
+      "engineering_relevance": "Learning from previous code evaluations can stretch limited search budgets when strong quantum error-correcting codes are rare.",
       "method": [
-        "Build lifted-product codes one group element at a time using a generative flow network.",
+        "Construct lifted-product codes one group element at a time with a GFlowNet.",
         "Train on earlier search scores to sample codes in proportion to a power of their score, then freeze the model.",
-        "Rank batches of proposed codes and spend paid evaluations on selected candidates."
+        "Rank batches of generated candidates before paying to evaluate selected codes."
       ],
-      "evidence_signal": "For distance-scored, 180-physical-qubit codes, ranking 10 draws per paid call found over 2× as many new top-scoring codes as tuned parallel tempering and over 3.5× as many as a supervised screen ranking 10 random candidates.",
-      "watch_item": "Performance depends on the comparator and screening budget: screening 100 random candidates beat GFlowQEC, while soft Q-learning matched or exceeded it across the two tested noise biases.",
+      "evidence_signal": "For distance-scored codes with 180 physical qubits, ranking 10 draws per paid evaluation found over twice as many new, training-inequivalent top-scoring codes as tuned parallel tempering and over 3.5 times as many as a supervised screen ranking 10 random candidates.",
+      "watch_item": "The advantage depends on the comparison: the supervised screen won at batch size 100, and soft Q-learning matched or exceeded GFlowQEC across the two tested noise biases.",
       "hashtags": [
         "#QuantumErrorCorrection",
-        "#GFlowNets",
         "#QuantumLDPC",
+        "#GFlowNets",
         "#QuantumMachineLearning",
-        "#CodeDesign"
+        "#SampleEfficientSearch"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -956,7 +904,7 @@
       "paper_title": "GFlowQEC: Generative Flow Networks that Learn to Sample Quantum LDPC Codes",
       "paper_date": "2026-11-04",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-07T16:07:22",
+      "generated_at": "2026-11-08T16:31:25",
       "generator": "openai"
     }
   },
@@ -986,17 +934,17 @@
         "url": "https://arxiv.org/pdf/2611.05483v1"
       }
     ],
-    "score": 61,
+    "score": 56,
     "infographic": {
       "key_insight": "Encoding conditions in the input state lets one shared IQP circuit represent conditional distributions beyond those achievable by diagonal conditioning with the same qubit count.",
-      "engineering_relevance": "This approach enables classical training of conditional quantum generative models without requiring quantum hardware during optimization.",
+      "engineering_relevance": "The approach enables classical training of conditional quantum generative models while sharing circuit parameters across conditions.",
       "method": [
-        "Encode each condition in the input state while sharing a single IQP unitary.",
-        "Use efficient reference-state sampling and amplitude-ratio evaluation to estimate conditional maximum mean discrepancy and its gradients without bias.",
-        "Train against conditional Curie–Weiss spin distributions."
+        "Encode each condition in the input state rather than in diagonal-layer parameters.",
+        "Apply a single shared IQP unitary across conditions.",
+        "Use efficient reference-state sampling and amplitude ratios to estimate conditional maximum mean discrepancy and gradients without bias."
       ],
-      "evidence_signal": "On a 16-qubit Curie–Weiss benchmark, mean total variation distance was six times lower than diagonal conditioning at held-out temperatures; models up to 2048 qubits reproduced mean squared magnetization away from the crossover.",
-      "watch_item": "Classical training requires efficient reference-state sampling and amplitude-ratio evaluation, and the reported large-scale results do not establish full-distribution accuracy or quantum advantage.",
+      "evidence_signal": "On the 16-qubit Curie–Weiss model, mean total variation distance was six times lower than diagonal conditioning at held-out temperatures; models up to 2048 qubits reproduced mean squared magnetization away from the crossover.",
+      "watch_item": "Classical training requires efficient reference-state sampling and amplitude-ratio evaluation; large-scale moment agreement alone does not establish full-distribution accuracy or quantum advantage.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#IQPCircuits",
@@ -1010,7 +958,7 @@
       "paper_title": "Classical training of conditional instantaneous quantum polynomial-time Born machines",
       "paper_date": "2026-11-03",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-07T16:07:25",
+      "generated_at": "2026-11-08T16:31:27",
       "generator": "openai"
     }
   },
@@ -1039,23 +987,23 @@
         "url": "https://arxiv.org/pdf/2611.08310v1"
       }
     ],
-    "score": 60,
+    "score": 55,
     "infographic": {
-      "key_insight": "With a fixed measurement basis, gate-optimal repetition-code tomography needs only 0, 1 and 5 recovery gates for 3, 5 and 7 qubits, respectively, and correcting more sites is not always better.",
-      "engineering_relevance": "Optimizing recovery can cut physical Pauli-gate overhead and improve precision, but poor conditioning—not gate count—limits scaling to larger codes.",
+      "key_insight": "With a fixed measurement basis, gate-optimal repetition-code tomography requires only 0, 1 and 5 recovery gates for 3, 5 and 7 qubits, respectively, and more correction is not always better.",
+      "engineering_relevance": "Optimizing recovery rather than defaulting to minimum-weight decoding can reduce gate overhead and improve tomography precision on superconducting hardware.",
       "method": [
         "Exhaustively enumerate recovery designs for 3-, 5- and 7-qubit repetition codes.",
         "Determine rank using exact modular arithmetic at two primes.",
-        "Evaluate precision under a calibration-residual floor and estimate shot requirements."
+        "Evaluate precision under a calibration-residual floor across sampled working points."
       ],
-      "evidence_signal": "Across 40 sampled working points, a three-gate, three-qubit design was more precise than the standard six-gate decoder at every point, with a median improvement of 9.5×.",
-      "watch_item": "The reported 10 mrad rms target requires 1.2×10^7 shots at a well-conditioned point; codes with 5 or more qubits remain impractical under the studied conditioning constraints.",
+      "evidence_signal": "At 40 sampled working points, the three-gate 3-qubit design was more precise than the standard six-gate decoder every time, with a median improvement of 9.5× and a range of 1.8–88×.",
+      "watch_item": "Low recovery-gate counts do not guarantee practical tomography: conditioning keeps designs with 5 or more qubits out of reach in the reported analysis.",
       "hashtags": [
         "#QuantumComputing",
         "#ProcessTomography",
         "#RepetitionCodes",
         "#QuantumHardware",
-        "#RecoveryOptimization"
+        "#DecoderOptimization"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -1063,7 +1011,61 @@
       "paper_title": "Recovery gates as a resource in repetition-code process tomography: exhaustive gate-optimal designs for three, five and seven qubits",
       "paper_date": "2026-11-05",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-07T16:07:27",
+      "generated_at": "2026-11-08T16:31:29",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-05-arxiv-beyond_quantum_messages_toward_quantum_native_network_functioning",
+    "arxiv_id": "2611.08298v1",
+    "date": "2026-11-05",
+    "title": "Beyond Quantum Messages: Toward Quantum-Native Network Functioning",
+    "authors": "Angela Sara Cacciapuoti, Jessica Illiano, Caterina De Risi, Marcello Caleffi",
+    "abstract": "The Quantum Internet is commonly envisioned as a network that transports quantum states and distributes entanglement as the key resource underpinning distributed quantum applications. This view is necessary but incomplete if quantum phenomena are confined to what the network carries or manages, while network functionalities remain grounded predominantly in classical abstractions. This Perspective advances a broader thesis: quantum phenomena can also participate directly in the realization of network functionalities. We first establish the architectural baseline by introducing entanglement as a stateful network resource whose operational condition is non-locally distributed across remote nodes, evolves through manipulation or consumption, and degrades over time through decoherence. Its evolving state must therefore remain visible to the functionalities acting on it. We then move beyond resource visibility and use two mechanisms as proof points of a broader quantum-native functional design space: entanglement generation during propagation through coherent spatial-path superposition, and operational connectivity induced by shared entanglement that can depart from the physical graph. These examples show that paths, neighbors, or participating nodes may become operationally relevant in ways determined by quantum coherence and shared entanglement, rather than by physical connectivity alone. We identify Quantum Addressing as a transversal abstraction capable of representing such relations while complementing, rather than replacing, classical addressing and signaling. The resulting perspective broadens the Quantum Internet from transporting quantum information and distributing entanglement to exploiting quantum phenomena in network functioning, opening a coupled frontier spanning routing, forwarding, control, and functionality placement.",
+    "category": "AI quantum computing",
+    "source": "arXiv",
+    "published": "2026-11-05T17:00:54Z",
+    "updated": "2026-11-05T17:00:54Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph",
+      "cs.NI"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.08298v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.08298v1"
+      }
+    ],
+    "score": 55,
+    "infographic": {
+      "key_insight": "Quantum networks can use coherence and shared entanglement to shape network functions, not merely transport quantum states.",
+      "engineering_relevance": "Routing, forwarding, control, and functionality placement may need to account for evolving entanglement and operational relationships beyond physical links.",
+      "method": [
+        "Treat entanglement as a distributed, stateful resource whose changing condition remains visible to network functions.",
+        "Explore entanglement generation through coherent spatial-path superposition and operational connectivity induced by shared entanglement.",
+        "Propose Quantum Addressing to represent these relationships alongside classical addressing and signaling."
+      ],
+      "evidence_signal": "The abstract presents a conceptual Perspective with two illustrative mechanisms, but reports no quantitative benchmarks or experimental evaluation.",
+      "watch_item": "Practical designs must track decohering entanglement and coordinate quantum-aware functions with classical signaling; implementation overhead is not quantified in the abstract.",
+      "hashtags": [
+        "#QuantumInternet",
+        "#QuantumNetworking",
+        "#Entanglement",
+        "#QuantumAddressing",
+        "#NetworkArchitecture"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-05-arxiv-beyond_quantum_messages_toward_quantum_native_network_functioning",
+      "paper_title": "Beyond Quantum Messages: Toward Quantum-Native Network Functioning",
+      "paper_date": "2026-11-05",
+      "paper_category": "AI quantum computing",
+      "generated_at": "2026-11-08T16:31:31",
       "generator": "openai"
     }
   }

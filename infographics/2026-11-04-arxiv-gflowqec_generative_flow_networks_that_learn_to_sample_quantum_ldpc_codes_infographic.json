@@ -1,19 +1,19 @@
 {
-  "key_insight": "GFlowQEC learns to propose promising quantum LDPC codes, finding more new top-scoring designs per expensive evaluation than tuned parallel tempering.",
-  "engineering_relevance": "A pretrained code proposer can stretch limited quantum-code evaluation budgets by prioritizing candidates before costly scoring.",
+  "key_insight": "A pretrained generative proposer can find more high-scoring quantum LDPC codes per expensive evaluation than tuned search baselines.",
+  "engineering_relevance": "Learning from previous code evaluations can stretch limited search budgets when strong quantum error-correcting codes are rare.",
   "method": [
-    "Build lifted-product codes one group element at a time using a generative flow network.",
+    "Construct lifted-product codes one group element at a time with a GFlowNet.",
     "Train on earlier search scores to sample codes in proportion to a power of their score, then freeze the model.",
-    "Rank batches of proposed codes and spend paid evaluations on selected candidates."
+    "Rank batches of generated candidates before paying to evaluate selected codes."
   ],
-  "evidence_signal": "For distance-scored, 180-physical-qubit codes, ranking 10 draws per paid call found over 2× as many new top-scoring codes as tuned parallel tempering and over 3.5× as many as a supervised screen ranking 10 random candidates.",
-  "watch_item": "Performance depends on the comparator and screening budget: screening 100 random candidates beat GFlowQEC, while soft Q-learning matched or exceeded it across the two tested noise biases.",
+  "evidence_signal": "For distance-scored codes with 180 physical qubits, ranking 10 draws per paid evaluation found over twice as many new, training-inequivalent top-scoring codes as tuned parallel tempering and over 3.5 times as many as a supervised screen ranking 10 random candidates.",
+  "watch_item": "The advantage depends on the comparison: the supervised screen won at batch size 100, and soft Q-learning matched or exceeded GFlowQEC across the two tested noise biases.",
   "hashtags": [
     "#QuantumErrorCorrection",
-    "#GFlowNets",
     "#QuantumLDPC",
+    "#GFlowNets",
     "#QuantumMachineLearning",
-    "#CodeDesign"
+    "#SampleEfficientSearch"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "GFlowQEC: Generative Flow Networks that Learn to Sample Quantum LDPC Codes",
   "paper_date": "2026-11-04",
   "paper_category": "Quantum Machine Learning",
-  "generated_at": "2026-11-07T16:07:22",
+  "generated_at": "2026-11-08T16:31:25",
   "generator": "openai"
 }

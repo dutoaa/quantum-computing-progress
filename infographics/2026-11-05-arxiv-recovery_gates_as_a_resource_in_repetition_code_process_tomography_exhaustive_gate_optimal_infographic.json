@@ -1,19 +1,19 @@
 {
-  "key_insight": "With a fixed measurement basis, gate-optimal repetition-code tomography needs only 0, 1 and 5 recovery gates for 3, 5 and 7 qubits, respectively, and correcting more sites is not always better.",
-  "engineering_relevance": "Optimizing recovery can cut physical Pauli-gate overhead and improve precision, but poor conditioning—not gate count—limits scaling to larger codes.",
+  "key_insight": "With a fixed measurement basis, gate-optimal repetition-code tomography requires only 0, 1 and 5 recovery gates for 3, 5 and 7 qubits, respectively, and more correction is not always better.",
+  "engineering_relevance": "Optimizing recovery rather than defaulting to minimum-weight decoding can reduce gate overhead and improve tomography precision on superconducting hardware.",
   "method": [
     "Exhaustively enumerate recovery designs for 3-, 5- and 7-qubit repetition codes.",
     "Determine rank using exact modular arithmetic at two primes.",
-    "Evaluate precision under a calibration-residual floor and estimate shot requirements."
+    "Evaluate precision under a calibration-residual floor across sampled working points."
   ],
-  "evidence_signal": "Across 40 sampled working points, a three-gate, three-qubit design was more precise than the standard six-gate decoder at every point, with a median improvement of 9.5×.",
-  "watch_item": "The reported 10 mrad rms target requires 1.2×10^7 shots at a well-conditioned point; codes with 5 or more qubits remain impractical under the studied conditioning constraints.",
+  "evidence_signal": "At 40 sampled working points, the three-gate 3-qubit design was more precise than the standard six-gate decoder every time, with a median improvement of 9.5× and a range of 1.8–88×.",
+  "watch_item": "Low recovery-gate counts do not guarantee practical tomography: conditioning keeps designs with 5 or more qubits out of reach in the reported analysis.",
   "hashtags": [
     "#QuantumComputing",
     "#ProcessTomography",
     "#RepetitionCodes",
     "#QuantumHardware",
-    "#RecoveryOptimization"
+    "#DecoderOptimization"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Recovery gates as a resource in repetition-code process tomography: exhaustive gate-optimal designs for three, five and seven qubits",
   "paper_date": "2026-11-05",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-11-07T16:07:27",
+  "generated_at": "2026-11-08T16:31:29",
   "generator": "openai"
 }

@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-11-07
+Generated: 2026-11-08
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. QDiff: Differential Testing of Quantum Software Stacks
@@ -99,15 +99,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.08460v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-05-arxiv-room_temperature_quantum_emission_from_boron_nitride_nanotubes_infographic.json
 
-## 13. Certifying quantum code and circuit distances at scale
-
-- Date: 2026-11-05
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2611.08247v1
-- PDF: https://arxiv.org/pdf/2611.08247v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-05-arxiv-certifying_quantum_code_and_circuit_distances_at_scale_infographic.json
-
-## 14. Improved Exact and Approximate Quantum Fourier Transforms from Multiplication
+## 13. Improved Exact and Approximate Quantum Fourier Transforms from Multiplication
 
 - Date: 2026-11-04
 - Category: Quantum Algorithms
@@ -115,7 +107,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.06341v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-04-arxiv-improved_exact_and_approximate_quantum_fourier_transforms_from_multiplication_infographic.json
 
-## 15. Hardware Demonstration of Neural-Surrogated Quantum-Enhanced MCMC for Large-Scale Constrained Boltzmann Sampling
+## 14. Hardware Demonstration of Neural-Surrogated Quantum-Enhanced MCMC for Large-Scale Constrained Boltzmann Sampling
 
 - Date: 2026-11-04
 - Category: Quantum Algorithms
@@ -123,15 +115,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.05883v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-04-arxiv-hardware_demonstration_of_neural_surrogated_quantum_enhanced_mcmc_for_large_scale_constrai_infographic.json
 
-## 16. Entropic measures of quantum information
-
-- Date: 2026-11-05
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2611.08254v1
-- PDF: https://arxiv.org/pdf/2611.08254v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-05-arxiv-entropic_measures_of_quantum_information_infographic.json
-
-## 17. Bounded decoding complexity in transversal circuits with magic state injection
+## 15. Bounded decoding complexity in transversal circuits with magic state injection
 
 - Date: 2026-11-03
 - Category: Quantum Algorithms
@@ -139,7 +123,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.05502v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-03-arxiv-bounded_decoding_complexity_in_transversal_circuits_with_magic_state_injection_infographic.json
 
-## 18. GFlowQEC: Generative Flow Networks that Learn to Sample Quantum LDPC Codes
+## 16. Certifying quantum code and circuit distances at scale
+
+- Date: 2026-11-05
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2611.08247v1
+- PDF: https://arxiv.org/pdf/2611.08247v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-05-arxiv-certifying_quantum_code_and_circuit_distances_at_scale_infographic.json
+
+## 17. GFlowQEC: Generative Flow Networks that Learn to Sample Quantum LDPC Codes
 
 - Date: 2026-11-04
 - Category: Quantum Machine Learning
@@ -147,7 +139,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.06819v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-04-arxiv-gflowqec_generative_flow_networks_that_learn_to_sample_quantum_ldpc_codes_infographic.json
 
-## 19. Classical training of conditional instantaneous quantum polynomial-time Born machines
+## 18. Classical training of conditional instantaneous quantum polynomial-time Born machines
 
 - Date: 2026-11-03
 - Category: Quantum Machine Learning
@@ -155,10 +147,18 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.05483v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-03-arxiv-classical_training_of_conditional_instantaneous_quantum_polynomial_time_born_machines_infographic.json
 
-## 20. Recovery gates as a resource in repetition-code process tomography: exhaustive gate-optimal designs for three, five and seven qubits
+## 19. Recovery gates as a resource in repetition-code process tomography: exhaustive gate-optimal designs for three, five and seven qubits
 
 - Date: 2026-11-05
 - Category: Quantum Hardware
 - arXiv: https://arxiv.org/abs/2611.08310v1
 - PDF: https://arxiv.org/pdf/2611.08310v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-05-arxiv-recovery_gates_as_a_resource_in_repetition_code_process_tomography_exhaustive_gate_optimal_infographic.json
+
+## 20. Beyond Quantum Messages: Toward Quantum-Native Network Functioning
+
+- Date: 2026-11-05
+- Category: AI quantum computing
+- arXiv: https://arxiv.org/abs/2611.08298v1
+- PDF: https://arxiv.org/pdf/2611.08298v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-05-arxiv-beyond_quantum_messages_toward_quantum_native_network_functioning_infographic.json

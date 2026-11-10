@@ -1,19 +1,19 @@
 {
-  "key_insight": "Sign-hedged beam RQAOA reduces irreversible elimination errors by exploring both sign assignments, recovering near-optimal solutions on frustrated SK instances without increasing QAOA depth p.",
-  "engineering_relevance": "Beam search adds a decision-side improvement to fixed-p quantum optimization, trading extra circuit evaluations and classical processing for better solution quality.",
+  "key_insight": "Sign-hedged beam RQAOA reduces irreversible elimination errors by exploring both sign assignments, recovering near-optimal solutions where standard recursion fails.",
+  "engineering_relevance": "The method improves fixed-depth QAOA/RQAOA through decision-side search rather than deeper quantum circuits, trading additional computation for better solution quality.",
   "method": [
-    "Keep standard RQAOA’s selected variable or pair, but branch on both possible sign assignments.",
-    "Rank residual problems with a classical score and retain the best B candidates.",
-    "Complete survivors with ordinary RQAOA and exactly solve a small remaining core."
+    "Keep standard RQAOA’s variable or pair selection, but branch on both possible signs.",
+    "Retain the best B residual problems using a classical score.",
+    "Complete survivors with ordinary RQAOA and solve a small core exactly."
   ],
-  "evidence_signal": "Across 50+ HamLib and QOBLIB instances up to 60 qubits, with runs on ibm kingston and ibm marrakesh, the authors report consistent simulator–hardware beam rankings and SK approximation-ratio recovery from 0.474 to 0.998 at the same p.",
-  "watch_item": "The gains require additional residual-circuit evaluations, classical pruning, and small-core exact solving; they do not establish quantum advantage or circuit-only scalability.",
+  "evidence_signal": "Across 50+ benchmark instances up to 60 qubits, including runs on IBM Kingston and Marrakesh, the abstract reports consistent beam rankings; on frustrated SK instances, AR improves from 0.474 to 0.998 at unchanged circuit depth p.",
+  "watch_item": "Gains require extra residual-circuit evaluations, classical pruning, and exact core solving; they do not establish that quantum circuits alone scale with problem size.",
   "hashtags": [
     "#QuantumOptimization",
     "#QAOA",
     "#RQAOA",
     "#BeamSearch",
-    "#QuantumComputing"
+    "#HybridComputing"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Sign-hedged Beam QAOA:Scaling Quantum Optimization Algorithms",
   "paper_date": "2026-11-05",
   "paper_category": "Quantum Optimization",
-  "generated_at": "2026-11-09T20:26:26",
+  "generated_at": "2026-11-10T17:30:12",
   "generator": "openai"
 }

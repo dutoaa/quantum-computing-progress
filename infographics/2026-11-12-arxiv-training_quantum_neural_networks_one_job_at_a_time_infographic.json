@@ -1,19 +1,19 @@
 {
-  "key_insight": "Batching parameter-shift evaluations into each quantum-cloud job accelerates quantum neural network training under matched job and shot budgets.",
-  "engineering_relevance": "Optimizer design should maximize useful learning per queued processor interaction, not merely minimize circuit evaluations.",
+  "key_insight": "Batching parameter-shift evaluations into each quantum job reduces the cloud interactions needed to train a quantum neural network compared with SPSA.",
+  "engineering_relevance": "Optimizer design should maximize progress per queued job, not just per shot, to amortize quantum-cloud overhead.",
   "method": [
-    "Compare optimizers using equal job counts and shots per job.",
-    "Precompute parameter-shift batches to estimate gradients within each job.",
-    "Test a structure-aware stencil search that interprets parameter sweeps as sinusoids."
+    "Compare optimizers with equal job budgets and shots per job.",
+    "Precompute parameter-shift batches for Pauli-rotation circuits.",
+    "Test batched training and a structure-aware sinusoidal stencil search against SPSA."
   ],
-  "evidence_signal": "Simulations with 24–48 parameters required one-fifth to one-half as many jobs as SPSA; three interleaved IBM ibm_fez runs at six and eight qubits matched SPSA’s 50-job final training loss within 4–20 jobs.",
-  "watch_item": "Hardware evidence is limited to six and eight qubits, and the test-accuracy advantage was not significant at six qubits.",
+  "evidence_signal": "Simulations with 24–48 parameters required 20–50% as many jobs as SPSA; across three interleaved IBM ibm_fez runs at six and eight qubits, batched training matched SPSA’s final loss in 4–20 versus 50 jobs.",
+  "watch_item": "Hardware evidence is limited to six and eight qubits, and the test-accuracy advantage was not statistically significant at six qubits.",
   "hashtags": [
     "#QuantumComputing",
     "#QuantumNeuralNetworks",
     "#ParameterShift",
-    "#CloudQuantum",
-    "#QuantumOptimization"
+    "#QuantumHardware",
+    "#Optimization"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Training quantum neural networks one job at a time",
   "paper_date": "2026-11-12",
   "paper_category": "Quantum Hardware",
-  "generated_at": "2026-11-13T17:31:18",
+  "generated_at": "2026-11-14T16:23:20",
   "generator": "openai"
 }

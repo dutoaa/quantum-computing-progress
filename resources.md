@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-11-13
+Generated: 2026-11-14
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Beauty and charm jet identification with end-to-end training on a superconducting quantum processor
@@ -99,7 +99,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.16115v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-11-arxiv-phase_interference_and_transverse_catalysts_govern_the_noise_fragility_of_long_range_varia_infographic.json
 
-## 13. Ensemble phase transitions in measurement-unitary hybrid quantum circuits
+## 13. Invariance can prevent overfitting and shortcut learning in Quantum Neural Networks
+
+- Date: 2026-11-10
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2611.14368v1
+- PDF: https://arxiv.org/pdf/2611.14368v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-10-arxiv-invariance_can_prevent_overfitting_and_shortcut_learning_in_quantum_neural_networks_infographic.json
+
+## 14. Ensemble phase transitions in measurement-unitary hybrid quantum circuits
 
 - Date: 2026-11-12
 - Category: Quantum Simulation
@@ -107,7 +115,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.17322v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-12-arxiv-ensemble_phase_transitions_in_measurement_unitary_hybrid_quantum_circuits_infographic.json
 
-## 14. The energetic cost of loading classical data in quantum computers
+## 15. The energetic cost of loading classical data in quantum computers
 
 - Date: 2026-11-10
 - Category: Quantum Hardware
@@ -115,21 +123,13 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.14422v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-10-arxiv-the_energetic_cost_of_loading_classical_data_in_quantum_computers_infographic.json
 
-## 15. Uncertainty-aware quantum machine learning based on Dempster-Shafer theory
+## 16. Uncertainty-aware quantum machine learning based on Dempster-Shafer theory
 
 - Date: 2026-11-12
 - Category: Quantum Machine Learning
 - arXiv: https://arxiv.org/abs/2611.16903v1
 - PDF: https://arxiv.org/pdf/2611.16903v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-12-arxiv-uncertainty_aware_quantum_machine_learning_based_on_dempster_shafer_theory_infographic.json
-
-## 16. Invariance can prevent overfitting and shortcut learning in Quantum Neural Networks
-
-- Date: 2026-11-10
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2611.14368v1
-- PDF: https://arxiv.org/pdf/2611.14368v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-10-arxiv-invariance_can_prevent_overfitting_and_shortcut_learning_in_quantum_neural_networks_infographic.json
 
 ## 17. Noise-Protected Superconducting Qudits from Higher-Harmonic Josephson Junctions
 

@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-11-14
+Generated: 2026-11-15
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Beauty and charm jet identification with end-to-end training on a superconducting quantum processor

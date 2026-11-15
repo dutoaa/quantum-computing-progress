@@ -1,19 +1,19 @@
 {
-  "key_insight": "An F₂-linear hash partitions Pauli strings so a k-qubit channel couples each partition to at most 4^k gate-determined partitions, avoiding global deduplication synchronization.",
-  "engineering_relevance": "Bounded communication helps pool memory across cores and compute nodes for larger classical simulations of quantum circuits and many-body dynamics.",
+  "key_insight": "An F₂-linear hash partitions Pauli strings so that each k-qubit channel couples any partition to at most 4^k partitions, avoiding global deduplication synchronization.",
+  "engineering_relevance": "Bounded communication helps pool memory across cores and compute nodes for memory-limited quantum simulations.",
   "method": [
     "Evolve observables as sparse sums of Pauli strings in the Heisenberg picture.",
     "Partition strings using an F₂-linear hash function.",
-    "Apply gates through independent tasks with bounded interpartition communication."
+    "Apply gates through independent tasks with gate-determined, bounded partition coupling."
   ],
-  "evidence_signal": "The abstract reports efficient parallel scaling within and across nodes, simulations exceeding 10^11 Pauli strings, and access to longer many-body dynamics timescales using an open-source implementation.",
-  "watch_item": "Memory bandwidth and capacity remain constraints, while the 4^k communication bound grows exponentially with channel locality.",
+  "evidence_signal": "Benchmarks of the open-source implementation report efficient scaling within and across nodes, simulations exceeding 10^11 Pauli strings, and longer accessible many-body dynamics timescales.",
+  "watch_item": "The partition-coupling bound grows as 4^k, so channels acting on many qubits may increase communication costs.",
   "hashtags": [
     "#QuantumSimulation",
     "#PauliPropagation",
-    "#HighPerformanceComputing",
     "#DistributedComputing",
-    "#ComputationalPhysics"
+    "#HighPerformanceComputing",
+    "#QuantumManyBody"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Scalable Pauli propagation through $\\mathbb{F}_2$-linear partitioning",
   "paper_date": "2026-11-12",
   "paper_category": "Quantum Simulation",
-  "generated_at": "2026-11-14T16:23:43",
+  "generated_at": "2026-11-15T16:50:14",
   "generator": "openai"
 }

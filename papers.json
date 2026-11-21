@@ -27,15 +27,15 @@
     ],
     "score": 97,
     "infographic": {
-      "key_insight": "Soft-MoQE learns input-dependent combinations of fixed quantum feature maps, avoiding quantum-parameter optimization while retaining competitive predictive performance.",
-      "engineering_relevance": "Moving trainable routing to a classical network reduces quantum training cost by orders of magnitude relative to the evaluated trainable quantum neural network.",
+      "key_insight": "Soft-MoQE learns input-dependent combinations of fixed quantum feature maps, avoiding quantum-parameter optimization while outperforming individual experts and simple baselines.",
+      "engineering_relevance": "Moving trainable routing to a classical network reduces quantum training cost by orders of magnitude, offering a practical design direction for resource-constrained hybrid QML.",
       "method": [
-        "Build a heterogeneous pool of fixed, non-trainable quantum circuits.",
-        "Train a classical gating network to weight each circuit’s embedding per input.",
-        "Combine weighted embeddings, with class-dependent routing favoring a few experts."
+        "Encode inputs with a heterogeneous pool of non-trainable quantum circuits.",
+        "Train a classical gating network to weight quantum embeddings for each input.",
+        "Combine expert embeddings using class-dependent, learned soft routing."
       ],
-      "evidence_signal": "Across PCA-reduced MNIST parity, MNIST 10-class, and FashionMNIST tasks, Soft-MoQE outperformed the best single expert, uniform expert averaging, and a linear baseline, with task-dependent performance comparable to a trainable quantum neural network.",
-      "watch_item": "Evaluation on PCA-reduced tasks does not establish scalability, robustness to hardware noise, or an advantage over strong classical models.",
+      "evidence_signal": "On PCA-reduced MNIST parity, MNIST 10-class, and FashionMNIST, Soft-MoQE beats the best single expert, uniform expert averaging, and a linear baseline, with task-dependent performance comparable to a trainable quantum neural network.",
+      "watch_item": "Evaluation is limited to three PCA-reduced tasks; robustness to hardware noise and scaling to higher-dimensional inputs remain unclear from the abstract.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#MixtureOfExperts",
@@ -49,7 +49,7 @@
       "paper_title": "Soft Mixture of Quantum Experts for Hybrid Quantum-Classical Learning",
       "paper_date": "2026-11-18",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-20T18:20:19",
+      "generated_at": "2026-11-21T17:07:17",
       "generator": "openai"
     }
   },
@@ -78,23 +78,23 @@
         "url": "https://arxiv.org/pdf/2611.25383v1"
       }
     ],
-    "score": 88,
+    "score": 83,
     "infographic": {
-      "key_insight": "In linear-elastic homogenization, differentiating a two-local Ising Hamiltonian yields one-local stress observables measurable from the same computational-basis samples as the energy.",
-      "engineering_relevance": "The formulation extracts homogenized stress directly from an optimized quantum state without reconstructing microscopic displacements or adding measurement bases.",
+      "key_insight": "Homogenized stress becomes a one-local quantum observable, measurable from the same computational-basis samples as the two-local Ising energy without reconstructing microscopic displacements.",
+      "engineering_relevance": "The formulation offers a quantum route to extracting effective stresses from linear-elastic representative volume elements for multiscale mechanics.",
       "method": [
-        "Encode the reduced finite-element RVE energy as a QUBO and map it to an Ising Hamiltonian.",
+        "Encode reduced finite-element RVE energy as a QUBO and map it to an Ising Hamiltonian.",
         "Approximate the equilibrium ground state using the variational quantum eigensolver (VQE).",
-        "Apply Hellmann–Feynman differentiation with respect to macroscopic strain to construct stress observables."
+        "Differentiate the strain-dependent Hamiltonian via Hellmann–Feynman to obtain stress observables containing only identity and single-qubit Pauli-Z terms."
       ],
-      "evidence_signal": "The abstract reports a demonstration on a two-dimensional periodic RVE but provides no quantitative accuracy, scaling, or hardware-performance results.",
-      "watch_item": "Finite encoding resolution and approximate VQE convergence can affect equilibrium and stress accuracy; no quantum advantage is established in the abstract.",
+      "evidence_signal": "The abstract reports a demonstration on a two-dimensional periodic RVE, but provides no quantitative accuracy, hardware, or speedup results.",
+      "watch_item": "Stress accuracy depends on the finite encoding grid and VQE state quality; the one-local result relies on strain-independent couplings in linear elasticity.",
       "hashtags": [
         "#QuantumComputing",
         "#ComputationalHomogenization",
         "#VQE",
         "#IsingModel",
-        "#ComputationalMechanics"
+        "#MultiscaleMechanics"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -102,7 +102,7 @@
       "paper_title": "Ising-Encoded Computational Homogenization: Stress as a Quantum Observable",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-20T18:20:21",
+      "generated_at": "2026-11-21T17:07:20",
       "generator": "openai"
     }
   },
@@ -131,23 +131,23 @@
         "url": "https://arxiv.org/pdf/2611.25740v1"
       }
     ],
-    "score": 83,
+    "score": 78,
     "infographic": {
-      "key_insight": "Parallel pairwise entangling gates across neighboring trapped-ion wells could provide an efficient transversal controlled-Z operation for fault-tolerant quantum computing.",
-      "engineering_relevance": "For selected register sizes, geometric cancellation enables parallel gates faster than sequential two-qubit gates while requiring a significantly smaller two-photon Rabi frequency.",
+      "key_insight": "Parallel pairwise entangling gates across neighboring trapped-ion wells can implement a transversal controlled-Z operation while suppressing unwanted couplings.",
+      "engineering_relevance": "For selected register sizes, geometric cancellation enables faster parallel operation than sequential two-qubit gates while requiring a significantly smaller two-photon Rabi frequency.",
       "method": [
-        "Implement simultaneous pairwise entangling operations in a double-well trapped-ion architecture.",
-        "Suppress unwanted couplings using tailored dynamical decoupling, with pulse count scaling quadratically with ion number.",
-        "Use geometric cancellation to reduce pulse count and evaluate crosstalk in logical Bell-state preparation."
+        "Couple corresponding ion pairs across a double-well architecture.",
+        "Suppress unwanted couplings using tailored dynamical decoupling with quadratically scaling pulse count.",
+        "Use geometric cancellation to reduce pulse requirements."
       ],
-      "evidence_signal": "The study analyzes decoherence and laser-misalignment crosstalk, including their impact on fault-tolerant logical Bell-state preparation between two [[4,1,2]] code blocks.",
-      "watch_item": "Performance gains depend on register size, while laser alignment, decoherence, and quadratic pulse-count scaling remain implementation concerns.",
+      "evidence_signal": "The study analyzes decoherence and laser-misalignment crosstalk, then evaluates crosstalk-induced errors during fault-tolerant logical Bell-state preparation between two [[4,1,2]] code blocks.",
+      "watch_item": "Laser alignment and decoherence remain implementation concerns, and the reported speed advantage applies only to selected register sizes.",
       "hashtags": [
-        "#QuantumComputing",
         "#TrappedIons",
         "#QuantumErrorCorrection",
-        "#FaultTolerance",
-        "#TransversalGates"
+        "#FaultTolerantQuantumComputing",
+        "#TransversalGates",
+        "#QuantumEngineering"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -155,7 +155,7 @@
       "paper_title": "Parallel transversal entangling gates for fault-tolerant trapped-ion quantum computing",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-20T18:20:24",
+      "generated_at": "2026-11-21T17:07:22",
       "generator": "openai"
     }
   },
@@ -185,17 +185,17 @@
         "url": "https://arxiv.org/pdf/2611.24290v1"
       }
     ],
-    "score": 83,
+    "score": 78,
     "infographic": {
-      "key_insight": "Quantum reinforcement learning lets musical agents develop distinct compositional mindsets through interaction and rewards rather than imitation of large music datasets.",
-      "engineering_relevance": "The agentic orchestra offers a hybrid quantum-classical framework for adaptive musical partners operating on MIDI-encoded music.",
+      "key_insight": "Quantum reinforcement learning enables musical agents to develop distinct compositional mindsets through interaction and rewards rather than imitation of large music datasets.",
+      "engineering_relevance": "The framework offers a hybrid quantum-classical approach to adaptive, multi-agent music generation with MIDI-based interactive and offline workflows.",
       "method": [
-        "Represent musical agents as parameterised quantum circuits in a reinforcement-learning loop.",
+        "Represent musical agents as parameterised quantum circuits updated through reinforcement learning.",
         "Use atomistic agents for separate pitch and rhythm decisions, or holistic agents for unified note events.",
-        "Combine and weight musically grounded rewards to shape distinct agent behaviours."
+        "Combine and weight musical reward functions to shape distinct agent behaviours."
       ],
-      "evidence_signal": "The abstract reports generalisation to unseen musical material, interactive and offline demonstrations, and musically meaningful learning on IBM quantum hardware, but provides no quantitative metrics.",
-      "watch_item": "The abstract does not establish a performance advantage over classical approaches or quantify scalability on current quantum hardware.",
+      "evidence_signal": "The abstract reports generalisation to unseen musical material and musically meaningful learning on IBM quantum hardware, but provides no quantitative metrics or baseline comparisons.",
+      "watch_item": "Quantum advantage and scalability remain unestablished; hardware demonstrations alone do not show superiority over classical approaches.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#ReinforcementLearning",
@@ -209,7 +209,7 @@
       "paper_title": "Beyond Corpus-Driven Imitation: Evolving Musical Mindsets in the Agentic Orchestra via Quantum Reinforcement Learning",
       "paper_date": "2026-11-18",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-20T18:20:26",
+      "generated_at": "2026-11-21T17:07:25",
       "generator": "openai"
     }
   },
@@ -239,23 +239,23 @@
         "url": "https://arxiv.org/pdf/2611.26219v1"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "CAVQS reduces two-qubit gate counts by optimizing across circuit-block boundaries and exploiting permitted terminal measurements with classical feedforward.",
-      "engineering_relevance": "Lower CNOT counts can ease quantum hardware demands, while dynamic implementations require measurement and feedforward support.",
+      "key_insight": "CAVQS reduces two-qubit gate costs by jointly exploiting cross-block unitary redistribution and measurement-enabled dynamic circuit reconstruction.",
+      "engineering_relevance": "The framework offers a route to lower CNOT costs, with dynamic-circuit savings requiring permitted terminal measurements and classical feedforward.",
       "method": [
-        "Use QR decomposition to redistribute unitary factors between overlapping blocks while preserving the overall transformation.",
-        "Reshape local synthesis targets to enable cross-block gate reductions.",
-        "For eligible terminal-measurement blocks, combine CNOT-budgeted search with analytic branch-unitary construction to minimize expected CNOT cost without ancillas."
+        "Use QR decomposition to redistribute unitary factors across overlapping blocks while preserving the overall transformation.",
+        "Reshape local synthesis targets to enable simplification across block boundaries.",
+        "Build ancilla-free dynamic implementations using CNOT-budgeted pre-measurement search and analytic branch unitaries."
       ],
-      "evidence_signal": "On common successful random-circuit instances, mean two-qubit gate reductions were 28.79–42.52% versus QFAST, 2.05–52.62% versus SQUANDER, and 30.51–74.64% versus Fast-USYN; reductions on 4–6-qubit algorithm benchmarks ranged from 20.65% to 71.88% across these baselines.",
-      "watch_item": "Gate-count savings do not establish hardware-level speed or fidelity gains, particularly when measurement and feedforward latency matter.",
+      "evidence_signal": "On common successful random-circuit instances, mean two-qubit gate reductions span 2.05%–74.64% across three baselines; reported reductions on 4–6-qubit algorithm benchmarks span 20.65%–71.88%.",
+      "watch_item": "Results on small algorithm benchmarks and common successful random instances do not establish larger-scale performance or hardware runtime gains.",
       "hashtags": [
         "#QuantumComputing",
-        "#QuantumCompilation",
-        "#VariationalSynthesis",
+        "#QuantumCircuitSynthesis",
+        "#VariationalQuantumAlgorithms",
         "#DynamicCircuits",
-        "#CircuitOptimization"
+        "#QuantumCompilation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -263,7 +263,7 @@
       "paper_title": "CAVQS: Context-Aware Variational Quantum Circuit Synthesis via Unitary Redistribution and Dynamic Reconstruction",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-20T18:20:28",
+      "generated_at": "2026-11-21T17:07:27",
       "generator": "openai"
     }
   },
@@ -292,17 +292,17 @@
         "url": "https://arxiv.org/pdf/2611.25095v1"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "A measurement-free protocol uses coherent control of three superconducting cavities to correct photon loss and extend logical-qubit lifetime beyond an unprotected encoding.",
-      "engineering_relevance": "Correcting dominant photon-loss errors locally could reduce the burden on an outer quantum error-correcting code in superconducting hardware.",
+      "key_insight": "A measurement-free protocol uses coherent control of three superconducting cavities to correct photon loss and extend a binomial-encoded qubit’s lifetime beyond break-even in simulations.",
+      "engineering_relevance": "Correcting dominant photon-loss errors locally could reduce the error-correction burden on an outer code in superconducting quantum computers.",
       "method": [
-        "Encode a logical qubit in one cavity using the lowest-order binomial code.",
+        "Encode one logical qubit in a cavity’s lowest-order binomial code.",
         "Use two ancillary cavities and Josephson-junction-based nonlinear couplings for coherent, measurement-free correction.",
-        "Optimize the waiting time between successive correction rounds."
+        "Optimize the waiting time between correction rounds."
       ],
-      "evidence_signal": "Numerical simulations with experimentally realistic parameters report 99% single-photon-loss correction fidelity and a 1.2–1.8× logical-lifetime extension over unprotected {|0⟩, |1⟩} Fock encoding.",
-      "watch_item": "The reported gains are simulation-based; experimental validation must establish whether hardware imperfections preserve the modest lifetime advantage.",
+      "evidence_signal": "Numerical simulations with experimentally realistic parameters report 99% single-photon-loss correction fidelity and a 1.2–1.8× logical lifetime relative to unprotected {|0⟩, |1⟩} Fock encoding.",
+      "watch_item": "The results are simulation-based; experimental implementation must preserve sufficient coherent-control fidelity to retain the predicted lifetime advantage.",
       "hashtags": [
         "#QuantumErrorCorrection",
         "#SuperconductingQubits",
@@ -316,275 +316,7 @@
       "paper_title": "A measurement-free quantum error correction protocol for superconducting cavities",
       "paper_date": "2026-11-18",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-20T18:20:30",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-18-arxiv-topological_quantum_reservoir_computing",
-    "arxiv_id": "2611.24013v1",
-    "date": "2026-11-18",
-    "title": "Topological Quantum Reservoir Computing",
-    "authors": "Zhi-Lei Zhang, Lianxiang Cui, C. P. Sun, Kohei Nakajima, Kazuyuki Aihara",
-    "abstract": "Scaling universal quantum computation and implementing quantum machine learning with protected logical qubits remain challenging. To harness the computational potential of existing fault-tolerant quantum platforms, we introduce topological quantum reservoir computing, a novel approach using protected degrees of freedom for storage and the host system's intrinsic dynamics for information processing. Using a one-dimensional Kitaev chain, we show how long-lived Majorana edge modes and fast bulk responses support these complementary functions within the same many-body system. We identify the tradeoffs governing access to protected memory and show how matched interfaces enable programmable writing and interactions enable autonomous information consolidation from the bulk to the edge. These mechanisms improve performance on tasks requiring long-term retention of temporal information. Our results establish topology as a new resource for quantum reservoir computing and open a route toward near-term quantum computing and quantum machine learning.",
-    "category": "Quantum Error Correction",
-    "source": "arXiv",
-    "published": "2026-11-18T08:04:49Z",
-    "updated": "2026-11-18T08:04:49Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph",
-      "cond-mat.mes-hall"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.24013v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.24013v1"
-      }
-    ],
-    "score": 81,
-    "infographic": {
-      "key_insight": "Topological quantum reservoir computing combines protected Majorana edge modes for long-lived memory with fast bulk dynamics for information processing.",
-      "engineering_relevance": "The approach suggests a route to quantum machine learning that exploits protected storage without requiring universal logical-qubit computation.",
-      "method": [
-        "Use a one-dimensional Kitaev chain as a quantum reservoir.",
-        "Match interfaces to enable programmable writing into protected memory.",
-        "Use interactions to autonomously consolidate information from bulk dynamics into edge modes."
-      ],
-      "evidence_signal": "The abstract reports improved performance on tasks requiring long-term temporal retention, but provides no numerical results or benchmark details.",
-      "watch_item": "Accessing protected memory introduces tradeoffs, and practical implementation of the required interfaces and interactions remains a concern.",
-      "hashtags": [
-        "#QuantumReservoirComputing",
-        "#TopologicalQuantumComputing",
-        "#QuantumMachineLearning",
-        "#MajoranaModes",
-        "#QuantumMemory"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-18-arxiv-topological_quantum_reservoir_computing",
-      "paper_title": "Topological Quantum Reservoir Computing",
-      "paper_date": "2026-11-18",
-      "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-20T18:20:32",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-18-arxiv-quantum_annealing_with_a_quantum_neural_network_width_of_annealing_matters",
-    "arxiv_id": "2611.24089v1",
-    "date": "2026-11-18",
-    "title": "Quantum Annealing with a Quantum Neural Network: Width of Annealing Matters",
-    "authors": "Mojtaba Asadollahi, Danial Khajehzadeh, Abolfazl Ramezanpour",
-    "abstract": "Quantum annealing is a promising quantum algorithm for dealing with computationally hard optimization problems. Currently available hardware can implement the algorithm for a significant class of Hamiltonian problems. However, its performance is especially limited in discontinuous quantum phase transitions, where the energy gap shrinks exponentially with system size. In this paper, we introduce an extension of quantum annealing to a quantum neural network and study its performance in a number of prototypical optimization problems. In particular, we observe that already a random quantum annealing network of width W = 2 can exponentially reduce the number of evolution layers or depth of the annealing process in the quantum search problem. By tuning the network parameters the search problem can be solved with exponentially small errors by a quantum perceptron of depth L = 1 and width W = 2. The findings show that width of a quantum annealing network is critical to enhance the success probability of the algorithm by providing a larger and learnable evolution space for the annealing process.",
-    "category": "Quantum Optimization",
-    "source": "arXiv",
-    "published": "2026-11-18T09:15:42Z",
-    "updated": "2026-11-18T09:15:42Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph",
-      "cond-mat.dis-nn",
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.24089v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.24089v1"
-      }
-    ],
-    "score": 80,
-    "infographic": {
-      "key_insight": "Adding width to a quantum annealing network can dramatically reduce the depth needed for quantum search, with benefits reported already at width W = 2.",
-      "engineering_relevance": "Learnable, wider annealing networks offer a potential design route to higher success probabilities without relying solely on deeper evolution.",
-      "method": [
-        "Extend quantum annealing to a quantum neural network.",
-        "Evaluate network width and depth on prototypical optimization problems.",
-        "Compare random networks with tuned network parameters."
-      ],
-      "evidence_signal": "The abstract reports exponential depth reduction for quantum search with random W = 2 networks and exponentially small errors with a tuned L = 1, W = 2 quantum perceptron.",
-      "watch_item": "The abstract does not establish hardware feasibility, parameter-training cost, or whether the quantum-search gains generalize to other optimization problems.",
-      "hashtags": [
-        "#QuantumAnnealing",
-        "#QuantumNeuralNetworks",
-        "#QuantumOptimization",
-        "#QuantumSearch",
-        "#QuantumComputing"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-18-arxiv-quantum_annealing_with_a_quantum_neural_network_width_of_annealing_matters",
-      "paper_title": "Quantum Annealing with a Quantum Neural Network: Width of Annealing Matters",
-      "paper_date": "2026-11-18",
-      "paper_category": "Quantum Optimization",
-      "generated_at": "2026-11-20T18:20:34",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-18-arxiv-quframe_pauli_frame_tracking_for_fault_tolerant_quantum_control",
-    "arxiv_id": "2611.24328v2",
-    "date": "2026-11-18",
-    "title": "QuFrame: Pauli Frame Tracking for Fault-Tolerant Quantum Control",
-    "authors": "Aleksandra Świerkowska, Ilgaz Er, Emmanouil Giortamis, Pramod Bhatotia",
-    "abstract": "Fault-tolerant quantum computing requires continuous quantum error correction (QEC) to suppress physical noise. While Clifford-only workloads can defer corrections to software post-processing, universal computation breaks this paradigm: executing non-Clifford gates via magic-state gadgets introduces hard, real-time control-flow dependencies on error-corrected measurements. Consequently, the controller must extract syndromes, decode them, and update the Pauli frame in real time, closing the entire QEC loop within a strict $1\\,μ\\text{s}$ cycle. However, prior proposals on Pauli frame tracking remain largely theoretical, leaving the microarchitectural bottlenecks of tracking, resolving, and synchronizing frame updates across distributed control pipelines unaddressed. To this end, we present QuFrame, a control microarchitecture for real-time Pauli frame tracking that closes the QEC loop within $1\\,μ\\text{s}$ while sustaining QPU-rate throughput. By introducing QuFrameISA, we cleanly decouple instruction execution from continuous Pauli frame management. Execution is distributed across per-qubit Instruction Resolution Engines (IREs) that resolve instructions against the frame via a single table lookup, while a Pauli Frame Management Unit enables independent, lock-free concurrent commits. To strictly guarantee the $1\\,μ\\text{s}$ deadline, QuFrame pairs an asynchronous primary decoder with an on-chip fallback decoder that resolves in $144\\,\\text{ns}$, natively reconciling divergent updates in hardware without degrading logical error rates.",
-    "category": "Quantum Error Correction",
-    "source": "arXiv",
-    "published": "2026-11-18T12:30:48Z",
-    "updated": "2026-11-19T10:43:11Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.24328v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.24328v2"
-      }
-    ],
-    "score": 79,
-    "infographic": {
-      "key_insight": "QuFrame is a quantum-control microarchitecture designed to track Pauli frames in real time and close the quantum error-correction loop within a 1 μs cycle.",
-      "engineering_relevance": "It addresses the strict control dependencies introduced by non-Clifford gates, enabling timely correction-aware decisions while sustaining QPU-rate throughput.",
-      "method": [
-        "QuFrameISA separates instruction execution from continuous Pauli frame management.",
-        "Per-qubit Instruction Resolution Engines use one table lookup, while a Pauli Frame Management Unit supports independent, lock-free concurrent commits.",
-        "An asynchronous primary decoder is paired with an on-chip fallback decoder and hardware reconciliation of divergent updates."
-      ],
-      "evidence_signal": "The abstract reports 144 ns fallback decoding, a 1 μs QEC-loop deadline, and no degradation in logical error rates, but provides no evaluation setup or benchmark details.",
-      "watch_item": "Scalability and hardware-resource costs need scrutiny because the abstract does not detail qubit counts, decoder assumptions, or implementation overhead.",
-      "hashtags": [
-        "#QuantumErrorCorrection",
-        "#FaultTolerantQuantumComputing",
-        "#PauliFrameTracking",
-        "#QuantumControl",
-        "#ComputerArchitecture"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-18-arxiv-quframe_pauli_frame_tracking_for_fault_tolerant_quantum_control",
-      "paper_title": "QuFrame: Pauli Frame Tracking for Fault-Tolerant Quantum Control",
-      "paper_date": "2026-11-18",
-      "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-20T18:20:36",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-18-arxiv-fault_tolerant_quantum_processor_with_minimal_external_control",
-    "arxiv_id": "2611.23919v1",
-    "date": "2026-11-18",
-    "title": "Fault-tolerant quantum processor with minimal external control",
-    "authors": "Christopher A. Pattison, Jeongwan Haah, John Preskill",
-    "abstract": "Contemporary classical information processors integrate tens of billions of transistors printed on a chip, yet are fully controlled through comparatively few external wires. This is possible because data flows through hard-coded operations in step with a global clock and is steered by external instructions. Today's solid-state quantum processors are different -- every qubit receives instructions from outside the chip via its own dedicated control line, and error correction adds a further torrent of syndrome data that is transported off-chip. Here we show that the external control of a quantum chip can be greatly simplified. We propose a fault-tolerant architecture for universal quantum computation, inspired by modern classical processors, in which quantum information flows through a fixed, clocked device, propelled by local gates in a planar array. Our quantum processor receives an input stream of classical instructions via a small, constant number of external wires, each attached to a single qubit. Except for those few qubits coupled to external wires, all qubits evolve under a periodically-applied geometrically-local depth-3 circuit, which is fixed at the time the device is fabricated. Assuming a noiseless global clock (so that every operation is applied on schedule, though imperfectly), we establish an accuracy threshold theorem: For physical noise below a universal threshold -- afflicting every gate, measurement, and wire -- a chip with $n$ physical qubits can run any quantum algorithm that uses~$n/{\\sf polylog}(n/ε)$ logical qubits, where $ε$ is the error rate per logical gate. Each logical gate takes time~$n/{\\sf polylog}(n/ε)$; an alternative design, in which quantum operations remain strictly local and noisy, but on-chip wires broadcast noiseless classical signals instantaneously, reduces the time per logical gate to ${\\sf polylog}(n/ε)$.",
-    "category": "Quantum Error Correction",
-    "source": "arXiv",
-    "published": "2026-11-18T06:09:26Z",
-    "updated": "2026-11-18T06:09:26Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.23919v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.23919v1"
-      }
-    ],
-    "score": 79,
-    "infographic": {
-      "key_insight": "A proposed fault-tolerant quantum processor replaces per-qubit external control with a constant number of instruction wires and a fixed, clocked local circuit.",
-      "engineering_relevance": "The architecture could reduce external wiring demands for scalable quantum hardware, while trading control flexibility for on-chip information routing and execution overhead.",
-      "method": [
-        "Route quantum information through a planar array using local gates.",
-        "Repeat a fabrication-fixed, geometrically local depth-3 circuit, with instructions entering through a few externally connected qubits.",
-        "Prove fault tolerance below a universal physical-noise threshold, assuming a noiseless global clock."
-      ],
-      "evidence_signal": "The abstract reports a theoretical threshold theorem—not hardware measurements—with n physical qubits supporting n/polylog(n/ε) logical qubits and time n/polylog(n/ε) per logical gate.",
-      "watch_item": "The noiseless global clock is an idealization; the faster polylog(n/ε)-time variant additionally assumes instantaneous, noiseless on-chip classical broadcasts.",
-      "hashtags": [
-        "#QuantumComputing",
-        "#QuantumErrorCorrection",
-        "#FaultTolerance",
-        "#QuantumArchitecture",
-        "#ScalableQuantumHardware"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-18-arxiv-fault_tolerant_quantum_processor_with_minimal_external_control",
-      "paper_title": "Fault-tolerant quantum processor with minimal external control",
-      "paper_date": "2026-11-18",
-      "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-20T18:20:38",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-19-arxiv-adaptive_hamiltonian_identification_via_quantum_reinforcement_learning_under_non_stationar",
-    "arxiv_id": "2611.26241v1",
-    "date": "2026-11-19",
-    "title": "Adaptive Hamiltonian Identification via Quantum Reinforcement Learning under Non-Stationary Dynamics",
-    "authors": "Jawaher Kaldari, Saif Al-Kuwari",
-    "abstract": "Accurate identification of the Hamiltonian governing a quantum system is important for quantum-system characterization, device calibration, simulation, and reliable operation of quantum hardware. In practical systems, however, the governing dynamics may vary over time because of parameter drift, changing control conditions, or transitions between operating regimes. In this work, we formulate Hamiltonian identification as a quantum reinforcement learning (QRL) problem in which a quantum agent processes sequential quantum-state observations and estimates the governing Hamiltonian parameters. We first consider stationary dynamics using a Vanilla-QRL agent and then introduce a recurrent GRU-QRL architecture to track non-stationary dynamics. The framework is evaluated on transverse-field Ising model systems under stationary dynamics, abrupt Hamiltonian switching, rapidly changing Hamiltonians, random switch locations over longer trajectories, and gradual Hamiltonian drift. We further compare the proposed approach with a Quantum Graph Recurrent Neural Network (QGRNN) baseline and evaluate frozen policies on unseen trajectories. Results show that both approaches accurately reconstruct stationary Hamiltonians, while GRU-QRL provides substantially improved tracking under non-stationary dynamics. These results demonstrate the potential of recurrent QRL as an adaptive system-identification tool for monitoring time-varying quantum systems.",
-    "category": "Quantum Simulation",
-    "source": "arXiv",
-    "published": "2026-11-19T15:20:21Z",
-    "updated": "2026-11-19T15:20:21Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.26241v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.26241v1"
-      }
-    ],
-    "score": 78,
-    "infographic": {
-      "key_insight": "Recurrent quantum reinforcement learning improves Hamiltonian tracking when quantum-system dynamics change over time.",
-      "engineering_relevance": "Adaptive Hamiltonian estimation could support quantum-device calibration and monitoring under parameter drift or changing operating conditions.",
-      "method": [
-        "Formulate Hamiltonian identification as quantum reinforcement learning from sequential quantum-state observations.",
-        "Use Vanilla-QRL for stationary dynamics and a recurrent GRU-QRL architecture for time-varying dynamics.",
-        "Compare against a Quantum Graph Recurrent Neural Network baseline and test frozen policies on unseen trajectories."
-      ],
-      "evidence_signal": "Evaluations on transverse-field Ising systems cover stationary dynamics, abrupt and rapid switching, random switch locations, and gradual drift; the abstract reports substantially improved non-stationary tracking with GRU-QRL.",
-      "watch_item": "The abstract does not establish robustness to experimental noise or scalability beyond the evaluated Ising systems.",
-      "hashtags": [
-        "#QuantumComputing",
-        "#ReinforcementLearning",
-        "#HamiltonianLearning",
-        "#QuantumControl",
-        "#SystemIdentification"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-19-arxiv-adaptive_hamiltonian_identification_via_quantum_reinforcement_learning_under_non_stationar",
-      "paper_title": "Adaptive Hamiltonian Identification via Quantum Reinforcement Learning under Non-Stationary Dynamics",
-      "paper_date": "2026-11-19",
-      "paper_category": "Quantum Simulation",
-      "generated_at": "2026-11-20T18:20:40",
+      "generated_at": "2026-11-21T17:07:30",
       "generator": "openai"
     }
   },
@@ -617,15 +349,15 @@
     ],
     "score": 76,
     "infographic": {
-      "key_insight": "Rapids co-designs a streaming neural decoder with FPGA hardware to deliver accurate, sub-microsecond quantum error correction.",
-      "engineering_relevance": "Scaling classical decoding hardware alongside qubits offers a path to faster, more accurate fault-tolerant quantum computing.",
+      "key_insight": "Rapids co-designs a streaming neural decoder with FPGA hardware to deliver fast, accurate quantum error correction while making classical compute a scalable resource.",
+      "engineering_relevance": "Hardware-aware decoding can meet superconducting processors’ rapid syndrome cycles without sacrificing accuracy, potentially reducing the physical-qubit overhead of fault tolerance.",
       "method": [
-        "Build the neural decoder from FPGA-efficient operations.",
-        "Train using the device’s integer arithmetic.",
-        "Scale across multiple FPGAs or harden into custom silicon."
+        "Stream syndrome measurements through a neural decoder.",
+        "Use FPGA-efficient operations and train in the device’s integer arithmetic.",
+        "Scale across multiple FPGAs or implement the design in custom silicon."
       ],
-      "evidence_signal": "The abstract reports under 1 microsecond per syndrome round for a distance-19 surface code on one FPGA, a 240-fold lower logical error rate than existing real-time hardware decoders, and 16-fold better accuracy than Relay on the [[144,12,12]] bivariate-bicycle code.",
-      "watch_item": "Multi-FPGA deployment must preserve low decision latency despite communication overhead; per-round throughput alone does not establish end-to-end latency.",
+      "evidence_signal": "The abstract reports under 1 microsecond per syndrome round for a distance-19 surface code on one FPGA, a 240-fold lower logical error rate than existing real-time hardware decoders, and 16-fold higher accuracy than Relay on the [[144,12,12]] bivariate-bicycle code.",
+      "watch_item": "Per-round throughput does not establish end-to-end decision latency; deployment should verify latency and accuracy under device-specific noise and integration constraints.",
       "hashtags": [
         "#QuantumErrorCorrection",
         "#NeuralDecoding",
@@ -639,7 +371,275 @@
       "paper_title": "Scaling classical hardware for accurate real-time quantum error correction",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-20T18:20:42",
+      "generated_at": "2026-11-21T17:07:32",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-topological_quantum_reservoir_computing",
+    "arxiv_id": "2611.24013v1",
+    "date": "2026-11-18",
+    "title": "Topological Quantum Reservoir Computing",
+    "authors": "Zhi-Lei Zhang, Lianxiang Cui, C. P. Sun, Kohei Nakajima, Kazuyuki Aihara",
+    "abstract": "Scaling universal quantum computation and implementing quantum machine learning with protected logical qubits remain challenging. To harness the computational potential of existing fault-tolerant quantum platforms, we introduce topological quantum reservoir computing, a novel approach using protected degrees of freedom for storage and the host system's intrinsic dynamics for information processing. Using a one-dimensional Kitaev chain, we show how long-lived Majorana edge modes and fast bulk responses support these complementary functions within the same many-body system. We identify the tradeoffs governing access to protected memory and show how matched interfaces enable programmable writing and interactions enable autonomous information consolidation from the bulk to the edge. These mechanisms improve performance on tasks requiring long-term retention of temporal information. Our results establish topology as a new resource for quantum reservoir computing and open a route toward near-term quantum computing and quantum machine learning.",
+    "category": "Quantum Error Correction",
+    "source": "arXiv",
+    "published": "2026-11-18T08:04:49Z",
+    "updated": "2026-11-18T08:04:49Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph",
+      "cond-mat.mes-hall"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24013v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24013v1"
+      }
+    ],
+    "score": 76,
+    "infographic": {
+      "key_insight": "Topological quantum reservoir computing combines protected Majorana edge modes for long-lived memory with fast bulk dynamics for information processing.",
+      "engineering_relevance": "This architecture could leverage existing fault-tolerant quantum platforms for temporal learning without requiring universal computation on protected logical qubits.",
+      "method": [
+        "Use a one-dimensional Kitaev chain as a quantum reservoir.",
+        "Match input interfaces to enable programmable writing into protected memory.",
+        "Use interactions to autonomously consolidate information from the bulk into edge modes."
+      ],
+      "evidence_signal": "The abstract reports improved performance on tasks requiring long-term temporal retention, but provides no numerical benchmarks or experimental validation details.",
+      "watch_item": "Accessing protected memory involves tradeoffs, making practical input coupling and readout important implementation concerns.",
+      "hashtags": [
+        "#QuantumReservoirComputing",
+        "#TopologicalQuantumComputing",
+        "#QuantumMachineLearning",
+        "#MajoranaModes",
+        "#QuantumMemory"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-topological_quantum_reservoir_computing",
+      "paper_title": "Topological Quantum Reservoir Computing",
+      "paper_date": "2026-11-18",
+      "paper_category": "Quantum Error Correction",
+      "generated_at": "2026-11-21T17:07:34",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-quantum_annealing_with_a_quantum_neural_network_width_of_annealing_matters",
+    "arxiv_id": "2611.24089v1",
+    "date": "2026-11-18",
+    "title": "Quantum Annealing with a Quantum Neural Network: Width of Annealing Matters",
+    "authors": "Mojtaba Asadollahi, Danial Khajehzadeh, Abolfazl Ramezanpour",
+    "abstract": "Quantum annealing is a promising quantum algorithm for dealing with computationally hard optimization problems. Currently available hardware can implement the algorithm for a significant class of Hamiltonian problems. However, its performance is especially limited in discontinuous quantum phase transitions, where the energy gap shrinks exponentially with system size. In this paper, we introduce an extension of quantum annealing to a quantum neural network and study its performance in a number of prototypical optimization problems. In particular, we observe that already a random quantum annealing network of width W = 2 can exponentially reduce the number of evolution layers or depth of the annealing process in the quantum search problem. By tuning the network parameters the search problem can be solved with exponentially small errors by a quantum perceptron of depth L = 1 and width W = 2. The findings show that width of a quantum annealing network is critical to enhance the success probability of the algorithm by providing a larger and learnable evolution space for the annealing process.",
+    "category": "Quantum Optimization",
+    "source": "arXiv",
+    "published": "2026-11-18T09:15:42Z",
+    "updated": "2026-11-18T09:15:42Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph",
+      "cond-mat.dis-nn",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24089v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24089v1"
+      }
+    ],
+    "score": 75,
+    "infographic": {
+      "key_insight": "Adding width to a quantum annealing network can dramatically reduce the depth needed for quantum search, with benefits reported already at width W = 2.",
+      "engineering_relevance": "Learnable network width offers an architectural lever for improving quantum optimization success without relying solely on longer annealing evolution.",
+      "method": [
+        "Extend quantum annealing to a quantum neural network.",
+        "Study random and parameter-tuned networks on prototypical optimization problems.",
+        "Vary network width and depth to assess quantum search performance."
+      ],
+      "evidence_signal": "The abstract reports that random width-2 networks can exponentially reduce quantum search depth, while a tuned width-2, depth-1 quantum perceptron achieves exponentially small errors.",
+      "watch_item": "The abstract does not establish hardware feasibility or quantify the cost of learning the network parameters, so reduced depth alone does not demonstrate practical speedup.",
+      "hashtags": [
+        "#QuantumAnnealing",
+        "#QuantumNeuralNetworks",
+        "#QuantumOptimization",
+        "#QuantumComputing",
+        "#QuantumSearch"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-quantum_annealing_with_a_quantum_neural_network_width_of_annealing_matters",
+      "paper_title": "Quantum Annealing with a Quantum Neural Network: Width of Annealing Matters",
+      "paper_date": "2026-11-18",
+      "paper_category": "Quantum Optimization",
+      "generated_at": "2026-11-21T17:07:36",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-quframe_pauli_frame_tracking_for_fault_tolerant_quantum_control",
+    "arxiv_id": "2611.24328v2",
+    "date": "2026-11-18",
+    "title": "QuFrame: Pauli Frame Tracking for Fault-Tolerant Quantum Control",
+    "authors": "Aleksandra Świerkowska, Ilgaz Er, Emmanouil Giortamis, Pramod Bhatotia",
+    "abstract": "Fault-tolerant quantum computing requires continuous quantum error correction (QEC) to suppress physical noise. While Clifford-only workloads can defer corrections to software post-processing, universal computation breaks this paradigm: executing non-Clifford gates via magic-state gadgets introduces hard, real-time control-flow dependencies on error-corrected measurements. Consequently, the controller must extract syndromes, decode them, and update the Pauli frame in real time, closing the entire QEC loop within a strict $1\\,μ\\text{s}$ cycle. However, prior proposals on Pauli frame tracking remain largely theoretical, leaving the microarchitectural bottlenecks of tracking, resolving, and synchronizing frame updates across distributed control pipelines unaddressed. To this end, we present QuFrame, a control microarchitecture for real-time Pauli frame tracking that closes the QEC loop within $1\\,μ\\text{s}$ while sustaining QPU-rate throughput. By introducing QuFrameISA, we cleanly decouple instruction execution from continuous Pauli frame management. Execution is distributed across per-qubit Instruction Resolution Engines (IREs) that resolve instructions against the frame via a single table lookup, while a Pauli Frame Management Unit enables independent, lock-free concurrent commits. To strictly guarantee the $1\\,μ\\text{s}$ deadline, QuFrame pairs an asynchronous primary decoder with an on-chip fallback decoder that resolves in $144\\,\\text{ns}$, natively reconciling divergent updates in hardware without degrading logical error rates.",
+    "category": "Quantum Error Correction",
+    "source": "arXiv",
+    "published": "2026-11-18T12:30:48Z",
+    "updated": "2026-11-19T10:43:11Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24328v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24328v2"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "QuFrame is a quantum-control microarchitecture designed to track Pauli frames in real time and close the quantum error-correction loop within 1 μs.",
+      "engineering_relevance": "It addresses the real-time control dependencies introduced by non-Clifford gates, where error-corrected measurements must guide ongoing execution.",
+      "method": [
+        "QuFrameISA separates instruction execution from continuous Pauli frame management.",
+        "Per-qubit Instruction Resolution Engines use a single table lookup, while a Pauli Frame Management Unit supports lock-free concurrent commits.",
+        "An asynchronous primary decoder is paired with an on-chip fallback decoder, with hardware reconciliation of divergent updates."
+      ],
+      "evidence_signal": "The abstract reports 144 ns fallback decoding, QPU-rate throughput, and a 1 μs QEC loop without degraded logical error rates, but gives no evaluation setup.",
+      "watch_item": "The abstract leaves hardware resource costs and scaling across large distributed control systems unspecified.",
+      "hashtags": [
+        "#QuantumComputing",
+        "#QuantumErrorCorrection",
+        "#FaultTolerance",
+        "#PauliFrameTracking",
+        "#QuantumControl"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-quframe_pauli_frame_tracking_for_fault_tolerant_quantum_control",
+      "paper_title": "QuFrame: Pauli Frame Tracking for Fault-Tolerant Quantum Control",
+      "paper_date": "2026-11-18",
+      "paper_category": "Quantum Error Correction",
+      "generated_at": "2026-11-21T17:07:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-fault_tolerant_quantum_processor_with_minimal_external_control",
+    "arxiv_id": "2611.23919v1",
+    "date": "2026-11-18",
+    "title": "Fault-tolerant quantum processor with minimal external control",
+    "authors": "Christopher A. Pattison, Jeongwan Haah, John Preskill",
+    "abstract": "Contemporary classical information processors integrate tens of billions of transistors printed on a chip, yet are fully controlled through comparatively few external wires. This is possible because data flows through hard-coded operations in step with a global clock and is steered by external instructions. Today's solid-state quantum processors are different -- every qubit receives instructions from outside the chip via its own dedicated control line, and error correction adds a further torrent of syndrome data that is transported off-chip. Here we show that the external control of a quantum chip can be greatly simplified. We propose a fault-tolerant architecture for universal quantum computation, inspired by modern classical processors, in which quantum information flows through a fixed, clocked device, propelled by local gates in a planar array. Our quantum processor receives an input stream of classical instructions via a small, constant number of external wires, each attached to a single qubit. Except for those few qubits coupled to external wires, all qubits evolve under a periodically-applied geometrically-local depth-3 circuit, which is fixed at the time the device is fabricated. Assuming a noiseless global clock (so that every operation is applied on schedule, though imperfectly), we establish an accuracy threshold theorem: For physical noise below a universal threshold -- afflicting every gate, measurement, and wire -- a chip with $n$ physical qubits can run any quantum algorithm that uses~$n/{\\sf polylog}(n/ε)$ logical qubits, where $ε$ is the error rate per logical gate. Each logical gate takes time~$n/{\\sf polylog}(n/ε)$; an alternative design, in which quantum operations remain strictly local and noisy, but on-chip wires broadcast noiseless classical signals instantaneously, reduces the time per logical gate to ${\\sf polylog}(n/ε)$.",
+    "category": "Quantum Error Correction",
+    "source": "arXiv",
+    "published": "2026-11-18T06:09:26Z",
+    "updated": "2026-11-18T06:09:26Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23919v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.23919v1"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "A proposed fault-tolerant quantum processor replaces per-qubit external control with a fixed, clocked local circuit and a constant number of instruction wires.",
+      "engineering_relevance": "The architecture could reduce external wiring and control complexity while supporting universal quantum computation.",
+      "method": [
+        "Move quantum information through a planar array using a fixed, periodically applied, geometrically local depth-3 circuit.",
+        "Inject classical instructions through a constant number of external wires, each attached to one qubit.",
+        "Prove an accuracy threshold for noisy gates, measurements, and wires under a noiseless global clock."
+      ],
+      "evidence_signal": "The abstract reports a theoretical threshold theorem, not hardware experiments: n physical qubits support n/polylog(n/ε) logical qubits at logical-gate error rate ε.",
+      "watch_item": "The noiseless-clock assumption is idealized, and the fully local design takes n/polylog(n/ε) time per logical gate; faster operation requires instantaneous noiseless on-chip classical broadcasts.",
+      "hashtags": [
+        "#QuantumComputing",
+        "#QuantumErrorCorrection",
+        "#FaultTolerance",
+        "#QuantumArchitecture",
+        "#QuantumControl"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-fault_tolerant_quantum_processor_with_minimal_external_control",
+      "paper_title": "Fault-tolerant quantum processor with minimal external control",
+      "paper_date": "2026-11-18",
+      "paper_category": "Quantum Error Correction",
+      "generated_at": "2026-11-21T17:07:40",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-19-arxiv-adaptive_hamiltonian_identification_via_quantum_reinforcement_learning_under_non_stationar",
+    "arxiv_id": "2611.26241v1",
+    "date": "2026-11-19",
+    "title": "Adaptive Hamiltonian Identification via Quantum Reinforcement Learning under Non-Stationary Dynamics",
+    "authors": "Jawaher Kaldari, Saif Al-Kuwari",
+    "abstract": "Accurate identification of the Hamiltonian governing a quantum system is important for quantum-system characterization, device calibration, simulation, and reliable operation of quantum hardware. In practical systems, however, the governing dynamics may vary over time because of parameter drift, changing control conditions, or transitions between operating regimes. In this work, we formulate Hamiltonian identification as a quantum reinforcement learning (QRL) problem in which a quantum agent processes sequential quantum-state observations and estimates the governing Hamiltonian parameters. We first consider stationary dynamics using a Vanilla-QRL agent and then introduce a recurrent GRU-QRL architecture to track non-stationary dynamics. The framework is evaluated on transverse-field Ising model systems under stationary dynamics, abrupt Hamiltonian switching, rapidly changing Hamiltonians, random switch locations over longer trajectories, and gradual Hamiltonian drift. We further compare the proposed approach with a Quantum Graph Recurrent Neural Network (QGRNN) baseline and evaluate frozen policies on unseen trajectories. Results show that both approaches accurately reconstruct stationary Hamiltonians, while GRU-QRL provides substantially improved tracking under non-stationary dynamics. These results demonstrate the potential of recurrent QRL as an adaptive system-identification tool for monitoring time-varying quantum systems.",
+    "category": "Quantum Simulation",
+    "source": "arXiv",
+    "published": "2026-11-19T15:20:21Z",
+    "updated": "2026-11-19T15:20:21Z",
+    "primary_category": "quant-ph",
+    "categories": [
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.26241v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.26241v1"
+      }
+    ],
+    "score": 73,
+    "infographic": {
+      "key_insight": "Recurrent quantum reinforcement learning improves Hamiltonian tracking when quantum-system dynamics change over time.",
+      "engineering_relevance": "Adaptive Hamiltonian estimation could support quantum-device calibration and monitoring under parameter drift or changing operating conditions.",
+      "method": [
+        "Formulate Hamiltonian identification as QRL using sequential quantum-state observations.",
+        "Use Vanilla-QRL for stationary dynamics and recurrent GRU-QRL for time-varying dynamics.",
+        "Compare against a Quantum Graph Recurrent Neural Network baseline and test frozen policies on unseen trajectories."
+      ],
+      "evidence_signal": "Evaluations on transverse-field Ising systems cover stationary dynamics, abrupt and rapid switching, randomized switch locations, and gradual drift, with substantially improved non-stationary tracking reported for GRU-QRL.",
+      "watch_item": "The abstract does not establish robustness to hardware noise, measurement costs, or scaling beyond the evaluated Ising systems.",
+      "hashtags": [
+        "#QuantumComputing",
+        "#ReinforcementLearning",
+        "#HamiltonianLearning",
+        "#SystemIdentification",
+        "#QuantumSimulation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-19-arxiv-adaptive_hamiltonian_identification_via_quantum_reinforcement_learning_under_non_stationar",
+      "paper_title": "Adaptive Hamiltonian Identification via Quantum Reinforcement Learning under Non-Stationary Dynamics",
+      "paper_date": "2026-11-19",
+      "paper_category": "Quantum Simulation",
+      "generated_at": "2026-11-21T17:07:42",
       "generator": "openai"
     }
   },
@@ -669,23 +669,23 @@
         "url": "https://arxiv.org/pdf/2611.26395v1"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "Non-binary detector error models preserve circuit-fault correlations and represent any Pauli channel exactly, while enabling more compact graphs and improved decoding.",
-      "engineering_relevance": "Tanner graphs with 4–5× fewer edges can reduce hardware interconnect demands, while scalar belief-propagation messages keep communication per edge simple.",
+      "key_insight": "Non-binary detector error models preserve circuit-fault correlations and represent any Pauli channel exactly, while yielding smaller graphs and better belief-propagation decoding performance in the reported evaluations.",
+      "engineering_relevance": "Tanner graphs with 4–5× fewer edges can reduce decoder hardware demands, while BP with OSD achieved up to 9.4× CPU speedup.",
       "method": [
-        "Represent each fault location with one random variable over its original error alphabet.",
-        "Apply a split-merge-regroup transformation to compact Clifford-circuit detector error models.",
-        "Decode using belief propagation, optionally with ordered-statistics decoding (OSD) post-processing."
+        "Model each circuit fault location as one random variable over its original error alphabet.",
+        "Use split–merge–regroup to combine error components with identical detector and observable flips.",
+        "Decode using belief propagation with one scalar message per edge, optionally followed by OSD."
       ],
-      "evidence_signal": "Numerical evaluations on surface, color, and bivariate bicycle codes report improved decoding performance, 4–5× fewer graph edges, and up to 9.4× faster CPU execution for BP with OSD.",
-      "watch_item": "The reported speedup is a best-case CPU result; hardware gains and performance across other noise models require validation.",
+      "evidence_signal": "Numerical evaluations on surface, color, and bivariate bicycle codes report better BP performance with and without OSD, 4–5× fewer graph edges, and up to 9.4× faster BP with OSD on CPU.",
+      "watch_item": "The reported speedup is CPU-based; hardware benefits require validation, and equivalence to binary models is proven only for factorizing channels under degenerate quantum MAP decoding.",
       "hashtags": [
         "#QuantumErrorCorrection",
-        "#QuantumHardware",
+        "#FaultTolerantQuantumComputing",
         "#DetectorErrorModels",
         "#BeliefPropagation",
-        "#FaultTolerantQuantumComputing"
+        "#QuantumHardware"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -693,7 +693,7 @@
       "paper_title": "Non-Binary Detector Error Models",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-20T18:20:44",
+      "generated_at": "2026-11-21T17:07:44",
       "generator": "openai"
     }
   },
@@ -723,22 +723,22 @@
         "url": "https://arxiv.org/pdf/2611.25578v1"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "Fourier-circuit configuration changes hybrid PointNet–quantum classification performance and noise sensitivity, with IQFT-After leading on ideal KITTI simulations but degrading more under noise.",
-      "engineering_relevance": "Hardware-aware circuit selection matters: removing final QFT SWAP gates reduces complexity while preserving Pauli-Z features up to a fixed permutation absorbable by the classification head.",
+      "key_insight": "Fourier-circuit configuration affects both LiDAR classification accuracy and noise sensitivity, with IQFT-After leading on ideal KITTI simulations but degrading more under quantum noise.",
+      "engineering_relevance": "Hardware-aware circuit selection matters: removing final QFT SWAP gates reduces complexity while preserving Pauli-Z features up to a fixed permutation absorbable by the classifier.",
       "method": [
-        "Combine classical PointNet feature extraction, amplitude encoding, and a variational quantum circuit.",
+        "Combine PointNet feature extraction, amplitude encoding, and a variational quantum circuit.",
         "Compare No-QFT, Full-QFT-After, QFT-no-swap, IQFT-After, and Trainable-QFT.",
-        "Evaluate classification, circuit complexity, and robustness under IBM FakeManilaV2 simulated noise."
+        "Evaluate classification, class-level behavior, circuit complexity, and simulated noise robustness."
       ],
-      "evidence_signal": "Across KITTI, nuScenes, and PandaSet with three random seeds, ideal KITTI weighted F1 reached 0.857 ± 0.033 for IQFT-After versus 0.838 ± 0.023 for No-QFT.",
-      "watch_item": "Simulation results do not establish quantum advantage or real-device performance; noise changes circuit rankings, and minority-class outcomes vary by dataset.",
+      "evidence_signal": "Evaluation on KITTI, nuScenes, and PandaSet across three seeds found ideal KITTI weighted F1 of 0.857 ± 0.033 for IQFT-After versus 0.838 ± 0.023 for No-QFT; IBM FakeManilaV2 noise changed the circuit ranking.",
+      "watch_item": "Ideal-simulation gains do not establish hardware advantage; noise robustness and dataset-dependent minority-class performance require careful validation.",
       "hashtags": [
         "#QuantumMachineLearning",
-        "#QuantumFourierTransform",
-        "#PointNet",
         "#LiDAR",
+        "#PointNet",
+        "#QuantumFourierTransform",
         "#NoiseRobustness"
       ],
       "model": "gpt-6.1-sol",
@@ -747,7 +747,7 @@
       "paper_title": "QFT-Based Hybrid PointNet-Quantum Neural Networks for LiDAR Point-Cloud Classification",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-20T18:20:46",
+      "generated_at": "2026-11-21T17:07:46",
       "generator": "openai"
     }
   },
@@ -778,23 +778,23 @@
         "url": "https://arxiv.org/pdf/2611.23196v1"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "Combining polynomial reduced-order models with quantum transport preserves nonlinear drift while making per-step rotation counts scale polylogarithmically with grid cells at fixed model dimension and polynomial degree.",
-      "engineering_relevance": "Reduced-model polynomial degree becomes a practical design variable for balancing flow-model accuracy against early fault-tolerant quantum hardware costs.",
+      "key_insight": "Reduced-order polynomial models paired with quantum transport preserve nonlinear flow dynamics while making per-step rotation counts polylogarithmic in grid resolution at fixed model dimension and drift degree.",
+      "engineering_relevance": "Jointly choosing reduced-model accuracy and polynomial degree offers a route to balancing flow-simulation fidelity against early fault-tolerant quantum hardware costs.",
       "method": [
-        "Fit polynomial reduced-order models using sparse identification of nonlinear dynamics.",
-        "Implement Koopman–von Neumann transport with Walsh-synthesized quantum circuits.",
-        "Estimate end-to-end runtime and physical qubits using surface-code resource models."
+        "Fit polynomial reduced-order dynamics using sparse identification of nonlinear dynamics.",
+        "Encode probability-density evolution with Walsh-synthesized Koopman–von Neumann transport.",
+        "Estimate end-to-end costs using surface-code resource models."
       ],
-      "evidence_signal": "For a saturating cylinder wake, the estimated cost is 1.62 hours on about 560,000 physical qubits for 1% relative RMS field error against the radial model; IBM experiments demonstrate nonlinear radial transport with reference-circuit noise mitigation.",
-      "watch_item": "The fault-tolerant results are resource estimates rather than demonstrated end-to-end performance, and the reported 1% error is relative to the radial model, not the full flow.",
+      "evidence_signal": "For a saturating cylinder wake, the study estimates 1.62 hours on about 560,000 physical qubits for 1% relative RMS field error against the radial model, and demonstrates nonlinear radial transport on IBM hardware with reference-circuit noise mitigation.",
+      "watch_item": "The fault-tolerant runtimes are estimates, not hardware demonstrations; three-coordinate wake estimates range from hours to weeks, and the quoted 1% error is relative to the radial model.",
       "hashtags": [
         "#QuantumComputing",
-        "#FaultTolerance",
-        "#NonlinearDynamics",
+        "#QuantumSimulation",
+        "#FluidDynamics",
         "#ReducedOrderModeling",
-        "#ComputationalFluidDynamics"
+        "#FaultTolerance"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -802,7 +802,7 @@
       "paper_title": "Nonlinearity-preserving quantum simulation of flows in the early fault-tolerant regime",
       "paper_date": "2026-11-17",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-20T18:20:48",
+      "generated_at": "2026-11-21T17:07:48",
       "generator": "openai"
     }
   },
@@ -831,17 +831,17 @@
         "url": "https://arxiv.org/pdf/2611.26126v1"
       }
     ],
-    "score": 75,
+    "score": 70,
     "infographic": {
       "key_insight": "The classical communication cost of simulating quantum state transmission equals that of simulating prepare-and-broadcast quantum correlations, growing exponentially with quantum dimension and as a power law in inverse noise.",
-      "engineering_relevance": "Classical complexity provides a resource benchmark for quantum communication advantage and tools to certify it in quantum preparation devices.",
+      "engineering_relevance": "Classical complexity provides a resource benchmark for quantum communication advantage and tools to certify that advantage in quantum preparation devices.",
       "method": [
         "Define minimum-cost classical communication models for quantum preparations.",
-        "Prove resource equivalence with prepare-and-broadcast correlation simulation.",
-        "Certify complexity using semidefinite programming, analytical witnesses and scalable convex programming."
+        "Prove resource equivalence with simulations of prepare-and-broadcast correlations.",
+        "Develop exact semidefinite-programming characterisations, analytical witnesses and scalable convex optimisation."
       ],
-      "evidence_signal": "The abstract reports theoretical scaling results, an exact semidefinite-programming characterisation and convex methods scalable to hundreds—and sometimes thousands—of qubit states.",
-      "watch_item": "The abstract does not report hardware validation, and computational scalability may depend on the preparation ensemble and certification method.",
+      "evidence_signal": "The abstract reports theoretical scaling results and convex-programming methods scalable to hundreds, and sometimes thousands, of qubit states, rather than hardware measurements.",
+      "watch_item": "Practical certification depends on computational tractability; the reported optimisation scale is not a guarantee for arbitrary preparation sets.",
       "hashtags": [
         "#QuantumCommunication",
         "#ClassicalSimulation",
@@ -855,7 +855,7 @@
       "paper_title": "The classical complexity of quantum state transmission",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-20T18:20:51",
+      "generated_at": "2026-11-21T17:07:50",
       "generator": "openai"
     }
   },
@@ -884,17 +884,17 @@
         "url": "https://arxiv.org/pdf/2611.25106v1"
       }
     ],
-    "score": 75,
+    "score": 70,
     "infographic": {
-      "key_insight": "A hybrid translator combines deterministic compilation for known quantum MLIR dialects with LLM agents for unseen dialects and repair, validating generated QIR through dual-backend testing.",
-      "engineering_relevance": "This approach could reduce hand-written compiler work when connecting diverse quantum frameworks to QIR runtimes.",
+      "key_insight": "A hybrid translator combines deterministic compilation with LLM agents to convert quantum MLIR dialects into QIR, using dual-backend testing to check behavioral agreement.",
+      "engineering_relevance": "This approach could reduce hand-written compiler work when connecting quantum frameworks to QIR runtimes, while retaining deterministic translation for known dialects.",
       "method": [
-        "Use deterministic translation for Catalyst and Quake, with LLM agents handling unseen dialects and failed-output repair.",
+        "Use deterministic translation for Catalyst and Quake, with an LLM path for unseen dialects and repair after failed tests.",
         "Execute source MLIR and generated QIR on independent simulators; compare output distributions using total variation distance (TVD).",
-        "Support smaller open-weight models with inline context and a guardrail assembler that rebuilds valid QIR from incomplete output."
+        "Support smaller open-weight models with inline context and a guardrail assembler that reconstructs valid QIR from incomplete output."
       ],
-      "evidence_signal": "Across 41 circuits spanning three dialects and 1–100 qubits, deterministic translation was gate-exact on all 70 circuit–dialect pairs with average similarity (1−TVD) above 95%; four of six models generated valid logical-level QIR for an unseen FTQC dialect on the first iteration.",
-      "watch_item": "Valid QIR and high distribution similarity do not establish full semantic equivalence or generalization beyond the tested circuits and dialects.",
+      "evidence_signal": "Across 41 circuits spanning three dialects and 1–100 qubits, deterministic translation was gate-exact on all 70 circuit–dialect pairs with average similarity above 95% (1−TVD); four of six models produced valid logical-level QIR for unseen FTQC on the first iteration.",
+      "watch_item": "Valid QIR and high distributional similarity do not establish full semantic equivalence or reliable generalization beyond the tested circuits and dialects.",
       "hashtags": [
         "#QuantumComputing",
         "#MLIR",
@@ -908,7 +908,7 @@
       "paper_title": "Agentic MLIR-to-QIR Translation with Dual-Backend Testing: A Hybrid Deterministic and LLM Approach",
       "paper_date": "2026-11-18",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-20T18:20:52",
+      "generated_at": "2026-11-21T17:07:52",
       "generator": "openai"
     }
   },
@@ -938,23 +938,23 @@
         "url": "https://arxiv.org/pdf/2611.25752v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Boosting noisy quantum classifiers can achieve a shared classification target with fewer circuit executions than probabilistic error cancellation, avoiding full reconstruction of ideal outputs.",
-      "engineering_relevance": "For supervised quantum classification, task-aware ensembles may reduce sampling costs by exploiting predictive information that survives hardware noise.",
+      "key_insight": "For the supervised classification tasks studied, boosting noisy quantum classifiers meets the same accuracy target with fewer circuit executions than probabilistic error cancellation, avoiding ideal-output reconstruction.",
+      "engineering_relevance": "Task-aware ensembles could reduce quantum sampling costs by exploiting labeled data and useful information retained in noisy circuit outputs.",
       "method": [
-        "Compare boosting and probabilistic error cancellation against the same learning target.",
-        "Bound hypothesis-class complexity for specified circuit architectures under Pauli noise, linking matched empirical margin loss to a shared risk upper bound.",
+        "Compare boosted noisy parameterized quantum circuits with probabilistic error cancellation at a shared learning target.",
+        "Establish a common classification-risk upper bound when empirical margin loss matches, for specified architectures under Pauli noise.",
         "Evaluate AdaBoostR and Real AdaBoost in finite-shot teacher–student simulations."
       ],
-      "evidence_signal": "Across simulated circuit depths and physical noise strengths, boosting required fewer executions at the same accuracy target as depth and noise increased, and achieved higher test accuracy than the corresponding reference.",
-      "watch_item": "The reported advantage is task-dependent and demonstrated in specified simulated settings; broader applicability and hardware performance remain unestablished.",
+      "evidence_signal": "Across simulated circuit depths and physical noise strengths, boosting required fewer circuit executions as depth and noise increased and achieved higher test accuracy than the corresponding reference.",
+      "watch_item": "The advantage is task-dependent and demonstrated in simulations with specified architectures and Pauli noise; broader hardware validation remains necessary.",
       "hashtags": [
         "#QuantumMachineLearning",
-        "#QuantumComputing",
         "#Boosting",
-        "#ErrorMitigation",
-        "#NoisyQuantumCircuits"
+        "#NoisyQuantumComputing",
+        "#QuantumErrorMitigation",
+        "#ResourceEfficiency"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -962,7 +962,7 @@
       "paper_title": "Beyond Error Mitigation: Using Boosting for Noisy Quantum Machine Learning",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-20T18:20:55",
+      "generated_at": "2026-11-21T17:07:55",
       "generator": "openai"
     }
   },
@@ -991,22 +991,22 @@
         "url": "https://arxiv.org/pdf/2611.24890v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Symmetry-preserving quantum circuits can retain hidden invariant blocks that limit target-state fidelity, but algebra-guided generator additions can remove these accessibility barriers.",
-      "engineering_relevance": "Screening candidate gates before variational optimization can guide symmetry-preserving circuit extensions toward better state accessibility.",
+      "key_insight": "Symmetry-preserving quantum circuits can retain hidden invariant blocks that limit target-state fidelity, but residual-algebra analysis identifies generators that remove these accessibility barriers.",
+      "engineering_relevance": "Screening symmetry-preserving gates before optimization can guide circuit extensions toward broader state access without violating physical symmetries.",
       "method": [
         "Compute the residual dynamical Lie algebra and its commutant to identify invariant blocks and fidelity bounds.",
-        "Screen added generators by the blocks they couple and the adjoint modules they generate.",
-        "Use real-rotation and complex-escape criteria to expand controllability; guide multi-block design with a connected coupling graph."
+        "Screen candidate generators by which blocks they couple and which adjoint modules they generate.",
+        "Use real-rotation and complex-escape criteria to expand controllability, with block graphs suggesting minimum-cost spanning-tree designs."
       ],
-      "evidence_signal": "The abstract reports algebraic proofs and demonstrations in XXZ and Hubbard models, but provides no numerical performance metrics.",
+      "evidence_signal": "The abstract reports algebraic proofs and demonstrations in XXZ and Hubbard models, but provides no quantitative performance benchmarks.",
       "watch_item": "Removing algebraic accessibility barriers does not by itself guarantee shallow circuits, noise robustness, or successful variational optimization.",
       "hashtags": [
         "#QuantumComputing",
-        "#VariationalQuantumAlgorithms",
-        "#SymmetryPreservingCircuits",
-        "#LieAlgebras",
+        "#VariationalQuantumCircuits",
+        "#SymmetryPreserving",
+        "#LieAlgebra",
         "#QuantumControl"
       ],
       "model": "gpt-6.1-sol",
@@ -1015,7 +1015,7 @@
       "paper_title": "Residual-Algebraic Design of Symmetry-Preserving Variational Quantum Circuits",
       "paper_date": "2026-11-18",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-20T18:20:57",
+      "generated_at": "2026-11-21T17:07:57",
       "generator": "openai"
     }
   },
@@ -1044,23 +1044,23 @@
         "url": "https://arxiv.org/pdf/2611.26605v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
       "key_insight": "In-place quantum multiplication and modular inversion achieve O(n^(1+ε)) gate counts for any ε > 0, with zero ancillas except for standard multiplication by a quantum multiplier.",
-      "engineering_relevance": "These arithmetic primitives could reduce gate and workspace requirements in quantum applications while overwriting inputs directly with outputs.",
+      "engineering_relevance": "These arithmetic primitives could reduce gate and qubit overheads in quantum applications while overwriting inputs directly with outputs.",
       "method": [
-        "Unify classical- and quantum-multiplier algorithms under one multiplication theorem.",
-        "Perform multiplication modulo 2^n with an odd multiplier and no ancillas.",
-        "Extend to standard multiplication with nonzero multipliers and to ancilla-free inversion modulo 2^n."
+        "Derive multiplication algorithms from a unified theorem.",
+        "Multiply modulo 2^n using an odd classical or quantum multiplier without ancillas.",
+        "Extend to standard multiplication with nonzero multipliers and ancilla-free modular inversion modulo 2^n."
       ],
-      "evidence_signal": "The abstract reports theoretical complexity guarantees and claims the first simultaneous subquadratic gate and sublinear ancilla bounds for these operations; it provides no empirical benchmarks.",
-      "watch_item": "Practical gains depend on gate-count constants and hardware compilation overheads, which are not quantified in the abstract.",
+      "evidence_signal": "The abstract reports theoretical resource bounds and claims the first simultaneous subquadratic gate and sublinear ancilla counts for these in-place operations, rather than empirical benchmarks.",
+      "watch_item": "Asymptotic savings do not establish practical circuit costs; standard multiplication by a quantum multiplier still requires O(log n) ancillas.",
       "hashtags": [
         "#QuantumAlgorithms",
         "#QuantumArithmetic",
-        "#InPlaceComputation",
-        "#AncillaOptimization",
-        "#QuantumComputing"
+        "#QuantumComputing",
+        "#ResourceEfficiency",
+        "#InPlaceComputation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -1068,7 +1068,7 @@
       "paper_title": "Fast, in-place, and ancilla-free quantum algorithms for integer multiplication and inversion",
       "paper_date": "2026-11-19",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-20T18:20:59",
+      "generated_at": "2026-11-21T17:07:59",
       "generator": "openai"
     }
   }

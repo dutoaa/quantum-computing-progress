@@ -1,19 +1,19 @@
 {
-  "key_insight": "Fourier-circuit configuration affects both LiDAR classification accuracy and noise sensitivity, with IQFT-After leading on ideal KITTI simulations but degrading more under quantum noise.",
-  "engineering_relevance": "Hardware-aware circuit selection matters: removing final QFT SWAP gates reduces complexity while preserving Pauli-Z features up to a fixed permutation absorbable by the classifier.",
+  "key_insight": "Fourier-circuit configuration affects LiDAR classification accuracy and noise sensitivity: IQFT-After performs best on ideal KITTI simulations but degrades more under quantum noise.",
+  "engineering_relevance": "Hardware-aware circuit selection matters, and removing final QFT SWAP gates reduces complexity while preserving Pauli-Z features up to a permutation absorbable by the classifier.",
   "method": [
     "Combine PointNet feature extraction, amplitude encoding, and a variational quantum circuit.",
     "Compare No-QFT, Full-QFT-After, QFT-no-swap, IQFT-After, and Trainable-QFT.",
     "Evaluate classification, class-level behavior, circuit complexity, and simulated noise robustness."
   ],
-  "evidence_signal": "Evaluation on KITTI, nuScenes, and PandaSet across three seeds found ideal KITTI weighted F1 of 0.857 ± 0.033 for IQFT-After versus 0.838 ± 0.023 for No-QFT; IBM FakeManilaV2 noise changed the circuit ranking.",
-  "watch_item": "Ideal-simulation gains do not establish hardware advantage; noise robustness and dataset-dependent minority-class performance require careful validation.",
+  "evidence_signal": "Tests on KITTI, nuScenes, and PandaSet across three seeds yielded ideal KITTI weighted F1 of 0.857 ± 0.033 for IQFT-After versus 0.838 ± 0.023 for No-QFT; IBM FakeManilaV2 noise changed the circuit ranking.",
+  "watch_item": "Noise-model simulations do not establish real-hardware performance, and minority-class behavior varies by dataset.",
   "hashtags": [
     "#QuantumMachineLearning",
-    "#LiDAR",
-    "#PointNet",
+    "#HybridQuantumClassical",
     "#QuantumFourierTransform",
-    "#NoiseRobustness"
+    "#PointCloudClassification",
+    "#LiDAR"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "QFT-Based Hybrid PointNet-Quantum Neural Networks for LiDAR Point-Cloud Classification",
   "paper_date": "2026-11-19",
   "paper_category": "Quantum Machine Learning",
-  "generated_at": "2026-11-21T17:07:46",
+  "generated_at": "2026-11-22T17:38:06",
   "generator": "openai"
 }

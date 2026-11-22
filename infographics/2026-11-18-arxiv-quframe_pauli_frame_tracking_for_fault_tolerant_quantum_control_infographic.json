@@ -1,19 +1,19 @@
 {
   "key_insight": "QuFrame is a quantum-control microarchitecture designed to track Pauli frames in real time and close the quantum error-correction loop within 1 μs.",
-  "engineering_relevance": "It addresses the real-time control dependencies introduced by non-Clifford gates, where error-corrected measurements must guide ongoing execution.",
+  "engineering_relevance": "It addresses time-critical control dependencies introduced by non-Clifford magic-state gadgets while sustaining QPU-rate throughput.",
   "method": [
     "QuFrameISA separates instruction execution from continuous Pauli frame management.",
-    "Per-qubit Instruction Resolution Engines use a single table lookup, while a Pauli Frame Management Unit supports lock-free concurrent commits.",
-    "An asynchronous primary decoder is paired with an on-chip fallback decoder, with hardware reconciliation of divergent updates."
+    "Per-qubit Instruction Resolution Engines use a single table lookup, while a Pauli Frame Management Unit supports independent, lock-free concurrent commits.",
+    "An asynchronous primary decoder is paired with an on-chip fallback decoder and hardware reconciliation of divergent updates."
   ],
-  "evidence_signal": "The abstract reports 144 ns fallback decoding, QPU-rate throughput, and a 1 μs QEC loop without degraded logical error rates, but gives no evaluation setup.",
-  "watch_item": "The abstract leaves hardware resource costs and scaling across large distributed control systems unspecified.",
+  "evidence_signal": "The abstract reports 144 ns fallback decoding and a 1 μs QEC-loop deadline without degraded logical error rates, but provides no benchmark or implementation details.",
+  "watch_item": "Scalability and timing guarantees need validation under realistic decoder workloads and distributed-control communication delays.",
   "hashtags": [
-    "#QuantumComputing",
     "#QuantumErrorCorrection",
-    "#FaultTolerance",
+    "#FaultTolerantQuantumComputing",
     "#PauliFrameTracking",
-    "#QuantumControl"
+    "#QuantumControl",
+    "#ComputerArchitecture"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "QuFrame: Pauli Frame Tracking for Fault-Tolerant Quantum Control",
   "paper_date": "2026-11-18",
   "paper_category": "Quantum Error Correction",
-  "generated_at": "2026-11-21T17:07:38",
+  "generated_at": "2026-11-22T17:37:55",
   "generator": "openai"
 }

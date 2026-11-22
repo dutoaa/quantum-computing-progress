@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-11-21
+Generated: 2026-11-22
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Soft Mixture of Quantum Experts for Hybrid Quantum-Classical Learning
@@ -51,15 +51,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.25095v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-18-arxiv-a_measurement_free_quantum_error_correction_protocol_for_superconducting_cavities_infographic.json
 
-## 7. Scaling classical hardware for accurate real-time quantum error correction
-
-- Date: 2026-11-19
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2611.26447v1
-- PDF: https://arxiv.org/pdf/2611.26447v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-19-arxiv-scaling_classical_hardware_for_accurate_real_time_quantum_error_correction_infographic.json
-
-## 8. Topological Quantum Reservoir Computing
+## 7. Topological Quantum Reservoir Computing
 
 - Date: 2026-11-18
 - Category: Quantum Error Correction
@@ -67,7 +59,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.24013v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-18-arxiv-topological_quantum_reservoir_computing_infographic.json
 
-## 9. Quantum Annealing with a Quantum Neural Network: Width of Annealing Matters
+## 8. Quantum Annealing with a Quantum Neural Network: Width of Annealing Matters
 
 - Date: 2026-11-18
 - Category: Quantum Optimization
@@ -75,7 +67,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.24089v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-18-arxiv-quantum_annealing_with_a_quantum_neural_network_width_of_annealing_matters_infographic.json
 
-## 10. QuFrame: Pauli Frame Tracking for Fault-Tolerant Quantum Control
+## 9. QuFrame: Pauli Frame Tracking for Fault-Tolerant Quantum Control
 
 - Date: 2026-11-18
 - Category: Quantum Error Correction
@@ -83,7 +75,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.24328v2
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-18-arxiv-quframe_pauli_frame_tracking_for_fault_tolerant_quantum_control_infographic.json
 
-## 11. Fault-tolerant quantum processor with minimal external control
+## 10. Fault-tolerant quantum processor with minimal external control
 
 - Date: 2026-11-18
 - Category: Quantum Error Correction
@@ -91,13 +83,21 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.23919v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-18-arxiv-fault_tolerant_quantum_processor_with_minimal_external_control_infographic.json
 
-## 12. Adaptive Hamiltonian Identification via Quantum Reinforcement Learning under Non-Stationary Dynamics
+## 11. Adaptive Hamiltonian Identification via Quantum Reinforcement Learning under Non-Stationary Dynamics
 
 - Date: 2026-11-19
 - Category: Quantum Simulation
 - arXiv: https://arxiv.org/abs/2611.26241v1
 - PDF: https://arxiv.org/pdf/2611.26241v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-19-arxiv-adaptive_hamiltonian_identification_via_quantum_reinforcement_learning_under_non_stationar_infographic.json
+
+## 12. Scaling classical hardware for accurate real-time quantum error correction
+
+- Date: 2026-11-19
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2611.26447v1
+- PDF: https://arxiv.org/pdf/2611.26447v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-19-arxiv-scaling_classical_hardware_for_accurate_real_time_quantum_error_correction_infographic.json
 
 ## 13. Non-Binary Detector Error Models
 

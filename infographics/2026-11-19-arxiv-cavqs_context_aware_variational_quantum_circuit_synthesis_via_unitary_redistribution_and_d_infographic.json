@@ -1,13 +1,13 @@
 {
   "key_insight": "CAVQS reduces two-qubit gate counts by optimizing across circuit-block boundaries and exploiting permitted terminal measurements with classical feedforward.",
-  "engineering_relevance": "Lower two-qubit gate counts could reduce execution cost and noise exposure, while dynamic implementations require measurement and feedforward support.",
+  "engineering_relevance": "Lower CNOT costs could ease hardware execution, while dynamic implementations require measurement and feedforward support.",
   "method": [
-    "Redistribute unitary factors between overlapping blocks using QR decomposition while preserving the overall transformation.",
-    "Search for ancilla-free dynamic implementations before permitted terminal measurements under a CNOT budget.",
-    "Construct branch unitaries analytically to minimize expected CNOT cost."
+    "Use QR decomposition to redistribute unitary factors across overlapping blocks while preserving the overall transformation.",
+    "Resynthesize context-adjusted blocks to enable cross-block gate reductions.",
+    "For eligible terminal-measurement blocks, combine CNOT-budgeted search with analytic branch unitaries to minimize expected CNOT cost without ancillas."
   ],
-  "evidence_signal": "On common successful random-circuit instances, mean two-qubit gate reductions span 2.05%–74.64% across three baselines; on 4–6-qubit algorithm benchmarks, reported reductions span 20.65%–71.88%.",
-  "watch_item": "Comparisons on common successful instances do not establish overall synthesis success rates, and dynamic-circuit latency may offset gate savings.",
+  "evidence_signal": "On common successful random-circuit instances, mean two-qubit gate reductions range from 2.05% to 74.64% across three baselines; reported reductions on 4–6-qubit algorithm benchmarks range from 20.65% to 71.88%.",
+  "watch_item": "Dynamic reconstruction applies only where terminal measurements are permitted, and gate-count savings alone do not establish hardware-level speed or fidelity gains.",
   "hashtags": [
     "#QuantumComputing",
     "#QuantumCircuitSynthesis",
@@ -21,6 +21,6 @@
   "paper_title": "CAVQS: Context-Aware Variational Quantum Circuit Synthesis via Unitary Redistribution and Dynamic Reconstruction",
   "paper_date": "2026-11-19",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-11-22T17:37:47",
+  "generated_at": "2026-11-23T21:54:07",
   "generator": "openai"
 }

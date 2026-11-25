@@ -1,19 +1,19 @@
 {
-  "key_insight": "BT-QAOA approximates Max-k-Cut through binary MaxCut splits, reducing per-circuit quantum resources without directly encoding k assignments per vertex.",
-  "engineering_relevance": "The approach could make multiway graph partitioning more practical on resource-limited quantum hardware by trading larger circuits for multiple smaller subproblem solves.",
+  "key_insight": "BT-QAOA approximates Max-k-Cut through binary-tree partitioning with standard MaxCut QAOA, reducing per-circuit resource demands without directly encoding k assignments per vertex.",
+  "engineering_relevance": "The approach could make multiway graph-partitioning optimization more accessible on qubit- and gate-limited quantum hardware.",
   "method": [
     "Run standard MaxCut QAOA on the full vertex set.",
-    "Repeatedly split the subset with the largest cut-value gain until the binary tree has k leaves.",
-    "Solve at most 2k−3 MaxCut subproblems, with a derived approximation bound tied to single-split quality."
+    "Repeatedly split the subset with the largest estimated cut-value gain, using at most 2k−3 MaxCut subproblems overall.",
+    "After k−1 splits, use the tree’s k leaves as the partition."
   ],
-  "evidence_signal": "Numerical simulations report high approximation ratios, reduced per-circuit qubit and gate overhead, and orders-of-magnitude improvements in estimated single compiled-circuit success probability.",
-  "watch_item": "Per-circuit savings do not establish lower total runtime, and the abstract reports simulations rather than hardware validation.",
+  "evidence_signal": "Numerical simulations report lower per-circuit qubit and gate overhead, high approximation ratios, and orders-of-magnitude improvements in estimated single-compiled-circuit success probability.",
+  "watch_item": "Per-circuit savings require multiple subproblem solves; the abstract does not establish end-to-end runtime gains or hardware-validated performance.",
   "hashtags": [
     "#QuantumComputing",
     "#QAOA",
     "#MaxKCut",
-    "#CombinatorialOptimization",
-    "#QuantumAlgorithms"
+    "#GraphPartitioning",
+    "#QuantumOptimization"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Binary-Tree Quantum Approximate Optimization Algorithm for the Maximum $k$-Cut Problem",
   "paper_date": "2026-11-23",
   "paper_category": "Quantum Algorithms",
-  "generated_at": "2026-11-24T20:30:04",
+  "generated_at": "2026-11-25T19:46:26",
   "generator": "openai"
 }

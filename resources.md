@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-11-24
+Generated: 2026-11-25
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. Cqlib: A High-Performance Software Stack for Quantum Computing
@@ -11,7 +11,15 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.29983v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-cqlib_a_high_performance_software_stack_for_quantum_computing_infographic.json
 
-## 2. Non unitary and nonlinear quantum generative large model design and fast large-scale training without back propagation
+## 2. Machine Learning-Based Quantum Error Mitigation for Bound-State Simulations
+
+- Date: 2026-11-24
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2611.32459v1
+- PDF: https://arxiv.org/pdf/2611.32459v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-machine_learning_based_quantum_error_mitigation_for_bound_state_simulations_infographic.json
+
+## 3. Non unitary and nonlinear quantum generative large model design and fast large-scale training without back propagation
 
 - Date: 2026-11-22
 - Category: Quantum Machine Learning
@@ -19,7 +27,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.29571v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-22-arxiv-non_unitary_and_nonlinear_quantum_generative_large_model_design_and_fast_large_scale_train_infographic.json
 
-## 3. Solving the Traveling Salesman Problem Using Quantum Devices: QUBO and HOBO Formulations
+## 4. Solving the Traveling Salesman Problem Using Quantum Devices: QUBO and HOBO Formulations
 
 - Date: 2026-11-23
 - Category: Quantum Algorithms
@@ -27,7 +35,7 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.30972v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-solving_the_traveling_salesman_problem_using_quantum_devices_qubo_and_hobo_formulations_infographic.json
 
-## 4. Observable-Level Expressivity in Fixed-Readout Quantum Neural Networks
+## 5. Observable-Level Expressivity in Fixed-Readout Quantum Neural Networks
 
 - Date: 2026-11-23
 - Category: Quantum Machine Learning
@@ -35,7 +43,23 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.30175v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-observable_level_expressivity_in_fixed_readout_quantum_neural_networks_infographic.json
 
-## 5. Binary-Tree Quantum Approximate Optimization Algorithm for the Maximum $k$-Cut Problem
+## 6. Thermal state preparation with shallow quantum circuits
+
+- Date: 2026-11-24
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2611.32388v1
+- PDF: https://arxiv.org/pdf/2611.32388v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-thermal_state_preparation_with_shallow_quantum_circuits_infographic.json
+
+## 7. A machine learning architecture for scaling of holographic quantum circuits
+
+- Date: 2026-11-24
+- Category: Quantum Machine Learning
+- arXiv: https://arxiv.org/abs/2611.31867v1
+- PDF: https://arxiv.org/pdf/2611.31867v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-a_machine_learning_architecture_for_scaling_of_holographic_quantum_circuits_infographic.json
+
+## 8. Binary-Tree Quantum Approximate Optimization Algorithm for the Maximum $k$-Cut Problem
 
 - Date: 2026-11-23
 - Category: Quantum Algorithms
@@ -43,15 +67,31 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.30508v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-binary_tree_quantum_approximate_optimization_algorithm_for_the_maximum_k_cut_problem_infographic.json
 
-## 6. A Frequency-Learning Interpolation-Based Coordinate Descent Method to Optimize Parameterized Quantum Circuits on Quantum Hardware
+## 9. Blueprint for DOE Quantum Supercomputing
 
-- Date: 2026-11-21
+- Date: 2026-11-23
+- Category: Quantum Error Correction
+- arXiv: https://arxiv.org/abs/2611.31514v1
+- PDF: https://arxiv.org/pdf/2611.31514v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-blueprint_for_doe_quantum_supercomputing_infographic.json
+
+## 10. Prospects and limitations of adaptive variational quantum algorithms for lattice field theories: a case study in 2+1 dimensions
+
+- Date: 2026-11-24
 - Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2611.29019v1
-- PDF: https://arxiv.org/pdf/2611.29019v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-21-arxiv-a_frequency_learning_interpolation_based_coordinate_descent_method_to_optimize_parameteriz_infographic.json
+- arXiv: https://arxiv.org/abs/2611.33138v1
+- PDF: https://arxiv.org/pdf/2611.33138v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-prospects_and_limitations_of_adaptive_variational_quantum_algorithms_for_lattice_field_the_infographic.json
 
-## 7. THeatA: Transport- and Heating-aware QEC simulation with Cooling Strategies for QCCD Trapped-Ion Systems
+## 11. Quantum optimization beyond qubit count by low-energy subspace sampling
+
+- Date: 2026-11-24
+- Category: Quantum Optimization
+- arXiv: https://arxiv.org/abs/2611.32560v1
+- PDF: https://arxiv.org/pdf/2611.32560v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-quantum_optimization_beyond_qubit_count_by_low_energy_subspace_sampling_infographic.json
+
+## 12. THeatA: Transport- and Heating-aware QEC simulation with Cooling Strategies for QCCD Trapped-Ion Systems
 
 - Date: 2026-11-23
 - Category: Quantum Error Correction
@@ -59,7 +99,55 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.30676v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-theata_transport_and_heating_aware_qec_simulation_with_cooling_strategies_for_qccd_trapped_infographic.json
 
-## 8. Reducing RSA-2048 Factoring Resources Below One Billion Toffolis via LLM-Driven Verifiable Quantum Compilation
+## 13. Improving Quantum Oblivious Transfer using Zero-Knowledge Proofs
+
+- Date: 2026-11-24
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2611.32239v1
+- PDF: https://arxiv.org/pdf/2611.32239v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-improving_quantum_oblivious_transfer_using_zero_knowledge_proofs_infographic.json
+
+## 14. Validity and maximum violation of the entanglement-assisted quantum Singleton bound for linear stabilizer codes
+
+- Date: 2026-11-24
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2611.32126v1
+- PDF: https://arxiv.org/pdf/2611.32126v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-validity_and_maximum_violation_of_the_entanglement_assisted_quantum_singleton_bound_for_li_infographic.json
+
+## 15. Quantum Coherence and Basis-Dependent Correlations in Quantum Systems
+
+- Date: 2026-11-24
+- Category: Quantum Hardware
+- arXiv: https://arxiv.org/abs/2611.32358v1
+- PDF: https://arxiv.org/pdf/2611.32358v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-quantum_coherence_and_basis_dependent_correlations_in_quantum_systems_infographic.json
+
+## 16. Large-Scale Streaming Portfolio Optimization with Pauli Correlation Encoding
+
+- Date: 2026-11-24
+- Category: Quantum Optimization
+- arXiv: https://arxiv.org/abs/2611.32769v1
+- PDF: https://arxiv.org/pdf/2611.32769v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-large_scale_streaming_portfolio_optimization_with_pauli_correlation_encoding_infographic.json
+
+## 17. When Randomness Hides Quantum Simulation Errors
+
+- Date: 2026-11-24
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2611.32497v1
+- PDF: https://arxiv.org/pdf/2611.32497v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-when_randomness_hides_quantum_simulation_errors_infographic.json
+
+## 18. Trotterized hybrid qubit-boson simulation of the Jaynes-Cummings-Hubbard model
+
+- Date: 2026-11-24
+- Category: Quantum Simulation
+- arXiv: https://arxiv.org/abs/2611.32895v1
+- PDF: https://arxiv.org/pdf/2611.32895v1
+- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-24-arxiv-trotterized_hybrid_qubit_boson_simulation_of_the_jaynes_cummings_hubbard_model_infographic.json
+
+## 19. Reducing RSA-2048 Factoring Resources Below One Billion Toffolis via LLM-Driven Verifiable Quantum Compilation
 
 - Date: 2026-11-23
 - Category: Quantum Algorithms
@@ -67,98 +155,10 @@ Public site: https://dutoaa.github.io/quantum-computing-progress/
 - PDF: https://arxiv.org/pdf/2611.31158v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-reducing_rsa_2048_factoring_resources_below_one_billion_toffolis_via_llm_driven_verifiable_infographic.json
 
-## 9. Impact of structured noise on bosonic quantum error correction
+## 20. Impact of structured noise on bosonic quantum error correction
 
 - Date: 2026-11-23
 - Category: Quantum Error Correction
 - arXiv: https://arxiv.org/abs/2611.30303v1
 - PDF: https://arxiv.org/pdf/2611.30303v1
 - Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-impact_of_structured_noise_on_bosonic_quantum_error_correction_infographic.json
-
-## 10. Quantum simulation of low-temperature impurity models
-
-- Date: 2026-11-23
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2611.30187v1
-- PDF: https://arxiv.org/pdf/2611.30187v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-quantum_simulation_of_low_temperature_impurity_models_infographic.json
-
-## 11. Stopping-Time Leakage in Blind Quantum Delegation
-
-- Date: 2026-11-22
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2611.29755v1
-- PDF: https://arxiv.org/pdf/2611.29755v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-22-arxiv-stopping_time_leakage_in_blind_quantum_delegation_infographic.json
-
-## 12. Optimizing Locally Equivalent Graph States in Quantum Computing Using Greedy Best-First Search
-
-- Date: 2026-11-23
-- Category: Quantum Algorithms
-- arXiv: https://arxiv.org/abs/2611.30738v1
-- PDF: https://arxiv.org/pdf/2611.30738v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-optimizing_locally_equivalent_graph_states_in_quantum_computing_using_greedy_best_first_se_infographic.json
-
-## 13. Froq: Safe Speculative Execution on Live Quantum States for FTQC
-
-- Date: 2026-11-20
-- Category: Quantum Error Correction
-- arXiv: https://arxiv.org/abs/2611.28427v1
-- PDF: https://arxiv.org/pdf/2611.28427v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-20-arxiv-froq_safe_speculative_execution_on_live_quantum_states_for_ftqc_infographic.json
-
-## 14. Coherence transfer under bounded channel capacity
-
-- Date: 2026-11-23
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2611.30680v1
-- PDF: https://arxiv.org/pdf/2611.30680v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-coherence_transfer_under_bounded_channel_capacity_infographic.json
-
-## 15. Quantum resources constrain function approximation
-
-- Date: 2026-11-23
-- Category: Quantum Machine Learning
-- arXiv: https://arxiv.org/abs/2611.30789v1
-- PDF: https://arxiv.org/pdf/2611.30789v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-quantum_resources_constrain_function_approximation_infographic.json
-
-## 16. Geometric properties of concatenated geometric and holonomic quantum gates
-
-- Date: 2026-11-23
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2611.30744v1
-- PDF: https://arxiv.org/pdf/2611.30744v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-geometric_properties_of_concatenated_geometric_and_holonomic_quantum_gates_infographic.json
-
-## 17. Improved two-way capacity upper bounds for amplitude-damping channels
-
-- Date: 2026-11-22
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2611.29650v1
-- PDF: https://arxiv.org/pdf/2611.29650v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-22-arxiv-improved_two_way_capacity_upper_bounds_for_amplitude_damping_channels_infographic.json
-
-## 18. Direct quantum simulation of compressible Navier-Stokes flow via finite homotopy linearisation
-
-- Date: 2026-11-22
-- Category: Quantum Simulation
-- arXiv: https://arxiv.org/abs/2611.29631v1
-- PDF: https://arxiv.org/pdf/2611.29631v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-22-arxiv-direct_quantum_simulation_of_compressible_navier_stokes_flow_via_finite_homotopy_linearisa_infographic.json
-
-## 19. Optimal fidelity over zero-capacity erasure channels
-
-- Date: 2026-11-23
-- Category: AI quantum computing
-- arXiv: https://arxiv.org/abs/2611.30902v1
-- PDF: https://arxiv.org/pdf/2611.30902v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-23-arxiv-optimal_fidelity_over_zero_capacity_erasure_channels_infographic.json
-
-## 20. Differentiable collision-model control for multipartite state engineering: reachability, geometry, and preparation cost
-
-- Date: 2026-11-22
-- Category: Quantum Hardware
-- arXiv: https://arxiv.org/abs/2611.29556v1
-- PDF: https://arxiv.org/pdf/2611.29556v1
-- Infographic JSON: https://dutoaa.github.io/quantum-computing-progress/infographics/2026-11-22-arxiv-differentiable_collision_model_control_for_multipartite_state_engineering_reachability_geo_infographic.json

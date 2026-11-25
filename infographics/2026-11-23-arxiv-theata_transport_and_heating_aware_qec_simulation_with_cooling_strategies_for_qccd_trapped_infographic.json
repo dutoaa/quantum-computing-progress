@@ -1,19 +1,19 @@
 {
-  "key_insight": "THeatA simulations show that transport-induced heating can erase the logical-error benefits of larger QCCD surface codes, while cooling gate-ion pairs immediately before two-qubit gates can restore them.",
-  "engineering_relevance": "QCCD control stacks should account for ion transport, motional heating, and cooling overhead when compiling and evaluating fault-tolerant schedules.",
+  "key_insight": "THeatA simulations show that transport-induced heating can prevent logical errors from decreasing with code distance, while cooling ion pairs immediately before two-qubit gates can restore that scaling.",
+  "engineering_relevance": "QCCD control and compiler design should account jointly for ion transport, motional heating, and cooling overhead rather than treating gate errors as fixed.",
   "method": [
-    "Represent QCCD-native transport, physical SWAP, splitting, merging, and cooling operations in an intermediate representation.",
-    "Compile syndrome-extraction circuits while tracking each ion’s mean phonon number and timing.",
-    "Generate noisy Stim circuits with gate-dependent errors and evaluate cooling strategies."
+    "Compile syndrome-extraction circuits into an intermediate representation with QCCD-native transport and cooling operations.",
+    "Track per-ion mean phonon numbers and timing to generate gate-dependent noise in Stim circuits.",
+    "Evaluate rotated surface codes while sweeping cooling duration and post-cooling phonon number."
   ],
-  "evidence_signal": "Finite-size rotated-surface-code simulations and sweeps of cooling duration and post-cooling phonon number identify conditions where logical error decreases with increasing code distance.",
-  "watch_item": "Results concern simulated linear, single-species QCCD systems and an abstract cooling instruction; hardware feasibility and cooling parameters require validation.",
+  "evidence_signal": "Finite-size simulations identify cooling-parameter regions where logical error rates decrease with increasing code distance under the evaluated transport- and heating-aware noise conditions.",
+  "watch_item": "Results are simulation-based for linear, single-species QCCD systems, and the abstract cooling instruction requires validation against realizable cooling protocols.",
   "hashtags": [
     "#QuantumErrorCorrection",
     "#TrappedIons",
     "#QCCD",
-    "#QuantumCompilation",
-    "#FaultTolerantQuantumComputing"
+    "#QuantumCompilers",
+    "#QuantumSimulation"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "THeatA: Transport- and Heating-aware QEC simulation with Cooling Strategies for QCCD Trapped-Ion Systems",
   "paper_date": "2026-11-23",
   "paper_category": "Quantum Error Correction",
-  "generated_at": "2026-11-24T20:30:10",
+  "generated_at": "2026-11-25T19:46:36",
   "generator": "openai"
 }

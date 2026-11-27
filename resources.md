@@ -1,6 +1,6 @@
 # AI quantum computing Progress Public Resources
 
-Generated: 2026-11-26
+Generated: 2026-11-27
 Public site: https://dutoaa.github.io/quantum-computing-progress/
 
 ## 1. LatentRL-QAS: Transfer via Latent Reinforcement Learning for Quantum Architecture Search

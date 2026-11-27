@@ -26,23 +26,23 @@
         "url": "https://arxiv.org/pdf/2611.34634v1"
       }
     ],
-    "score": 116,
+    "score": 111,
     "infographic": {
-      "key_insight": "LatentRL-QAS enables transfer across qubit counts by reusing learned circuit representations while keeping the RL agent’s state, action space, and network size fixed.",
-      "engineering_relevance": "A qubit-count-independent search agent could reduce the need to redesign and scale RL networks when moving to larger quantum circuit design problems.",
+      "key_insight": "LatentRL-QAS enables transfer across qubit counts by reusing learned circuit representations in a shared latent space while keeping the RL agent’s dimensions fixed.",
+      "engineering_relevance": "Decoupling the RL agent from qubit count removes the need to enlarge its state, action space, and network when searching larger quantum circuits.",
       "method": [
-        "Encode circuits as one token per gate using a variational autoencoder with a shared latent space across qubit counts.",
-        "Search the latent space with RL instead of directly adding gates.",
-        "Periodically refresh the representation with new discoveries and grow it for larger systems from smaller-system solutions."
+        "Encode circuits as one token per gate using a variational autoencoder with a shared latent space.",
+        "Train an RL agent to navigate latent representations rather than add gates directly.",
+        "Periodically refresh the representation with new discoveries and expand it for larger systems using smaller-system solutions."
       ],
-      "evidence_signal": "LatentRL-QAS discovered five- and six-qubit absolutely maximally entangled states and prepared them in 89–99% of evaluation episodes; baseline RL-QAS failed under the same budget despite networks 10–17× larger.",
-      "watch_item": "Transfer is demonstrated for AME-state preparation; broader task generalization and the cost of refreshing the latent representation remain important validation targets.",
+      "evidence_signal": "On five- and six-qubit absolutely maximally entangled state tasks, LatentRL-QAS succeeded in 89–99% of evaluation episodes; baseline RL-QAS found neither target under the same budget despite 10–17× larger networks.",
+      "watch_item": "Transfer is demonstrated on AME-state preparation; its effectiveness and representation-refresh costs for broader circuit-design tasks remain to be established.",
       "hashtags": [
         "#QuantumComputing",
         "#ReinforcementLearning",
         "#QuantumArchitectureSearch",
         "#TransferLearning",
-        "#LatentRepresentations"
+        "#LatentSpace"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -50,7 +50,7 @@
       "paper_title": "LatentRL-QAS: Transfer via Latent Reinforcement Learning for Quantum Architecture Search",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-26T19:25:20",
+      "generated_at": "2026-11-27T19:20:57",
       "generator": "openai"
     }
   },
@@ -81,23 +81,23 @@
         "url": "https://arxiv.org/pdf/2611.33806v1"
       }
     ],
-    "score": 104,
+    "score": 99,
     "infographic": {
-      "key_insight": "QPAT uses a learnable quantum generative prior during classical model training, then performs inference entirely classically.",
-      "engineering_relevance": "The framework is designed to augment LSTMs, CNNs, and Transformers without requiring quantum hardware at inference time.",
+      "key_insight": "QPAT uses a learnable quantum generative prior during classical model training, aiming to improve predictions while keeping inference entirely classical.",
+      "engineering_relevance": "The framework integrates with LSTMs, CNNs, and Transformers without requiring quantum hardware at inference time.",
       "method": [
-        "Use a Quantum Circuit Born Machine as a task-aligned, learnable generative prior.",
+        "Use a Quantum Circuit Born Machine to supply a task-aligned, structured training prior.",
         "Apply decoupled fitness-based scoring to guide prior learning.",
         "Use stochastic Drop-Prior to implicitly distill quantum structure into classical weights."
       ],
-      "evidence_signal": "Across six benchmarks in time-series forecasting, vision, and NLP, the abstract reports improved predictive performance and seed stability, with ablations favoring QPAT over random and classically learned priors.",
-      "watch_item": "The abstract does not quantify training overhead or establish robustness to realistic quantum hardware noise.",
+      "evidence_signal": "Across six benchmarks in forecasting, vision, and NLP, the abstract reports better predictive performance and cross-seed stability than classical backbones, with ablations favoring QPAT over random and classically learned priors.",
+      "watch_item": "The abstract does not quantify quantum training costs or establish a computational advantage over classical alternatives.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#QPAT",
         "#QuantumComputing",
-        "#ClassicalInference",
-        "#GenerativePriors"
+        "#GenerativePriors",
+        "#ClassicalInference"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -105,7 +105,7 @@
       "paper_title": "QPAT: A Universal Quantum Machine Learning Framework for Quantum-Assisted Training and Classical Inference",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-26T19:25:23",
+      "generated_at": "2026-11-27T19:21:00",
       "generator": "openai"
     }
   },
@@ -135,17 +135,17 @@
         "url": "https://arxiv.org/pdf/2611.32459v1"
       }
     ],
-    "score": 93,
+    "score": 88,
     "infographic": {
       "key_insight": "Residual learning with convex projection improves quantum error mitigation while ensuring reconstructed density matrices remain physically valid.",
-      "engineering_relevance": "The framework supports more accurate bound-state simulations on noisy quantum hardware, with performance shaped by training-state selection and regression model choice.",
+      "engineering_relevance": "The framework can improve noisy-hardware bound-state simulations, but training-state selection and regression-model choice affect accuracy.",
       "method": [
-        "Use residual learning to correct noisy quantum-state estimates.",
-        "Apply convex projection to enforce physically valid density matrices.",
-        "Evaluate Haar-random and VQE-ansatz training states with different regression models."
+        "Learn error corrections using residual regression, then apply convex projection to enforce density-matrix validity.",
+        "Evaluate Haar-random versus VQE-ansatz training states and different regression models.",
+        "Compare with conventional ML-QEM, readout error mitigation, and zero-noise extrapolation."
       ],
-      "evidence_signal": "IBM hardware tests on three- and four-qubit hypernuclear systems achieved a three-qubit energy of −0.134 MeV versus the ideal −0.135 MeV with 0.999 fidelity, and four-qubit energies of −3.014 and −3.045 MeV with fidelities of 0.995 and 0.998.",
-      "watch_item": "Evaluation is limited to three- and four-qubit systems; scalability and robustness across training distributions and hardware noise require further validation.",
+      "evidence_signal": "On IBM hardware, three-qubit Λ-deuteron simulations achieved −0.134 MeV versus an ideal −0.135 MeV with 0.999 fidelity; four-qubit Λ–α simulations achieved −3.014 and −3.045 MeV with fidelities of 0.995 and 0.998.",
+      "watch_item": "Results cover only three- and four-qubit systems; scalability and generalization beyond the evaluated training distributions remain unestablished.",
       "hashtags": [
         "#QuantumComputing",
         "#QuantumErrorMitigation",
@@ -159,7 +159,7 @@
       "paper_title": "Machine Learning-Based Quantum Error Mitigation for Bound-State Simulations",
       "paper_date": "2026-11-24",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-26T19:25:25",
+      "generated_at": "2026-11-27T19:21:04",
       "generator": "openai"
     }
   },
@@ -188,17 +188,17 @@
         "url": "https://arxiv.org/pdf/2611.34266v1"
       }
     ],
-    "score": 92,
+    "score": 87,
     "infographic": {
-      "key_insight": "Directly estimating small energy-level differences can lower sampling costs by replacing the full Hamiltonian norm with a scale set by its derivative and the parameter shift.",
-      "engineering_relevance": "The approach could make molecular forces, energy gradients, and response properties more accessible on early fault-tolerant quantum computers.",
+      "key_insight": "Directly estimating small energy-level differences with paired quantum evolutions lowers sampling cost by replacing the full-Hamiltonian norm scale with one tied to the Hamiltonian derivative and parameter shift.",
+      "engineering_relevance": "The approach could reduce early fault-tolerant quantum computing resources for molecular forces, energy gradients, and response-property calculations.",
       "method": [
-        "Combine time evolutions under the original and parameter-shifted Hamiltonians in one quantum circuit.",
+        "Combine time evolution under the original and parameter-shifted Hamiltonians in one quantum circuit.",
         "Use non-adaptive statistical sampling to reconstruct energy differences directly.",
         "Jointly estimate energy eigenvalues and their differences to characterize the energy landscape."
       ],
       "evidence_signal": "Numerical simulations and resource estimates on prototypical systems, including the Fermi-Hubbard model, indicate reduced resource requirements without loss of precision.",
-      "watch_item": "The abstract reports simulation-based evidence; practical savings still depend on the cost and accuracy of implementing both Hamiltonian time evolutions.",
+      "watch_item": "Practical savings depend on implementing both Hamiltonian evolutions accurately; the abstract reports simulations and resource estimates, not hardware demonstrations.",
       "hashtags": [
         "#QuantumSimulation",
         "#QuantumAlgorithms",
@@ -212,7 +212,7 @@
       "paper_title": "Quantum Algorithm for Direct Estimation of Energy-Level Differences via Quantum Dynamics Simulation",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-11-26T19:25:27",
+      "generated_at": "2026-11-27T19:21:06",
       "generator": "openai"
     }
   },
@@ -241,23 +241,23 @@
         "url": "https://arxiv.org/pdf/2611.33509v1"
       }
     ],
-    "score": 86,
+    "score": 81,
     "infographic": {
-      "key_insight": "An LLM coding-agent search discovered ELOTE, a shared quantum-simulation protocol that reduced estimated median T-gate cost by 85.35% while retaining chemical accuracy across 115 training Hamiltonians.",
-      "engineering_relevance": "Jointly optimizing product-formula structure and rotation-synthesis precision can substantially lower estimated fault-tolerant quantum chemistry costs.",
+      "key_insight": "An LLM coding-agent loop discovered ELOTE, a product-formula protocol that reduced median estimated T-gate cost by 85.35% while preserving chemical accuracy across 115 training molecular Hamiltonians.",
+      "engineering_relevance": "Optimizing product-formula structure and rotation-synthesis precision together could substantially lower fault-tolerant quantum chemistry resource requirements.",
       "method": [
-        "Run five independent Nemotron 3.5 Lightning coding-agent searches, each with 100 code mutations.",
-        "Minimize estimated T-gate cost for 95% success while requiring chemical accuracy on every training Hamiltonian.",
-        "Combine identical Pauli strings, use a first-order product formula, and adapt synthesis precision to term properties."
+        "Run five independent agent searches, each with 100 code mutations, to optimize a shared protocol across molecules.",
+        "Minimize estimated T-gate cost for 95% success probability, subject to chemical accuracy for every training Hamiltonian.",
+        "Combine identical Pauli terms, use a first-order product formula, and tailor synthesis precision to coefficient magnitude, Pauli support, and diagonal character."
       ],
-      "evidence_signal": "Classical verification covered 115 training Hamiltonians with 4–16 qubits and 76 larger tests with 18–22 qubits; all met chemical accuracy, while a separately optimized δ-ELOTE reduced geometric-mean cost by another 58.90% versus ELOTE for ten reaction energies.",
-      "watch_item": "Savings are classically verified cost estimates, not demonstrated quantum-hardware performance; generalization beyond the evaluated Hamiltonians remains unproven.",
+      "evidence_signal": "Classical verification found chemical accuracy on all 115 training Hamiltonians (4–16 qubits) and 76 larger test Hamiltonians (18–22 qubits); a shared δ-ELOTE protocol for ten reaction energies cut geometric-mean cost a further 58.90% relative to ELOTE.",
+      "watch_item": "Savings are classically verified resource estimates, not demonstrated quantum-hardware performance; applicability beyond the evaluated molecules and sizes remains unproven.",
       "hashtags": [
-        "#QuantumComputing",
+        "#QuantumSimulation",
         "#QuantumChemistry",
+        "#FaultTolerantQuantumComputing",
         "#AIAgents",
-        "#FaultTolerance",
-        "#QuantumSimulation"
+        "#ResourceEstimation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -265,7 +265,7 @@
       "paper_title": "Reducing T gates in product formulas with agent loops",
       "paper_date": "2026-11-24",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-11-26T19:25:29",
+      "generated_at": "2026-11-27T19:21:08",
       "generator": "openai"
     }
   },
@@ -296,23 +296,23 @@
         "url": "https://arxiv.org/pdf/2611.33590v1"
       }
     ],
-    "score": 84,
+    "score": 79,
     "infographic": {
-      "key_insight": "A proposed dense silicon spin-qubit architecture combines surface-code memories, transport lanes, and routing junctions to support scalable fault-tolerant quantum computing.",
-      "engineering_relevance": "The design links qubit storage, connectivity, logical gates, and CMOS-compatible multiplexed wiring in a semiconductor integration roadmap.",
+      "key_insight": "A proposed dense silicon spin-qubit architecture combines surface-code memories, shuttling lanes, and routing junctions to support scalable fault-tolerant quantum computing.",
+      "engineering_relevance": "The design connects logical storage and gate operations with semiconductor-compatible integration and multiplexed control wiring.",
       "method": [
         "Store rotated surface-code logical qubits in memories supporting logical single-qubit operations.",
         "Connect memories through one-dimensional spin-shuttling lanes and cross junctions implementing transversal logical CNOT gates.",
-        "Evaluate logical error rates and wiring constraints using experimentally demonstrated silicon spin-qubit parameters."
+        "Evaluate logical errors using demonstrated device parameters and estimate capacity under multiplexed wiring constraints."
       ],
-      "evidence_signal": "The analysis estimates that code distance ≥21 is needed for logical error rates below 10⁻¹⁰ per syndrome cycle and that optimized wiring could enable over 120,000 logical qubits on a 100 mm × 100 mm chip.",
-      "watch_item": "These are architectural estimates rather than a demonstrated integrated system; scaling depends on reliable shuttling, junction operations, and optimized wiring.",
+      "evidence_signal": "The analysis estimates that code distance ≥21 is needed for logical errors below 10⁻¹⁰ per syndrome cycle and projects over 120,000 logical qubits on a 100 mm × 100 mm chip with optimized wiring efficiency.",
+      "watch_item": "These are architecture-level estimates, not a demonstrated integrated system; scaling depends on reliable shuttling, junction operations, and optimized control wiring.",
       "hashtags": [
         "#QuantumErrorCorrection",
         "#SiliconSpinQubits",
         "#FaultTolerantQuantumComputing",
         "#SurfaceCode",
-        "#QuantumEngineering"
+        "#QuantumArchitecture"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -320,7 +320,7 @@
       "paper_title": "A scalable dense silicon qubit architecture with logical operations",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-26T19:25:32",
+      "generated_at": "2026-11-27T19:21:11",
       "generator": "openai"
     }
   },
@@ -349,22 +349,22 @@
         "url": "https://arxiv.org/pdf/2611.34291v1"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "Search-for-Gradient restarts stalled optimisation by searching for trainable regions within structured flat VQA landscapes.",
-      "engineering_relevance": "The framework can complement existing VQA optimisers to reduce stagnation when informative gradients exist elsewhere in parameter space.",
+      "key_insight": "Search-for-Gradient restarts stalled optimisation by searching for trainable regions within otherwise flat variational quantum algorithm landscapes.",
+      "engineering_relevance": "The framework can augment existing VQA optimisers to reduce stagnation when informative gradients exist elsewhere in parameter space.",
       "method": [
-        "Detect stalled parameter updates when gradients vanish.",
+        "Detect stalled parameter updates caused by vanishing gradients.",
         "Search sampled parameter points for nonzero gradients.",
-        "Restart local optimisation in a trainable region."
+        "Restart local optimisation in a discovered trainable region."
       ],
-      "evidence_signal": "The abstract reports theoretical estimates of jump counts and escape probabilities, plus improved optimisation on synthetic landscapes and a quantum-circuit cost landscape.",
-      "watch_item": "The method requires a trainable region of nonzero measure and cannot work if that region has zero measure.",
+      "evidence_signal": "The abstract reports improved optimisation on synthetic structured-flat functions and a quantum-circuit cost landscape, alongside theoretical estimates of jump counts and escape probability.",
+      "watch_item": "The method requires a trainable region of nonzero measure and cannot escape if that region has zero measure.",
       "hashtags": [
         "#QuantumComputing",
         "#VariationalQuantumAlgorithms",
         "#QuantumOptimisation",
-        "#SearchForGradient",
+        "#BarrenPlateaus",
         "#HybridAlgorithms"
       ],
       "model": "gpt-6.1-sol",
@@ -373,7 +373,7 @@
       "paper_title": "Search-for-Gradient: Search-Based Restarts for Optimisation in Structured Flat Landscapes of Variational Quantum Algorithms",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-26T19:25:34",
+      "generated_at": "2026-11-27T19:21:13",
       "generator": "openai"
     }
   },
@@ -403,23 +403,23 @@
         "url": "https://arxiv.org/pdf/2611.34755v1"
       }
     ],
-    "score": 80,
+    "score": 75,
     "infographic": {
       "key_insight": "Hybrid quantum-classical PINNs had 38–44% fewer parameters but took at least 10× longer than the classical PINN at every measured stage.",
-      "engineering_relevance": "Benchmark wall-clock time and derivative costs rather than using parameter count as a proxy for computational efficiency.",
+      "engineering_relevance": "Benchmark wall-clock costs across forward passes and derivative computations rather than using parameter count as a proxy for computational efficiency.",
       "method": [
         "Tested a classical PINN, four hybrid configurations, and size-matched classical controls on 1D seawater temperature diffusion.",
         "Timed cumulative forward, first- and second-order input-gradient, and PDE-loss parameter-gradient stages with CPU-simulated quantum circuits.",
-        "Varied qubit count, circuit depth, and batch size; compared two simulator backends for circuit-only forward execution."
+        "Examined runtime scaling with qubit count, circuit depth, batch size, and simulator backend."
       ],
-      "evidence_signal": "Hybrids were 14–56× slower on forward passes and 10–97× slower on PDE-loss parameter gradients than the classical PINN, remaining 9–85× slower than size-matched controls.",
-      "watch_item": "Results concern one benchmark and CPU simulation; performance on quantum hardware or other workloads is not established.",
+      "evidence_signal": "Hybrids were 14–56× slower for forward passes and 10–97× slower for PDE-loss parameter gradients than the classical PINN, with approximately exponential runtime growth as qubit count increased over the tested range.",
+      "watch_item": "These results concern a single diffusion benchmark with CPU-simulated circuits and do not establish runtime performance on quantum hardware.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#PhysicsInformedNeuralNetworks",
         "#ScientificMachineLearning",
-        "#QuantumSimulation",
-        "#PerformanceBenchmarking"
+        "#PerformanceBenchmarking",
+        "#QuantumSimulation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -427,7 +427,7 @@
       "paper_title": "Fewer Parameters, Longer Runtimes: The Wall-Clock Cost of Hybrid Quantum Physics-Informed Neural Networks",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-26T19:25:36",
+      "generated_at": "2026-11-27T19:21:15",
       "generator": "openai"
     }
   },
@@ -456,17 +456,17 @@
         "url": "https://arxiv.org/pdf/2611.33299v1"
       }
     ],
-    "score": 78,
+    "score": 73,
     "infographic": {
       "key_insight": "Using higher-dimensional quantum units called qudits can increase information capacity per carrier and naturally encode high-dimensional systems for quantum simulation.",
-      "engineering_relevance": "Qudits offer a route to extracting more processing capability from a fixed number of quantum carriers, provided reliable multilevel control and readout are available.",
+      "engineering_relevance": "Qudits offer a route to extracting more processing capability from a fixed number of physical carriers, provided their additional levels can be reliably controlled and measured.",
       "method": [
-        "Review experimental progress in qudit preparation, control, and measurement.",
-        "Compare trapped ions, superconducting circuits, nuclear spins, photonics, and neutral atoms.",
-        "Survey early demonstrations of qudit simulation, computation, and error suppression."
+        "Review experimental progress in qudit preparation, control, and measurement across five hardware platforms.",
+        "Survey early demonstrations of qudit-based simulation, computation, and error suppression.",
+        "Outline challenges and future directions for scalable qudit processing."
       ],
-      "evidence_signal": "The abstract reports high-fidelity experimental progress and early application demonstrations but provides no numerical benchmarks.",
-      "watch_item": "Scalable qudit processing remains challenging, and higher-dimensional encoding does not eliminate decoherence or the need for fault tolerance.",
+      "evidence_signal": "The abstract reports high-fidelity experimental progress and early application demonstrations, but provides no numerical benchmarks or comparative performance data.",
+      "watch_item": "Higher information capacity does not eliminate decoherence or the need for fault tolerance, and scalable multilevel control remains a challenge.",
       "hashtags": [
         "#Qudits",
         "#QuantumComputing",
@@ -480,7 +480,7 @@
       "paper_title": "Quditology: harnessing many levels for quantum information processing",
       "paper_date": "2026-11-24",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-26T19:25:38",
+      "generated_at": "2026-11-27T19:21:17",
       "generator": "openai"
     }
   },
@@ -509,23 +509,23 @@
         "url": "https://arxiv.org/pdf/2611.32388v1"
       }
     ],
-    "score": 77,
+    "score": 72,
     "infographic": {
-      "key_insight": "PP-VarQITE designs shallow thermal-state preparation circuits entirely classically, encoding temperature in the angles of a fixed circuit architecture.",
-      "engineering_relevance": "Shallower circuits reduce quantum hardware depth requirements, enabling low-temperature state preparation beyond the practical reach of statevector simulation.",
+      "key_insight": "PP-VarQITE determines thermal-state circuit parameters entirely classically, encoding temperature in the angles of a fixed, shallow quantum circuit.",
+      "engineering_relevance": "Shallower circuits reduce quantum hardware execution demands and enable low-temperature state preparation beyond the practical reach of statevector simulation.",
       "method": [
         "Combine Pauli propagation with variational quantum imaginary-time evolution.",
-        "Determine circuit parameters entirely classically.",
-        "Vary circuit angles to target different temperatures without changing the architecture."
+        "Compute circuit parameters classically for different target temperatures.",
+        "Execute fixed-architecture circuits on trapped-ion quantum hardware."
       ],
-      "evidence_signal": "Numerical studies reached 100 qubits with approximately 2–10× shallower circuits than the lowest-depth sequential tensor-network compilations; Quantinuum Helios demonstrations used 96 and 98 qubits, with the 7×7 Ising lattice requiring at most 42 two-qubit layers.",
-      "watch_item": "Performance is demonstrated for selected Ising and frustrated Heisenberg models; classical optimization cost and accuracy for broader Hamiltonians require further evaluation.",
+      "evidence_signal": "Numerical studies reached 100 qubits with circuits approximately 2–10× shallower than the lowest-depth sequential tensor-network compilations; Helios experiments used 96 and 98 qubits, with the lattice circuits requiring at most 42 two-qubit layers.",
+      "watch_item": "The reported benchmarks do not establish classical parameter-computation costs or accuracy for arbitrary models and lower temperatures.",
       "hashtags": [
         "#QuantumComputing",
-        "#ThermalStates",
-        "#QuantumHardware",
+        "#ThermalStatePreparation",
         "#ShallowCircuits",
-        "#QuantumSimulation"
+        "#QuantumSimulation",
+        "#TrappedIons"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -533,7 +533,7 @@
       "paper_title": "Thermal state preparation with shallow quantum circuits",
       "paper_date": "2026-11-24",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-26T19:25:40",
+      "generated_at": "2026-11-27T19:21:20",
       "generator": "openai"
     }
   },
@@ -564,23 +564,23 @@
         "url": "https://arxiv.org/pdf/2611.34768v1"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "The integrable Lie-Trotter-Suzuki (I-LTS) decomposition enables efficient unitary simulation of nonlinear dynamics by splitting their generator into integrable parts.",
-      "engineering_relevance": "Explicit tensor-product factorizations make the method suitable for tensor-network computation and quantum block-encoding, with a circuit implementation demonstrated for Stepanoff flow.",
+      "key_insight": "Integrable Lie-Trotter-Suzuki decomposition enables efficient unitary simulation of nonlinear dynamics by splitting the evolution generator into integrable parts.",
+      "engineering_relevance": "The approach provides a structured route to implementing nonlinear dynamical simulations with tensor networks or quantum block-encoding methods.",
       "method": [
-        "Split the dynamical generator into integrable components.",
-        "Approximate evolution with a Lie-Trotter-Suzuki product at the desired time-step order.",
-        "Encode Stepanoff flow using block-encoded operators and alternating quantum Fourier transform and quantum signal processing circuits."
+        "Split the generator into integrable components with explicit tensor-product factorizations.",
+        "Approximate evolution using a Lie-Trotter-Suzuki product formula of the desired order.",
+        "Encode the Stepanoff flow on a torus using alternating quantum Fourier transform and quantum signal processing circuits."
       ],
-      "evidence_signal": "Fault-tolerant quantum circuit emulation produced results consistent with several alternative classical computational methods.",
-      "watch_item": "Accuracy requires sufficiently small Trotter time steps, while the advection operator scales linearly with grid size, creating a fundamental complexity constraint.",
+      "evidence_signal": "Fault-tolerant quantum circuit emulation produced results consistent with several alternative classical computational methods; the abstract reports no quantitative accuracy or speedup.",
+      "watch_item": "Accuracy requires sufficiently small Trotter steps, while the advection operator scales linearly with grid size, constraining simulation cost.",
       "hashtags": [
         "#QuantumSimulation",
-        "#NonlinearDynamics",
         "#HamiltonianSimulation",
+        "#NonlinearDynamics",
         "#QuantumAlgorithms",
-        "#TensorNetworks"
+        "#Trotterization"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -588,7 +588,7 @@
       "paper_title": "The integrable Lie-Trotter-Suzuki decomposition for nonlinear dynamics: Efficient Hamiltonian simulation of the Stepanoff flow",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-11-26T19:25:46",
+      "generated_at": "2026-11-27T19:21:22",
       "generator": "openai"
     }
   },
@@ -617,17 +617,17 @@
         "url": "https://arxiv.org/pdf/2611.31867v1"
       }
     ],
-    "score": 75,
+    "score": 70,
     "infographic": {
-      "key_insight": "Machine learning can extrapolate gate sequences and parameters from holographic quantum circuits to construct longer or more expressive circuits.",
-      "engineering_relevance": "Reusing measured and reset qubits enables sampling from large quantum states with fixed qubit resources, while additional ancilla qubits exponentially increase the effective bond dimension.",
+      "key_insight": "A machine learning architecture learns holographic quantum circuit syntax and parameters to extrapolate toward longer or more expressive circuits.",
+      "engineering_relevance": "Reusing measured and reset qubits enables sampling from large quantum states with fixed qubit resources, while additional persistent ancillas exponentially increase effective bond dimension.",
       "method": [
-        "Couple reusable physical qubits to persistent ancilla qubits.",
-        "Learn circuit syntax, including gates, measurements, and resets, alongside rotation parameters.",
-        "Extrapolate learned structure and parameters to longer or more expressive circuits."
+        "Use physical qubits with mid-circuit measurements and resets, coupled to persistent ancillas.",
+        "Learn gate, measurement, and reset sequences alongside rotation parameters from circuit datasets.",
+        "Extrapolate learned syntax and parameters to scale circuit length or expressivity."
       ],
       "evidence_signal": "The methodology is demonstrated on an analytically solvable dataset based on a vector-valued generalization of the W-state; the abstract reports no quantitative performance metrics.",
-      "watch_item": "Generalization beyond the solvable dataset and robustness to hardware measurement and reset errors remain unestablished in the abstract.",
+      "watch_item": "Generalization beyond the solvable dataset and robustness to hardware noise remain unestablished in the abstract.",
       "hashtags": [
         "#QuantumMachineLearning",
         "#HolographicQuantumCircuits",
@@ -641,7 +641,7 @@
       "paper_title": "A machine learning architecture for scaling of holographic quantum circuits",
       "paper_date": "2026-11-24",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-26T19:25:48",
+      "generated_at": "2026-11-27T19:21:25",
       "generator": "openai"
     }
   },
@@ -670,21 +670,21 @@
         "url": "https://arxiv.org/pdf/2611.34891v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "A loss-aware CNN decoder makes qubit-loss decoding tractable and shows that loss-dominated noise can substantially outperform Pauli noise in a high-rate qLDPC code.",
-      "engineering_relevance": "Loss-resolving measurements paired with fast decoding could reduce fault-tolerance overhead in quantum hardware where qubit loss dominates.",
+      "key_insight": "A loss-aware CNN decoder turns qubit-loss information into substantially improved error correction, including for a high-rate qLDPC code.",
+      "engineering_relevance": "Fast loss simulation and neural decoding offer a practical route to evaluating error correction for quantum hardware with detectable qubit loss.",
       "method": [
-        "Train a loss-aware convolutional neural-network decoder.",
-        "Generate Pauli-and-loss training samples with the high-throughput slim sampler.",
-        "Evaluate surface-code decoding and a walking syndrome-extraction circuit for the [[144,12,12]] bivariate bicycle code."
+        "Train loss-aware CNN decoders using the new slim sampler for circuits with Pauli noise and qubit loss.",
+        "Benchmark surface-code decoding against computationally expensive most-likely error decoders.",
+        "Evaluate a walking syndrome-extraction circuit for the [[144,12,12]] bivariate bicycle (Gross) code."
       ],
-      "evidence_signal": "The CNN matches most-likely-error decoder accuracy on the surface code at much lower latency; for the [[144,12,12]] code at physical error rates below 1%, pure loss yields over 1,000-fold lower logical error rates than pure Pauli noise.",
-      "watch_item": "The largest reported gain compares idealized pure-noise models; practical benefits depend on mixed-noise behavior and reliable loss-resolving measurements.",
+      "evidence_signal": "In simulations, surface-code accuracy matches most-likely error decoding at much lower latency; for the Gross code at physical error rates below 1%, pure loss yields over 1,000× lower logical error rates than pure Pauli noise at the same rate.",
+      "watch_item": "The largest reported gain compares idealized pure-noise models; hardware benefits will depend on mixed noise and reliable loss-resolving measurements.",
       "hashtags": [
         "#QuantumErrorCorrection",
-        "#NeuralDecoders",
         "#QubitLoss",
+        "#NeuralDecoders",
         "#QLDPC",
         "#QuantumHardware"
       ],
@@ -694,7 +694,7 @@
       "paper_title": "Neural Network Decoders For Qubit Loss",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-26T19:25:50",
+      "generated_at": "2026-11-27T19:21:28",
       "generator": "openai"
     }
   },
@@ -723,23 +723,23 @@
         "url": "https://arxiv.org/pdf/2611.34429v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Dirac-3S natively handles higher-order optimization, avoiding quadratization and gate compilation, but demonstrates a mapping-cost advantage rather than superior solution quality.",
-      "engineering_relevance": "Native polynomial support could simplify encoding dense industrial objectives that incur prohibitive qubit or gate overhead on conventional quantum hardware.",
+      "key_insight": "Dirac-3S solves higher-order optimization natively, demonstrating an expressibility and mapping-cost advantage—not superior solution quality.",
+      "engineering_relevance": "Native polynomial support can avoid the auxiliary variables, embedding overhead and two-qubit gate counts required by conventional quantum mappings.",
       "method": [
-        "Encode four industrial use cases as six cubic and quartic optimization instances.",
-        "Run each instance natively on the hybrid photonic-electronic Dirac-3S system with 30 samples.",
-        "Compare solutions with certified optima or classical best-known values and estimate conventional quantum mapping costs."
+        "Formulated four industrial use cases as six cubic and quartic optimization instances.",
+        "Ran 30 samples per instance on the hybrid photonic-electronic Dirac-3S system.",
+        "Compared results with reference objectives and estimated mapping costs for annealers and gate-based processors."
       ],
-      "evidence_signal": "Across 180 samples, all solutions were feasible; the best portfolio result was within 0.32% of its reference and the best budget result was 15% above its reference, with no sample reaching its reference.",
-      "watch_item": "Classical solvers reached the references within minutes, and locally polished random starts were comparable or better; a time-to-solution advantage remains unproven.",
+      "evidence_signal": "All six instances yielded feasible, distinct solutions; the best portfolio result was within 0.32% of its reference, while the best budget result was 15% above its reference.",
+      "watch_item": "No sample reached its reference; classical solvers reached references within minutes, and larger-scale time-to-solution advantage remains unproven.",
       "hashtags": [
         "#QuantumComputing",
         "#HigherOrderOptimization",
         "#EntropyComputing",
         "#QuantumHardware",
-        "#OptimizationBenchmarks"
+        "#ComputationalEngineering"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -747,7 +747,7 @@
       "paper_title": "Native higher-order optimization with entropy quantum computing",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Hardware",
-      "generated_at": "2026-11-26T19:25:53",
+      "generated_at": "2026-11-27T19:21:30",
       "generator": "openai"
     }
   },
@@ -776,23 +776,23 @@
         "url": "https://arxiv.org/pdf/2611.33942v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "On the tested equity data, QCML behaved like a classical smoothing kernel, with no return-ranking gains from complex phases, noncommutativity, or circuit entanglement.",
-      "engineering_relevance": "Capacity-matched classical baselines and norm-controlled spectral tests can help engineers determine whether quantum-inspired components add value beyond regularization and scale effects.",
+      "key_insight": "On Moscow Exchange equities, quantum-specific features offered no out-of-sample return-ranking advantage over classical controls, while matrix-form QCML behaved like a classical smoothing kernel.",
+      "engineering_relevance": "Benchmark quantum-inspired financial models against capacity-matched classical controls and normalize feature magnitudes before attributing gains to quantum structure.",
       "method": [
-        "Progressively remove complex phases and noncommutativity using capacity-matched operator swaps.",
-        "Compare spectral crisis indicators against radial-norm nulls and untrained random matrices.",
-        "Evaluate variational circuits and classical controls under realistic trading constraints."
+        "Progressively removed complex phases and noncommutativity through capacity-matched operator swaps.",
+        "Audited spectral crisis indicators against radial-norm nulls and untrained random matrices.",
+        "Compared variational circuits and classical controls under trading costs and short-selling bans."
       ],
-      "evidence_signal": "Out-of-sample tests on Moscow Exchange equities from 2020–2025 with causally lagged macro news found no quantum-component ranking advantage, while feature normalization pushed spectral-gap crisis detection below chance.",
-      "watch_item": "Findings are specific to the tested market and period, and reported economic benefits did not pass multiple-testing thresholds.",
+      "evidence_signal": "Using Moscow Exchange daily equities from 2020–2025 with causally lagged macro news, out-of-sample tests found no advantage from phases, noncommutativity, or entanglement; magnitude normalization pushed spectral-gap crisis detection below chance.",
+      "watch_item": "Results are specific to this noisy equity setting, and reported economic performance did not pass multiple-testing thresholds.",
       "hashtags": [
         "#QuantumMachineLearning",
-        "#QuantumInspiredAI",
+        "#QuantumCognition",
         "#ComputationalFinance",
-        "#SpectralAnalysis",
-        "#ModelValidation"
+        "#ClassicalBaselines",
+        "#SpectralAnalysis"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -800,7 +800,7 @@
       "paper_title": "Empirical De-Quantization and Norm-Controlled Spectral Audit of Quantum Cognition Machine Learning in an Emerging Equity Market",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Machine Learning",
-      "generated_at": "2026-11-26T19:25:55",
+      "generated_at": "2026-11-27T19:21:33",
       "generator": "openai"
     }
   },
@@ -829,17 +829,17 @@
         "url": "https://arxiv.org/pdf/2611.33665v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Amatlas maps Union-Find surface-code decoding onto a 2D processing-element array that runs without a central controller or array-wide stage synchronization.",
-      "engineering_relevance": "Local neighbor connections and per-stabilizer memory make the architecture better suited to planar hardware than a 3D processing-element array.",
+      "key_insight": "Amatlas maps Union-Find surface-code decoding onto a 2D processing-element array without a central controller or array-wide stage synchronization.",
+      "engineering_relevance": "Local neighbor links and per-stabilizer memory make the architecture better suited to planar hardware than a 3D processing-element array.",
       "method": [
         "Assign one processing element to each stabilizer on the 2D qubit lattice.",
-        "Store all measurement-round states in each element’s local memory.",
+        "Store measurement-round states in each element’s local memory.",
         "Advance every element each clock cycle, with the clock as the only global signal."
       ],
-      "evidence_signal": "Under circuit-level noise, the RTL implementation fits a VCU129 FPGA through code distance 25, averaging 462 ns per round at 0.1% physical error, with a 0.72% threshold versus 0.78% reported for Union-Find under the same noise model.",
-      "watch_item": "Scaling beyond distance 25 remains to be demonstrated, including the local-memory cost of storing measurement-round states.",
+      "evidence_signal": "Under circuit-level noise, the RTL implementation fits a VCU129 FPGA at code distance 25 and averages 462 ns per round at 0.1% physical error, with a 0.72% threshold versus 0.78% reported for Union-Find under the same noise model.",
+      "watch_item": "Scaling beyond distance 25 remains un demonstrated here, and average latency alone does not establish worst-case real-time performance.",
       "hashtags": [
         "#QuantumErrorCorrection",
         "#SurfaceCode",
@@ -853,7 +853,7 @@
       "paper_title": "Amatlas: A 2D Array Architecture for Union-Find Decoding Without Global Coordination",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-26T19:25:57",
+      "generated_at": "2026-11-27T19:21:35",
       "generator": "openai"
     }
   },
@@ -882,23 +882,23 @@
         "url": "https://arxiv.org/pdf/2611.33461v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
-      "key_insight": "Conditional thermal states offer a route to enhanced quantum thermometry, and this work demonstrates their preparation on few-qubit quantum hardware.",
-      "engineering_relevance": "Preparing these states on gate-based devices provides a practical building block for quantum thermodynamics and precision temperature sensing.",
+      "key_insight": "Conditional thermal states offer a route to improved quantum thermometry and were prepared on few-qubit IonQ hardware across a range of temperatures.",
+      "engineering_relevance": "Preparing these states on gate-based quantum hardware supports practical exploration of precision thermometry and quantum thermodynamics.",
       "method": [
         "Condition thermal states on an accessible measurement pointer basis.",
-        "Prepare few-qubit states across a range of temperatures on IonQ cloud hardware.",
+        "Prepare few-qubit conditional thermal states on IonQ cloud quantum computers.",
         "Measure sub-quantum Fisher information using a constant-depth circuit without tomography."
       ],
-      "evidence_signal": "The abstract reports hardware preparation across multiple temperatures and sub-quantum Fisher information measurements to assess thermometric advantage, but gives no numerical results.",
-      "watch_item": "The demonstration is limited to few-qubit systems, and sub-quantum Fisher information is only a lower bound on quantum Fisher information.",
+      "evidence_signal": "The abstract reports hardware preparation across multiple temperatures and measurement of a lower bound on quantum Fisher information to evaluate thermometric performance.",
+      "watch_item": "The demonstration is limited to few-qubit systems, and the abstract does not quantify the thermometric advantage or scalability under hardware noise.",
       "hashtags": [
         "#QuantumComputing",
         "#QuantumThermometry",
         "#NISQ",
-        "#ThermalStates",
-        "#QuantumAlgorithms"
+        "#QuantumAlgorithms",
+        "#QuantumThermodynamics"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -906,7 +906,7 @@
       "paper_title": "NISQ Preparation of Conditional Thermal States for Precision Thermometry",
       "paper_date": "2026-11-24",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-26T19:25:59",
+      "generated_at": "2026-11-27T19:21:37",
       "generator": "openai"
     }
   },
@@ -936,23 +936,23 @@
         "url": "https://arxiv.org/pdf/2611.33730v1"
       }
     ],
-    "score": 71,
+    "score": 66,
     "infographic": {
-      "key_insight": "A new quantum algorithm improves the stated TSP time bound from O*(1.7274^n) to O*(1.70961^n) by combining extremal set systems with quantum search.",
-      "engineering_relevance": "The result reduces theoretical exponential scaling for exact route optimization and offers improved quantum time–space tradeoffs, but does not establish practical hardware performance.",
+      "key_insight": "A new quantum algorithm lowers the stated TSP time bound from O*(1.7274^n) to O*(1.70961^n) by combining extremal set systems with quantum search and dynamic programming.",
+      "engineering_relevance": "The approach offers a theoretical route to faster exact routing and related combinatorial optimization, though runtime remains exponential.",
       "method": [
         "Split the optimal tour into four consecutive subpaths of unequal sizes.",
-        "Use extremal set systems and dynamic programming to compute optimal subpath values with low success probability.",
-        "Apply amplitude amplification within the existing quantum TSP framework."
+        "Use extremal set systems and dynamic programming to compute subpath optima with small success probability.",
+        "Apply amplitude amplification within the quantum search framework."
       ],
-      "evidence_signal": "The abstract reports theoretical runtime bounds and improved time–space tradeoffs, with no empirical benchmarks or hardware evaluation.",
-      "watch_item": "Runtime remains exponential, and the abstract does not quantify implementation overhead or hardware resource requirements.",
+      "evidence_signal": "The abstract reports theoretical runtime and quantum space–time tradeoff improvements, plus matching bounds for related problems, but no empirical benchmarks.",
+      "watch_item": "Practical value depends on quantum resource requirements and overheads not specified in the abstract; O* suppresses polynomial factors.",
       "hashtags": [
         "#QuantumAlgorithms",
-        "#TravelingSalesman",
+        "#TravelingSalesmanProblem",
         "#CombinatorialOptimization",
-        "#AmplitudeAmplification",
-        "#DynamicProgramming"
+        "#DynamicProgramming",
+        "#AmplitudeAmplification"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -960,7 +960,7 @@
       "paper_title": "Improved Quantum Algorithms for TSP and More",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Algorithms",
-      "generated_at": "2026-11-26T19:26:02",
+      "generated_at": "2026-11-27T19:21:40",
       "generator": "openai"
     }
   },
@@ -989,23 +989,23 @@
         "url": "https://arxiv.org/pdf/2611.31514v1"
       }
     ],
-    "score": 71,
+    "score": 66,
     "infographic": {
-      "key_insight": "The Blueprint proposes preparing DOE to deploy fault-tolerant quantum computers for scientific use beginning in 2028 and scale their capabilities into the 2030s.",
-      "engineering_relevance": "Scientific deployment requires integrating quantum hardware with national computing facilities, supported by programming expertise, system software, and facility readiness.",
+      "key_insight": "The Blueprint proposes preparing DOE for fault-tolerant quantum computing deployment beginning in 2028, with scientific utility as the central goal.",
+      "engineering_relevance": "Integrating fault-tolerant quantum computers into national scientific computing infrastructure requires programming expertise, system software, and facility readiness.",
       "method": [
-        "Target first-generation systems with at least 100 logical qubits and 10,000–100,000 hard logical operations per scientifically relevant calculation.",
-        "Develop FTQC programming competencies, system software, and infrastructure readiness.",
+        "Target initial systems with at least 100 logical qubits and 10,000–100,000 hard logical operations per scientific calculation.",
+        "Develop FTQC programming capabilities, system software, and deployment infrastructure.",
         "Invest in applications, algorithms, and logical architectures to enable larger production-scale systems."
       ],
-      "evidence_signal": "The abstract cites recent error-corrected logical-operation demonstrations and commercial hardware roadmaps as motivation, but reports no new benchmark results.",
-      "watch_item": "The 2028 scientific-utility goal is a roadmap target, not a demonstrated outcome; reliable logical-operation capacity and useful applications remain critical dependencies.",
+      "evidence_signal": "The abstract cites recent error-corrected logical-operation demonstrations and commercial hardware roadmaps as motivation, but reports no new benchmarks or experimental validation.",
+      "watch_item": "The 2028 deployment goal and subsequent scaling to 1,000–10,000 logical qubits remain roadmap targets, not demonstrated capabilities.",
       "hashtags": [
         "#QuantumComputing",
         "#QuantumErrorCorrection",
         "#FaultTolerance",
         "#ScientificComputing",
-        "#DOEScience"
+        "#QuantumSupercomputing"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -1013,7 +1013,7 @@
       "paper_title": "Blueprint for DOE Quantum Supercomputing",
       "paper_date": "2026-11-23",
       "paper_category": "Quantum Error Correction",
-      "generated_at": "2026-11-26T19:26:04",
+      "generated_at": "2026-11-27T19:21:42",
       "generator": "openai"
     }
   },
@@ -1043,23 +1043,23 @@
         "url": "https://arxiv.org/pdf/2611.33883v1"
       }
     ],
-    "score": 70,
+    "score": 65,
     "infographic": {
-      "key_insight": "TyxonQ connects quantum chemistry solvers to multiscale classical workflows, enabling quantum treatment of selected orbitals or fragments rather than entire molecular systems.",
-      "engineering_relevance": "Its interfaces support incremental integration into existing chemistry simulations while retaining classical methods where appropriate.",
+      "key_insight": "TyxonQ connects quantum chemistry solvers to multiscale classical workflows, enabling selected electronic subspaces to receive quantum treatment.",
+      "engineering_relevance": "Its workflow interfaces support incremental quantum integration into existing chemistry simulations while retaining classical methods elsewhere.",
       "method": [
-        "Connect PySCF-compatible energy/force scanners and embedding, solver adapters, backends, and classical consumers through four interfaces.",
-        "Combine QM/MM and fragment embedding with CCSD/FCI solvers and variational or sampling-based quantum methods.",
+        "Connect PySCF-compatible energy/force scanners and embedding, solver adapters, backends, and classical consumers.",
+        "Combine QM/MM and fragment embedding with CCSD/FCI, variational, and sampling-based solvers.",
         "Provide adapters for ASE, i-PI, OpenMM, LAMMPS through i-PI, and MDI."
       ],
       "evidence_signal": "The abstract reports evaluation of correctness, switching cost, reproducibility, and artifact portability on small chemistry workflows, distinguishing executed paths from source-level support.",
-      "watch_item": "Small-workflow evaluation does not establish industrial-scale performance or quantum advantage; source-level support should not be treated as executed validation.",
+      "watch_item": "Small-workflow evaluations do not establish industrial-scale performance or quantum advantage, and supported interfaces are not necessarily execution-tested.",
       "hashtags": [
-        "#QuantumChemistry",
         "#QuantumComputing",
-        "#MultiscaleSimulation",
-        "#ScientificWorkflows",
-        "#ComputationalChemistry"
+        "#ComputationalChemistry",
+        "#MultiscaleModeling",
+        "#QuantumSimulation",
+        "#ScientificWorkflows"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -1067,7 +1067,7 @@
       "paper_title": "TyxonQ: A Workflow Layer for Quantum Computing in Chemistry",
       "paper_date": "2026-11-25",
       "paper_category": "Quantum Simulation",
-      "generated_at": "2026-11-26T19:26:06",
+      "generated_at": "2026-11-27T19:21:44",
       "generator": "openai"
     }
   }
